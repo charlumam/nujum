@@ -67,7 +67,7 @@ export default function Results({ universities, totalEligible }) {
 
   // Always render filters and controls if universities data is present
   return (
-    <div className="max-w-4xl mx-auto mt-6 space-y-3">
+    <div className="h-full space-y-3">
       {/* Filter Row */}
       <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-3">
         <input

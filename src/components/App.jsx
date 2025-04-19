@@ -147,16 +147,23 @@ export default function App() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto p-6 space-y-8">
-      {/* Pass finalScore, totalEligible, and totalPrograms to ScoreForm */}
-      <ScoreForm
-        onSubmit={handleScoresSubmit}
-        finalScore={finalScore}
-        totalEligible={totalEligible}
-        totalPrograms={totalPrograms}
-      />
-      {/* Pass eligibleUnis and totalEligible to Results */}
-      {eligibleUnis !== null && <Results universities={eligibleUnis} totalEligible={totalEligible} />}
+    <div className="container mx-auto p-4 md:p-6">
+      <div className="lg:flex lg:space-x-6 lg:space-y-0 space-y-8">
+        {/* Left column - ScoreForm */}
+        <div className="lg:w-2/5">
+          <ScoreForm
+            onSubmit={handleScoresSubmit}
+            finalScore={finalScore}
+            totalEligible={totalEligible}
+            totalPrograms={totalPrograms}
+          />
+        </div>
+        
+        {/* Right column - Results */}
+        <div className="lg:w-3/5">
+          {eligibleUnis !== null && <Results universities={eligibleUnis} totalEligible={totalEligible} />}
+        </div>
+      </div>
     </div>
   );
 }
