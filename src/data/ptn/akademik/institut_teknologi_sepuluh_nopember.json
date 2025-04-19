@@ -1,0 +1,1243 @@
+{
+  "informasi_universitas": {
+    "KODE": "1382",
+    "Nama Universitas": "INSTITUT TEKNOLOGI SEPULUH NOPEMBER",
+    "Kab/Kota": "Kota Surabaya",
+    "Provinsi-1": "Jawa Timur",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "13821001",
+      "NAMA": "FISIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 153,
+          "2021": 172,
+          "2022": 221,
+          "2023": 125,
+          "2024": 144
+        },
+        "Daya Tampung": {
+          "2020": 63,
+          "2021": 60,
+          "2022": 80,
+          "2023": 81,
+          "2024": 69,
+          "2025": 68
+        }
+      }
+    },
+    {
+      "KODE": "13821002",
+      "NAMA": "MATEMATIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 566,
+          "2021": 275,
+          "2022": 676,
+          "2023": 239,
+          "2024": 269
+        },
+        "Daya Tampung": {
+          "2020": 61,
+          "2021": 60,
+          "2022": 80,
+          "2023": 80,
+          "2024": 80,
+          "2025": 80
+        }
+      }
+    },
+    {
+      "KODE": "13821003",
+      "NAMA": "STATISTIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 781,
+          "2021": 625,
+          "2022": 867,
+          "2023": 566,
+          "2024": 583
+        },
+        "Daya Tampung": {
+          "2020": 61,
+          "2021": 60,
+          "2022": 60,
+          "2023": 60,
+          "2024": 60,
+          "2025": 60
+        }
+      }
+    },
+    {
+      "KODE": "13821004",
+      "NAMA": "KIMIA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 331,
+          "2021": 187,
+          "2022": 473,
+          "2023": 163,
+          "2024": 332
+        },
+        "Daya Tampung": {
+          "2020": 60,
+          "2021": 60,
+          "2022": 80,
+          "2023": 80,
+          "2024": 80,
+          "2025": 80
+        }
+      }
+    },
+    {
+      "KODE": "13821005",
+      "NAMA": "BIOLOGI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 147,
+          "2021": 203,
+          "2022": 247,
+          "2023": 184,
+          "2024": 168
+        },
+        "Daya Tampung": {
+          "2020": 38,
+          "2021": 36,
+          "2022": 48,
+          "2023": 48,
+          "2024": 48,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "13821006",
+      "NAMA": "TEKNIK MESIN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 1279,
+          "2021": 762,
+          "2022": 757,
+          "2023": 864,
+          "2024": 1080
+        },
+        "Daya Tampung": {
+          "2020": 79,
+          "2021": 78,
+          "2022": 78,
+          "2023": 72,
+          "2024": 60,
+          "2025": 60
+        }
+      }
+    },
+    {
+      "KODE": "13821007",
+      "NAMA": "TEKNIK ELEKTRO",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 1160,
+          "2021": 677,
+          "2022": 809,
+          "2023": 845,
+          "2024": 1078
+        },
+        "Daya Tampung": {
+          "2020": 88,
+          "2021": 84,
+          "2022": 84,
+          "2023": 72,
+          "2024": 73,
+          "2025": 72
+        }
+      }
+    },
+    {
+      "KODE": "13821008",
+      "NAMA": "TEKNIK KIMIA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 715,
+          "2021": 469,
+          "2022": 698,
+          "2023": 567,
+          "2024": 764
+        },
+        "Daya Tampung": {
+          "2020": 60,
+          "2021": 60,
+          "2022": 66,
+          "2023": 60,
+          "2024": 60,
+          "2025": 60
+        }
+      }
+    },
+    {
+      "KODE": "13821009",
+      "NAMA": "TEKNIK FISIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 318,
+          "2021": 285,
+          "2022": 213,
+          "2023": 236,
+          "2024": 293
+        },
+        "Daya Tampung": {
+          "2020": 61,
+          "2021": 60,
+          "2022": 60,
+          "2023": 60,
+          "2024": 81,
+          "2025": 60
+        }
+      }
+    },
+    {
+      "KODE": "13821010",
+      "NAMA": "TEKNIK INDUSTRI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 1435,
+          "2021": 1016,
+          "2022": 1225,
+          "2023": 1045,
+          "2024": 1284
+        },
+        "Daya Tampung": {
+          "2020": 60,
+          "2021": 60,
+          "2022": 60,
+          "2023": 61,
+          "2024": 60,
+          "2025": 60
+        }
+      }
+    },
+    {
+      "KODE": "13821011",
+      "NAMA": "TEKNIK MATERIAL",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 601,
+          "2021": 324,
+          "2022": 407,
+          "2023": 806,
+          "2024": 707
+        },
+        "Daya Tampung": {
+          "2020": 61,
+          "2021": 60,
+          "2022": 60,
+          "2023": 60,
+          "2024": 60,
+          "2025": 60
+        }
+      }
+    },
+    {
+      "KODE": "13821012",
+      "NAMA": "TEKNIK SIPIL",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 1247,
+          "2021": 943,
+          "2022": 1108,
+          "2023": 931,
+          "2024": 1140
+        },
+        "Daya Tampung": {
+          "2020": 61,
+          "2021": 60,
+          "2022": 60,
+          "2023": 54,
+          "2024": 54,
+          "2025": 54
+        }
+      }
+    },
+    {
+      "KODE": "13821013",
+      "NAMA": "ARSITEKTUR",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 956,
+          "2021": 840,
+          "2022": 927,
+          "2023": 695,
+          "2024": 688
+        },
+        "Daya Tampung": {
+          "2020": 44,
+          "2021": 45,
+          "2022": 45,
+          "2023": 36,
+          "2024": 36,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "13821014",
+      "NAMA": "TEKNIK LINGKUNGAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 779,
+          "2021": 447,
+          "2022": 622,
+          "2023": 499,
+          "2024": 519
+        },
+        "Daya Tampung": {
+          "2020": 48,
+          "2021": 48,
+          "2022": 48,
+          "2023": 39,
+          "2024": 39,
+          "2025": 39
+        }
+      }
+    },
+    {
+      "KODE": "13821015",
+      "NAMA": "TEKNIK GEOMATIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 310,
+          "2021": 289,
+          "2022": 257,
+          "2023": 285,
+          "2024": 304
+        },
+        "Daya Tampung": {
+          "2020": 45,
+          "2021": 45,
+          "2022": 45,
+          "2023": 39,
+          "2024": 39,
+          "2025": 39
+        }
+      }
+    },
+    {
+      "KODE": "13821016",
+      "NAMA": "PERENCANAAN WILAYAH DAN KOTA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 1021,
+          "2021": 447,
+          "2022": 836,
+          "2023": 559,
+          "2024": 606
+        },
+        "Daya Tampung": {
+          "2020": 57,
+          "2021": 57,
+          "2022": 57,
+          "2023": 51,
+          "2024": 51,
+          "2025": 51
+        }
+      }
+    },
+    {
+      "KODE": "13821017",
+      "NAMA": "TEKNIK PERKAPALAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 577,
+          "2021": 331,
+          "2022": 321,
+          "2023": 386,
+          "2024": 591
+        },
+        "Daya Tampung": {
+          "2020": 41,
+          "2021": 36,
+          "2022": 36,
+          "2023": 37,
+          "2024": 36,
+          "2025": 54
+        }
+      }
+    },
+    {
+      "KODE": "13821018",
+      "NAMA": "TEKNIK KELAUTAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 225,
+          "2021": 219,
+          "2022": 178,
+          "2023": 358,
+          "2024": 366
+        },
+        "Daya Tampung": {
+          "2020": 37,
+          "2021": 36,
+          "2022": 36,
+          "2023": 37,
+          "2024": 36,
+          "2025": 54
+        }
+      }
+    },
+    {
+      "KODE": "13821019",
+      "NAMA": "TEKNIK SISTEM PERKAPALAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 274,
+          "2021": 253,
+          "2022": 210,
+          "2023": 331,
+          "2024": 426
+        },
+        "Daya Tampung": {
+          "2020": 39,
+          "2021": 42,
+          "2022": 42,
+          "2023": 42,
+          "2024": 42,
+          "2025": 63
+        }
+      }
+    },
+    {
+      "KODE": "13821020",
+      "NAMA": "TEKNIK INFORMATIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 2049,
+          "2021": 2028,
+          "2022": 2564,
+          "2023": 2577,
+          "2024": 2225
+        },
+        "Daya Tampung": {
+          "2020": 91,
+          "2021": 90,
+          "2022": 90,
+          "2023": 81,
+          "2024": 84,
+          "2025": 84
+        }
+      }
+    },
+    {
+      "KODE": "13821021",
+      "NAMA": "SISTEM INFORMASI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 1152,
+          "2021": 992,
+          "2022": 1358,
+          "2023": 1093,
+          "2024": 1156
+        },
+        "Daya Tampung": {
+          "2020": 54,
+          "2021": 66,
+          "2022": 66,
+          "2023": 57,
+          "2024": 58,
+          "2025": 63
+        }
+      }
+    },
+    {
+      "KODE": "13821022",
+      "NAMA": "DESAIN PRODUK INDUSTRI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 327,
+          "2021": 218,
+          "2022": 199,
+          "2023": 205,
+          "2024": 182
+        },
+        "Daya Tampung": {
+          "2020": 36,
+          "2021": 36,
+          "2022": 48,
+          "2023": 36,
+          "2024": 48,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "13821023",
+      "NAMA": "TEKNIK TRANSPORTASI LAUT",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 172,
+          "2021": 110,
+          "2022": 100,
+          "2023": 149,
+          "2024": 231
+        },
+        "Daya Tampung": {
+          "2020": 18,
+          "2021": 15,
+          "2022": 15,
+          "2023": 15,
+          "2024": 24,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "13821024",
+      "NAMA": "TEK. SIST PERKAPALAN (GLR GANDA ITS-JERMAN)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 125,
+          "2021": 111,
+          "2022": 101,
+          "2023": 108,
+          "2024": 136
+        },
+        "Daya Tampung": {
+          "2020": 21,
+          "2021": 19,
+          "2022": 18,
+          "2023": 22,
+          "2024": 22,
+          "2025": 27
+        }
+      }
+    },
+    {
+      "KODE": "13821025",
+      "NAMA": "TEKNIK KOMPUTER",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 451,
+          "2021": 390,
+          "2022": 478,
+          "2023": 438,
+          "2024": 496
+        },
+        "Daya Tampung": {
+          "2020": 24,
+          "2021": 24,
+          "2022": 24,
+          "2023": 24,
+          "2024": 35,
+          "2025": 42
+        }
+      }
+    },
+    {
+      "KODE": "13821027",
+      "NAMA": "TEKNIK GEOFISIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 301,
+          "2021": 184,
+          "2022": 299,
+          "2023": 246,
+          "2024": 275
+        },
+        "Daya Tampung": {
+          "2020": 30,
+          "2021": 30,
+          "2022": 30,
+          "2023": 27,
+          "2024": 28,
+          "2025": 27
+        }
+      }
+    },
+    {
+      "KODE": "13821028",
+      "NAMA": "DESAIN INTERIOR",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 354,
+          "2021": 311,
+          "2022": 269,
+          "2023": 207,
+          "2024": 209
+        },
+        "Daya Tampung": {
+          "2020": 24,
+          "2021": 24,
+          "2022": 24,
+          "2023": 36,
+          "2024": 36,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "13821029",
+      "NAMA": "TEKNIK BIOMEDIK",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 349,
+          "2021": 365,
+          "2022": 396,
+          "2023": 357,
+          "2024": 436
+        },
+        "Daya Tampung": {
+          "2020": 24,
+          "2021": 24,
+          "2022": 24,
+          "2023": 24,
+          "2024": 37,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "13821030",
+      "NAMA": "SAINS AKTUARIA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 540,
+          "2021": 382,
+          "2022": 418,
+          "2023": 440,
+          "2024": 346
+        },
+        "Daya Tampung": {
+          "2020": 36,
+          "2021": 36,
+          "2022": 36,
+          "2023": 36,
+          "2024": 36,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "13821031",
+      "NAMA": "TEKNOLOGI INFORMASI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 388,
+          "2021": 328,
+          "2022": 470,
+          "2023": 476,
+          "2024": 541
+        },
+        "Daya Tampung": {
+          "2020": 25,
+          "2021": 24,
+          "2022": 24,
+          "2023": 24,
+          "2024": 36,
+          "2025": 39
+        }
+      }
+    },
+    {
+      "KODE": "13821032",
+      "NAMA": "DESAIN KOMUNIKASI VISUAL",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 608,
+          "2021": 497,
+          "2022": 562,
+          "2023": 651,
+          "2024": 644
+        },
+        "Daya Tampung": {
+          "2020": 24,
+          "2021": 24,
+          "2022": 24,
+          "2023": 48,
+          "2024": 48,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "13821041",
+      "NAMA": "TEKNIK LEPAS PANTAI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 138,
+          "2023": 102,
+          "2024": 284
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": 12,
+          "2023": 13,
+          "2024": 26,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "13821042",
+      "NAMA": "TEKNIK PANGAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 339,
+          "2023": 194,
+          "2024": 330
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": 12,
+          "2023": 12,
+          "2024": 25,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "13821043",
+      "NAMA": "MANAJEMEN BISNIS",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 931,
+          "2021": 720,
+          "2022": 787,
+          "2023": 849,
+          "2024": 992
+        },
+        "Daya Tampung": {
+          "2020": 41,
+          "2021": 39,
+          "2022": 42,
+          "2023": 36,
+          "2024": 36,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "13821044",
+      "NAMA": "STUDI PEMBANGUNAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 230,
+          "2021": 198,
+          "2022": 248,
+          "2023": 297,
+          "2024": 326
+        },
+        "Daya Tampung": {
+          "2020": 30,
+          "2021": 30,
+          "2022": 30,
+          "2023": 41,
+          "2024": 54,
+          "2025": 54
+        }
+      }
+    },
+    {
+      "KODE": "13821045",
+      "NAMA": "TEKNIK TELEKOMUNIKASI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 184,
+          "2024": 256
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 24,
+          "2024": 24,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "13821046",
+      "NAMA": "TEKNOLOGI KEDOKTERAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 548,
+          "2024": 311
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 36,
+          "2024": 36,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "13821047",
+      "NAMA": "SAINS ANALITIK DAN INSTRUMENTASI KIMIA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 58,
+          "2024": 117
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 18,
+          "2024": 18,
+          "2025": 18
+        }
+      }
+    },
+    {
+      "KODE": "13821048",
+      "NAMA": "KEDOKTERAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 522
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 15,
+          "2025": 15
+        }
+      }
+    },
+    {
+      "KODE": "13821049",
+      "NAMA": "SAINS DATA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 313
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 12,
+          "2025": 14
+        }
+      }
+    },
+    {
+      "KODE": "13821050",
+      "NAMA": "INOVASI DIGITAL",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 145
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 20,
+          "2025": 15
+        }
+      }
+    },
+    {
+      "KODE": "13821051",
+      "NAMA": "REKAYASA KECERDASAN ARTIFISIAL",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 488
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 18,
+          "2025": 18
+        }
+      }
+    },
+    {
+      "KODE": "13821052",
+      "NAMA": "REKAYASA PERANGKAT LUNAK",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 306
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 18,
+          "2025": 18
+        }
+      }
+    },
+    {
+      "KODE": "13821053",
+      "NAMA": "BISNIS DIGITAL",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 15
+        }
+      }
+    },
+    {
+      "KODE": "13821054",
+      "NAMA": "REKAYASA KESELAMATAN PROSES",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 12
+        }
+      }
+    },
+    {
+      "KODE": "13821056",
+      "NAMA": "SAINS KOMUNIKASI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 18
+        }
+      }
+    },
+    {
+      "KODE": "13821057",
+      "NAMA": "BIOTEKNOLOGI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 16
+        }
+      }
+    },
+    {
+      "KODE": "13822033",
+      "NAMA": "TEKNIK SIPIL",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 180,
+          "2022": null,
+          "2023": 345,
+          "2024": 2296
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 27,
+          "2022": null,
+          "2023": 27,
+          "2024": 36,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "13822034",
+      "NAMA": "TEKNOLOGI REKAYASA KONSTRUKSI BANGUNAN AIR",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 32,
+          "2022": null,
+          "2023": 68,
+          "2024": 280
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 32,
+          "2022": null,
+          "2023": 28,
+          "2024": 36,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "13822035",
+      "NAMA": "TEKNOLOGI REKAYASA MANUFAKTUR",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 66,
+          "2022": null,
+          "2023": 98,
+          "2024": 468
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 30,
+          "2022": null,
+          "2023": 27,
+          "2024": 36,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "13822036",
+      "NAMA": "TEKNOLOGI REKAYASA KONVERSI ENERGI",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 44,
+          "2022": null,
+          "2023": 65,
+          "2024": 505
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 30,
+          "2022": null,
+          "2023": 27,
+          "2024": 36,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "13822037",
+      "NAMA": "TEKNOLOGI REKAYASA OTOMASI",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 109,
+          "2022": null,
+          "2023": 119,
+          "2024": 401
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 42,
+          "2022": null,
+          "2023": 40,
+          "2024": 52,
+          "2025": 52
+        }
+      }
+    },
+    {
+      "KODE": "13822038",
+      "NAMA": "TEKNOLOGI REKAYASA KIMIA INDUSTRI",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 109,
+          "2022": null,
+          "2023": 139,
+          "2024": 1131
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 30,
+          "2022": null,
+          "2023": 39,
+          "2024": 52,
+          "2025": 52
+        }
+      }
+    },
+    {
+      "KODE": "13822039",
+      "NAMA": "TEKNOLOGI REKAYASA INSTRUMENTASI",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 82,
+          "2022": null,
+          "2023": 104,
+          "2024": 420
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 39,
+          "2022": null,
+          "2023": 39,
+          "2024": 52,
+          "2025": 52
+        }
+      }
+    },
+    {
+      "KODE": "13822040",
+      "NAMA": "STATISTIKA BISNIS",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 175,
+          "2022": null,
+          "2023": 200,
+          "2024": 1670
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 39,
+          "2022": null,
+          "2023": 41,
+          "2024": 53,
+          "2025": 52
+        }
+      }
+    },
+    {
+      "KODE": "13822055",
+      "NAMA": "ANALITIKA LOGISTIK TERAPAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 16
+        }
+      }
+    }
+  ]
+}

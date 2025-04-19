@@ -1,0 +1,209 @@
+{
+  "informasi_universitas": {
+    "KODE": "2516",
+    "Nama Universitas": "POLITEKNIK NEGERI KETAPANG",
+    "Kab/Kota": "Kabupaten Ketapang",
+    "Provinsi-1": "Kalimantan Barat",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "25162001",
+      "NAMA": "TEKNOLOGI PRODUKSI TANAMAN PERKEBUNAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 23,
+          "2022": 55,
+          "2023": 50,
+          "2024": 44
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 25,
+          "2022": 40,
+          "2023": 30,
+          "2024": 24,
+          "2025": 40
+        }
+      }
+    },
+    {
+      "KODE": "25162002",
+      "NAMA": "TEKNOLOGI REKAYASA KONSTRUKSI JALAN DAN JEMBATAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 30,
+          "2022": 57,
+          "2023": 54,
+          "2024": 48
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 28,
+          "2022": 40,
+          "2023": 35,
+          "2024": 24,
+          "2025": 40
+        }
+      }
+    },
+    {
+      "KODE": "25162009",
+      "NAMA": "MANAJEMEN AGRIBISNIS",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 40
+        }
+      }
+    },
+    {
+      "KODE": "25163003",
+      "NAMA": "TEKNOLOGI HASIL PERKEBUNAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 25,
+          "2024": 34
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 34,
+          "2024": 35,
+          "2025": 40
+        }
+      }
+    },
+    {
+      "KODE": "25163004",
+      "NAMA": "PEMELIHARAAN MESIN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 15,
+          "2024": 16
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 41,
+          "2024": 41,
+          "2025": 40
+        }
+      }
+    },
+    {
+      "KODE": "25163005",
+      "NAMA": "TEKNOLOGI LISTRIK",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 13,
+          "2024": 29
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 37,
+          "2024": 37,
+          "2025": 40
+        }
+      }
+    },
+    {
+      "KODE": "25163006",
+      "NAMA": "TEKNOLOGI PERTAMBANGAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 45,
+          "2024": 65
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 30,
+          "2024": 24,
+          "2025": 40
+        }
+      }
+    },
+    {
+      "KODE": "25163007",
+      "NAMA": "TEKNOLOGI INFORMASI",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 86,
+          "2024": 98
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 38,
+          "2024": 31,
+          "2025": 40
+        }
+      }
+    },
+    {
+      "KODE": "25163008",
+      "NAMA": "AGROINDUSTRI",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 33,
+          "2024": 28
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 33,
+          "2024": 32,
+          "2025": 40
+        }
+      }
+    }
+  ]
+}

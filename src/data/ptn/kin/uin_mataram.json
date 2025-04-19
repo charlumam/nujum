@@ -1,0 +1,77 @@
+{
+  "informasi_universitas": {
+    "KODE": "1622",
+    "Nama Universitas": "UIN MATARAM",
+    "Kab/Kota": "Kota Mataram",
+    "Provinsi-1": "Nusa Tenggara Barat",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "16221001",
+      "NAMA": "HUKUM BISNIS",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 58
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 38,
+          "2025": 28
+        }
+      }
+    },
+    {
+      "KODE": "16221002",
+      "NAMA": "KEWIRAUSAHAAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 48
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 43,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "16221003",
+      "NAMA": "TEKNOLOGI INFORMASI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 24
+        }
+      }
+    }
+  ]
+}

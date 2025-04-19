@@ -1,0 +1,77 @@
+{
+  "informasi_universitas": {
+    "KODE": "1194",
+    "Nama Universitas": "UIN MAHMUD YUNUS BATUSANGKAR",
+    "Kab/Kota": "Kabupaten Tanah Datar",
+    "Provinsi-1": "Sumatera Barat",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "11941001",
+      "NAMA": "MATEMATIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 56,
+          "2025": 44
+        }
+      }
+    },
+    {
+      "KODE": "11941002",
+      "NAMA": "BIOLOGI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 2
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 56,
+          "2025": 44
+        }
+      }
+    },
+    {
+      "KODE": "11941003",
+      "NAMA": "SISTEM INFORMASI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 24
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 84,
+          "2025": 60
+        }
+      }
+    }
+  ]
+}

@@ -1,23 +1,36 @@
 import React, { useState } from 'react';
 import ScoreForm from './ScoreForm.jsx';
 import Results from './Results.jsx';
-import universities from '../data/universities.json';
+
+// load all JSON data under data/ptn on component initialization using Vite glob with eager option
+const modules = import.meta.glob('../data/ptn/**/*.json', { eager: true, as: 'json' });
+const allData = Object.values(modules);
+const allUnis = allData.map(data => {
+  const info = data.informasi_universitas;
+  const prodiList = (data.daftar_prodi || []).map(p => ({
+    nama: p.NAMA,
+    dayaTampung: p['SEBARAN DATA']['Daya Tampung']['2025'],
+  }));
+  return { name: info['Nama Universitas'], prodi: prodiList };
+});
 
 export default function App() {
-  const [eligibleUnis, setEligibleUnis] = useState([]);
+  // will hold null before search and array of results after
+  const [eligibleUnis, setEligibleUnis] = useState(null);
 
   const handleScoresSubmit = (scores) => {
-    // sum all scores
-    const total = Object.values(scores).reduce((sum, val) => sum + val, 0);
-    // filter universities by minimum total score
-    const filtered = universities.filter(u => total >= u.min_total_score);
-    setEligibleUnis(filtered);
+    console.log('Scores submitted:', scores);
+    alert('Mencari universitas berdasarkan skor Anda...');
+    // For now, just display all loaded universities to confirm data load
+    console.log('Loaded universities count:', allUnis.length);
+    console.log('Sample university names:', allUnis.slice(0,5).map(u => u.name));
+    setEligibleUnis(allUnis);
   };
 
   return (
     <div className="max-w-3xl mx-auto p-6 space-y-8">
       <ScoreForm onSubmit={handleScoresSubmit} />
-      <Results universities={eligibleUnis} />
+      {eligibleUnis !== null && <Results universities={eligibleUnis} />}
     </div>
   );
 }

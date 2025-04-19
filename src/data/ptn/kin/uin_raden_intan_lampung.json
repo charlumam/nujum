@@ -1,0 +1,99 @@
+{
+  "informasi_universitas": {
+    "KODE": "1193",
+    "Nama Universitas": "UIN RADEN INTAN LAMPUNG",
+    "Kab/Kota": "Kota Bandar Lampung",
+    "Provinsi-1": "Lampung",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "11931001",
+      "NAMA": "BIOLOGI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 50,
+          "2024": 29
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 40,
+          "2024": 111,
+          "2025": 80
+        }
+      }
+    },
+    {
+      "KODE": "11931002",
+      "NAMA": "SISTEM INFORMASI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 199,
+          "2024": 146
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 40,
+          "2024": 40,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "11931003",
+      "NAMA": "SAINS DATA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 21
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 74,
+          "2025": 80
+        }
+      }
+    },
+    {
+      "KODE": "11931004",
+      "NAMA": "KIMIA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 80
+        }
+      }
+    }
+  ]
+}

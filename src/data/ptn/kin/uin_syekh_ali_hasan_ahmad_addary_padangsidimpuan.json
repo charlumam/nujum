@@ -1,0 +1,77 @@
+{
+  "informasi_universitas": {
+    "KODE": "1124",
+    "Nama Universitas": "UIN SYEKH ALI HASAN AHMAD ADDARY PADANGSIDIMPUAN",
+    "Kab/Kota": "Kota Padangsidimpuan",
+    "Provinsi-1": "Sumatera Utara",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "11241001",
+      "NAMA": "BISNIS DIGITAL",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 1
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 80,
+          "2025": 52
+        }
+      }
+    },
+    {
+      "KODE": "11241002",
+      "NAMA": "DESAIN KOMUNIKASI VISUAL",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 2
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 80,
+          "2025": 52
+        }
+      }
+    },
+    {
+      "KODE": "11241003",
+      "NAMA": "TEKNOLOGI INFORMASI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 3
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 80,
+          "2025": 52
+        }
+      }
+    }
+  ]
+}

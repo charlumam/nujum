@@ -1,0 +1,99 @@
+{
+  "informasi_universitas": {
+    "KODE": "1366",
+    "Nama Universitas": "UIN PROFESOR KIAI HAJI SAIFUDDIN ZUHRI PURWOKERTO",
+    "Kab/Kota": "Kabupaten Banyumas",
+    "Provinsi-1": "Jawa Tengah",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "13661001",
+      "NAMA": "ARSITEKTUR",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 29
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 49,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "13661002",
+      "NAMA": "INFORMATIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 77
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 73,
+          "2025": 66
+        }
+      }
+    },
+    {
+      "KODE": "13661003",
+      "NAMA": "PERPUSTAKAAN DAN SAINS INFORMASI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 31
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 20,
+          "2025": 30
+        }
+      }
+    },
+    {
+      "KODE": "13661004",
+      "NAMA": "ILMU LINGKUNGAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 35
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 55,
+          "2025": 40
+        }
+      }
+    }
+  ]
+}

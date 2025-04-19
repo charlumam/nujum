@@ -1,0 +1,319 @@
+{
+  "informasi_universitas": {
+    "KODE": "2561",
+    "Nama Universitas": "POLITEKNIK PERTANIAN NEGERI SAMARINDA",
+    "Kab/Kota": "Kota Samarinda",
+    "Provinsi-1": "Kalimantan Timur",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "25612001",
+      "NAMA": "PENGELOLAAN PERKEBUNAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 5,
+          "2021": 54,
+          "2022": 46,
+          "2023": 28,
+          "2024": 36
+        },
+        "Daya Tampung": {
+          "2020": 27,
+          "2021": 31,
+          "2022": 47,
+          "2023": 36,
+          "2024": 31,
+          "2025": 39
+        }
+      }
+    },
+    {
+      "KODE": "25612002",
+      "NAMA": "TEKNOLOGI REKAYASA PERANGKAT LUNAK",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 4,
+          "2021": 38,
+          "2022": 27,
+          "2023": 33,
+          "2024": 16
+        },
+        "Daya Tampung": {
+          "2020": 40,
+          "2021": 36,
+          "2022": 55,
+          "2023": 47,
+          "2024": 44,
+          "2025": 31
+        }
+      }
+    },
+    {
+      "KODE": "25612003",
+      "NAMA": "REKAYASA KAYU",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 7,
+          "2022": 9,
+          "2023": 4,
+          "2024": 1
+        },
+        "Daya Tampung": {
+          "2020": 40,
+          "2021": 12,
+          "2022": 28,
+          "2023": 45,
+          "2024": 13,
+          "2025": 12
+        }
+      }
+    },
+    {
+      "KODE": "25612010",
+      "NAMA": "TEKNOLOGI REKAYASA GEOMATIKA DAN SURVEI",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 38
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 19,
+          "2025": 28
+        }
+      }
+    },
+    {
+      "KODE": "25612012",
+      "NAMA": "TEKNOLOGI PRODUKSI TANAMAN PANGAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 25
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 20,
+          "2025": 12
+        }
+      }
+    },
+    {
+      "KODE": "25612013",
+      "NAMA": "TEKNOLOGI REKAYASA PENGENDALIAN PENCEMARAN LINGKUNGAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 12
+        }
+      }
+    },
+    {
+      "KODE": "25612014",
+      "NAMA": "TEKNOLOGI REKAYASA PANGAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 12
+        }
+      }
+    },
+    {
+      "KODE": "25613004",
+      "NAMA": "BUDIDAYA TANAMAN PERKEBUNAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 17,
+          "2024": 62
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 39,
+          "2024": 17,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "25613005",
+      "NAMA": "TEKNOLOGI HASIL PERKEBUNAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 7,
+          "2024": 12
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 34,
+          "2024": 19,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "25613006",
+      "NAMA": "PENGOLAHAN HASIL HUTAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 7,
+          "2024": 7
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 35,
+          "2024": 20,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "25613007",
+      "NAMA": "TEKNOLOGI GEOMATIKA",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 16,
+          "2024": 34
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 27,
+          "2024": 36,
+          "2025": 20
+        }
+      }
+    },
+    {
+      "KODE": "25613008",
+      "NAMA": "PENGELOLAAN LINGKUNGAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 11,
+          "2024": 27
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 40,
+          "2024": 15,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "25613009",
+      "NAMA": "PENGELOLAAN HUTAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 13,
+          "2024": 30
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 26,
+          "2024": 24,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "25613011",
+      "NAMA": "SISTEM INFORMASI AKUNTANSI",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 17
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 20,
+          "2025": 24
+        }
+      }
+    }
+  ]
+}

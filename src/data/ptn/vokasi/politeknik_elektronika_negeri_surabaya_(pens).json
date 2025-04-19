@@ -1,0 +1,451 @@
+{
+  "informasi_universitas": {
+    "KODE": "2482",
+    "Nama Universitas": "POLITEKNIK ELEKTRONIKA NEGERI SURABAYA (PENS)",
+    "Kab/Kota": "Kota Surabaya",
+    "Provinsi-1": "Jawa Timur",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "24822001",
+      "NAMA": "TEKNIK ELEKTRONIKA",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 193,
+          "2022": 208,
+          "2023": 167,
+          "2024": 488
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 24,
+          "2022": 26,
+          "2023": 24,
+          "2024": 48,
+          "2025": 60
+        }
+      }
+    },
+    {
+      "KODE": "24822002",
+      "NAMA": "TEKNIK TELEKOMUNIKASI",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 102,
+          "2022": 142,
+          "2023": 78,
+          "2024": 320
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 25,
+          "2022": 24,
+          "2023": 24,
+          "2024": 48,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24822003",
+      "NAMA": "TEKNIK ELEKTRO INDUSTRI",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 227,
+          "2022": 235,
+          "2023": 209,
+          "2024": 546
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 24,
+          "2022": 25,
+          "2023": 25,
+          "2024": 48,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24822004",
+      "NAMA": "TEKNIK INFORMATIKA",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 485,
+          "2022": 510,
+          "2023": 431,
+          "2024": 1324
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 24,
+          "2022": 24,
+          "2023": 25,
+          "2024": 48,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24822005",
+      "NAMA": "TEKNIK KOMPUTER",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 173,
+          "2022": 223,
+          "2023": 159,
+          "2024": 374
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 24,
+          "2022": 25,
+          "2023": 24,
+          "2024": 36,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24822006",
+      "NAMA": "TEKNIK MEKATRONIKA",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 127,
+          "2022": 121,
+          "2023": 134,
+          "2024": 243
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 25,
+          "2022": 26,
+          "2023": 24,
+          "2024": 36,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24822007",
+      "NAMA": "SISTEM PEMBANGKIT ENERGI",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 66,
+          "2022": 92,
+          "2023": 73,
+          "2024": 132
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 24,
+          "2022": 25,
+          "2023": 24,
+          "2024": 36,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24822008",
+      "NAMA": "TEKNOLOGI GAME",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 168,
+          "2022": 173,
+          "2023": 155,
+          "2024": 329
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 40,
+          "2022": 36,
+          "2023": 37,
+          "2024": 49,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24822009",
+      "NAMA": "TEKNOLOGI REKAYASA INTERNET",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 67,
+          "2023": 118,
+          "2024": 136
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": 12,
+          "2023": 26,
+          "2024": 24,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "24822010",
+      "NAMA": "TEKNOLOGI REKAYASA MULTIMEDIA",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 181,
+          "2023": 100,
+          "2024": 289
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": 13,
+          "2023": 25,
+          "2024": 24,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "24822011",
+      "NAMA": "SAINS DATA TERAPAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 91,
+          "2023": 188,
+          "2024": 450
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": 12,
+          "2023": 25,
+          "2024": 25,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "24823012",
+      "NAMA": "TEKNOLOGI MULTIMEDIA BROADCASTING (KAMPUS KAB LAMONGAN)",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 19,
+          "2024": 68
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 19,
+          "2024": 12,
+          "2025": 12
+        }
+      }
+    },
+    {
+      "KODE": "24823013",
+      "NAMA": "TEKNIK ELEKTRO INDUSTRI",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 73,
+          "2024": 864
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 24,
+          "2024": 26,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24823015",
+      "NAMA": "TEKNIK INFORMATIKA (KAMPUS KAB SUMENEP)",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 3,
+          "2024": 14
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 19,
+          "2024": 15,
+          "2025": 12
+        }
+      }
+    },
+    {
+      "KODE": "24823016",
+      "NAMA": "TEKNIK ELEKTRONIKA",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 64,
+          "2024": 585
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 27,
+          "2024": 24,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24823017",
+      "NAMA": "TEKNOLOGI MULTIMEDIA BROADCASTING (KAMPUS KAB. SUMENEP)",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 5,
+          "2024": 18
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 21,
+          "2024": 18,
+          "2025": 12
+        }
+      }
+    },
+    {
+      "KODE": "24823018",
+      "NAMA": "TEKNIK INFORMATIKA (KAMPUS KAB LAMONGAN)",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 28,
+          "2024": 146
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 37,
+          "2024": 31,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24823019",
+      "NAMA": "TEKNOLOGI MULTIMEDIA DAN BROADCASTING",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 98,
+          "2024": 709
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 25,
+          "2024": 24,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24823020",
+      "NAMA": "TEKNIK INFORMATIKA",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 125,
+          "2024": 1765
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 25,
+          "2024": 24,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24823021",
+      "NAMA": "TEKNIK TELEKOMUNIKASI",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 37,
+          "2024": 524
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 36,
+          "2024": 24,
+          "2025": 24
+        }
+      }
+    }
+  ]
+}

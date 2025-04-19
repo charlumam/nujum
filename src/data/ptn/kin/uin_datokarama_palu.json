@@ -1,0 +1,77 @@
+{
+  "informasi_universitas": {
+    "KODE": "1732",
+    "Nama Universitas": "UIN DATOKARAMA PALU",
+    "Kab/Kota": "Kota Palu",
+    "Provinsi-1": "Sulawesi Tengah",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "17321001",
+      "NAMA": "INFORMATIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 31,
+          "2024": 40
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 29,
+          "2024": 47,
+          "2025": 42
+        }
+      }
+    },
+    {
+      "KODE": "17321002",
+      "NAMA": "ARSITEKTUR",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 5,
+          "2024": 9
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 27,
+          "2024": 24,
+          "2025": 28
+        }
+      }
+    },
+    {
+      "KODE": "17321003",
+      "NAMA": "SISTEM INFORMASI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 24,
+          "2024": 25
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 27,
+          "2024": 38,
+          "2025": 28
+        }
+      }
+    }
+  ]
+}

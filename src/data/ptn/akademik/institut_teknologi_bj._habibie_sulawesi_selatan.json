@@ -1,0 +1,297 @@
+{
+  "informasi_universitas": {
+    "KODE": "1718",
+    "Nama Universitas": "INSTITUT TEKNOLOGI BJ. HABIBIE SULAWESI SELATAN",
+    "Kab/Kota": "Kota Parepare",
+    "Provinsi-1": "Sulawesi Selatan",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "17181001",
+      "NAMA": "ILMU KOMPUTER",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 109,
+          "2024": 124
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 77,
+          "2024": 86,
+          "2025": 64
+        }
+      }
+    },
+    {
+      "KODE": "17181002",
+      "NAMA": "SISTEM INFORMASI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 90,
+          "2024": 86
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 79,
+          "2024": 96,
+          "2025": 64
+        }
+      }
+    },
+    {
+      "KODE": "17181003",
+      "NAMA": "MATEMATIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 9,
+          "2024": 4
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 24,
+          "2024": 22,
+          "2025": 15
+        }
+      }
+    },
+    {
+      "KODE": "17181004",
+      "NAMA": "TEKNOLOGI PANGAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 16
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 93,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "17181005",
+      "NAMA": "SAINS DATA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 10
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 98,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "17181006",
+      "NAMA": "SAINS AKTUARIA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 9
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 96,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "17181007",
+      "NAMA": "TEKNIK SISTEM ENERGI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 10
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 94,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "17181008",
+      "NAMA": "TEKNIK METALURGI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 16
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 89,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "17181009",
+      "NAMA": "BIOTEKNOLOGI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 17
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 95,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "17181010",
+      "NAMA": "TEKNIK SIPIL",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 61
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 102,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "17181011",
+      "NAMA": "ARSITEKTUR",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "17181012",
+      "NAMA": "TEKNIK PERKAPALAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "17181013",
+      "NAMA": "TEKNIK ROBOTIKA DAN KECERDASAN BUATAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 56
+        }
+      }
+    }
+  ]
+}

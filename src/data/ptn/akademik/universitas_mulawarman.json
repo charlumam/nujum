@@ -1,0 +1,1485 @@
+{
+  "informasi_universitas": {
+    "KODE": "1541",
+    "Nama Universitas": "UNIVERSITAS MULAWARMAN",
+    "Kab/Kota": "Kota Samarinda",
+    "Provinsi-1": "Kalimantan Timur",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "15411001",
+      "NAMA": "AGROEKOTEKNOLOGI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 157,
+          "2021": 159,
+          "2022": 159,
+          "2023": 158,
+          "2024": 119
+        },
+        "Daya Tampung": {
+          "2020": 50,
+          "2021": 50,
+          "2022": 55,
+          "2023": 52,
+          "2024": 65,
+          "2025": 63
+        }
+      }
+    },
+    {
+      "KODE": "15411002",
+      "NAMA": "AGRIBISNIS",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 220,
+          "2021": 184,
+          "2022": 189,
+          "2023": 175,
+          "2024": 152
+        },
+        "Daya Tampung": {
+          "2020": 35,
+          "2021": 35,
+          "2022": 35,
+          "2023": 36,
+          "2024": 42,
+          "2025": 45
+        }
+      }
+    },
+    {
+      "KODE": "15411003",
+      "NAMA": "TEKNOLOGI HASIL PERTANIAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 113,
+          "2021": 113,
+          "2022": 108,
+          "2023": 85,
+          "2024": 75
+        },
+        "Daya Tampung": {
+          "2020": 35,
+          "2021": 35,
+          "2022": 38,
+          "2023": 40,
+          "2024": 42,
+          "2025": 45
+        }
+      }
+    },
+    {
+      "KODE": "15411004",
+      "NAMA": "KEHUTANAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 330,
+          "2021": 276,
+          "2022": 326,
+          "2023": 336,
+          "2024": 368
+        },
+        "Daya Tampung": {
+          "2020": 150,
+          "2021": 192,
+          "2022": 164,
+          "2023": 164,
+          "2024": 188,
+          "2025": 176
+        }
+      }
+    },
+    {
+      "KODE": "15411005",
+      "NAMA": "PENDIDIKAN BIOLOGI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 136,
+          "2021": 141,
+          "2022": 140,
+          "2023": 84,
+          "2024": 74
+        },
+        "Daya Tampung": {
+          "2020": 34,
+          "2021": 32,
+          "2022": 32,
+          "2023": 32,
+          "2024": 34,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "15411006",
+      "NAMA": "PENDIDIKAN KIMIA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 60,
+          "2021": 42,
+          "2022": 33,
+          "2023": 19,
+          "2024": 19
+        },
+        "Daya Tampung": {
+          "2020": 33,
+          "2021": 32,
+          "2022": 32,
+          "2023": 34,
+          "2024": 33,
+          "2025": 16
+        }
+      }
+    },
+    {
+      "KODE": "15411007",
+      "NAMA": "PENDIDIKAN FISIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 41,
+          "2021": 39,
+          "2022": 21,
+          "2023": 30,
+          "2024": 15
+        },
+        "Daya Tampung": {
+          "2020": 33,
+          "2021": 32,
+          "2022": 32,
+          "2023": 32,
+          "2024": 38,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "15411008",
+      "NAMA": "PENDIDIKAN MATEMATIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 143,
+          "2021": 134,
+          "2022": 106,
+          "2023": 76,
+          "2024": 69
+        },
+        "Daya Tampung": {
+          "2020": 32,
+          "2021": 32,
+          "2022": 32,
+          "2023": 32,
+          "2024": 32,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "15411009",
+      "NAMA": "AKUAKULTUR",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 29,
+          "2021": 49,
+          "2022": 29,
+          "2023": 38,
+          "2024": 23
+        },
+        "Daya Tampung": {
+          "2020": 32,
+          "2021": 32,
+          "2022": 38,
+          "2023": 60,
+          "2024": 26,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "15411010",
+      "NAMA": "SOSIAL EKONOMI PERIKANAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 61,
+          "2021": 18,
+          "2022": 24,
+          "2023": 16,
+          "2024": 23
+        },
+        "Daya Tampung": {
+          "2020": 32,
+          "2021": 32,
+          "2022": 30,
+          "2023": 54,
+          "2024": 28,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "15411011",
+      "NAMA": "PENGELOLAAN SUMBERDAYA PERIKANAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 39,
+          "2021": 53,
+          "2022": 39,
+          "2023": 39,
+          "2024": 36
+        },
+        "Daya Tampung": {
+          "2020": 32,
+          "2021": 32,
+          "2022": 35,
+          "2023": 58,
+          "2024": 27,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "15411012",
+      "NAMA": "STATISTIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 130,
+          "2021": 143,
+          "2022": 129,
+          "2023": 96,
+          "2024": 93
+        },
+        "Daya Tampung": {
+          "2020": 24,
+          "2021": 24,
+          "2022": 24,
+          "2023": 33,
+          "2024": 39,
+          "2025": 41
+        }
+      }
+    },
+    {
+      "KODE": "15411013",
+      "NAMA": "BIOLOGI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 101,
+          "2021": 120,
+          "2022": 115,
+          "2023": 57,
+          "2024": 47
+        },
+        "Daya Tampung": {
+          "2020": 34,
+          "2021": 34,
+          "2022": 34,
+          "2023": 35,
+          "2024": 42,
+          "2025": 40
+        }
+      }
+    },
+    {
+      "KODE": "15411014",
+      "NAMA": "KIMIA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 67,
+          "2021": 59,
+          "2022": 66,
+          "2023": 31,
+          "2024": 49
+        },
+        "Daya Tampung": {
+          "2020": 34,
+          "2021": 34,
+          "2022": 32,
+          "2023": 28,
+          "2024": 41,
+          "2025": 35
+        }
+      }
+    },
+    {
+      "KODE": "15411015",
+      "NAMA": "FISIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 24,
+          "2021": 16,
+          "2022": 20,
+          "2023": 21,
+          "2024": 14
+        },
+        "Daya Tampung": {
+          "2020": 18,
+          "2021": 18,
+          "2022": 22,
+          "2023": 30,
+          "2024": 19,
+          "2025": 20
+        }
+      }
+    },
+    {
+      "KODE": "15411017",
+      "NAMA": "TEKNIK SIPIL",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 385,
+          "2021": 409,
+          "2022": 458,
+          "2023": 494,
+          "2024": 551
+        },
+        "Daya Tampung": {
+          "2020": 25,
+          "2021": 25,
+          "2022": 25,
+          "2023": 23,
+          "2024": 28,
+          "2025": 28
+        }
+      }
+    },
+    {
+      "KODE": "15411018",
+      "NAMA": "TEKNIK INDUSTRI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 289,
+          "2021": 254,
+          "2022": 318,
+          "2023": 334,
+          "2024": 349
+        },
+        "Daya Tampung": {
+          "2020": 25,
+          "2021": 25,
+          "2022": 25,
+          "2023": 24,
+          "2024": 28,
+          "2025": 28
+        }
+      }
+    },
+    {
+      "KODE": "15411019",
+      "NAMA": "TEKNIK LINGKUNGAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 286,
+          "2021": 239,
+          "2022": 291,
+          "2023": 307,
+          "2024": 324
+        },
+        "Daya Tampung": {
+          "2020": 25,
+          "2021": 25,
+          "2022": 25,
+          "2023": 24,
+          "2024": 28,
+          "2025": 28
+        }
+      }
+    },
+    {
+      "KODE": "15411020",
+      "NAMA": "TEKNIK PERTAMBANGAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 206,
+          "2021": 268,
+          "2022": 459,
+          "2023": 556,
+          "2024": 716
+        },
+        "Daya Tampung": {
+          "2020": 25,
+          "2021": 25,
+          "2022": 25,
+          "2023": 23,
+          "2024": 28,
+          "2025": 28
+        }
+      }
+    },
+    {
+      "KODE": "15411021",
+      "NAMA": "PENDIDIKAN DOKTER",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 957,
+          "2021": 964,
+          "2022": 1132,
+          "2023": 1139,
+          "2024": 972
+        },
+        "Daya Tampung": {
+          "2020": 40,
+          "2021": 40,
+          "2022": 40,
+          "2023": 50,
+          "2024": 58,
+          "2025": 61
+        }
+      }
+    },
+    {
+      "KODE": "15411022",
+      "NAMA": "KESEHATAN MASYARAKAT",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 728,
+          "2021": 779,
+          "2022": 950,
+          "2023": 851,
+          "2024": 765
+        },
+        "Daya Tampung": {
+          "2020": 44,
+          "2021": 44,
+          "2022": 60,
+          "2023": 50,
+          "2024": 51,
+          "2025": 50
+        }
+      }
+    },
+    {
+      "KODE": "15411023",
+      "NAMA": "FARMASI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 598,
+          "2021": 879,
+          "2022": 981,
+          "2023": 838,
+          "2024": 743
+        },
+        "Daya Tampung": {
+          "2020": 60,
+          "2021": 60,
+          "2022": 60,
+          "2023": 65,
+          "2024": 71,
+          "2025": 80
+        }
+      }
+    },
+    {
+      "KODE": "15411024",
+      "NAMA": "PETERNAKAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 50,
+          "2021": 53,
+          "2022": 93,
+          "2023": 73,
+          "2024": 69
+        },
+        "Daya Tampung": {
+          "2020": 25,
+          "2021": 25,
+          "2022": 33,
+          "2023": 46,
+          "2024": 42,
+          "2025": 51
+        }
+      }
+    },
+    {
+      "KODE": "15411025",
+      "NAMA": "TEKNIK KIMIA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 85,
+          "2021": 64,
+          "2022": 70,
+          "2023": 50,
+          "2024": 70
+        },
+        "Daya Tampung": {
+          "2020": 25,
+          "2021": 25,
+          "2022": 25,
+          "2023": 23,
+          "2024": 28,
+          "2025": 28
+        }
+      }
+    },
+    {
+      "KODE": "15411026",
+      "NAMA": "INFORMATIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 604,
+          "2021": 736,
+          "2022": 867,
+          "2023": 948,
+          "2024": 829
+        },
+        "Daya Tampung": {
+          "2020": 60,
+          "2021": 75,
+          "2022": 75,
+          "2023": 46,
+          "2024": 56,
+          "2025": 55
+        }
+      }
+    },
+    {
+      "KODE": "15411027",
+      "NAMA": "ARSITEKTUR",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 149,
+          "2022": 146,
+          "2023": 160,
+          "2024": 140
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 25,
+          "2022": 25,
+          "2023": 25,
+          "2024": 29,
+          "2025": 28
+        }
+      }
+    },
+    {
+      "KODE": "15411028",
+      "NAMA": "TEKNIK GEOLOGI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 67,
+          "2021": 76,
+          "2022": 145,
+          "2023": 212,
+          "2024": 283
+        },
+        "Daya Tampung": {
+          "2020": 25,
+          "2021": 25,
+          "2022": 25,
+          "2023": 23,
+          "2024": 28,
+          "2025": 28
+        }
+      }
+    },
+    {
+      "KODE": "15411030",
+      "NAMA": "TEKNIK ELEKTRO",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 112,
+          "2021": 81,
+          "2022": 125,
+          "2023": 102,
+          "2024": 144
+        },
+        "Daya Tampung": {
+          "2020": 25,
+          "2021": 25,
+          "2022": 25,
+          "2023": 25,
+          "2024": 28,
+          "2025": 28
+        }
+      }
+    },
+    {
+      "KODE": "15411031",
+      "NAMA": "TEKNOLOGI HASIL PERIKANAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 51,
+          "2021": 34,
+          "2022": 41,
+          "2023": 19,
+          "2024": 36
+        },
+        "Daya Tampung": {
+          "2020": 32,
+          "2021": 34,
+          "2022": 28,
+          "2023": 48,
+          "2024": 26,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "15411032",
+      "NAMA": "KEDOKTERAN GIGI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 229,
+          "2021": 230,
+          "2022": 289,
+          "2023": 488,
+          "2024": 491
+        },
+        "Daya Tampung": {
+          "2020": 14,
+          "2021": 12,
+          "2022": 10,
+          "2023": 30,
+          "2024": 30,
+          "2025": 30
+        }
+      }
+    },
+    {
+      "KODE": "15411033",
+      "NAMA": "MATEMATIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 42,
+          "2021": 49,
+          "2022": 38,
+          "2023": 35,
+          "2024": 21
+        },
+        "Daya Tampung": {
+          "2020": 18,
+          "2021": 18,
+          "2022": 20,
+          "2023": 24,
+          "2024": 26,
+          "2025": 28
+        }
+      }
+    },
+    {
+      "KODE": "15411034",
+      "NAMA": "ILMU KELAUTAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 66,
+          "2021": 43,
+          "2022": 63,
+          "2023": 53,
+          "2024": 57
+        },
+        "Daya Tampung": {
+          "2020": 32,
+          "2021": 32,
+          "2022": 38,
+          "2023": 44,
+          "2024": 26,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "15411035",
+      "NAMA": "GEOFISIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 6,
+          "2021": 36,
+          "2022": 31,
+          "2023": 39,
+          "2024": 33
+        },
+        "Daya Tampung": {
+          "2020": 16,
+          "2021": 22,
+          "2022": 23,
+          "2023": 19,
+          "2024": 25,
+          "2025": 20
+        }
+      }
+    },
+    {
+      "KODE": "15411036",
+      "NAMA": "PENDIDIKAN KOMPUTER",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 239,
+          "2021": 208,
+          "2022": 194,
+          "2023": 158,
+          "2024": 185
+        },
+        "Daya Tampung": {
+          "2020": 19,
+          "2021": 16,
+          "2022": 32,
+          "2023": 32,
+          "2024": 32,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "15411038",
+      "NAMA": "SISTEM INFORMASI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 420,
+          "2021": 397,
+          "2022": 419,
+          "2023": 491,
+          "2024": 537
+        },
+        "Daya Tampung": {
+          "2020": 40,
+          "2021": 75,
+          "2022": 50,
+          "2023": 46,
+          "2024": 56,
+          "2025": 55
+        }
+      }
+    },
+    {
+      "KODE": "15411039",
+      "NAMA": "MANAJEMEN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 1365,
+          "2021": 1550,
+          "2022": 1465,
+          "2023": 1413,
+          "2024": 1474
+        },
+        "Daya Tampung": {
+          "2020": 108,
+          "2021": 138,
+          "2022": 140,
+          "2023": 139,
+          "2024": 140,
+          "2025": 138
+        }
+      }
+    },
+    {
+      "KODE": "15411040",
+      "NAMA": "EKONOMI PEMBANGUNAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 354,
+          "2021": 283,
+          "2022": 347,
+          "2023": 289,
+          "2024": 301
+        },
+        "Daya Tampung": {
+          "2020": 75,
+          "2021": 83,
+          "2022": 83,
+          "2023": 92,
+          "2024": 89,
+          "2025": 90
+        }
+      }
+    },
+    {
+      "KODE": "15411041",
+      "NAMA": "AKUNTANSI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 628,
+          "2021": 680,
+          "2022": 682,
+          "2023": 771,
+          "2024": 737
+        },
+        "Daya Tampung": {
+          "2020": 108,
+          "2021": 138,
+          "2022": 138,
+          "2023": 139,
+          "2024": 139,
+          "2025": 138
+        }
+      }
+    },
+    {
+      "KODE": "15411042",
+      "NAMA": "ADMINISTRASI PUBLIK",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 480,
+          "2021": 465,
+          "2022": 480,
+          "2023": 473,
+          "2024": 512
+        },
+        "Daya Tampung": {
+          "2020": 32,
+          "2021": 32,
+          "2022": 32,
+          "2023": 32,
+          "2024": 33,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "15411043",
+      "NAMA": "ILMU PEMERINTAHAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 689,
+          "2021": 567,
+          "2022": 533,
+          "2023": 390,
+          "2024": 400
+        },
+        "Daya Tampung": {
+          "2020": 32,
+          "2021": 32,
+          "2022": 32,
+          "2023": 35,
+          "2024": 33,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "15411044",
+      "NAMA": "PEMBANGUNAN SOSIAL",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 187,
+          "2021": 186,
+          "2022": 179,
+          "2023": 114,
+          "2024": 98
+        },
+        "Daya Tampung": {
+          "2020": 32,
+          "2021": 32,
+          "2022": 32,
+          "2023": 38,
+          "2024": 33,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "15411045",
+      "NAMA": "ILMU HUBUNGAN INTERNASIONAL",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 303,
+          "2021": 400,
+          "2022": 364,
+          "2023": 351,
+          "2024": 323
+        },
+        "Daya Tampung": {
+          "2020": 32,
+          "2021": 32,
+          "2022": 32,
+          "2023": 34,
+          "2024": 32,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "15411046",
+      "NAMA": "ILMU KOMUNIKASI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 693,
+          "2021": 710,
+          "2022": 866,
+          "2023": 645,
+          "2024": 661
+        },
+        "Daya Tampung": {
+          "2020": 32,
+          "2021": 32,
+          "2022": 32,
+          "2023": 32,
+          "2024": 34,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "15411047",
+      "NAMA": "ADMINISTRASI BISNIS",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 1024,
+          "2021": 755,
+          "2022": 889,
+          "2023": 769,
+          "2024": 933
+        },
+        "Daya Tampung": {
+          "2020": 32,
+          "2021": 32,
+          "2022": 32,
+          "2023": 32,
+          "2024": 33,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "15411048",
+      "NAMA": "PEND. PANCASILA DAN KEWARGANEGARAAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 54,
+          "2021": 110,
+          "2022": 96,
+          "2023": 105,
+          "2024": 80
+        },
+        "Daya Tampung": {
+          "2020": 35,
+          "2021": 32,
+          "2022": 32,
+          "2023": 32,
+          "2024": 36,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "15411049",
+      "NAMA": "PENDIDIKAN EKONOMI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 115,
+          "2021": 93,
+          "2022": 122,
+          "2023": 76,
+          "2024": 78
+        },
+        "Daya Tampung": {
+          "2020": 33,
+          "2021": 32,
+          "2022": 32,
+          "2023": 32,
+          "2024": 33,
+          "2025": 28
+        }
+      }
+    },
+    {
+      "KODE": "15411050",
+      "NAMA": "PEND. BAHASA, SASTRA INDO. & DAERAH",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 107,
+          "2021": 184,
+          "2022": 154,
+          "2023": 140,
+          "2024": 124
+        },
+        "Daya Tampung": {
+          "2020": 38,
+          "2021": 32,
+          "2022": 32,
+          "2023": 32,
+          "2024": 35,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "15411051",
+      "NAMA": "PENDIDIKAN BAHASA INGGRIS",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 297,
+          "2021": 247,
+          "2022": 225,
+          "2023": 211,
+          "2024": 165
+        },
+        "Daya Tampung": {
+          "2020": 33,
+          "2021": 32,
+          "2022": 42,
+          "2023": 42,
+          "2024": 32,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "15411052",
+      "NAMA": "BIMBINGAN DAN KONSELING",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 294,
+          "2021": 300,
+          "2022": 303,
+          "2023": 282,
+          "2024": 258
+        },
+        "Daya Tampung": {
+          "2020": 36,
+          "2021": 32,
+          "2022": 32,
+          "2023": 32,
+          "2024": 36,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "15411053",
+      "NAMA": "PENDIDIKAN JASMANI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 91,
+          "2021": 74,
+          "2022": 114,
+          "2023": 70,
+          "2024": 70
+        },
+        "Daya Tampung": {
+          "2020": 35,
+          "2021": 32,
+          "2022": 32,
+          "2023": 32,
+          "2024": 32,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "15411054",
+      "NAMA": "PENDIDIKAN GURU SEKOLAH DASAR",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 556,
+          "2021": 578,
+          "2022": 563,
+          "2023": 554,
+          "2024": 551
+        },
+        "Daya Tampung": {
+          "2020": 36,
+          "2021": 32,
+          "2022": 64,
+          "2023": 65,
+          "2024": 64,
+          "2025": 64
+        }
+      }
+    },
+    {
+      "KODE": "15411055",
+      "NAMA": "PENDIDIKAN ANAK USIA DINI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 111,
+          "2021": 118,
+          "2022": 95,
+          "2023": 103,
+          "2024": 64
+        },
+        "Daya Tampung": {
+          "2020": 38,
+          "2021": 32,
+          "2022": 32,
+          "2023": 34,
+          "2024": 36,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "15411056",
+      "NAMA": "HUKUM",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 767,
+          "2021": 839,
+          "2022": 861,
+          "2023": 859,
+          "2024": 807
+        },
+        "Daya Tampung": {
+          "2020": 90,
+          "2021": 102,
+          "2022": 115,
+          "2023": 124,
+          "2024": 132,
+          "2025": 132
+        }
+      }
+    },
+    {
+      "KODE": "15411057",
+      "NAMA": "PSIKOLOGI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 599,
+          "2021": 852,
+          "2022": 896,
+          "2023": 950,
+          "2024": 799
+        },
+        "Daya Tampung": {
+          "2020": 32,
+          "2021": 32,
+          "2022": 32,
+          "2023": 33,
+          "2024": 32,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "15411058",
+      "NAMA": "SASTRA INDONESIA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 154,
+          "2021": 118,
+          "2022": 104,
+          "2023": 110,
+          "2024": 72
+        },
+        "Daya Tampung": {
+          "2020": 60,
+          "2021": 40,
+          "2022": 50,
+          "2023": 50,
+          "2024": 51,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "15411059",
+      "NAMA": "SASTRA INGGRIS",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 332,
+          "2021": 394,
+          "2022": 351,
+          "2023": 269,
+          "2024": 201
+        },
+        "Daya Tampung": {
+          "2020": 60,
+          "2021": 40,
+          "2022": 48,
+          "2023": 50,
+          "2024": 48,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "15411060",
+      "NAMA": "PENDIDIKAN MASYARAKAT",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 28,
+          "2021": 36,
+          "2022": 49,
+          "2023": 32,
+          "2024": 42
+        },
+        "Daya Tampung": {
+          "2020": 16,
+          "2021": 16,
+          "2022": 19,
+          "2023": 16,
+          "2024": 20,
+          "2025": 28
+        }
+      }
+    },
+    {
+      "KODE": "15411061",
+      "NAMA": "PENDIDIKAN GEOGRAFI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 106,
+          "2021": 77,
+          "2022": 83,
+          "2023": 54,
+          "2024": 55
+        },
+        "Daya Tampung": {
+          "2020": 33,
+          "2021": 32,
+          "2022": 32,
+          "2023": 32,
+          "2024": 35,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "15411062",
+      "NAMA": "EKONOMI SYARIAH",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 118,
+          "2021": 153,
+          "2022": 139,
+          "2023": 143,
+          "2024": 118
+        },
+        "Daya Tampung": {
+          "2020": 40,
+          "2021": 50,
+          "2022": 50,
+          "2023": 67,
+          "2024": 58,
+          "2025": 57
+        }
+      }
+    },
+    {
+      "KODE": "15411063",
+      "NAMA": "ETNOMUSIKOLOGI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 6,
+          "2021": 7,
+          "2022": 5,
+          "2023": 6,
+          "2024": 4
+        },
+        "Daya Tampung": {
+          "2020": 20,
+          "2021": 20,
+          "2022": 26,
+          "2023": 45,
+          "2024": 46,
+          "2025": 28
+        }
+      }
+    },
+    {
+      "KODE": "15411064",
+      "NAMA": "PENDIDIKAN SEJARAH",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 112,
+          "2021": 88,
+          "2022": 120,
+          "2023": 69,
+          "2024": 87
+        },
+        "Daya Tampung": {
+          "2020": 16,
+          "2021": 16,
+          "2022": 32,
+          "2023": 32,
+          "2024": 34,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "15411072",
+      "NAMA": "ILMU LINGKUNGAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 39,
+          "2024": 53
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 25,
+          "2024": 27,
+          "2025": 25
+        }
+      }
+    },
+    {
+      "KODE": "15411073",
+      "NAMA": "KEPERAWATAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 613
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 26,
+          "2025": 25
+        }
+      }
+    },
+    {
+      "KODE": "15411074",
+      "NAMA": "GIZI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 310
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 34,
+          "2025": 50
+        }
+      }
+    },
+    {
+      "KODE": "15411075",
+      "NAMA": "TARI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 16
+        }
+      }
+    },
+    {
+      "KODE": "15411076",
+      "NAMA": "ILMU KEOLAHRAGAAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "15413069",
+      "NAMA": "FARMASI",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 73,
+          "2024": 1200
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 40,
+          "2024": 42,
+          "2025": 40
+        }
+      }
+    }
+  ]
+}

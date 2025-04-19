@@ -1,0 +1,1089 @@
+{
+  "informasi_universitas": {
+    "KODE": "1921",
+    "Nama Universitas": "UNIVERSITAS PAPUA",
+    "Kab/Kota": "Kabupaten Manokwari",
+    "Provinsi-1": "Papua Barat",
+    "Provinsi-2": "Papua Barat Daya"
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "19211001",
+      "NAMA": "TEKNOLOGI HASIL PERTANIAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 5,
+          "2021": 4,
+          "2022": 3,
+          "2023": 1,
+          "2024": 4
+        },
+        "Daya Tampung": {
+          "2020": 41,
+          "2021": 55,
+          "2022": 37,
+          "2023": 83,
+          "2024": 79,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211002",
+      "NAMA": "MANAJEMEN SUMBERDAYA PERAIRAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 5,
+          "2021": 6,
+          "2022": 5,
+          "2023": 2,
+          "2024": 2
+        },
+        "Daya Tampung": {
+          "2020": 28,
+          "2021": 34,
+          "2022": 35,
+          "2023": 82,
+          "2024": 81,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211003",
+      "NAMA": "ILMU KELAUTAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 2,
+          "2021": 5,
+          "2022": 3,
+          "2023": 1,
+          "2024": 6
+        },
+        "Daya Tampung": {
+          "2020": 27,
+          "2021": 33,
+          "2022": 33,
+          "2023": 80,
+          "2024": 80,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211004",
+      "NAMA": "MATEMATIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 2,
+          "2022": 2,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": 28,
+          "2021": 36,
+          "2022": 24,
+          "2023": 81,
+          "2024": 80,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211005",
+      "NAMA": "FISIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 1,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": 28,
+          "2021": 39,
+          "2022": 28,
+          "2023": 82,
+          "2024": 83,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211006",
+      "NAMA": "BIOLOGI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 3,
+          "2021": 8,
+          "2022": 12,
+          "2023": 2,
+          "2024": 3
+        },
+        "Daya Tampung": {
+          "2020": 46,
+          "2021": 56,
+          "2022": 50,
+          "2023": 72,
+          "2024": 81,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211007",
+      "NAMA": "KIMIA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 1,
+          "2021": 3,
+          "2022": null,
+          "2023": 6,
+          "2024": 1
+        },
+        "Daya Tampung": {
+          "2020": 27,
+          "2021": 36,
+          "2022": 27,
+          "2023": 84,
+          "2024": 79,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211008",
+      "NAMA": "AGRIBISNIS",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 7,
+          "2021": 6,
+          "2022": 9,
+          "2023": 6,
+          "2024": 3
+        },
+        "Daya Tampung": {
+          "2020": 41,
+          "2021": 41,
+          "2022": 48,
+          "2023": 72,
+          "2024": 77,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211009",
+      "NAMA": "AGROTEKNOLOGI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 2,
+          "2021": 7,
+          "2022": 3,
+          "2023": 3,
+          "2024": 3
+        },
+        "Daya Tampung": {
+          "2020": 41,
+          "2021": 46,
+          "2022": 54,
+          "2023": 82,
+          "2024": 80,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211010",
+      "NAMA": "PETERNAKAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 3,
+          "2021": 6,
+          "2022": 4,
+          "2023": 2,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": 42,
+          "2021": 56,
+          "2022": 39,
+          "2023": 80,
+          "2024": 80,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211011",
+      "NAMA": "KEHUTANAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 7,
+          "2021": 21,
+          "2022": 20,
+          "2023": 13,
+          "2024": 12
+        },
+        "Daya Tampung": {
+          "2020": 42,
+          "2021": 42,
+          "2022": 39,
+          "2023": 73,
+          "2024": 65,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211012",
+      "NAMA": "TEKNIK INFORMATIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 38,
+          "2021": 53,
+          "2022": 49,
+          "2023": 44,
+          "2024": 43
+        },
+        "Daya Tampung": {
+          "2020": 12,
+          "2021": 12,
+          "2022": 24,
+          "2023": 54,
+          "2024": 48,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211013",
+      "NAMA": "TEKNIK PERTAMBANGAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 16,
+          "2021": 34,
+          "2022": 25,
+          "2023": 24,
+          "2024": 20
+        },
+        "Daya Tampung": {
+          "2020": 39,
+          "2021": 45,
+          "2022": 24,
+          "2023": 48,
+          "2024": 57,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211014",
+      "NAMA": "TEKNIK ELEKTRO",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 2,
+          "2021": 8,
+          "2022": 6,
+          "2023": 6,
+          "2024": 2
+        },
+        "Daya Tampung": {
+          "2020": 28,
+          "2021": 30,
+          "2022": 22,
+          "2023": 81,
+          "2024": 78,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211015",
+      "NAMA": "PENDIDIKAN BIOLOGI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 4,
+          "2021": 6,
+          "2022": 13,
+          "2023": 4,
+          "2024": 7
+        },
+        "Daya Tampung": {
+          "2020": 28,
+          "2021": 33,
+          "2022": 24,
+          "2023": 78,
+          "2024": 72,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211016",
+      "NAMA": "PENDIDIKAN MATEMATIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 5,
+          "2021": 4,
+          "2022": 2,
+          "2023": 2,
+          "2024": 5
+        },
+        "Daya Tampung": {
+          "2020": 28,
+          "2021": 33,
+          "2022": 24,
+          "2023": 81,
+          "2024": 77,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211017",
+      "NAMA": "PENDIDIKAN KIMIA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 1,
+          "2021": 1,
+          "2022": null,
+          "2023": null,
+          "2024": 2
+        },
+        "Daya Tampung": {
+          "2020": 28,
+          "2021": 37,
+          "2022": 27,
+          "2023": 81,
+          "2024": 83,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211018",
+      "NAMA": "TEKNIK GEOLOGI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 4,
+          "2021": 6,
+          "2022": 5,
+          "2023": 2,
+          "2024": 3
+        },
+        "Daya Tampung": {
+          "2020": 42,
+          "2021": 52,
+          "2022": 39,
+          "2023": 75,
+          "2024": 77,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211019",
+      "NAMA": "PENDIDIKAN FISIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 1,
+          "2021": 2,
+          "2022": null,
+          "2023": null,
+          "2024": 1
+        },
+        "Daya Tampung": {
+          "2020": 27,
+          "2021": 39,
+          "2022": 28,
+          "2023": 84,
+          "2024": 83,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211020",
+      "NAMA": "ILMU TANAH",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 1,
+          "2021": 2,
+          "2022": 3,
+          "2023": 1,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": 42,
+          "2021": 57,
+          "2022": 41,
+          "2023": 84,
+          "2024": 84,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211021",
+      "NAMA": "NUTRISI DAN TEKNOLOGI PAKAN TERNAK",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 1,
+          "2021": null,
+          "2022": null,
+          "2023": 1,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": 28,
+          "2021": 40,
+          "2022": 41,
+          "2023": 83,
+          "2024": 84,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211022",
+      "NAMA": "TEKNIK PERTANIAN DAN BIOSISTEM",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 3,
+          "2021": 2,
+          "2022": 4,
+          "2023": 3,
+          "2024": 2
+        },
+        "Daya Tampung": {
+          "2020": 28,
+          "2021": 35,
+          "2022": 38,
+          "2023": 82,
+          "2024": 79,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211023",
+      "NAMA": "TEKNIK SIPIL",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 19,
+          "2021": 34,
+          "2022": 23,
+          "2023": 27,
+          "2024": 17
+        },
+        "Daya Tampung": {
+          "2020": 16,
+          "2021": 25,
+          "2022": 24,
+          "2023": 66,
+          "2024": 59,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211024",
+      "NAMA": "EKONOMI PEMBANGUNAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 15,
+          "2021": 17,
+          "2022": 20,
+          "2023": 12,
+          "2024": 9
+        },
+        "Daya Tampung": {
+          "2020": 51,
+          "2021": 51,
+          "2022": 38,
+          "2023": 73,
+          "2024": 77,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211025",
+      "NAMA": "SASTRA INGGRIS",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 4,
+          "2021": 13,
+          "2022": 8,
+          "2023": 3,
+          "2024": 6
+        },
+        "Daya Tampung": {
+          "2020": 25,
+          "2021": 32,
+          "2022": 44,
+          "2023": 72,
+          "2024": 73,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211026",
+      "NAMA": "ANTROPOLOGI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 2,
+          "2021": 5,
+          "2022": 4,
+          "2023": 2,
+          "2024": 5
+        },
+        "Daya Tampung": {
+          "2020": 28,
+          "2021": 33,
+          "2022": 50,
+          "2023": 82,
+          "2024": 79,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211027",
+      "NAMA": "MANAJEMEN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 26,
+          "2021": 45,
+          "2022": 32,
+          "2023": 32,
+          "2024": 45
+        },
+        "Daya Tampung": {
+          "2020": 44,
+          "2021": 44,
+          "2022": 32,
+          "2023": 48,
+          "2024": 48,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211028",
+      "NAMA": "AKUNTANSI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 22,
+          "2021": 39,
+          "2022": 22,
+          "2023": 35,
+          "2024": 29
+        },
+        "Daya Tampung": {
+          "2020": 49,
+          "2021": 49,
+          "2022": 32,
+          "2023": 77,
+          "2024": 48,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211029",
+      "NAMA": "SASTRA INDONESIA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 5,
+          "2021": 6,
+          "2022": 12,
+          "2023": 5,
+          "2024": 3
+        },
+        "Daya Tampung": {
+          "2020": 28,
+          "2021": 28,
+          "2022": 50,
+          "2023": 80,
+          "2024": 81,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211030",
+      "NAMA": "PENDIDIKAN BAHASA INGGRIS",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 9,
+          "2021": 4,
+          "2022": 7,
+          "2023": 7,
+          "2024": 2
+        },
+        "Daya Tampung": {
+          "2020": 28,
+          "2021": 30,
+          "2022": 40,
+          "2023": 80,
+          "2024": 80,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211046",
+      "NAMA": "TEKNIK PERMINYAKAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 7,
+          "2024": 5
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 77,
+          "2024": 73,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211047",
+      "NAMA": "PENDIDKAN GURU SEKOLAH DASAR",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 8,
+          "2024": 13
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 65,
+          "2024": 65,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211048",
+      "NAMA": "KONSERVASI HUTAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211049",
+      "NAMA": "TEKNOLOGI HASIL HUTAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19211050",
+      "NAMA": "ILMU LINGKUNGAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "19213032",
+      "NAMA": "TEKNIK PERMINYAKAN DAN GAS BUMI",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 1,
+          "2024": 28
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 55,
+          "2024": 56,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "19213033",
+      "NAMA": "KESEHATAN HEWAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 1,
+          "2024": 15
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 52,
+          "2024": 54,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "19213034",
+      "NAMA": "TEKNIK KOMPUTER",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 7,
+          "2024": 33
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 52,
+          "2024": 51,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "19213035",
+      "NAMA": "EKOWISATA",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 7
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 53,
+          "2024": 53,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "19213036",
+      "NAMA": "MANAJEMEN HUTAN ALAM PRODUKSI",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 1,
+          "2024": 6
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 56,
+          "2024": 56,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "19213037",
+      "NAMA": "TEKNIK LISTRIK",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 53,
+          "2024": 54,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "19213038",
+      "NAMA": "TEKNIK GEOLOGI TERAPAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 5
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 32,
+          "2024": 56,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "19213039",
+      "NAMA": "BUDIDAYA TANAMAN PANGAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 1
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 56,
+          "2024": 56,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "19213040",
+      "NAMA": "BUDIDAYA HUTAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 6
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 56,
+          "2024": 56,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "19213041",
+      "NAMA": "KONSERVASI SUMBERDAYA HUTAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 3
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 56,
+          "2024": 56,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "19213042",
+      "NAMA": "TEKNIK PERTAMBANGAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 3,
+          "2024": 49
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 56,
+          "2024": 54,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "19213043",
+      "NAMA": "BUDIDAYA PERIKANAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 1,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 55,
+          "2024": 55,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "19213044",
+      "NAMA": "BUDIDAYA TANAMAN PERKEBUNAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 1,
+          "2024": 3
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 55,
+          "2024": 56,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "19213045",
+      "NAMA": "BUDIDAYA TERNAK",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 1
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 56,
+          "2024": 56,
+          "2025": 32
+        }
+      }
+    }
+  ]
+}

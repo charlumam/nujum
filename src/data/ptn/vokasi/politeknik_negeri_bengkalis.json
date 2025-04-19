@@ -1,0 +1,407 @@
+{
+  "informasi_universitas": {
+    "KODE": "2232",
+    "Nama Universitas": "POLITEKNIK NEGERI BENGKALIS",
+    "Kab/Kota": "Kabupaten Bengkalis",
+    "Provinsi-1": "Riau",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "22322001",
+      "NAMA": "TEKNIK LISTRIK",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 2,
+          "2021": 31,
+          "2022": 39,
+          "2023": 41,
+          "2024": 49
+        },
+        "Daya Tampung": {
+          "2020": 24,
+          "2021": 36,
+          "2022": 36,
+          "2023": 39,
+          "2024": 47,
+          "2025": 52
+        }
+      }
+    },
+    {
+      "KODE": "22322002",
+      "NAMA": "TEKNIK MESIN PRODUKSI DAN PERAWATAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 2,
+          "2021": 36,
+          "2022": 51,
+          "2023": 27,
+          "2024": 47
+        },
+        "Daya Tampung": {
+          "2020": 12,
+          "2021": 24,
+          "2022": 50,
+          "2023": 39,
+          "2024": 29,
+          "2025": 34
+        }
+      }
+    },
+    {
+      "KODE": "22322003",
+      "NAMA": "TEKNIK PERANCANGAN JALAN DAN JEMBATAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 4,
+          "2021": 28,
+          "2022": 43,
+          "2023": 36,
+          "2024": 30
+        },
+        "Daya Tampung": {
+          "2020": 24,
+          "2021": 36,
+          "2022": 42,
+          "2023": 39,
+          "2024": 51,
+          "2025": 39
+        }
+      }
+    },
+    {
+      "KODE": "22322004",
+      "NAMA": "REKAYASA PERANGKAT LUNAK",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 1,
+          "2021": 45,
+          "2022": 67,
+          "2023": 60,
+          "2024": 74
+        },
+        "Daya Tampung": {
+          "2020": 24,
+          "2021": 36,
+          "2022": 54,
+          "2023": 39,
+          "2024": 36,
+          "2025": 34
+        }
+      }
+    },
+    {
+      "KODE": "22322005",
+      "NAMA": "TEKNOLOGI REKAYASA ARSITEKTUR PERKAPALAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 15,
+          "2022": 13,
+          "2023": 5,
+          "2024": 14
+        },
+        "Daya Tampung": {
+          "2020": 12,
+          "2021": 12,
+          "2022": 12,
+          "2023": 13,
+          "2024": 21,
+          "2025": 39
+        }
+      }
+    },
+    {
+      "KODE": "22322006",
+      "NAMA": "KEAMANAN SISTEM INFORMASI",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 2,
+          "2021": 22,
+          "2022": 37,
+          "2023": 34,
+          "2024": 57
+        },
+        "Daya Tampung": {
+          "2020": 12,
+          "2021": 24,
+          "2022": 24,
+          "2023": 26,
+          "2024": 27,
+          "2025": 23
+        }
+      }
+    },
+    {
+      "KODE": "22322007",
+      "NAMA": "ADMINISTRASI BISNIS INTERNASIONAL",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 2,
+          "2021": 69,
+          "2022": 108,
+          "2023": 80,
+          "2024": 123
+        },
+        "Daya Tampung": {
+          "2020": 24,
+          "2021": 45,
+          "2022": 49,
+          "2023": 39,
+          "2024": 46,
+          "2025": 52
+        }
+      }
+    },
+    {
+      "KODE": "22322008",
+      "NAMA": "AKUNTANSI KEUANGAN PUBLIK",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 1,
+          "2021": 53,
+          "2022": 80,
+          "2023": 59,
+          "2024": 101
+        },
+        "Daya Tampung": {
+          "2020": 24,
+          "2021": 45,
+          "2022": 52,
+          "2023": 39,
+          "2024": 43,
+          "2025": 52
+        }
+      }
+    },
+    {
+      "KODE": "22322009",
+      "NAMA": "BAHASA INGGRIS UNTUK KOMUNIKASI BISNIS DAN PROFESIONAL",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 13,
+          "2022": 19,
+          "2023": 10,
+          "2024": 27
+        },
+        "Daya Tampung": {
+          "2020": 12,
+          "2021": 24,
+          "2022": 24,
+          "2023": 26,
+          "2024": 43,
+          "2025": 26
+        }
+      }
+    },
+    {
+      "KODE": "22322010",
+      "NAMA": "BISNIS DIGITAL",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 17,
+          "2023": 38,
+          "2024": 74
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": 63,
+          "2023": 39,
+          "2024": 50,
+          "2025": 52
+        }
+      }
+    },
+    {
+      "KODE": "22323011",
+      "NAMA": "BAHASA INGGRIS",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 3,
+          "2024": 33
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 13,
+          "2024": 28,
+          "2025": 13
+        }
+      }
+    },
+    {
+      "KODE": "22323012",
+      "NAMA": "TEKNIK MESIN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 26,
+          "2024": 38
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 13,
+          "2024": 16,
+          "2025": 23
+        }
+      }
+    },
+    {
+      "KODE": "22323013",
+      "NAMA": "TEKNIK PERKAPALAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 17,
+          "2024": 54
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 26,
+          "2024": 42,
+          "2025": 39
+        }
+      }
+    },
+    {
+      "KODE": "22323014",
+      "NAMA": "NAUTIKA",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 24,
+          "2024": 41
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 20,
+          "2024": 20,
+          "2025": 10
+        }
+      }
+    },
+    {
+      "KODE": "22323015",
+      "NAMA": "KETATALAKSANAAN PELAYARAN NIAGA",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 21,
+          "2024": 38
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 26,
+          "2024": 43,
+          "2025": 26
+        }
+      }
+    },
+    {
+      "KODE": "22323016",
+      "NAMA": "TEKNIK INFORMATIKA",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 43,
+          "2024": 113
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 39,
+          "2024": 51,
+          "2025": 34
+        }
+      }
+    },
+    {
+      "KODE": "22323019",
+      "NAMA": "TEKNIK ELEKTRONIKA",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 9,
+          "2024": 30
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 26,
+          "2024": 56,
+          "2025": 26
+        }
+      }
+    },
+    {
+      "KODE": "22323020",
+      "NAMA": "TEKNIK SIPIL",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 27,
+          "2024": 74
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 26,
+          "2024": 49,
+          "2025": 26
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,495 @@
+{
+  "informasi_universitas": {
+    "KODE": "1143",
+    "Nama Universitas": "ISI PADANG PANJANG",
+    "Kab/Kota": "Kota Padang Panjang",
+    "Provinsi-1": "Sumatera Barat",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "11431001",
+      "NAMA": "SENI KARAWITAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 20,
+          "2021": 32,
+          "2022": 16,
+          "2023": 33,
+          "2024": 29
+        },
+        "Daya Tampung": {
+          "2020": 38,
+          "2021": 37,
+          "2022": 20,
+          "2023": 37,
+          "2024": 47,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "11431002",
+      "NAMA": "SENI TARI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 36,
+          "2021": 63,
+          "2022": 54,
+          "2023": 29,
+          "2024": 76
+        },
+        "Daya Tampung": {
+          "2020": 35,
+          "2021": 38,
+          "2022": 50,
+          "2023": 62,
+          "2024": 41,
+          "2025": 40
+        }
+      }
+    },
+    {
+      "KODE": "11431003",
+      "NAMA": "SENI MUSIK",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 45,
+          "2021": 52,
+          "2022": 44,
+          "2023": 75,
+          "2024": 65
+        },
+        "Daya Tampung": {
+          "2020": 65,
+          "2021": 79,
+          "2022": 36,
+          "2023": 35,
+          "2024": 47,
+          "2025": 32
+        }
+      }
+    },
+    {
+      "KODE": "11431004",
+      "NAMA": "SENI TEATER",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 8,
+          "2021": 11,
+          "2022": 10,
+          "2023": 10,
+          "2024": 13
+        },
+        "Daya Tampung": {
+          "2020": 26,
+          "2021": 23,
+          "2022": 16,
+          "2023": 17,
+          "2024": 18,
+          "2025": 12
+        }
+      }
+    },
+    {
+      "KODE": "11431005",
+      "NAMA": "SENI KRIYA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 19,
+          "2021": 16,
+          "2022": 16,
+          "2023": 19,
+          "2024": 6
+        },
+        "Daya Tampung": {
+          "2020": 23,
+          "2021": 20,
+          "2022": 21,
+          "2023": 20,
+          "2024": 26,
+          "2025": 16
+        }
+      }
+    },
+    {
+      "KODE": "11431006",
+      "NAMA": "TV DAN FILM",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 98,
+          "2021": 64,
+          "2022": 98,
+          "2023": 45,
+          "2024": 50
+        },
+        "Daya Tampung": {
+          "2020": 48,
+          "2021": 54,
+          "2022": 61,
+          "2023": 70,
+          "2024": 61,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "11431007",
+      "NAMA": "SENI MURNI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 24,
+          "2021": 16,
+          "2022": 19,
+          "2023": 23,
+          "2024": 20
+        },
+        "Daya Tampung": {
+          "2020": 20,
+          "2021": 26,
+          "2022": 15,
+          "2023": 26,
+          "2024": 28,
+          "2025": 16
+        }
+      }
+    },
+    {
+      "KODE": "11431008",
+      "NAMA": "FOTOGRAFI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 58,
+          "2021": 62,
+          "2022": 55,
+          "2023": 23,
+          "2024": 76
+        },
+        "Daya Tampung": {
+          "2020": 40,
+          "2021": 37,
+          "2022": 44,
+          "2023": 52,
+          "2024": 45,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "11431009",
+      "NAMA": "DESAIN DAN KOMUNIKASI VISUAL",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 159,
+          "2021": 191,
+          "2022": 145,
+          "2023": 158,
+          "2024": 123
+        },
+        "Daya Tampung": {
+          "2020": 48,
+          "2021": 49,
+          "2022": 60,
+          "2023": 60,
+          "2024": 71,
+          "2025": 64
+        }
+      }
+    },
+    {
+      "KODE": "11431010",
+      "NAMA": "ANTROPOLOGI BUDAYA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 42,
+          "2021": 43,
+          "2022": 63,
+          "2023": 31,
+          "2024": 21
+        },
+        "Daya Tampung": {
+          "2020": 31,
+          "2021": 30,
+          "2022": 42,
+          "2023": 55,
+          "2024": 44,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "11431011",
+      "NAMA": "PENDIDIKAN KRIYA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 12,
+          "2021": 25,
+          "2022": 35,
+          "2023": 16,
+          "2024": 12
+        },
+        "Daya Tampung": {
+          "2020": 27,
+          "2021": 16,
+          "2022": 25,
+          "2023": 42,
+          "2024": 18,
+          "2025": 16
+        }
+      }
+    },
+    {
+      "KODE": "11431013",
+      "NAMA": "DESAIN PRODUK",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 12,
+          "2023": 27,
+          "2024": 26
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": 61,
+          "2023": 20,
+          "2024": 36,
+          "2025": 20
+        }
+      }
+    },
+    {
+      "KODE": "11431014",
+      "NAMA": "PARIWISATA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 118,
+          "2023": 77,
+          "2024": 106
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": 38,
+          "2023": 46,
+          "2024": 49,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "11431015",
+      "NAMA": "HUMANITAS",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 2,
+          "2024": 8
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 29,
+          "2024": 24,
+          "2025": 12
+        }
+      }
+    },
+    {
+      "KODE": "11431016",
+      "NAMA": "PENDIDIKAN VOKASIONAL TATA RIAS",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 47,
+          "2024": 72
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 28,
+          "2024": 38,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "11431022",
+      "NAMA": "KEWIRAUSAHAAN",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 41
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 28,
+          "2025": 16
+        }
+      }
+    },
+    {
+      "KODE": "11432012",
+      "NAMA": "DESAIN MODE",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 31,
+          "2022": 41,
+          "2023": 66,
+          "2024": 118
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 16,
+          "2022": 36,
+          "2023": 36,
+          "2024": 41,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "11432017",
+      "NAMA": "MUSIK FILM",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 11,
+          "2024": 52
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 45,
+          "2024": 27,
+          "2025": 12
+        }
+      }
+    },
+    {
+      "KODE": "11432018",
+      "NAMA": "TARI MELAYU",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 9
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 32,
+          "2024": 23,
+          "2025": 8
+        }
+      }
+    },
+    {
+      "KODE": "11432019",
+      "NAMA": "TARI MINANG",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 3,
+          "2024": 32
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 32,
+          "2024": 23,
+          "2025": 8
+        }
+      }
+    },
+    {
+      "KODE": "11432020",
+      "NAMA": "ANIMASI",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 24,
+          "2024": 84
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 37,
+          "2024": 41,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "11432021",
+      "NAMA": "PRODUKSI MEDIA",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 8,
+          "2024": 66
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 32,
+          "2024": 25,
+          "2025": 12
+        }
+      }
+    }
+  ]
+}

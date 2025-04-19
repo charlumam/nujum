@@ -1,0 +1,407 @@
+{
+  "informasi_universitas": {
+    "KODE": "2471",
+    "Nama Universitas": "POLITEKNIK NEGERI BANYUWANGI",
+    "Kab/Kota": "Kabupaten Banyuwangi",
+    "Provinsi-1": "Jawa Timur",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "24712001",
+      "NAMA": "AGRIBISNIS",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 40,
+          "2021": 164,
+          "2022": 130,
+          "2023": 164,
+          "2024": 134
+        },
+        "Daya Tampung": {
+          "2020": 48,
+          "2021": 77,
+          "2022": 83,
+          "2023": 65,
+          "2024": 60,
+          "2025": 60
+        }
+      }
+    },
+    {
+      "KODE": "24712002",
+      "NAMA": "TEKNOLOGI PENGOLAHAN HASIL TERNAK",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 14,
+          "2021": 64,
+          "2022": 66,
+          "2023": 53,
+          "2024": 25
+        },
+        "Daya Tampung": {
+          "2020": 40,
+          "2021": 65,
+          "2022": 55,
+          "2023": 83,
+          "2024": 87,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "24712003",
+      "NAMA": "TEKNIK MANUFAKTUR KAPAL",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 13,
+          "2021": 40,
+          "2022": 29,
+          "2023": 29,
+          "2024": 28
+        },
+        "Daya Tampung": {
+          "2020": 24,
+          "2021": 39,
+          "2022": 33,
+          "2023": 39,
+          "2024": 28,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "24712004",
+      "NAMA": "MANAJEMEN BISNIS PARIWISATA",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 46,
+          "2021": 260,
+          "2022": 203,
+          "2023": 210,
+          "2024": 204
+        },
+        "Daya Tampung": {
+          "2020": 60,
+          "2021": 86,
+          "2022": 99,
+          "2023": 80,
+          "2024": 69,
+          "2025": 60
+        }
+      }
+    },
+    {
+      "KODE": "24712005",
+      "NAMA": "TEKNOLOGI REKAYASA MANUFAKTUR",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 30,
+          "2024": 25
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 59,
+          "2024": 61,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24712006",
+      "NAMA": "TEKNOLOGI REKAYASA PERANGKAT LUNAK",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 108,
+          "2024": 110
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 77,
+          "2024": 65,
+          "2025": 60
+        }
+      }
+    },
+    {
+      "KODE": "24712008",
+      "NAMA": "TEKNOLOGI REKAYASA KOMPUTER",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 80,
+          "2024": 61
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 14,
+          "2024": 27,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24712009",
+      "NAMA": "BISNIS DIGITAL",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 97,
+          "2024": 173
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 13,
+          "2024": 38,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "24712010",
+      "NAMA": "TEKNOLOGI REKAYASA KONSTRUKSI JALAN DAN JEMBATAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 23,
+          "2024": 42
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 39,
+          "2024": 38,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24712011",
+      "NAMA": "TEKNOLOGI PRODUKSI TERNAK",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 20
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 46,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24712012",
+      "NAMA": "PENGEMBANGAN PRODUK AGROINDUSTRI",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 16
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 41,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24712013",
+      "NAMA": "TEKNOLOGI BUDI DAYA PERIKANAN/TEKNOLOGI AKUAKULTUR",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 18
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 42,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24712014",
+      "NAMA": "TEKNOLOGI PRODUKSI TANAMAN PANGAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 24
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 41,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24712015",
+      "NAMA": "PENGELOLAAN PERHOTELAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 37
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 12,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24712016",
+      "NAMA": "DESTINASI PARIWISATA",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 71
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 24,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24712017",
+      "NAMA": "MANAJEMEN KONSTRUKSI",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 12
+        }
+      }
+    },
+    {
+      "KODE": "24712018",
+      "NAMA": "TEKNOLOGI REKAYASA KONSTRUKSI BANGUNAN GEDUNG",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 12
+        }
+      }
+    },
+    {
+      "KODE": "24713007",
+      "NAMA": "TEKNIK SIPIL",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 64,
+          "2024": 206
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 59,
+          "2024": 57,
+          "2025": 48
+        }
+      }
+    }
+  ]
+}

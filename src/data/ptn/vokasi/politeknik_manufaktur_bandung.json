@@ -1,0 +1,319 @@
+{
+  "informasi_universitas": {
+    "KODE": "2432",
+    "Nama Universitas": "POLITEKNIK MANUFAKTUR BANDUNG",
+    "Kab/Kota": "Kota Bandung",
+    "Provinsi-1": "Jawa Barat",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "24322001",
+      "NAMA": "TEKNOLOGI REKAYASA MANUFAKTUR",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 256,
+          "2022": 159,
+          "2023": 119,
+          "2024": 339
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 34,
+          "2022": 24,
+          "2023": 26,
+          "2024": 20,
+          "2025": 21
+        }
+      }
+    },
+    {
+      "KODE": "24322002",
+      "NAMA": "TEKNOLOGI REKAYASA PERANCANGAN MANUFAKTUR",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 135,
+          "2022": 97,
+          "2023": 78,
+          "2024": 167
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 34,
+          "2022": 20,
+          "2023": 21,
+          "2024": 20,
+          "2025": 20
+        }
+      }
+    },
+    {
+      "KODE": "24322003",
+      "NAMA": "TEKNOLOGI REKAYASA OTOMASI",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 153,
+          "2022": 73,
+          "2023": 121,
+          "2024": 177
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 34,
+          "2022": 20,
+          "2023": 39,
+          "2024": 39,
+          "2025": 21
+        }
+      }
+    },
+    {
+      "KODE": "24322004",
+      "NAMA": "TEKNOLOGI REKAYASA MATERIAL MAJU",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 31,
+          "2023": 31,
+          "2024": 66
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": 11,
+          "2023": 11,
+          "2024": 10,
+          "2025": 20
+        }
+      }
+    },
+    {
+      "KODE": "24322005",
+      "NAMA": "REKAYASA PERANCANGAN MEKANIK",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 62,
+          "2023": 49,
+          "2024": 125
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": 34,
+          "2023": 20,
+          "2024": 20,
+          "2025": 20
+        }
+      }
+    },
+    {
+      "KODE": "24322006",
+      "NAMA": "TEKNOLOGI REKAYASA MEKATRONIKA",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 126,
+          "2023": 159,
+          "2024": 289
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": 34,
+          "2023": 39,
+          "2024": 39,
+          "2025": 21
+        }
+      }
+    },
+    {
+      "KODE": "24322014",
+      "NAMA": "MANAJEMEN TEKNOLOGI REKAYASA",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 58,
+          "2024": 237
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 35,
+          "2024": 26,
+          "2025": 26
+        }
+      }
+    },
+    {
+      "KODE": "24322015",
+      "NAMA": "TEKNOLOGI REKAYASA INFORMATIKA INDUSTRI",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 155,
+          "2024": 381
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 45,
+          "2024": 39,
+          "2025": 21
+        }
+      }
+    },
+    {
+      "KODE": "24322016",
+      "NAMA": "TEKNOLOGI REKAYASA SISTEM AERIAL NIRAWAK",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 10
+        }
+      }
+    },
+    {
+      "KODE": "24323007",
+      "NAMA": "PEMELIHARAAN MESIN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 104,
+          "2024": 350
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 27,
+          "2024": 20,
+          "2025": 21
+        }
+      }
+    },
+    {
+      "KODE": "24323008",
+      "NAMA": "TEKNOLOGI MANUFAKTUR",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 103,
+          "2024": 601
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 28,
+          "2024": 21,
+          "2025": 21
+        }
+      }
+    },
+    {
+      "KODE": "24323010",
+      "NAMA": "TEKNOLOGI PEMBUATAN PERKAKAS PRESISI",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 29,
+          "2024": 130
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 31,
+          "2024": 20,
+          "2025": 21
+        }
+      }
+    },
+    {
+      "KODE": "24323011",
+      "NAMA": "TEKNOLOGI PERANCANGAN PERKAKAS PRESISI",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 23,
+          "2024": 131
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 24,
+          "2024": 21,
+          "2025": 20
+        }
+      }
+    },
+    {
+      "KODE": "24323012",
+      "NAMA": "TEKNOLOGI PENGECORAN LOGAM",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 68,
+          "2024": 210
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 20,
+          "2024": 20,
+          "2025": 29
+        }
+      }
+    }
+  ]
+}

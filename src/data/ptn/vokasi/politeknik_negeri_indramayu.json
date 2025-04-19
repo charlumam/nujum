@@ -1,0 +1,209 @@
+{
+  "informasi_universitas": {
+    "KODE": "2433",
+    "Nama Universitas": "POLITEKNIK NEGERI INDRAMAYU",
+    "Kab/Kota": "Kabupaten Indramayu",
+    "Provinsi-1": "Jawa Barat",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "24332001",
+      "NAMA": "PERANCANGAN MANUFAKTUR",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 55,
+          "2022": 74,
+          "2023": 60,
+          "2024": 58
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 45,
+          "2022": 45,
+          "2023": 45,
+          "2024": 69,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24332002",
+      "NAMA": "REKAYASA PERANGKAT LUNAK",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 62,
+          "2022": 93,
+          "2023": 116,
+          "2024": 87
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 45,
+          "2022": 45,
+          "2023": 60,
+          "2024": 54,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24332007",
+      "NAMA": "SISTEM INFORMASI KOTA CERDAS",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 56,
+          "2024": 95
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 60,
+          "2024": 57,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24332008",
+      "NAMA": "TEKNOLOGI REKAYASA INSTRUMENTASI DAN KONTROL",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 32,
+          "2024": 44
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 96,
+          "2024": 83,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24332009",
+      "NAMA": "TEKNOLOGI REKAYASA KOMPUTER",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 27
+        }
+      }
+    },
+    {
+      "KODE": "24333003",
+      "NAMA": "KEPERAWATAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 211,
+          "2024": 392
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 60,
+          "2024": 54,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24333004",
+      "NAMA": "TEKNIK MESIN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 123,
+          "2024": 122
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 45,
+          "2024": 57,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24333005",
+      "NAMA": "TEKNIK INFORMATIKA",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 188,
+          "2024": 294
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 60,
+          "2024": 55,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24333006",
+      "NAMA": "TEKNIK PENDINGIN DAN TATA UDARA",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 52,
+          "2024": 69
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 60,
+          "2024": 83,
+          "2025": 48
+        }
+      }
+    }
+  ]
+}

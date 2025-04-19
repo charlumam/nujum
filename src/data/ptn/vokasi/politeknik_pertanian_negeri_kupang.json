@@ -1,0 +1,297 @@
+{
+  "informasi_universitas": {
+    "KODE": "2642",
+    "Nama Universitas": "POLITEKNIK PERTANIAN NEGERI KUPANG",
+    "Kab/Kota": "Kota Kupang",
+    "Provinsi-1": "Nusa Tenggara Timur",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "26422001",
+      "NAMA": "PENYULUHAN PERTANIAN LAHAN KERING",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 31,
+          "2022": 59,
+          "2023": 35,
+          "2024": 77
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 60,
+          "2022": 78,
+          "2023": 72,
+          "2024": 86,
+          "2025": 50
+        }
+      }
+    },
+    {
+      "KODE": "26422002",
+      "NAMA": "TEKNOLOGI INDUSTRI HORTIKULTURA",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 23,
+          "2022": 35,
+          "2023": 19,
+          "2024": 17
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 48,
+          "2022": 75,
+          "2023": 75,
+          "2024": 79,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "26422003",
+      "NAMA": "TEKNOLOGI PAKAN TERNAK",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 33,
+          "2022": 50,
+          "2023": 26,
+          "2024": 53
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 48,
+          "2022": 72,
+          "2023": 66,
+          "2024": 75,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "26422004",
+      "NAMA": "PENGELOLAAN HUTAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 32,
+          "2022": 30,
+          "2023": 13,
+          "2024": 37
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 36,
+          "2022": 52,
+          "2023": 60,
+          "2024": 81,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "26422005",
+      "NAMA": "AGRIBISNIS PERIKANAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 10,
+          "2022": 8,
+          "2023": 8,
+          "2024": 9
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 32,
+          "2022": 40,
+          "2023": 42,
+          "2024": 49,
+          "2025": 28
+        }
+      }
+    },
+    {
+      "KODE": "26422006",
+      "NAMA": "TEKNOLOGI REKAYASA PANGAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 11,
+          "2022": 4,
+          "2023": 6,
+          "2024": 13
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 24,
+          "2022": 40,
+          "2023": 34,
+          "2024": 28,
+          "2025": 16
+        }
+      }
+    },
+    {
+      "KODE": "26422010",
+      "NAMA": "PENGELOLAAN AGRIBISNIS",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 29,
+          "2024": 40
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 82,
+          "2024": 80,
+          "2025": 50
+        }
+      }
+    },
+    {
+      "KODE": "26423007",
+      "NAMA": "TANAMAN PANGAN DAN HORTIKULTURA",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 7,
+          "2024": 14
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 41,
+          "2024": 41,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "26423008",
+      "NAMA": "MANAJEMEN SUMBER DAYA HUTAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 4,
+          "2024": 20
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 35,
+          "2024": 33,
+          "2025": 20
+        }
+      }
+    },
+    {
+      "KODE": "26423011",
+      "NAMA": "TEKNOLOGI BUDIDAYA PERIKANAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 4,
+          "2024": 19
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 20,
+          "2024": 21,
+          "2025": 12
+        }
+      }
+    },
+    {
+      "KODE": "26423012",
+      "NAMA": "PRODUKSI TERNAK",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 9,
+          "2024": 17
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 46,
+          "2024": 48,
+          "2025": 28
+        }
+      }
+    },
+    {
+      "KODE": "26423013",
+      "NAMA": "MANAJEMEN PERTANIAN LAHAN KERING",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 7,
+          "2024": 20
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 44,
+          "2024": 35,
+          "2025": 20
+        }
+      }
+    },
+    {
+      "KODE": "26423014",
+      "NAMA": "KESEHATAN HEWAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 18,
+          "2024": 76
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 47,
+          "2024": 40,
+          "2025": 40
+        }
+      }
+    }
+  ]
+}

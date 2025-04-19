@@ -1,0 +1,165 @@
+{
+  "informasi_universitas": {
+    "KODE": "2483",
+    "Nama Universitas": "POLITEKNIK NEGERI MADURA",
+    "Kab/Kota": "Kabupaten Sampang",
+    "Provinsi-1": "Jawa Timur",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "24832005",
+      "NAMA": "TEKNOLOGI REKAYASA KESELAMATAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 38,
+          "2024": 31
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 19,
+          "2024": 42,
+          "2025": 28
+        }
+      }
+    },
+    {
+      "KODE": "24832006",
+      "NAMA": "TEKNOLOGI REKAYASA OTOMASI",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 11,
+          "2024": 9
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 27,
+          "2024": 25,
+          "2025": 12
+        }
+      }
+    },
+    {
+      "KODE": "24832007",
+      "NAMA": "PROMOSI KESEHATAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 76
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 34,
+          "2025": 28
+        }
+      }
+    },
+    {
+      "KODE": "24833001",
+      "NAMA": "TEKNIK MESIN ALAT BERAT",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 37,
+          "2024": 48
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 42,
+          "2024": 37,
+          "2025": 28
+        }
+      }
+    },
+    {
+      "KODE": "24833002",
+      "NAMA": "TEKNIK LISTRIK INDUSTRI",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 26,
+          "2024": 41
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 51,
+          "2024": 42,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24833003",
+      "NAMA": "TEKNIK BANGUNAN KAPAL",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 10,
+          "2024": 21
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 56,
+          "2024": 19,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24833004",
+      "NAMA": "KEPERAWATAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 215,
+          "2024": 291
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 52,
+          "2024": 56,
+          "2025": 60
+        }
+      }
+    }
+  ]
+}

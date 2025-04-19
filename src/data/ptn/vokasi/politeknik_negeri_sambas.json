@@ -1,0 +1,253 @@
+{
+  "informasi_universitas": {
+    "KODE": "2517",
+    "Nama Universitas": "POLITEKNIK NEGERI SAMBAS",
+    "Kab/Kota": "Kabupaten Sambas",
+    "Provinsi-1": "Kalimantan Barat",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "25172001",
+      "NAMA": "AGROINDUSTRI PANGAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 47,
+          "2022": 90,
+          "2023": 77,
+          "2024": 61
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 38,
+          "2022": 36,
+          "2023": 41,
+          "2024": 49,
+          "2025": 45
+        }
+      }
+    },
+    {
+      "KODE": "25172002",
+      "NAMA": "TEKNIK MULTIMEDIA",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 81,
+          "2022": 167,
+          "2023": 186,
+          "2024": 123
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 24,
+          "2022": 30,
+          "2023": 51,
+          "2024": 51,
+          "2025": 45
+        }
+      }
+    },
+    {
+      "KODE": "25172003",
+      "NAMA": "TEKNIK MESIN PERTANIAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 16,
+          "2022": 34,
+          "2023": 18,
+          "2024": 20
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 45,
+          "2022": 36,
+          "2023": 29,
+          "2024": 28,
+          "2025": 25
+        }
+      }
+    },
+    {
+      "KODE": "25172004",
+      "NAMA": "AGRIBISNIS PERIKANAN DAN KELAUTAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 28,
+          "2022": 27,
+          "2023": 34,
+          "2024": 27
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 52,
+          "2022": 48,
+          "2023": 47,
+          "2024": 36,
+          "2025": 30
+        }
+      }
+    },
+    {
+      "KODE": "25172005",
+      "NAMA": "MANAJEMEN BISNIS PARIWISATA",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 50,
+          "2022": 133,
+          "2023": 90,
+          "2024": 109
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 70,
+          "2022": 60,
+          "2023": 60,
+          "2024": 47,
+          "2025": 45
+        }
+      }
+    },
+    {
+      "KODE": "25172006",
+      "NAMA": "AKUNTANSI KEUANGAN PERUSAHAAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 81,
+          "2022": 188,
+          "2023": 211,
+          "2024": 155
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 49,
+          "2022": 42,
+          "2023": 58,
+          "2024": 50,
+          "2025": 45
+        }
+      }
+    },
+    {
+      "KODE": "25172010",
+      "NAMA": "AKUNTANSI SEKTOR PUBLIK",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 48
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 31,
+          "2025": 45
+        }
+      }
+    },
+    {
+      "KODE": "25172011",
+      "NAMA": "PENGELOLAAN PERKEBUNAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 30
+        }
+      }
+    },
+    {
+      "KODE": "25173007",
+      "NAMA": "AGROBISNIS",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 59,
+          "2024": 73
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 45,
+          "2024": 54,
+          "2025": 33
+        }
+      }
+    },
+    {
+      "KODE": "25173008",
+      "NAMA": "MANAJEMEN INFORMATIKA",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 165,
+          "2024": 143
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 49,
+          "2024": 47,
+          "2025": 45
+        }
+      }
+    },
+    {
+      "KODE": "25173009",
+      "NAMA": "TEKNIK MESIN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 32,
+          "2024": 39
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 34,
+          "2024": 32,
+          "2025": 30
+        }
+      }
+    }
+  ]
+}

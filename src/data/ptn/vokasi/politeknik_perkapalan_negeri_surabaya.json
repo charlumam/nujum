@@ -1,0 +1,363 @@
+{
+  "informasi_universitas": {
+    "KODE": "2481",
+    "Nama Universitas": "POLITEKNIK PERKAPALAN NEGERI SURABAYA",
+    "Kab/Kota": "Kota Surabaya",
+    "Provinsi-1": "Jawa Timur",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "24812001",
+      "NAMA": "TEKNIK KESELAMATAN DAN KESEHATAN KERJA",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 429,
+          "2022": 478,
+          "2023": 536,
+          "2024": 1716
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 65,
+          "2022": 52,
+          "2023": 53,
+          "2024": 77,
+          "2025": 120
+        }
+      }
+    },
+    {
+      "KODE": "24812002",
+      "NAMA": "TEKNIK DESAIN DAN MANUFAKTUR",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 68,
+          "2022": 98,
+          "2023": 111,
+          "2024": 105
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 33,
+          "2022": 50,
+          "2023": 57,
+          "2024": 41,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24812003",
+      "NAMA": "TEKNIK PENGELASAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 136,
+          "2022": 138,
+          "2023": 176,
+          "2024": 303
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 32,
+          "2022": 49,
+          "2023": 54,
+          "2024": 42,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24812004",
+      "NAMA": "TEKNIK PERPIPAAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 91,
+          "2022": 95,
+          "2023": 91,
+          "2024": 147
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 48,
+          "2022": 40,
+          "2023": 40,
+          "2024": 52,
+          "2025": 60
+        }
+      }
+    },
+    {
+      "KODE": "24812005",
+      "NAMA": "TEKNIK OTOMASI",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 47,
+          "2022": 153,
+          "2023": 76,
+          "2024": 148
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 49,
+          "2022": 52,
+          "2023": 53,
+          "2024": 54,
+          "2025": 60
+        }
+      }
+    },
+    {
+      "KODE": "24812006",
+      "NAMA": "TEKNIK PENGOLAHAN LIMBAH",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 64,
+          "2022": 118,
+          "2023": 112,
+          "2024": 250
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 32,
+          "2022": 49,
+          "2023": 56,
+          "2024": 52,
+          "2025": 60
+        }
+      }
+    },
+    {
+      "KODE": "24812008",
+      "NAMA": "TEKNIK PERANCANGAN DAN KONSTRUKSI KAPAL",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 106,
+          "2022": 111,
+          "2023": 121,
+          "2024": 208
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 49,
+          "2022": 50,
+          "2023": 55,
+          "2024": 56,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24812009",
+      "NAMA": "TEKNIK PERMESINAN KAPAL",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 164,
+          "2022": 150,
+          "2023": 136,
+          "2024": 306
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 48,
+          "2022": 42,
+          "2023": 40,
+          "2024": 41,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24812010",
+      "NAMA": "TEKNIK KELISTRIKAN KAPAL",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 76,
+          "2022": 113,
+          "2023": 52,
+          "2024": 158
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 32,
+          "2022": 40,
+          "2023": 27,
+          "2024": 39,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24812011",
+      "NAMA": "MANAJEMEN BISNIS",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 125,
+          "2022": 196,
+          "2023": 189,
+          "2024": 843
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 65,
+          "2022": 66,
+          "2023": 64,
+          "2024": 80,
+          "2025": 96
+        }
+      }
+    },
+    {
+      "KODE": "24812016",
+      "NAMA": "TEKNOLOGI REKAYASA ENERGI BERKELANJUTAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 62
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 28,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24812017",
+      "NAMA": "TEKNOLOGI REKAYASA KONSTRUKSI PERKAPALAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 36
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 15,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24813012",
+      "NAMA": "TEKNIK KELISTRIKAN KAPAL",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 22,
+          "2024": 252
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 30,
+          "2024": 30,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "24813013",
+      "NAMA": "TEKNIK PERMESINAN KAPAL",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 42,
+          "2024": 529
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 36,
+          "2024": 29,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "24813014",
+      "NAMA": "TEKNIK PERANCANGAN DAN KONSTRUKSI KAPAL",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 23,
+          "2024": 535
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 40,
+          "2024": 35,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "24813015",
+      "NAMA": "TEKNIK BANGUNAN KAPAL",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 19,
+          "2024": 265
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 42,
+          "2024": 32,
+          "2025": 36
+        }
+      }
+    }
+  ]
+}

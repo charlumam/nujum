@@ -1,0 +1,99 @@
+{
+  "informasi_universitas": {
+    "KODE": "2552",
+    "Nama Universitas": "POLITEKNIK NEGERI NUNUKAN",
+    "Kab/Kota": "Kabupaten Nunukan",
+    "Provinsi-1": "Kalimantan Utara",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "25523001",
+      "NAMA": "ADMINISTRASI BISNIS",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 10,
+          "2024": 21
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 40,
+          "2024": 34,
+          "2025": 29
+        }
+      }
+    },
+    {
+      "KODE": "25523002",
+      "NAMA": "TEKNIK ALAT BERAT",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 8,
+          "2024": 8
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 20,
+          "2024": 32,
+          "2025": 20
+        }
+      }
+    },
+    {
+      "KODE": "25523003",
+      "NAMA": "TEKNIK SIPIL INFRASTRUKTUR PERKOTAAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 5,
+          "2024": 7
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 30,
+          "2024": 31,
+          "2025": 20
+        }
+      }
+    },
+    {
+      "KODE": "25523004",
+      "NAMA": "TEKNOLOGI HASIL PERIKANAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 6,
+          "2024": 8
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 20,
+          "2024": 17,
+          "2025": 10
+        }
+      }
+    }
+  ]
+}

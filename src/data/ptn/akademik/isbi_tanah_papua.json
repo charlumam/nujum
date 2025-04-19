@@ -1,0 +1,121 @@
+{
+  "informasi_universitas": {
+    "KODE": "1913",
+    "Nama Universitas": "ISBI TANAH PAPUA",
+    "Kab/Kota": "Kabupate Jayapura",
+    "Provinsi-1": "Papua",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "19131001",
+      "NAMA": "DESAIN KOMUNIKASI VISUAL",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 2,
+          "2021": 2,
+          "2022": 4,
+          "2023": 1,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": 25,
+          "2021": 12,
+          "2022": 21,
+          "2023": 21,
+          "2024": 21,
+          "2025": 14
+        }
+      }
+    },
+    {
+      "KODE": "19131002",
+      "NAMA": "SENI RUPA MURNI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 1,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": 20,
+          "2021": 10,
+          "2022": 21,
+          "2023": 22,
+          "2024": 22,
+          "2025": 14
+        }
+      }
+    },
+    {
+      "KODE": "19131003",
+      "NAMA": "SENI KRIYA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 1,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": 20,
+          "2021": 10,
+          "2022": 21,
+          "2023": 22,
+          "2024": 22,
+          "2025": 14
+        }
+      }
+    },
+    {
+      "KODE": "19131004",
+      "NAMA": "SENI MUSIK",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 1,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": 20,
+          "2021": 10,
+          "2022": 21,
+          "2023": 22,
+          "2024": 22,
+          "2025": 14
+        }
+      }
+    },
+    {
+      "KODE": "19131005",
+      "NAMA": "SENI TARI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 2,
+          "2022": 1,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": 20,
+          "2021": 10,
+          "2022": 21,
+          "2023": 22,
+          "2024": 22,
+          "2025": 14
+        }
+      }
+    }
+  ]
+}

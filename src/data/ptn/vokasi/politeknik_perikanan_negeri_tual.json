@@ -1,0 +1,231 @@
+{
+  "informasi_universitas": {
+    "KODE": "2832",
+    "Nama Universitas": "POLITEKNIK PERIKANAN NEGERI TUAL",
+    "Kab/Kota": "Kabupaten Maluku Tenggara",
+    "Provinsi-1": "Maluku",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "28322001",
+      "NAMA": "TEKNOLOGI KELAUTAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 1,
+          "2023": 4,
+          "2024": 2
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 48,
+          "2022": 27,
+          "2023": 31,
+          "2024": 15,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "28322002",
+      "NAMA": "BIOTEKNOLOGI PERIKANAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 1,
+          "2022": null,
+          "2023": null,
+          "2024": 1
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 60,
+          "2022": 35,
+          "2023": 27,
+          "2024": 20,
+          "2025": 16
+        }
+      }
+    },
+    {
+      "KODE": "28322003",
+      "NAMA": "MANAJEMEN REKAYASA PERIKANAN TANGKAP",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 1,
+          "2023": 1,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 60,
+          "2022": 34,
+          "2023": 25,
+          "2024": 17,
+          "2025": 20
+        }
+      }
+    },
+    {
+      "KODE": "28322004",
+      "NAMA": "REKAYASA BUDIDAYA LAUT",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 1,
+          "2022": 1,
+          "2023": 1,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 60,
+          "2022": 42,
+          "2023": 32,
+          "2024": 33,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "28322005",
+      "NAMA": "MANAJEMEN REKAYASA PENGOLAHAN HASIL PERIKANAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 1,
+          "2022": 2,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 60,
+          "2022": 26,
+          "2023": 25,
+          "2024": 15,
+          "2025": 20
+        }
+      }
+    },
+    {
+      "KODE": "28322006",
+      "NAMA": "AGROWISATA BAHARI",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 3,
+          "2022": 1,
+          "2023": null,
+          "2024": 1
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 60,
+          "2022": 47,
+          "2023": 42,
+          "2024": 34,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "28323007",
+      "NAMA": "AGRIBISNIS PERIKANAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 3
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 42,
+          "2024": 35,
+          "2025": 20
+        }
+      }
+    },
+    {
+      "KODE": "28323008",
+      "NAMA": "TEKNOLOGI PENANGKAPAN IKAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 1
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 35,
+          "2024": 15,
+          "2025": 12
+        }
+      }
+    },
+    {
+      "KODE": "28323009",
+      "NAMA": "TEKNOLOGI BUDIDAYA PERIKANAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 3
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 41,
+          "2024": 17,
+          "2025": 12
+        }
+      }
+    },
+    {
+      "KODE": "28323010",
+      "NAMA": "TEKNOLOGI HASIL PERIKANAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 1,
+          "2024": 4
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 34,
+          "2024": 19,
+          "2025": 20
+        }
+      }
+    }
+  ]
+}

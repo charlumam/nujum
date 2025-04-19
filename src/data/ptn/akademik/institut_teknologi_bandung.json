@@ -1,0 +1,539 @@
+{
+  "informasi_universitas": {
+    "KODE": "1332",
+    "Nama Universitas": "INSTITUT TEKNOLOGI BANDUNG",
+    "Kab/Kota": "Kota Bandung",
+    "Provinsi-1": "Jawa Barat",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "13321001",
+      "NAMA": "FAKULTAS ILMU DAN TEKNOLOGI KEBUMIAN (FITB)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 921,
+          "2021": 599,
+          "2022": 1059,
+          "2023": 1111,
+          "2024": 1267
+        },
+        "Daya Tampung": {
+          "2020": 98,
+          "2021": 104,
+          "2022": 150,
+          "2023": 151,
+          "2024": 150,
+          "2025": 150
+        }
+      }
+    },
+    {
+      "KODE": "13321002",
+      "NAMA": "FAKULTAS TEKNIK PERTAMBANGAN DAN PERMINYAKAN (FTTM)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 1813,
+          "2021": 1781,
+          "2022": 2009,
+          "2023": 2757,
+          "2024": 3492
+        },
+        "Daya Tampung": {
+          "2020": 121,
+          "2021": 114,
+          "2022": 125,
+          "2023": 127,
+          "2024": 127,
+          "2025": 123
+        }
+      }
+    },
+    {
+      "KODE": "13321005",
+      "NAMA": "SEKOLAH FARMASI (SF)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 686,
+          "2021": 855,
+          "2022": 906,
+          "2023": 1124,
+          "2024": 895
+        },
+        "Daya Tampung": {
+          "2020": 53,
+          "2021": 50,
+          "2022": 46,
+          "2023": 57,
+          "2024": 58,
+          "2025": 58
+        }
+      }
+    },
+    {
+      "KODE": "13321006",
+      "NAMA": "SEKOLAH ILMU DAN TEKNOLOGI HAYATI - SAINS (SITH-S)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 351,
+          "2021": 305,
+          "2022": 427,
+          "2023": 427,
+          "2024": 351
+        },
+        "Daya Tampung": {
+          "2020": 42,
+          "2021": 36,
+          "2022": 69,
+          "2023": 69,
+          "2024": 56,
+          "2025": 45
+        }
+      }
+    },
+    {
+      "KODE": "13321009",
+      "NAMA": "FAKULTAS TEKNIK MESIN DAN DIRGANTARA (FTMD)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 1423,
+          "2021": 1282,
+          "2022": 1202,
+          "2023": 1429,
+          "2024": 1692
+        },
+        "Daya Tampung": {
+          "2020": 105,
+          "2021": 93,
+          "2022": 107,
+          "2023": 107,
+          "2024": 100,
+          "2025": 100
+        }
+      }
+    },
+    {
+      "KODE": "13321010",
+      "NAMA": "SEKOLAH ARSITEKTUR, PERENCANAAN DAN PENGEMBANGAN KEBIJAKAN (SAPPK)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 1398,
+          "2021": 1265,
+          "2022": 1242,
+          "2023": 1277,
+          "2024": 1197
+        },
+        "Daya Tampung": {
+          "2020": 60,
+          "2021": 54,
+          "2022": 64,
+          "2023": 64,
+          "2024": 59,
+          "2025": 59
+        }
+      }
+    },
+    {
+      "KODE": "13321012",
+      "NAMA": "SEKOLAH ILMU DAN TEKNOLOGI HAYATI - REKAYASA (SITH-R)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 483,
+          "2021": 545,
+          "2022": 517,
+          "2023": 653,
+          "2024": 513
+        },
+        "Daya Tampung": {
+          "2020": 70,
+          "2021": 120,
+          "2022": 99,
+          "2023": 101,
+          "2024": 77,
+          "2025": 71
+        }
+      }
+    },
+    {
+      "KODE": "13321015",
+      "NAMA": "FAKULTAS TEKNOLOGI INDUSTRI - KAMPUS CIREBON (FTI-C)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 185,
+          "2021": 401,
+          "2022": 353,
+          "2023": 320,
+          "2024": 518
+        },
+        "Daya Tampung": {
+          "2020": 18,
+          "2021": 32,
+          "2022": 20,
+          "2023": 20,
+          "2024": 20,
+          "2025": 27
+        }
+      }
+    },
+    {
+      "KODE": "13321016",
+      "NAMA": "SEKOLAH ARSITEKTUR, PERENCANAAN DAN PENGEMBANGAN KEBIJAKAN - KAMPUS CIREBON (SAPPK-C)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 215,
+          "2021": 330,
+          "2022": 298,
+          "2023": 271,
+          "2024": 338
+        },
+        "Daya Tampung": {
+          "2020": 13,
+          "2021": 26,
+          "2022": 20,
+          "2023": 20,
+          "2024": 20,
+          "2025": 25
+        }
+      }
+    },
+    {
+      "KODE": "13321017",
+      "NAMA": "FAKULTAS TEKNIK PERTAMBANGAN DAN PERMINYAKAN - KAMPUS CIREBON (FTTM-C)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 418,
+          "2021": 707,
+          "2022": 657,
+          "2023": 781,
+          "2024": 1406
+        },
+        "Daya Tampung": {
+          "2020": 42,
+          "2021": 77,
+          "2022": 48,
+          "2023": 48,
+          "2024": 45,
+          "2025": 60
+        }
+      }
+    },
+    {
+      "KODE": "13321018",
+      "NAMA": "FAKULTAS ILMU DAN TEKNOLOGI KEBUMIAN - KAMPUS CIREBON (FITB-C)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 104,
+          "2021": 169,
+          "2022": 198,
+          "2023": 206,
+          "2024": 250
+        },
+        "Daya Tampung": {
+          "2020": 14,
+          "2021": 27,
+          "2022": 20,
+          "2023": 20,
+          "2024": 19,
+          "2025": 25
+        }
+      }
+    },
+    {
+      "KODE": "13321019",
+      "NAMA": "FAKULTAS MATEMATIKA DAN ILMU PENGETAHUAN ALAM - MATEMATIKA (FMIPA-M)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 692,
+          "2023": 644,
+          "2024": 546
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": 60,
+          "2023": 56,
+          "2024": 53,
+          "2025": 66
+        }
+      }
+    },
+    {
+      "KODE": "13321020",
+      "NAMA": "FAKULTAS MATEMATIKA DAN ILMU PENGETAHUAN ALAM - IPA (FMIPA-IPA)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 468,
+          "2023": 637,
+          "2024": 542
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": 91,
+          "2023": 91,
+          "2024": 112,
+          "2025": 136
+        }
+      }
+    },
+    {
+      "KODE": "13321021",
+      "NAMA": "SEKOLAH TEKNIK ELEKTRO DAN INFORMATIKA - KOMPUTASI (STEI-K)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 3430,
+          "2023": 3848,
+          "2024": 3454
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": 109,
+          "2023": 110,
+          "2024": 90,
+          "2025": 90
+        }
+      }
+    },
+    {
+      "KODE": "13321022",
+      "NAMA": "SEKOLAH TEKNIK ELEKTRO DAN INFORMATIKA - REKAYASA (STEI-R)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 1058,
+          "2023": 1174,
+          "2024": 1267
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": 90,
+          "2023": 101,
+          "2024": 95,
+          "2025": 94
+        }
+      }
+    },
+    {
+      "KODE": "13321023",
+      "NAMA": "FAKULTAS SENIRUPA DAN DESAIN (FSRD)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 1618,
+          "2021": 1677,
+          "2022": 1793,
+          "2023": 1878,
+          "2024": 1755
+        },
+        "Daya Tampung": {
+          "2020": 88,
+          "2021": 102,
+          "2022": 170,
+          "2023": 171,
+          "2024": 134,
+          "2025": 113
+        }
+      }
+    },
+    {
+      "KODE": "13321024",
+      "NAMA": "SEKOLAH BISNIS DAN MANAJEMEN (SBM)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 2214,
+          "2021": 2453,
+          "2022": 1974,
+          "2023": 2644,
+          "2024": 2473
+        },
+        "Daya Tampung": {
+          "2020": 98,
+          "2021": 72,
+          "2022": 84,
+          "2023": 85,
+          "2024": 100,
+          "2025": 54
+        }
+      }
+    },
+    {
+      "KODE": "13321025",
+      "NAMA": "FAKULTAS SENIRUPA DAN DESAIN - KAMPUS CIREBON (FSRD-C)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 95,
+          "2021": 132,
+          "2022": 185,
+          "2023": 158,
+          "2024": 241
+        },
+        "Daya Tampung": {
+          "2020": 11,
+          "2021": 40,
+          "2022": 28,
+          "2023": 35,
+          "2024": 70,
+          "2025": 42
+        }
+      }
+    },
+    {
+      "KODE": "13321026",
+      "NAMA": "FAKULTAS TEKNIK SIPIL DAN LINGKUNGAN - INFRASTRUKTUR SIPIL DAN KELAUTAN (FTSL-SI)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 1355
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 100,
+          "2025": 106
+        }
+      }
+    },
+    {
+      "KODE": "13321027",
+      "NAMA": "FAKULTAS TEKNIK SIPIL DAN LINGKUNGAN - TEKNOLOGI LINGKUNGAN (FTSL-L)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 1007
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 58,
+          "2025": 68
+        }
+      }
+    },
+    {
+      "KODE": "13321028",
+      "NAMA": "FAKULTAS TEKNOLOGI INDUSTRI - SISTEM DAN PROSES (FTI-SP)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 1161
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 118,
+          "2025": 128
+        }
+      }
+    },
+    {
+      "KODE": "13321029",
+      "NAMA": "FAKULTAS TEKNOLOGI INDUSTRI - REKAYASA INDUSTRI (FTI-RI)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 1231
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 61,
+          "2025": 61
+        }
+      }
+    },
+    {
+      "KODE": "13321034",
+      "NAMA": "SEKOLAH ILMU DAN TEKNOLOGI HAYATI - KAMPUS CIREBON (SITH-C)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 57
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 15,
+          "2025": 12
+        }
+      }
+    },
+    {
+      "KODE": "13321035",
+      "NAMA": "SEKOLAH BISNIS DAN MANAJEMEN - KAMPUS CIREBON (SBM-C)",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 330
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 15,
+          "2025": 15
+        }
+      }
+    }
+  ]
+}

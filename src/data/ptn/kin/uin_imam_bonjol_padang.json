@@ -1,0 +1,55 @@
+{
+  "informasi_universitas": {
+    "KODE": "1144",
+    "Nama Universitas": "UIN IMAM BONJOL PADANG",
+    "Kab/Kota": "Kota Padang",
+    "Provinsi-1": "Sumatera Barat",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "11441001",
+      "NAMA": "MATEMATIKA",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 5,
+          "2024": 5
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 140,
+          "2024": 37,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "11441002",
+      "NAMA": "SISTEM INFORMASI",
+      "JENJANG": "Sarjana",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 102,
+          "2024": 113
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 116,
+          "2024": 81,
+          "2025": 60
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,847 @@
+{
+  "informasi_universitas": {
+    "KODE": "2472",
+    "Nama Universitas": "POLITEKNIK NEGERI JEMBER",
+    "Kab/Kota": "Kabupate Jember",
+    "Provinsi-1": "Jawa Timur",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "24722001",
+      "NAMA": "GIZI KLINIK",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 38,
+          "2021": 318,
+          "2022": 307,
+          "2023": 267,
+          "2024": 811
+        },
+        "Daya Tampung": {
+          "2020": 60,
+          "2021": 69,
+          "2022": 60,
+          "2023": 65,
+          "2024": 64,
+          "2025": 60
+        }
+      }
+    },
+    {
+      "KODE": "24722002",
+      "NAMA": "MANAJEMEN AGROINDUSTRI",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 40,
+          "2021": 146,
+          "2022": 140,
+          "2023": 136,
+          "2024": 220
+        },
+        "Daya Tampung": {
+          "2020": 60,
+          "2021": 70,
+          "2022": 60,
+          "2023": 65,
+          "2024": 62,
+          "2025": 72
+        }
+      }
+    },
+    {
+      "KODE": "24722003",
+      "NAMA": "TEKNIK ENERGI TERBARUKAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 16,
+          "2021": 68,
+          "2022": 69,
+          "2023": 62,
+          "2024": 119
+        },
+        "Daya Tampung": {
+          "2020": 40,
+          "2021": 67,
+          "2022": 48,
+          "2023": 50,
+          "2024": 48,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24722004",
+      "NAMA": "TEKNIK PRODUKSI TANAMAN PANGAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 16,
+          "2021": 74,
+          "2022": 77,
+          "2023": 54,
+          "2024": 98
+        },
+        "Daya Tampung": {
+          "2020": 40,
+          "2021": 45,
+          "2022": 36,
+          "2023": 45,
+          "2024": 40,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "24722005",
+      "NAMA": "MANAGEMEN BISNIS UNGGAS",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 8,
+          "2021": 38,
+          "2022": 31,
+          "2023": 51,
+          "2024": 50
+        },
+        "Daya Tampung": {
+          "2020": 50,
+          "2021": 67,
+          "2022": 48,
+          "2023": 57,
+          "2024": 54,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24722006",
+      "NAMA": "TEKNIK INFORMATIKA",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 65,
+          "2021": 420,
+          "2022": 415,
+          "2023": 417,
+          "2024": 706
+        },
+        "Daya Tampung": {
+          "2020": 60,
+          "2021": 64,
+          "2022": 60,
+          "2023": 64,
+          "2024": 74,
+          "2025": 84
+        }
+      }
+    },
+    {
+      "KODE": "24722007",
+      "NAMA": "TEKNIK PRODUKSI BENIH",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 9,
+          "2021": 33,
+          "2022": 68,
+          "2023": 33,
+          "2024": 83
+        },
+        "Daya Tampung": {
+          "2020": 40,
+          "2021": 43,
+          "2022": 36,
+          "2023": 41,
+          "2024": 39,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "24722008",
+      "NAMA": "MANAJEMEN INFORMASI KESEHATAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 60,
+          "2021": 419,
+          "2022": 313,
+          "2023": 370,
+          "2024": 598
+        },
+        "Daya Tampung": {
+          "2020": 60,
+          "2021": 67,
+          "2022": 60,
+          "2023": 66,
+          "2024": 61,
+          "2025": 72
+        }
+      }
+    },
+    {
+      "KODE": "24722009",
+      "NAMA": "MESIN OTOMOTIF",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 25,
+          "2021": 142,
+          "2022": 141,
+          "2023": 137,
+          "2024": 181
+        },
+        "Daya Tampung": {
+          "2020": 40,
+          "2021": 60,
+          "2022": 48,
+          "2023": 54,
+          "2024": 53,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24722010",
+      "NAMA": "BUDIDAYA TANAMAN PERKEBUNAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 20,
+          "2021": 83,
+          "2022": 66,
+          "2023": 56,
+          "2024": 97
+        },
+        "Daya Tampung": {
+          "2020": 40,
+          "2021": 53,
+          "2022": 36,
+          "2023": 48,
+          "2024": 43,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "24722011",
+      "NAMA": "TEKNOLOGI REKAYASA PANGAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 9,
+          "2021": 77,
+          "2022": 83,
+          "2023": 79,
+          "2024": 182
+        },
+        "Daya Tampung": {
+          "2020": 35,
+          "2021": 71,
+          "2022": 48,
+          "2023": 54,
+          "2024": 53,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24722012",
+      "NAMA": "PENGELOLAAN PERKEBUNAN KOPI",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 9,
+          "2021": 28,
+          "2022": 31,
+          "2023": 37,
+          "2024": 23
+        },
+        "Daya Tampung": {
+          "2020": 25,
+          "2021": 62,
+          "2022": 24,
+          "2023": 38,
+          "2024": 35,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24722013",
+      "NAMA": "TEKNOLOGI REKAYASA MEKATRONIKA",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 24,
+          "2021": 92,
+          "2022": 53,
+          "2023": 72,
+          "2024": 56
+        },
+        "Daya Tampung": {
+          "2020": 63,
+          "2021": 70,
+          "2022": 48,
+          "2023": 52,
+          "2024": 48,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24722014",
+      "NAMA": "PSDKU TEKNIK INFORMATIKA KAB. NGANJUK",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 24,
+          "2022": 45,
+          "2023": 41,
+          "2024": 49
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 32,
+          "2022": 36,
+          "2023": 38,
+          "2024": 39,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "24722015",
+      "NAMA": "TEKNOLOGI PAKAN TERNAK",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 40,
+          "2023": 33,
+          "2024": 67
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": 36,
+          "2023": 54,
+          "2024": 48,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "24722016",
+      "NAMA": "PSDKU MANAJEMEN AGROINDUSTRI KAB. SIDOARJO",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 12,
+          "2023": 25,
+          "2024": 28
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": 36,
+          "2023": 55,
+          "2024": 33,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24722017",
+      "NAMA": "PSDKU TEKNIK INFORMATIKA KAB. SIDOARJO",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 47,
+          "2023": 34,
+          "2024": 56
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": 36,
+          "2023": 52,
+          "2024": 41,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "24722018",
+      "NAMA": "PROMOSI KESEHATAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 49,
+          "2023": 82,
+          "2024": 149
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": 48,
+          "2023": 56,
+          "2024": 48,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24722019",
+      "NAMA": "BISNIS DIGITAL",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": 66,
+          "2023": 112,
+          "2024": 222
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": 63,
+          "2023": 42,
+          "2024": 36,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24722020",
+      "NAMA": "AKUNTANSI SEKTOR PUBLIK",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": 11,
+          "2021": 152,
+          "2022": 124,
+          "2023": 119,
+          "2024": 282
+        },
+        "Daya Tampung": {
+          "2020": 40,
+          "2021": 54,
+          "2022": 48,
+          "2023": 54,
+          "2024": 55,
+          "2025": 60
+        }
+      }
+    },
+    {
+      "KODE": "24722021",
+      "NAMA": "MANAJEMEN PEMASARAN INTERNASIONAL",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 82,
+          "2022": 141,
+          "2023": 78,
+          "2024": 220
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 63,
+          "2022": 48,
+          "2023": 65,
+          "2024": 48,
+          "2025": 60
+        }
+      }
+    },
+    {
+      "KODE": "24722022",
+      "NAMA": "DESTINASI PARIWISATA",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 99,
+          "2022": 101,
+          "2023": 94,
+          "2024": 181
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 63,
+          "2022": 36,
+          "2023": 39,
+          "2024": 42,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24722033",
+      "NAMA": "PSDKU MANAJEMEN AGRIBISNIS KAB. NGAWI",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 23
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 36,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24722034",
+      "NAMA": "PSDKU MANAJEMEN INFORMASI KESEHATAN KAB. NGAWI",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 51
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 24,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24722035",
+      "NAMA": "PRODUKSI MEDIA KAMPUS BONDOWOSO",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 25
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 41,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24722036",
+      "NAMA": "PSDKU TEKNOLOGI REKAYASA PERANGKAT LUNAK KAB. SABU RAIJUA",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24722037",
+      "NAMA": "TEKNOLOGI REKAYASA KOMPUTER",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 85
+        }
+      }
+    },
+    {
+      "KODE": "24722038",
+      "NAMA": "MANAJEMEN AGRIBISNIS KAMPUS BONDOWOSO",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 57
+        }
+      }
+    },
+    {
+      "KODE": "24723023",
+      "NAMA": "MANAJEMEN AGRIBISNIS",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 108,
+          "2024": 464
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 60,
+          "2024": 48,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24723024",
+      "NAMA": "PRODUKSI TANAMAN HORTIKULTURA",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 22,
+          "2024": 75
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 28,
+          "2024": 32,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24723025",
+      "NAMA": "PRODUKSI TANAMAN PERKEBUNAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 25,
+          "2024": 137
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 34,
+          "2024": 37,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24723026",
+      "NAMA": "TEKNOLOGI INDUSTRI PANGAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 51,
+          "2024": 438
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 41,
+          "2024": 69,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "24723027",
+      "NAMA": "BAHASA INGGRIS",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 27,
+          "2024": 215
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 50,
+          "2024": 47,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "24723028",
+      "NAMA": "PRODUKSI TERNAK",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 37,
+          "2024": 167
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 48,
+          "2024": 49,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "24723029",
+      "NAMA": "MANAJEMEN INFORMATIKA",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 118,
+          "2024": 380
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 50,
+          "2024": 48,
+          "2025": 60
+        }
+      }
+    },
+    {
+      "KODE": "24723030",
+      "NAMA": "MANAJEMEN AGRIBISNIS (KAMPUS KAB. NGANJUK)",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 18,
+          "2024": 60
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 32,
+          "2024": 32,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "24723031",
+      "NAMA": "KETEKNIKAN PERTANIAN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 61,
+          "2024": 176
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 51,
+          "2024": 56,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "24723032",
+      "NAMA": "TEKNIK KOMPUTER",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 95,
+          "2024": 395
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 56,
+          "2024": 48,
+          "2025": 60
+        }
+      }
+    }
+  ]
+}

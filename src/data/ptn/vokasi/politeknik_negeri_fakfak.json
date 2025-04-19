@@ -1,0 +1,187 @@
+{
+  "informasi_universitas": {
+    "KODE": "2931",
+    "Nama Universitas": "POLITEKNIK NEGERI FAKFAK",
+    "Kab/Kota": "Kabupaten Fak-Fak",
+    "Provinsi-1": "Papua Barat",
+    "Provinsi-2": null
+  },
+  "daftar_prodi": [
+    {
+      "KODE": "29312001",
+      "NAMA": "TEKNOLOGI REKAYASA KONSTRUKSI JALAN DAN JEMBATAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": 2,
+          "2022": null,
+          "2023": 1,
+          "2024": 10
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": 18,
+          "2022": 35,
+          "2023": 47,
+          "2024": 43,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "29312007",
+      "NAMA": "AKUNTANSI SEKTOR PUBLIK",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 10
+        }
+      }
+    },
+    {
+      "KODE": "29312008",
+      "NAMA": "PENGELOLAAN AGRIBISNIS PERKEBUNAN",
+      "JENJANG": "Sarjana Terapan",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": null,
+          "2025": 10
+        }
+      }
+    },
+    {
+      "KODE": "29313002",
+      "NAMA": "TEKNIK LISTRIK",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 8
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 48,
+          "2024": 47,
+          "2025": 24
+        }
+      }
+    },
+    {
+      "KODE": "29313003",
+      "NAMA": "TEKNIK SIPIL",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 3,
+          "2024": 7
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 89,
+          "2024": 91,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "29313004",
+      "NAMA": "MANAJEMEN INFORMATIKA",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 2,
+          "2024": 12
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 85,
+          "2024": 70,
+          "2025": 48
+        }
+      }
+    },
+    {
+      "KODE": "29313005",
+      "NAMA": "AGRO INDUSTRI",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 2
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 71,
+          "2024": 71,
+          "2025": 36
+        }
+      }
+    },
+    {
+      "KODE": "29313006",
+      "NAMA": "TEKNIK PERAWATAN DAN PERBAIKAN MESIN",
+      "JENJANG": "Diploma Tiga",
+      "SEBARAN DATA": {
+        "Jumlah Peminat": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": null,
+          "2024": 3
+        },
+        "Daya Tampung": {
+          "2020": null,
+          "2021": null,
+          "2022": null,
+          "2023": 71,
+          "2024": 69,
+          "2025": 36
+        }
+      }
+    }
+  ]
+}
