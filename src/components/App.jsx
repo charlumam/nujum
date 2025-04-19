@@ -84,41 +84,44 @@ export default function App() {
     console.log('User Average Score:', userAverageScore);
 
     const filteredUnis = allUnis.map(uni => {
-      const eligibleProdi = uni.prodi.filter(prodi => {
+      const eligibleProdi = uni.prodi.map(prodi => { // Use map instead of filter to keep admissionRate
         const seats = prodi.dayaTampung2025;
         const applicants = prodi.peminat2024;
 
         // Skip if no seats or no applicant data for calculation
         if (seats <= 0 || applicants <= 0) {
-          return false;
+          return null; // Mark as ineligible
         }
 
         const admissionRate = seats / applicants;
         // Ensure rate is not > 1 (can happen with data errors)
         const validAdmissionRate = Math.min(admissionRate, 1.0);
 
+        let meetsCutoff = false;
         // If admission rate is 100%, everyone qualifies (percentile 0)
         if (validAdmissionRate >= 1.0) {
-            return true; // Cutoff is effectively lowest possible score
+            meetsCutoff = true; // Cutoff is effectively lowest possible score
+        } else {
+            const requiredPercentile = 1.0 - validAdmissionRate;
+            const zScore = percentileToZScore(requiredPercentile);
+
+            // Handle infinite Z-scores (percentile 0 or 1)
+            if (!isFinite(zScore)) {
+                // If percentile is 1 (Z=Infinity), technically impossible unless score is infinite
+                // If percentile is 0 (Z=-Infinity), technically always possible
+                meetsCutoff = zScore === -Infinity;
+            } else {
+                // Calculate UTBK cut-off score
+                const cutoffScore = 500 + zScore * 100;
+                meetsCutoff = userAverageScore >= cutoffScore;
+            }
         }
-
-        const requiredPercentile = 1.0 - validAdmissionRate;
-        const zScore = percentileToZScore(requiredPercentile);
-
-        // Handle infinite Z-scores (percentile 0 or 1)
-        if (!isFinite(zScore)) {
-            // If percentile is 1 (Z=Infinity), technically impossible unless score is infinite
-            // If percentile is 0 (Z=-Infinity), technically always possible
-            return zScore === -Infinity;
-        }
-
-        // Calculate UTBK cut-off score
-        const cutoffScore = 500 + zScore * 100;
 
         // console.log(`${uni.name} - ${prodi.nama}: Seats=${seats}, Applicants=${applicants}, Rate=${admissionRate.toFixed(4)}, Percentile=${requiredPercentile.toFixed(4)}, Z=${zScore.toFixed(2)}, Cutoff=${cutoffScore.toFixed(2)}`);
 
-        return userAverageScore >= cutoffScore;
-      });
+        // Return prodi object with admissionRate if it meets the cutoff, otherwise null
+        return meetsCutoff ? { ...prodi, admissionRate: validAdmissionRate } : null;
+      }).filter(prodi => prodi !== null); // Filter out null (ineligible) programs
 
       // Return university only if it has eligible programs
       if (eligibleProdi.length > 0) {
