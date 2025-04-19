@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-export default function ScoreForm({ onSubmit }) {
+// Accept finalScore, totalEligible, and totalPrograms as props
+export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalEligible, totalPrograms }) {
   const [scores, setScores] = useState({
     penalaranUmum: '',
     kuantitatif: '',
@@ -10,20 +11,24 @@ export default function ScoreForm({ onSubmit }) {
     bahasaInggris: '',
     penalaranMatematika: '',
   });
-  const [finalScore, setFinalScore] = useState(null);
+  // Local score state for immediate feedback *before* submission
+  const [localFinalScore, setLocalFinalScore] = useState(null);
 
-  // Calculate final score whenever scores change
+  // Calculate local final score whenever scores change
   useEffect(() => {
     const scoreValues = Object.values(scores);
     if (scoreValues.every(v => v !== '' && !isNaN(parseFloat(v.replace(',', '.'))))) {
       const numericScores = scoreValues.map(v => parseFloat(v.replace(',', '.')));
       const sum = numericScores.reduce((acc, curr) => acc + curr, 0);
       const average = sum / numericScores.length;
-      setFinalScore(average.toFixed(2)); // Format to 2 decimal places
+      setLocalFinalScore(average.toFixed(2));
     } else {
-      setFinalScore(null); // Reset if not all scores are valid numbers
+      setLocalFinalScore(null);
     }
   }, [scores]);
+
+  // Calculate percentage only when results are available
+  const percentage = (propFinalScore !== null && totalPrograms > 0) ? ((totalEligible / totalPrograms) * 100).toFixed(1) : 0;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -125,12 +130,41 @@ export default function ScoreForm({ onSubmit }) {
         </div>
       </div>
 
-      {/* Display Final Score */}
-      {finalScore !== null && (
-        <div className="text-center mt-6 mb-4 p-4 bg-indigo-50 rounded-lg border border-indigo-200">
-          <p className="text-lg font-medium text-gray-700">Skor Rata-rata Anda:</p>
-          <p className="text-3xl font-bold text-indigo-600">{finalScore}</p>
+      {/* Display Final Score and Eligibility Info ONLY AFTER submission */}
+      {propFinalScore !== null && (
+        <div className="text-center mt-6 mb-4 p-4 bg-indigo-50 rounded-lg border border-indigo-200 space-y-2">
+          {/* Display the final score passed from App.jsx */}
+          <div>
+            <p className="text-lg font-medium text-gray-700">Skor Rata-rata Anda:</p>
+            <p className="text-3xl font-bold text-indigo-600">{propFinalScore}</p>
+          </div>
+
+          {/* Display eligibility text based on totalEligible */}
+          <div className="pt-2 border-t border-indigo-100">
+            {totalEligible > 0 ? (
+              <>
+                <p className="text-base sm:text-lg font-semibold text-indigo-700">
+                  Dan diterima di <span className="font-bold">{totalEligible}</span> program studi.
+                </p>
+                <p className="text-sm sm:text-base text-indigo-600">
+                  Skor Anda termasuk dalam top <span className="font-bold">{percentage}%</span>!
+                </p>
+              </>
+            ) : (
+              <p className="text-base sm:text-lg font-semibold text-orange-600">
+                Sayangnya, belum ada program studi yang sesuai dengan skor Anda.
+              </p>
+            )}
+          </div>
         </div>
+      )}
+
+      {/* Display local score calculation *before* submission for feedback */}
+      {propFinalScore === null && localFinalScore !== null && (
+         <div className="text-center mt-6 mb-4 p-3 bg-gray-50 rounded-lg border border-gray-200">
+           <p className="text-md font-medium text-gray-600">Skor Rata-rata Sementara:</p>
+           <p className="text-xl font-bold text-gray-700">{localFinalScore}</p>
+         </div>
       )}
 
       <button

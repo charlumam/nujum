@@ -29,6 +29,9 @@ const allUnis = allData.map(data => {
   return { name: info?.['Nama Universitas'], prodi: prodiList };
 }).filter(u => u.name && u.prodi.length > 0); // Ensure university has a name and programs
 
+// Calculate the total number of programs across all universities
+const totalPrograms = allUnis.reduce((sum, uni) => sum + uni.prodi.length, 0);
+
 // More accurate approximation for Percentile to Z-score (Inverse Normal CDF)
 // Based on Abramowitz and Stegun formula 26.2.23
 function percentileToZScore(p) {
@@ -62,15 +65,19 @@ function percentileToZScore(p) {
 export default function App() {
   // will hold null before search and array of results after
   const [eligibleUnis, setEligibleUnis] = useState(null);
+  const [finalScore, setFinalScore] = useState(null); // Add state for final score
+  const [totalEligible, setTotalEligible] = useState(0); // Add state for total eligible count
 
   const handleScoresSubmit = (scores) => {
     // Calculate user's average score
     const scoreValues = Object.values(scores).map(Number);
     const userAverageScore = scoreValues.reduce((sum, score) => sum + score, 0) / scoreValues.length;
+    setFinalScore(userAverageScore.toFixed(2)); // Set final score state
 
     // If user's average score is below minimum threshold, return no results
     if (userAverageScore < 178) {
       setEligibleUnis([]);
+      setTotalEligible(0); // Reset eligible count
       return;
     }
 
@@ -125,15 +132,26 @@ export default function App() {
       return null; // Remove university if no programs match
     }).filter(uni => uni !== null); // Filter out null entries
 
+    // Calculate total eligible programs count
+    const currentTotalEligible = filteredUnis.reduce((sum, uni) => sum + uni.prodi.length, 0);
+    setTotalEligible(currentTotalEligible); // Set total eligible count state
+
     console.log('Filtered Universities Count:', filteredUnis.length);
+    console.log('Total Eligible Programs:', currentTotalEligible); // Log the program count
     setEligibleUnis(filteredUnis);
   };
 
   return (
     <div className="max-w-3xl mx-auto p-6 space-y-8">
-      <ScoreForm onSubmit={handleScoresSubmit} />
-      {/* Ensure Results component receives the potentially empty or null list correctly */}
-      {eligibleUnis !== null && <Results universities={eligibleUnis} />}
+      {/* Pass finalScore, totalEligible, and totalPrograms to ScoreForm */}
+      <ScoreForm
+        onSubmit={handleScoresSubmit}
+        finalScore={finalScore}
+        totalEligible={totalEligible}
+        totalPrograms={totalPrograms}
+      />
+      {/* Pass eligibleUnis and totalEligible to Results */}
+      {eligibleUnis !== null && <Results universities={eligibleUnis} totalEligible={totalEligible} />}
     </div>
   );
 }

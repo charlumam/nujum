@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 
-export default function Results({ universities }) {
+// Accept totalEligible prop
+export default function Results({ universities, totalEligible }) {
   const [sortOrder, setSortOrder] = useState('asc'); // 'asc' for Low to High, 'desc' for High to Low
 
   // flatten all university-program entries and sort based on sortOrder
@@ -24,7 +25,8 @@ export default function Results({ universities }) {
     return flatItems;
   }, [universities, sortOrder]); // Recalculate when universities or sortOrder change
 
-  const total = items.length;
+  // Use totalEligible prop instead of calculating total internally
+  const total = totalEligible;
   const [pageSize, setPageSize] = useState(10);
   const [pageIndex, setPageIndex] = useState(0);
 
@@ -44,9 +46,9 @@ export default function Results({ universities }) {
     <div className="max-w-4xl mx-auto mt-8 space-y-4">
       {/* Control Row */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
-        {/* Left side: Total and Page Size */}
+        {/* Left side: Page Size */}
         <div className="flex items-center gap-2">
-          <span className="font-bold text-gray-700">{total} Total.</span>
+          {/* Removed total display */}
           <label className="text-gray-700 flex items-center gap-1">
             Tampilkan
             <select
