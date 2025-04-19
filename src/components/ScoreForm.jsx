@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-// Accept finalScore, totalEligible, and totalPrograms as props
-export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalEligible, totalPrograms }) {
+// Accept finalScore, totalEligible, totalPrograms and savedScores as props
+export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalEligible, totalPrograms, savedScores }) {
   const [scores, setScores] = useState({
     penalaranUmum: '',
     kuantitatif: '',
@@ -13,6 +13,17 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
   });
   // Local score state for immediate feedback *before* submission
   const [localFinalScore, setLocalFinalScore] = useState(null);
+
+  // Use savedScores if available when component mounts or when savedScores changes
+  useEffect(() => {
+    if (savedScores) {
+      // Convert numeric values back to string format for the inputs
+      const formattedScores = Object.fromEntries(
+        Object.entries(savedScores).map(([key, value]) => [key, String(value).replace('.', ',')])
+      );
+      setScores(formattedScores);
+    }
+  }, [savedScores]);
 
   // Calculate local final score whenever scores change
   useEffect(() => {

@@ -71,8 +71,12 @@ export default function App() {
   const [eligibleUnis, setEligibleUnis] = useState(null);
   const [finalScore, setFinalScore] = useState(null); // Add state for final score
   const [totalEligible, setTotalEligible] = useState(0); // Add state for total eligible count
+  const [inputScores, setInputScores] = useState(null); // Add state to preserve user input scores
 
   const handleScoresSubmit = (scores) => {
+    // Save the input scores
+    setInputScores(scores);
+    
     // Calculate user's average score
     const scoreValues = Object.values(scores).map(Number);
     const userAverageScore = scoreValues.reduce((sum, score) => sum + score, 0) / scoreValues.length;
@@ -156,6 +160,7 @@ export default function App() {
             finalScore={finalScore}
             totalEligible={totalEligible}
             totalPrograms={totalPrograms}
+            savedScores={inputScores}
           />
         </div>
       ) : (
@@ -168,6 +173,7 @@ export default function App() {
               finalScore={finalScore}
               totalEligible={totalEligible}
               totalPrograms={totalPrograms}
+              savedScores={inputScores}
             />
           </div>
           
