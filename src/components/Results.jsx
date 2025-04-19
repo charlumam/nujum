@@ -5,6 +5,7 @@ export default function Results({ universities, totalEligible }) {
   const [sortOrder, setSortOrder] = useState('asc'); // 'asc' for Low to High, 'desc' for High to Low
   const [filterUniName, setFilterUniName] = useState('');
   const [filterCity, setFilterCity] = useState('');
+  const [filterProdiName, setFilterProdiName] = useState(''); // Add state for Prodi filter
 
   // flatten all university-program entries, filter, and sort based on state
   const items = useMemo(() => {
@@ -28,6 +29,11 @@ export default function Results({ universities, totalEligible }) {
         item.city?.toLowerCase().includes(filterCity.toLowerCase()) // Use optional chaining for city
       );
     }
+    if (filterProdiName) { // Apply Prodi filter
+      flatItems = flatItems.filter(item =>
+        item.nama.toLowerCase().includes(filterProdiName.toLowerCase())
+      );
+    }
 
     // Sort based on sortOrder state
     flatItems.sort((a, b) => {
@@ -38,7 +44,7 @@ export default function Results({ universities, totalEligible }) {
       }
     });
     return flatItems;
-  }, [universities, sortOrder, filterUniName, filterCity]); // Recalculate when data or filters change
+  }, [universities, sortOrder, filterUniName, filterCity, filterProdiName]); // Add filterProdiName dependency
 
   // Calculate total based on filtered items
   const total = items.length;
@@ -48,7 +54,7 @@ export default function Results({ universities, totalEligible }) {
   // Reset page index when filters change
   React.useEffect(() => {
     setPageIndex(0);
-  }, [filterUniName, filterCity, pageSize]);
+  }, [filterUniName, filterCity, filterProdiName, pageSize]); // Add filterProdiName dependency
 
   const start = pageIndex * pageSize;
   const end = Math.min(start + pageSize, total);
@@ -73,6 +79,13 @@ export default function Results({ universities, totalEligible }) {
           placeholder="Filter Kab/Kota..."
           value={filterCity}
           onChange={e => setFilterCity(e.target.value)}
+          className="border rounded px-3 py-1.5 flex-grow"
+        />
+        <input // Add Prodi filter input
+          type="text"
+          placeholder="Filter Program Studi..."
+          value={filterProdiName}
+          onChange={e => setFilterProdiName(e.target.value)}
           className="border rounded px-3 py-1.5 flex-grow"
         />
       </div>
@@ -122,7 +135,7 @@ export default function Results({ universities, totalEligible }) {
       {/* Conditional Rendering for Results or No Results Message */}
       {!items.length ? (
         <div className="max-w-md mx-auto mt-12 p-6 bg-white rounded-lg shadow-lg text-center text-gray-600">
-          {filterUniName || filterCity ? (
+          {filterUniName || filterCity || filterProdiName ? ( // Update condition
             <p className="text-lg">Tidak ada hasil yang cocok dengan filter Anda.</p>
           ) : (
             <p className="text-lg">Belum ada program studi yang sesuai dengan skor Anda.</p>
