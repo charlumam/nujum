@@ -69,7 +69,6 @@ export default function ScoreForm({ onSubmit }) {
               <input
                 type="text"
                 inputMode="numeric"
-                pattern="[0-9]*"
                 name={key} value={scores[key]} onChange={handleChange}
                 className="mt-1 block w-full bg-gray-50 text-lg px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
               />
@@ -90,7 +89,6 @@ export default function ScoreForm({ onSubmit }) {
                 <input
                   type="text"
                   inputMode="numeric"
-                  pattern="[0-9]*"
                   name={key} value={scores[key]} onChange={handleChange}
                   className="mt-1 block w-full bg-gray-50 text-lg px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 />
@@ -105,7 +103,6 @@ export default function ScoreForm({ onSubmit }) {
               <input
                 type="text"
                 inputMode="numeric"
-                pattern="[0-9]*"
                 name="penalaranMatematika" value={scores.penalaranMatematika} onChange={handleChange}
                 className="mt-1 block w-full bg-gray-50 text-lg px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
               />
