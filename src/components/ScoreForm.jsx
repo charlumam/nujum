@@ -13,13 +13,20 @@ export default function ScoreForm({ onSubmit }) {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    // sanitize to digits only
-    let numericValue = value.replace(/[^0-9]/g, '');
-    // clamp to max 1000
-    if (numericValue) {
-      numericValue = String(Math.min(Number(numericValue), 1000));
+    // Allow digits, optional comma, and up to two decimal digits
+    const regex = /^[0-9]*(,[0-9]{0,2})?$/;
+
+    if (value === '' || regex.test(value)) {
+      let numericString = value;
+      // Check max value
+      if (numericString !== '') {
+        const num = parseFloat(numericString.replace(',', '.'));
+        if (num > 1000) {
+          numericString = '1000';
+        }
+      }
+      setScores(prev => ({ ...prev, [name]: numericString }));
     }
-    setScores(prev => ({ ...prev, [name]: numericValue }));
   };
 
   const handleSubmit = (e) => {
@@ -29,7 +36,8 @@ export default function ScoreForm({ onSubmit }) {
       return;
     }
     const numeric = Object.fromEntries(
-      Object.entries(scores).map(([k, v]) => [k, Number(v)])
+      // Replace comma with dot before converting to Number
+      Object.entries(scores).map(([k, v]) => [k, Number(v.replace(',', '.'))])
     );
     onSubmit(numeric);
   };
@@ -51,7 +59,9 @@ export default function ScoreForm({ onSubmit }) {
             <label key={key} className="block">
               <span className="text-gray-700 font-medium">{label}</span>
               <input
-                type="text" inputMode="numeric" pattern="[0-9]*"
+                type="text"
+                inputMode="numeric"
+                pattern="[0-9]*"
                 name={key} value={scores[key]} onChange={handleChange}
                 className="mt-1 block w-full bg-gray-50 text-lg px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
               />
@@ -70,7 +80,9 @@ export default function ScoreForm({ onSubmit }) {
               <label key={key} className="block">
                 <span className="text-gray-700 font-medium">{label}</span>
                 <input
-                  type="text" inputMode="numeric" pattern="[0-9]*"
+                  type="text"
+                  inputMode="numeric"
+                  pattern="[0-9]*"
                   name={key} value={scores[key]} onChange={handleChange}
                   className="mt-1 block w-full bg-gray-50 text-lg px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 />
@@ -83,7 +95,9 @@ export default function ScoreForm({ onSubmit }) {
             <label className="block">
               <span className="text-gray-700 font-medium">Skor Penalaran Matematika</span>
               <input
-                type="text" inputMode="numeric" pattern="[0-9]*"
+                type="text"
+                inputMode="numeric"
+                pattern="[0-9]*"
                 name="penalaranMatematika" value={scores.penalaranMatematika} onChange={handleChange}
                 className="mt-1 block w-full bg-gray-50 text-lg px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
               />
