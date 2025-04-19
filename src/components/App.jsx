@@ -26,7 +26,11 @@ const allUnis = allData.map(data => {
     };
   }).filter(p => p.nama); // Ensure program has a name
 
-  return { name: info?.['Nama Universitas'], prodi: prodiList };
+  return {
+    name: info?.['Nama Universitas'],
+    city: info?.['Kab/Kota'], // Add city information
+    prodi: prodiList
+  };
 }).filter(u => u.name && u.prodi.length > 0); // Ensure university has a name and programs
 
 // Calculate the total number of programs across all universities
@@ -127,6 +131,7 @@ export default function App() {
 
       // Return university only if it has eligible programs
       if (eligibleProdi.length > 0) {
+        // Ensure city is included in the filtered results
         return { ...uni, prodi: eligibleProdi };
       }
       return null; // Remove university if no programs match
