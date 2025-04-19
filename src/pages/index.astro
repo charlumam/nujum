@@ -1,16 +1,16 @@
 ---
-
+import App from '../components/App.jsx';
+import '../styles/global.css';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SNBT University Matcher</title>
+    <link rel="icon" href="/favicon.svg" />
+  </head>
+  <body class="bg-gray-100 min-h-screen py-8">
+    <App client:load />
+  </body>
 </html>
