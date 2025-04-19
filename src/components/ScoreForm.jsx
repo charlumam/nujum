@@ -71,7 +71,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
 
   return (
     <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-white shadow-lg rounded-xl p-8 space-y-8">
-      <h2 className="text-2xl font-semibold text-gray-800">Masukkan Skor SNBT</h2>
+      <h2 className="text-2xl font-semibold text-gray-800">Masukkan Skor UTBK</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Test Potensi Skolastik */}
@@ -135,7 +135,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
         <div className="text-center mt-6 mb-4 p-4 bg-indigo-50 rounded-lg border border-indigo-200 space-y-2">
           {/* Display the final score passed from App.jsx */}
           <div>
-            <p className="text-lg font-medium text-gray-700">Skor Rata-rata Anda:</p>
+            <p className="text-lg font-medium text-gray-700">Nilai rata-rata UTBK kamu:</p>
             <p className="text-3xl font-bold text-indigo-600">{propFinalScore}</p>
           </div>
 
@@ -148,12 +148,12 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
                 </p>
                 {/* Added mt-1 for spacing */}
                 <p className="text-sm sm:text-base text-indigo-600 mt-2">
-                  Skor Anda termasuk dalam top <span className="font-bold">{percentage}%</span>!
+                  Nilai kamu termasuk dalam top <span className="font-bold">{percentage}%</span>!
                 </p>
               </>
             ) : (
               <p className="text-base sm:text-lg font-semibold text-orange-600">
-                Sayangnya, belum ada program studi yang sesuai dengan skor Anda.
+                Sayangnya, belum ada program studi yang sesuai dengan nilai kamu.
               </p>
             )}
           </div>
@@ -163,7 +163,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
       {/* Display local score calculation *before* submission for feedback */}
       {propFinalScore === null && localFinalScore !== null && (
          <div className="text-center mt-6 mb-4 p-3 bg-gray-50 rounded-lg border border-gray-200">
-           <p className="text-md font-medium text-gray-600">Skor Rata-rata Sementara:</p>
+           <p className="text-md font-medium text-gray-600">Nilai rata-rata sementara:</p>
            <p className="text-xl font-bold text-gray-700">{localFinalScore}</p>
          </div>
       )}

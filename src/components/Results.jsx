@@ -20,18 +20,21 @@ export default function Results({ universities, totalEligible }) {
 
     // Apply filters
     if (filterUniName) {
+      const keywords = filterUniName.toLowerCase().split(',').map(k => k.trim()).filter(Boolean);
       flatItems = flatItems.filter(item =>
-        item.uniName.toLowerCase().includes(filterUniName.toLowerCase())
+        keywords.every(k => item.uniName.toLowerCase().includes(k))
       );
     }
     if (filterCity) {
+      const keywords = filterCity.toLowerCase().split(',').map(k => k.trim()).filter(Boolean);
       flatItems = flatItems.filter(item =>
-        item.city?.toLowerCase().includes(filterCity.toLowerCase()) // Use optional chaining for city
+        keywords.every(k => item.city?.toLowerCase().includes(k))
       );
     }
-    if (filterProdiName) { // Apply Prodi filter
+    if (filterProdiName) {
+      const keywords = filterProdiName.toLowerCase().split(',').map(k => k.trim()).filter(Boolean);
       flatItems = flatItems.filter(item =>
-        item.nama.toLowerCase().includes(filterProdiName.toLowerCase())
+        keywords.every(k => item.nama.toLowerCase().includes(k))
       );
     }
 
@@ -105,9 +108,9 @@ export default function Results({ universities, totalEligible }) {
               }}
               className="border rounded px-2 py-1"
             >
-              {[10, 50, 100, total > 100 ? total : null].filter(Boolean).map(n => ( // Only show 'Semua' if total > 100
+              {[10, 50, 100].map(n => (
                 <option key={n} value={n}>
-                  {n === total ? 'Semua' : n}
+                  {n}
                 </option>
               ))}
             </select>
