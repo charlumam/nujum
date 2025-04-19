@@ -67,46 +67,47 @@ export default function Results({ universities, totalEligible }) {
 
   // Always render filters and controls if universities data is present
   return (
-    <div className="h-full space-y-3">
+    <div className="h-full space-y-2 sm:space-y-3">
       {/* Filter Row */}
-      <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-3">
+      <div className="flex flex-col gap-2">
         <input
           type="text"
           placeholder="Filter Nama Universitas..."
           value={filterUniName}
           onChange={e => setFilterUniName(e.target.value)}
-          className="border rounded px-3 py-1.5 flex-grow"
+          className="border rounded px-2 py-1.5 text-sm"
         />
-        <input
-          type="text"
-          placeholder="Filter Kab/Kota..."
-          value={filterCity}
-          onChange={e => setFilterCity(e.target.value)}
-          className="border rounded px-3 py-1.5 flex-grow"
-        />
-        <input // Add Prodi filter input
-          type="text"
-          placeholder="Filter Program Studi..."
-          value={filterProdiName}
-          onChange={e => setFilterProdiName(e.target.value)}
-          className="border rounded px-3 py-1.5 flex-grow"
-        />
+        <div className="flex gap-2">
+          <input
+            type="text"
+            placeholder="Filter Kab/Kota..."
+            value={filterCity}
+            onChange={e => setFilterCity(e.target.value)}
+            className="border rounded px-2 py-1.5 text-sm flex-1"
+          />
+          <input
+            type="text"
+            placeholder="Filter Program Studi..."
+            value={filterProdiName}
+            onChange={e => setFilterProdiName(e.target.value)}
+            className="border rounded px-2 py-1.5 text-sm flex-1"
+          />
+        </div>
       </div>
 
       {/* Control Row */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-3">
+      <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
         {/* Left side: Page Size & Total */}
-        <div className="flex items-center gap-2">
-           <label className="text-gray-700 flex items-center gap-1">
+        <div className="flex items-center gap-1">
+          <label className="text-gray-700 text-sm flex items-center gap-1">
             Tampilkan
             <select
               value={pageSize}
               onChange={e => {
                 const newSize = Number(e.target.value);
                 setPageSize(newSize);
-                // setPageIndex(0); // Handled by useEffect
               }}
-              className="border rounded px-2 py-1"
+              className="border rounded px-2 py-0.5 text-sm"
             >
               {[10, 50, 100].map(n => (
                 <option key={n} value={n}>
@@ -119,14 +120,14 @@ export default function Results({ universities, totalEligible }) {
         </div>
 
         {/* Right side: Sort */}
-        <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+        <div className="flex items-center">
           {/* Sort Dropdown */}
-          <label className="text-gray-700 flex items-center gap-1">
+          <label className="text-gray-700 text-sm flex items-center gap-1">
             Tingkat Penerimaan
             <select
               value={sortOrder}
               onChange={e => setSortOrder(e.target.value)}
-              className="border rounded px-2 py-1"
+              className="border rounded px-2 py-0.5 text-sm"
             >
               <option value="asc">Rendah ke Tinggi</option>
               <option value="desc">Tinggi ke Rendah</option>
@@ -137,17 +138,17 @@ export default function Results({ universities, totalEligible }) {
 
       {/* Conditional Rendering for Results or No Results Message */}
       {!items.length ? (
-        <div className="max-w-md mx-auto mt-12 p-6 bg-white rounded-lg shadow-lg text-center text-gray-600">
-          {filterUniName || filterCity || filterProdiName ? ( // Update condition
-            <p className="text-lg">Tidak ada hasil yang cocok dengan filter Anda.</p>
+        <div className="max-w-md mx-auto mt-6 p-4 bg-white rounded-lg shadow-lg text-center text-gray-600">
+          {filterUniName || filterCity || filterProdiName ? (
+            <p className="text-base">Tidak ada hasil yang cocok dengan filter Anda.</p>
           ) : (
-            <p className="text-lg">Belum ada program studi yang sesuai dengan skor Anda.</p>
+            <p className="text-base">Belum ada program studi yang sesuai dengan skor Anda.</p>
           )}
         </div>
       ) : (
         <>
           {/* Results Grid */}
-          <div className="grid gap-4 md:grid-cols-2">
+          <div className="grid gap-3 grid-cols-1 sm:grid-cols-2">
             {displayed.map((item, idx) => {
               const admissionPercentage = item.admissionRate * 100;
               let textColorClass = 'text-green-600';
@@ -159,12 +160,12 @@ export default function Results({ universities, totalEligible }) {
 
               return (
                 <div
-                  key={start + idx} // Use index relative to the full filtered list if possible, or ensure unique key
-                  className="bg-white rounded-lg p-4 shadow-md hover:shadow-xl transition-shadow relative"
+                  key={start + idx}
+                  className="bg-white rounded-lg p-3 shadow-md hover:shadow-lg transition-shadow relative"
                 >
-                  <h3 className="font-semibold text-indigo-600">{item.uniName}</h3>
-                  <p className="text-sm text-gray-500 mb-1">{item.city}</p> {/* Display City */}
-                  <p className="text-gray-700 mt-1 mb-2">{item.nama}</p>
+                  <h3 className="font-semibold text-indigo-600 text-sm sm:text-base">{item.uniName}</h3>
+                  <p className="text-xs text-gray-500">{item.city}</p>
+                  <p className="text-xs sm:text-sm text-gray-700 mt-1 mb-2">{item.nama}</p>
                   <div className="absolute bottom-2 right-2 text-right">
                     <span className="text-xs font-medium text-gray-500">Tingkat Penerimaan:</span>
                     <span className={`text-xs font-bold ${textColorClass} ml-1`}>
@@ -177,22 +178,22 @@ export default function Results({ universities, totalEligible }) {
           </div>
           {/* Pagination Buttons (Bottom) */}
           {total > pageSize && (
-            <div className="flex justify-center items-center gap-2 mt-4">
+            <div className="flex justify-center items-center gap-2 mt-3">
               {pageIndex > 0 && (
                 <button
                   onClick={() => setPageIndex(prev => prev - 1)}
-                  className="bg-gray-300 text-gray-700 px-3 py-1.5 rounded font-semibold hover:bg-gray-400"
+                  className="bg-gray-300 text-gray-700 px-2 py-1 text-xs sm:text-sm rounded font-semibold hover:bg-gray-400"
                 >
                   Sebelumnya
                 </button>
               )}
-              <span className="text-gray-600 text-sm">
+              <span className="text-gray-600 text-xs">
                 Halaman {pageIndex + 1} dari {Math.ceil(total / pageSize)}
               </span>
               {end < total && (
                 <button
                   onClick={() => setPageIndex(prev => prev + 1)}
-                  className="bg-indigo-600 text-white px-3 py-1.5 rounded font-semibold hover:bg-indigo-700"
+                  className="bg-indigo-600 text-white px-2 py-1 text-xs sm:text-sm rounded font-semibold hover:bg-indigo-700"
                 >
                   Berikutnya
                 </button>
