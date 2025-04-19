@@ -56,23 +56,7 @@ export default function Results({ universities, totalEligible }) {
 
   if (universities === null) return null; // Don't render if initial state
 
-  if (!items.length && (filterUniName || filterCity)) {
-    return (
-      <div className="max-w-md mx-auto mt-12 p-6 bg-white rounded-lg shadow-lg text-center text-gray-600">
-        <p className="text-lg">Tidak ada hasil yang cocok dengan filter Anda.</p>
-      </div>
-    );
-  }
-
-  if (!items.length && !filterUniName && !filterCity) {
-    return (
-      <div className="max-w-md mx-auto mt-12 p-6 bg-white rounded-lg shadow-lg text-center text-gray-600">
-        <p className="text-lg">Belum ada program studi yang sesuai dengan skor Anda.</p>
-      </div>
-    );
-  }
-
-
+  // Always render filters and controls if universities data is present
   return (
     <div className="max-w-4xl mx-auto mt-6 space-y-3">
       {/* Filter Row */}
@@ -132,64 +116,75 @@ export default function Results({ universities, totalEligible }) {
               <option value="desc">Tinggi ke Rendah</option>
             </select>
           </label>
-
-          {/* Pagination Info Removed from here */}
         </div>
       </div>
 
-      {/* Results Grid */}
-      <div className="grid gap-4 md:grid-cols-2">
-        {displayed.map((item, idx) => {
-          const admissionPercentage = item.admissionRate * 100;
-          let textColorClass = 'text-green-600';
-          if (admissionPercentage <= 10) {
-            textColorClass = 'text-red-600';
-          } else if (admissionPercentage <= 30) {
-            textColorClass = 'text-orange-500';
-          }
+      {/* Conditional Rendering for Results or No Results Message */}
+      {!items.length ? (
+        <div className="max-w-md mx-auto mt-12 p-6 bg-white rounded-lg shadow-lg text-center text-gray-600">
+          {filterUniName || filterCity ? (
+            <p className="text-lg">Tidak ada hasil yang cocok dengan filter Anda.</p>
+          ) : (
+            <p className="text-lg">Belum ada program studi yang sesuai dengan skor Anda.</p>
+          )}
+        </div>
+      ) : (
+        <>
+          {/* Results Grid */}
+          <div className="grid gap-4 md:grid-cols-2">
+            {displayed.map((item, idx) => {
+              const admissionPercentage = item.admissionRate * 100;
+              let textColorClass = 'text-green-600';
+              if (admissionPercentage <= 10) {
+                textColorClass = 'text-red-600';
+              } else if (admissionPercentage <= 30) {
+                textColorClass = 'text-orange-500';
+              }
 
-          return (
-            <div
-              key={start + idx} // Use index relative to the full filtered list if possible, or ensure unique key
-              className="bg-white rounded-lg p-4 shadow-md hover:shadow-xl transition-shadow relative"
-            >
-              <h3 className="font-semibold text-indigo-600">{item.uniName}</h3>
-              <p className="text-sm text-gray-500 mb-1">{item.city}</p> {/* Display City */}
-              <p className="text-gray-700 mt-1 mb-2">{item.nama}</p>
-              <div className="absolute bottom-2 right-2 text-right">
-                <span className="text-xs font-medium text-gray-500">Tingkat Penerimaan:</span>
-                <span className={`text-xs font-bold ${textColorClass} ml-1`}>
-                  {admissionPercentage.toFixed(2)}%
-                </span>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-       {/* Pagination Buttons (Bottom) */}
-       {total > pageSize && (
-         <div className="flex justify-center items-center gap-2 mt-4">
-            {pageIndex > 0 && (
-              <button
-                onClick={() => setPageIndex(prev => prev - 1)}
-                className="bg-gray-300 text-gray-700 px-3 py-1.5 rounded font-semibold hover:bg-gray-400"
-              >
-                &lt; Sebelumnya
-              </button>
-            )}
-             <span className="text-gray-600 text-sm">
-              Halaman {pageIndex + 1} dari {Math.ceil(total / pageSize)}
-            </span>
-            {end < total && (
-              <button
-                onClick={() => setPageIndex(prev => prev + 1)}
-                className="bg-indigo-600 text-white px-3 py-1.5 rounded font-semibold hover:bg-indigo-700"
-              >
-                Berikutnya &gt;
-              </button>
-            )}
+              return (
+                <div
+                  key={start + idx} // Use index relative to the full filtered list if possible, or ensure unique key
+                  className="bg-white rounded-lg p-4 shadow-md hover:shadow-xl transition-shadow relative"
+                >
+                  <h3 className="font-semibold text-indigo-600">{item.uniName}</h3>
+                  <p className="text-sm text-gray-500 mb-1">{item.city}</p> {/* Display City */}
+                  <p className="text-gray-700 mt-1 mb-2">{item.nama}</p>
+                  <div className="absolute bottom-2 right-2 text-right">
+                    <span className="text-xs font-medium text-gray-500">Tingkat Penerimaan:</span>
+                    <span className={`text-xs font-bold ${textColorClass} ml-1`}>
+                      {admissionPercentage.toFixed(2)}%
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
           </div>
-       )}
+          {/* Pagination Buttons (Bottom) */}
+          {total > pageSize && (
+            <div className="flex justify-center items-center gap-2 mt-4">
+              {pageIndex > 0 && (
+                <button
+                  onClick={() => setPageIndex(prev => prev - 1)}
+                  className="bg-gray-300 text-gray-700 px-3 py-1.5 rounded font-semibold hover:bg-gray-400"
+                >
+                  Sebelumnya
+                </button>
+              )}
+              <span className="text-gray-600 text-sm">
+                Halaman {pageIndex + 1} dari {Math.ceil(total / pageSize)}
+              </span>
+              {end < total && (
+                <button
+                  onClick={() => setPageIndex(prev => prev + 1)}
+                  className="bg-indigo-600 text-white px-3 py-1.5 rounded font-semibold hover:bg-indigo-700"
+                >
+                  Berikutnya
+                </button>
+              )}
+            </div>
+          )}
+        </>
+      )}
     </div>
   );
 }
