@@ -147,10 +147,10 @@ export default function App() {
   };
 
   return (
-    <div className="container mx-auto p-4 md:p-6">
-      <div className="lg:flex lg:space-x-6 lg:space-y-0 space-y-8">
-        {/* Left column - ScoreForm */}
-        <div className="lg:w-2/5">
+    <div className="container mx-auto p-4 md:p-6 xl:max-w-7xl">
+      {/* If no results yet, center the ScoreForm */}
+      {eligibleUnis === null ? (
+        <div className="max-w-xl mx-auto">
           <ScoreForm
             onSubmit={handleScoresSubmit}
             finalScore={finalScore}
@@ -158,12 +158,25 @@ export default function App() {
             totalPrograms={totalPrograms}
           />
         </div>
-        
-        {/* Right column - Results */}
-        <div className="lg:w-3/5">
-          {eligibleUnis !== null && <Results universities={eligibleUnis} totalEligible={totalEligible} />}
+      ) : (
+        /* Show side-by-side layout once results are available */
+        <div className="lg:flex lg:space-x-6 lg:space-y-0 space-y-8">
+          {/* Left column - ScoreForm */}
+          <div className="lg:w-2/5">
+            <ScoreForm
+              onSubmit={handleScoresSubmit}
+              finalScore={finalScore}
+              totalEligible={totalEligible}
+              totalPrograms={totalPrograms}
+            />
+          </div>
+          
+          {/* Right column - Results */}
+          <div className="lg:w-3/5">
+            <Results universities={eligibleUnis} totalEligible={totalEligible} />
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
