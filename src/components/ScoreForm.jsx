@@ -13,7 +13,12 @@ export default function ScoreForm({ onSubmit }) {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    const numericValue = value.replace(/[^0-9]/g, '');
+    // sanitize to digits only
+    let numericValue = value.replace(/[^0-9]/g, '');
+    // clamp to max 1000
+    if (numericValue) {
+      numericValue = String(Math.min(Number(numericValue), 1000));
+    }
     setScores(prev => ({ ...prev, [name]: numericValue }));
   };
 

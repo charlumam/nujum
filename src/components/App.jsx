@@ -20,7 +20,6 @@ export default function App() {
 
   const handleScoresSubmit = (scores) => {
     console.log('Scores submitted:', scores);
-    alert('Mencari universitas berdasarkan skor Anda...');
     // For now, just display all loaded universities to confirm data load
     console.log('Loaded universities count:', allUnis.length);
     console.log('Sample university names:', allUnis.slice(0,5).map(u => u.name));
