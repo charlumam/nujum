@@ -144,9 +144,10 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
             {totalEligible > 0 ? (
               <>
                 <p className="text-base sm:text-lg font-semibold text-indigo-700">
-                  Dan diterima di <span className="font-bold">{totalEligible}</span> program studi.
+                  Kemungkinan besar <span className="font-bold">{totalEligible}</span> program studi.
                 </p>
-                <p className="text-sm sm:text-base text-indigo-600">
+                {/* Added mt-1 for spacing */}
+                <p className="text-sm sm:text-base text-indigo-600 mt-2">
                   Skor Anda termasuk dalam top <span className="font-bold">{percentage}%</span>!
                 </p>
               </>
