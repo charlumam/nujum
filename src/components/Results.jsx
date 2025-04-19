@@ -5,9 +5,10 @@ export default function Results({ universities }) {
   const items = (universities || []).flatMap(u =>
     (u.prodi || []).map(p => ({ uniName: u.name, nama: p.nama }))
   );
+  const total = items.length;
   const [pageSize, setPageSize] = useState(10);
   const [pageIndex, setPageIndex] = useState(0);
-  const total = items.length;
+  
   const start = pageIndex * pageSize;
   const end = Math.min(start + pageSize, total);
   const displayed = items.slice(start, end);
@@ -22,28 +23,45 @@ export default function Results({ universities }) {
 
   return (
     <div className="max-w-4xl mx-auto mt-8 space-y-4">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between mb-4">
         <label className="text-gray-700">
           Tampilkan{' '}
           <select
             value={pageSize}
-            onChange={e => { setPageSize(Number(e.target.value)); setPageIndex(0); }}
-            className="border rounded px-2 py-1"
+            onChange={e => { 
+              const newSize = Number(e.target.value);
+              setPageSize(newSize);
+              // Reset to first page when page size changes
+              setPageIndex(0); 
+            }}
+            className="border rounded px-2 py-1 ml-1 mr-1"
           >
-            {[10, 20, 50, 100].map(n => (
-              <option key={n} value={n}>{n}</option>
+            {[10, 50, 100, total].map(n => (
+              <option key={n} value={n}>
+                {n === total ? 'Semua' : n}
+              </option>
             ))}
           </select>{' '}
           hasil
         </label>
-        {end < total && (
-          <button
-            onClick={() => setPageIndex(prev => prev + 1)}
-            className="bg-indigo-600 text-white px-4 py-2 rounded"
-          >
-            Next
-          </button>
-        )}
+        <div className="space-x-2">
+          {pageIndex > 0 && (
+            <button
+              onClick={() => setPageIndex(prev => prev - 1)}
+              className="bg-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-400"
+            >
+              Kembali
+            </button>
+          )}
+          {end < total && (
+            <button
+              onClick={() => setPageIndex(prev => prev + 1)}
+              className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700"
+            >
+              Selanjutnya
+            </button>
+          )}
+        </div>
       </div>
       <div className="grid gap-6 md:grid-cols-2">
         {displayed.map((item, idx) => (

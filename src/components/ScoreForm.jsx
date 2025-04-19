@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function ScoreForm({ onSubmit }) {
   const [scores, setScores] = useState({
@@ -10,6 +10,20 @@ export default function ScoreForm({ onSubmit }) {
     bahasaInggris: '',
     penalaranMatematika: '',
   });
+  const [finalScore, setFinalScore] = useState(null);
+
+  // Calculate final score whenever scores change
+  useEffect(() => {
+    const scoreValues = Object.values(scores);
+    if (scoreValues.every(v => v !== '' && !isNaN(parseFloat(v.replace(',', '.'))))) {
+      const numericScores = scoreValues.map(v => parseFloat(v.replace(',', '.')));
+      const sum = numericScores.reduce((acc, curr) => acc + curr, 0);
+      const average = sum / numericScores.length;
+      setFinalScore(average.toFixed(2)); // Format to 2 decimal places
+    } else {
+      setFinalScore(null); // Reset if not all scores are valid numbers
+    }
+  }, [scores]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -110,6 +124,14 @@ export default function ScoreForm({ onSubmit }) {
           </div>
         </div>
       </div>
+
+      {/* Display Final Score */}
+      {finalScore !== null && (
+        <div className="text-center mt-6 mb-4 p-4 bg-indigo-50 rounded-lg border border-indigo-200">
+          <p className="text-lg font-medium text-gray-700">Skor Rata-rata Anda:</p>
+          <p className="text-3xl font-bold text-indigo-600">{finalScore}</p>
+        </div>
+      )}
 
       <button
         type="submit"
