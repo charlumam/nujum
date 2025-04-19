@@ -23,9 +23,11 @@ export default function Results({ universities }) {
 
   return (
     <div className="max-w-4xl mx-auto mt-8 space-y-4">
-      <div className="flex items-center justify-between mb-4">
+      {/* Apply flex-col on mobile and flex-row on sm screens and up */}
+      {/* Add gap for spacing when stacked */}
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
         <label className="text-gray-700">
-          Tampilkan{' '}
+          <span className="font-bold mr-2">{total} Total.</span>Tampilkan{' '}
           <select
             value={pageSize}
             onChange={e => { 
@@ -44,13 +46,14 @@ export default function Results({ universities }) {
           </select>{' '}
           hasil
         </label>
-        <div className="space-x-2">
+        {/* Add margin-top on mobile, remove on sm screens */}
+        <div className="mt-4 sm:mt-0 space-x-2">
           {pageIndex > 0 && (
             <button
               onClick={() => setPageIndex(prev => prev - 1)}
               className="bg-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-400"
             >
-              Kembali
+              &lt;
             </button>
           )}
           {end < total && (
@@ -58,7 +61,7 @@ export default function Results({ universities }) {
               onClick={() => setPageIndex(prev => prev + 1)}
               className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700"
             >
-              Selanjutnya
+              &gt;
             </button>
           )}
         </div>
