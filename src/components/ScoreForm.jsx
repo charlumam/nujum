@@ -18,10 +18,18 @@ export default function ScoreForm({ onSubmit }) {
 
     if (value === '' || regex.test(value)) {
       let numericString = value;
-      // Check max value
+
+      // Prevent "1000," or values strictly greater than 1000
       if (numericString !== '') {
+        // Special case: prevent "1000,"
+        if (numericString === '1000,') {
+           // Don't update state if input is exactly "1000,"
+           return;
+        }
+
         const num = parseFloat(numericString.replace(',', '.'));
         if (num > 1000) {
+          // If number is > 1000, cap it at 1000
           numericString = '1000';
         }
       }
