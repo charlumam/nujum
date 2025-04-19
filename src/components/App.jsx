@@ -29,40 +29,33 @@ const allUnis = allData.map(data => {
   return { name: info?.['Nama Universitas'], prodi: prodiList };
 }).filter(u => u.name && u.prodi.length > 0); // Ensure university has a name and programs
 
-// Placeholder for percentile to Z-score conversion.
-// A proper implementation using numerical methods (e.g., Acklam's algorithm) is recommended for accuracy.
-// This lookup table provides a rough approximation.
+// More accurate approximation for Percentile to Z-score (Inverse Normal CDF)
+// Based on Abramowitz and Stegun formula 26.2.23
 function percentileToZScore(p) {
-  if (p <= 0) return -Infinity;
-  if (p >= 1) return Infinity;
-  if (p === 0.5) return 0;
+    if (p <= 0) return -Infinity;
+    if (p >= 1) return Infinity;
+    if (p === 0.5) return 0;
 
-  // Rough lookup based on common values
-  const lookup = [
-    [0.01, -2.326], [0.025, -1.960], [0.05, -1.645], [0.10, -1.282],
-    [0.20, -0.842], [0.30, -0.524], [0.40, -0.253], [0.50, 0.000],
-    [0.60, 0.253], [0.70, 0.524], [0.80, 0.842], [0.90, 1.282],
-    [0.95, 1.645], [0.975, 1.960], [0.99, 2.326],
-  ];
+    // Constants for the approximation
+    const c0 = 2.515517;
+    const c1 = 0.802853;
+    const c2 = 0.010328;
+    const d1 = 1.432788;
+    const d2 = 0.189269;
+    const d3 = 0.001308;
 
-  // Find the two closest points for interpolation (simple linear)
-  let lower = lookup[0];
-  let upper = lookup[lookup.length - 1];
-
-  for (let i = 0; i < lookup.length; i++) {
-    if (lookup[i][0] <= p) {
-      lower = lookup[i];
+    let t;
+    if (p < 0.5) {
+        t = Math.sqrt(-2.0 * Math.log(p));
+        const numerator = c0 + c1 * t + c2 * t * t;
+        const denominator = 1 + d1 * t + d2 * t * t + d3 * t * t * t;
+        return -(numerator / denominator);
+    } else {
+        t = Math.sqrt(-2.0 * Math.log(1.0 - p));
+        const numerator = c0 + c1 * t + c2 * t * t;
+        const denominator = 1 + d1 * t + d2 * t * t + d3 * t * t * t;
+        return numerator / denominator;
     }
-    if (lookup[i][0] >= p && upper[0] >= lookup[i][0]) {
-      upper = lookup[i];
-    }
-  }
-
-  if (lower[0] === upper[0]) return lower[1]; // Exact match
-
-  // Linear interpolation
-  const fraction = (p - lower[0]) / (upper[0] - lower[0]);
-  return lower[1] + fraction * (upper[1] - lower[1]);
 }
 
 
@@ -111,8 +104,10 @@ export default function App() {
                 // If percentile is 0 (Z=-Infinity), technically always possible
                 meetsCutoff = zScore === -Infinity;
             } else {
-                // Calculate UTBK cut-off score
-                const cutoffScore = 500 + zScore * 100;
+                // Calculate UTBK cut-off score using the official 2024 mean (500) and std dev (100)
+                const mean = 500;
+                const stdDev = 100;
+                const cutoffScore = mean + zScore * stdDev;
                 meetsCutoff = userAverageScore >= cutoffScore;
             }
         }
