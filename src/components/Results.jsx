@@ -43,9 +43,9 @@ export default function Results({ universities, totalEligible }) {
   }
 
   return (
-    <div className="max-w-4xl mx-auto mt-8 space-y-4">
+    <div className="max-w-4xl mx-auto mt-6 space-y-3"> {/* Reduced mt and space-y */}
       {/* Control Row */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-3"> {/* Reduced gap and mb */}
         {/* Left side: Page Size */}
         <div className="flex items-center gap-2">
           {/* Removed total display */}
@@ -71,7 +71,7 @@ export default function Results({ universities, totalEligible }) {
         </div>
 
         {/* Right side: Sort and Pagination */}
-        <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-3"> {/* Reduced gap */}
           {/* Sort Dropdown */}
           <label className="text-gray-700 flex items-center gap-1">
             Tingkat Penerimaan
@@ -90,7 +90,7 @@ export default function Results({ universities, totalEligible }) {
             {pageIndex > 0 && (
               <button
                 onClick={() => setPageIndex(prev => prev - 1)}
-                className="bg-gray-300 text-gray-700 px-4 py-2 rounded font-black hover:bg-gray-400"
+                className="bg-gray-300 text-gray-700 px-3 py-1.5 rounded font-semibold hover:bg-gray-400" // Reduced padding, font weight
               >
                 &lt;
               </button>
@@ -98,7 +98,7 @@ export default function Results({ universities, totalEligible }) {
             {end < total && (
               <button
                 onClick={() => setPageIndex(prev => prev + 1)}
-                className="bg-indigo-600 text-white px-4 py-2 rounded font-black hover:bg-indigo-700"
+                className="bg-indigo-600 text-white px-3 py-1.5 rounded font-semibold hover:bg-indigo-700" // Reduced padding, font weight
               >
                 &gt;
               </button>
@@ -108,7 +108,7 @@ export default function Results({ universities, totalEligible }) {
       </div>
 
       {/* Results Grid */}
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid gap-4 md:grid-cols-2"> {/* Reduced gap */}
         {displayed.map((item, idx) => {
           // Calculate admission rate percentage
           const admissionPercentage = item.admissionRate * 100;
@@ -124,15 +124,15 @@ export default function Results({ universities, totalEligible }) {
           return (
             <div
               key={start + idx}
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow relative" // Add relative positioning
+              className="bg-white rounded-lg p-4 shadow-md hover:shadow-xl transition-shadow relative" // Reduced padding, rounding, shadow
             >
-              <h3 className="text-lg font-semibold text-indigo-600">{item.uniName}</h3>
-              <p className="text-gray-700 mt-2 mb-4">{item.nama}</p> {/* Add margin-bottom */}
+              <h3 className="font-semibold text-indigo-600">{item.uniName}</h3> {/* Removed text-lg */}
+              <p className="text-gray-700 mt-1 mb-2">{item.nama}</p> {/* Reduced mt and mb */}
               {/* Display Admission Rate */}
-              <div className="absolute bottom-2 right-3 text-right"> {/* Position bottom right */}
-                <span className="text-sm font-medium text-gray-500">Tingkat Penerimaan:</span>
+              <div className="absolute bottom-2 right-2 text-right"> {/* Adjusted position */}
+                <span className="text-xs font-medium text-gray-500">Tingkat Penerimaan:</span> {/* Changed to text-xs */}
                 {/* Apply dynamic text color */}
-                <span className={`text-sm font-bold ${textColorClass} ml-1`}>
+                <span className={`text-xs font-bold ${textColorClass} ml-1`}> {/* Changed to text-xs */}
                   {admissionPercentage.toFixed(2)}%
                 </span>
               </div>
