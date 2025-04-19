@@ -71,7 +71,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
 
   return (
     <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-white shadow-lg rounded-xl p-8 space-y-8">
-      <h2 className="text-2xl font-semibold text-gray-800">Masukkan Skor UTBK</h2>
+      <h2 className="text-2xl font-semibold text-gray-800">Masukkan Nilai UTBK</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Test Potensi Skolastik */}
