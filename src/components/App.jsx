@@ -75,6 +75,12 @@ export default function App() {
     const scoreValues = Object.values(scores).map(Number);
     const userAverageScore = scoreValues.reduce((sum, score) => sum + score, 0) / scoreValues.length;
 
+    // If user's average score is below minimum threshold, return no results
+    if (userAverageScore < 178) {
+      setEligibleUnis([]);
+      return;
+    }
+
     console.log('User Average Score:', userAverageScore);
 
     const filteredUnis = allUnis.map(uni => {
