@@ -37,8 +37,14 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
     }
   }, [scores]);
 
-  // Calculate percentage only when results are available
-  const percentage = (propFinalScore !== null && totalPrograms > 0) ? ((totalEligible / totalPrograms) * 100).toFixed(1) : 0;
+  // Calculate percentage rank based on 2024 max average score (859.13). Clamped to top 0%
+  const MAX_AVERAGE_SCORE = 859.13;
+  const percentage = propFinalScore !== null
+    ? Math.max(
+        0,
+        (1 - Math.min(propFinalScore, MAX_AVERAGE_SCORE) / MAX_AVERAGE_SCORE) * 100
+      ).toFixed(1)
+    : 0;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
