@@ -109,7 +109,7 @@ export default function Results({ universities, totalEligible }) {
               }}
               className="border rounded px-2 py-0.5 text-sm"
             >
-              {[10, 25, 50].map(n => (
+              {[10, 20, 50].map(n => (
                 <option key={n} value={n}>
                   {n}
                 </option>
