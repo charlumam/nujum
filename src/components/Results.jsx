@@ -70,28 +70,28 @@ export default function Results({ universities, totalEligible }) {
   return (
     <div className="h-full space-y-2 sm:space-y-3">
       {/* Filter Row */}
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-1">
         <input
           type="text"
           placeholder="Filter Nama Universitas..."
           value={filterUniName}
           onChange={e => setFilterUniName(e.target.value)}
-          className="border rounded px-2 py-1.5 text-sm"
+          className="border rounded px-2 py-1.5 text-sm flex-1 border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600"
         />
-        <div className="flex gap-2">
+        <div className="flex flex-col gap-1">
           <input
             type="text"
             placeholder="Filter Kab/Kota..."
             value={filterCity}
             onChange={e => setFilterCity(e.target.value)}
-            className="border rounded px-2 py-1.5 text-sm flex-1"
+            className="border rounded px-2 py-1.5 text-sm flex-1 border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600"
           />
           <input
             type="text"
             placeholder="Filter Program Studi..."
             value={filterProdiName}
             onChange={e => setFilterProdiName(e.target.value)}
-            className="border rounded px-2 py-1.5 text-sm flex-1"
+            className="border rounded px-2 py-1.5 text-sm flex-1 border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600"
           />
         </div>
       </div>
@@ -108,7 +108,7 @@ export default function Results({ universities, totalEligible }) {
                 const newSize = Number(e.target.value);
                 setPageSize(newSize);
               }}
-              className="border rounded px-2 py-0.5 text-sm"
+              className="border rounded px-2 py-0.5 text-sm border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600"
             >
               {[10, 20, 50].map(n => (
                 <option key={n} value={n}>
@@ -128,7 +128,7 @@ export default function Results({ universities, totalEligible }) {
             <select
               value={sortOrder}
               onChange={e => setSortOrder(e.target.value)}
-              className="border rounded px-2 py-0.5 text-sm"
+              className="border rounded px-2 py-0.5 text-sm border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600"
             >
               <option value="asc">Rendah ke Tinggi</option>
               <option value="desc">Tinggi ke Rendah</option>
@@ -150,7 +150,7 @@ export default function Results({ universities, totalEligible }) {
         <>
           {/* Results Grid - Wrapped for Scrolling */}
           {/* Adjusted height to match ScoreForm */}
-          <div className="overflow-y-auto max-h-[85vh] border border-gray-200 rounded p-2 scrollbar-thin scrollbar-thumb-indigo-200 scrollbar-track-gray-100">
+          <div className="overflow-y-auto max-h-[85vh] border bg-gray-50 border-gray-200 rounded p-2 scrollbar-thin scrollbar-thumb-indigo-200 scrollbar-track-gray-100">
             <div className="grid gap-3 grid-cols-1 sm:grid-cols-2">
               {displayed.map((item, idx) => {
                 const admissionPercentage = item.admissionRate * 100;
@@ -167,17 +167,17 @@ export default function Results({ universities, totalEligible }) {
                     key={start + idx}
                     className="bg-white rounded-lg p-3 shadow-md hover:shadow-lg transition-shadow relative"
                   >
-                    <h3 className="font-semibold text-indigo-600 text-sm sm:text-base">{item.uniName}</h3>
+                    <h3 className="font-semibold text-blue-600 text-sm sm:text-base">{item.uniName}</h3>
                     <p className="text-xs text-gray-500">{item.city}</p>
                     <p className="text-xs sm:text-sm text-gray-700 mt-1 mb-10">
                       {item.nama}
                     </p>
                     <div className="absolute bottom-2 right-2 text-right">
                       <span className="text-xs font-medium text-gray-500">Passing Grade:</span>
-                      <span className={`text-xs font-bold ${textColorClass} ml-1`}>{cutoffScore}</span>
+                      <span className={`text-xs font-bold underline ${textColorClass} ml-1`}>{cutoffScore}</span>
                       <br />
                       <span className="text-xs font-medium text-gray-500">Persentase Diterima:</span>
-                      <span className={`text-xs font-bold ${textColorClass} ml-1`}>{admissionPercentage.toFixed(2)}%</span>
+                      <span className={`text-xs font-bold underline ${textColorClass} ml-1`}>{admissionPercentage.toFixed(2)}%</span>
                     </div>
                   </div>
                 );
@@ -190,7 +190,7 @@ export default function Results({ universities, totalEligible }) {
               {pageIndex > 0 && (
                 <button
                   onClick={() => setPageIndex(prev => prev - 1)}
-                  className="bg-gray-300 text-gray-700 px-2 py-1 text-xs sm:text-sm rounded font-semibold hover:bg-gray-400"
+                  className="bg-stone-500 border-b-3 border-stone-600 text-white px-2 py-1 text-xs sm:text-sm rounded font-semibold hover:bg-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-600 focus:border-b-0"
                 >
                   Sebelumnya
                 </button>
@@ -201,7 +201,7 @@ export default function Results({ universities, totalEligible }) {
               {end < total && (
                 <button
                   onClick={() => setPageIndex(prev => prev + 1)}
-                  className="bg-indigo-600 text-white px-2 py-1 text-xs sm:text-sm rounded font-semibold hover:bg-indigo-700"
+                  className="bg-blue-600 border-b-3 border-blue-800 text-white px-2 py-1 text-xs sm:text-sm rounded font-semibold hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:border-b-0"
                 >
                   Berikutnya
                 </button>
