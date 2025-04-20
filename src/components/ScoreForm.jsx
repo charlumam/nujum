@@ -86,12 +86,12 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
 
   return (
     <form onSubmit={handleSubmit} className="max-w-full mx-auto bg-white shadow-lg rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 space-y-4 sm:space-y-6">
-      <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800">Masukkan Nilai UTBK</h2>
+      <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800">Nujum | Passing Grade UTBK-SNBT</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
         {/* Test Potensi Skolastik */}
         <div className="space-y-3">
-          <h3 className="text-base sm:text-lg md:text-xl font-semibold text-indigo-600 border-b-2 border-indigo-100 pb-1 sm:pb-2">Tes Potensi Skolastik</h3>
+          <h3 className="text-base sm:text-lg md:text-xl font-semibold text-orange-600 border-b-2 border-orange-100 pb-1 sm:pb-2">Tes Potensi Skolastik</h3>
           {[
             ['penalaranUmum', 'Kemampuan Penalaran Umum'],
             ['kuantitatif', 'Kemampuan Kuantitatif'],
@@ -104,7 +104,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
                 type="text"
                 inputMode="numeric"
                 name={key} value={scores[key]} onChange={handleChange}
-                className="mt-1 block w-full bg-gray-50 text-base sm:text-lg px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 placeholder:text-center text-center"
+                className="mt-1 block w-full bg-gray-50 text-base sm:text-lg px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 placeholder:text-center text-center"
                 placeholder="0 - 1000"
               />
             </label>
@@ -114,7 +114,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
         {/* Test Literasi & Matematika */}
         <div className="space-y-3 sm:space-y-4">
           <div className="space-y-3">
-            <h3 className="text-base sm:text-lg md:text-xl font-semibold text-indigo-600 border-b-2 border-indigo-100 pb-1 sm:pb-2">Tes Literasi Bahasa</h3>
+            <h3 className="text-base sm:text-lg md:text-xl font-semibold text-orange-500 border-b-2 border-orange-100 pb-1 sm:pb-2">Tes Literasi Bahasa</h3>
             {[
               ['bahasaIndonesia', 'Literasi Bahasa Indonesia'],
               ['bahasaInggris', 'Literasi Bahasa Inggris'],
@@ -125,7 +125,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
                   type="text"
                   inputMode="numeric"
                   name={key} value={scores[key]} onChange={handleChange}
-                  className="mt-1 block w-full bg-gray-50 text-base sm:text-lg px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 placeholder:text-center text-center"
+                  className="mt-1 block w-full bg-gray-50 text-base sm:text-lg px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 placeholder:text-center text-center"
                   placeholder="0 - 1000"
                 />
               </label>
@@ -133,14 +133,14 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
           </div>
 
           <div className="space-y-3">
-            <h3 className="text-base sm:text-lg md:text-xl font-semibold text-indigo-600 border-b-2 border-indigo-100 pb-1 sm:pb-2">Tes Penalaran Matematika</h3>
+            <h3 className="text-base sm:text-lg md:text-xl font-semibold text-orange-500 border-b-2 border-orange-100 pb-1 sm:pb-2">Tes Penalaran Matematika</h3>
             <label className="block">
               <span className="text-sm sm:text-base text-gray-700 font-medium">Skor Penalaran Matematika</span>
               <input
                 type="text"
                 inputMode="numeric"
                 name="penalaranMatematika" value={scores.penalaranMatematika} onChange={handleChange}
-                className="mt-1 block w-full bg-gray-50 text-base sm:text-lg px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 placeholder:text-center text-center"
+                className="mt-1 block w-full bg-gray-50 text-base sm:text-lg px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 placeholder:text-center text-center"
                 placeholder="0 - 1000"
               />
             </label>
@@ -150,23 +150,23 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
 
       {/* Display Final Score and Eligibility Info ONLY AFTER submission */}
       {propFinalScore !== null && (
-        <div className="text-center mt-3 mb-3 p-3 sm:p-4 bg-indigo-50 rounded-lg border border-indigo-200 space-y-1 sm:space-y-2">
+        <div className="text-center mt-3 mb-3 p-3 sm:p-4 bg-orange-50 rounded-lg border border-orange-200 space-y-1 sm:space-y-2">
           {/* Display the final score passed from App.jsx */}
           <div>
-            <p className="text-base sm:text-lg font-medium text-gray-700">Nilai rata-rata UTBK kamu:</p>
-            <p className="text-2xl sm:text-3xl font-bold text-indigo-600">{propFinalScore}</p>
+            <p className="text-base sm:text-lg font-medium text-gray-700">Dengan nilai rata-rata:</p>
+            <p className="text-2xl sm:text-3xl font-bold text-orange-500">{propFinalScore}</p>
           </div>
 
           {/* Display eligibility text based on totalEligible */}
-          <div className="pt-1 sm:pt-2 border-t border-indigo-100">
+          <div className="pt-1 sm:pt-2 border-t border-orange-100">
             {totalEligible > 0 ? (
               <>
-                <p className="text-sm sm:text-base font-semibold text-indigo-700">
-                  Kemungkinan besar diterima di <span className="font-bold">{totalEligible}</span> program studi.
+                <p className="text-sm sm:text-base font-semibold text-orange-500">
+                  Kemu berpeluang besar masuk di <span className="font-bold underline">{totalEligible}</span> program studi.
                 </p>
                 {/* Added mt-1 for spacing */}
-                <p className="text-xs sm:text-sm text-indigo-600 mt-1 sm:mt-2">
-                  Nilai kamu termasuk dalam top <span className="font-bold">{percentage}%</span>!
+                <p className="text-xs sm:text-sm text-orange-500 mt-1 sm:mt-2">
+                  Nilai kamu termasuk dalam top <span className="font-bold underline">{percentage}%</span>!
                 </p>
               </>
             ) : (
@@ -188,7 +188,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
 
       <button
         type="submit"
-        className="w-full py-2 sm:py-3 bg-indigo-600 text-white text-base sm:text-lg font-semibold rounded-lg hover:bg-indigo-700 transition-shadow shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        className="w-full py-2 sm:py-3 bg-orange-500 border-b-3 border-orange-700 text-white text-base sm:text-lg font-semibold rounded-lg hover:bg-orange-400 transition-shadow shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-orange-700 focus:border-b-0"
       >
         Cari Universitas
       </button>
