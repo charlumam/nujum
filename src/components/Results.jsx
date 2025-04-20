@@ -124,7 +124,7 @@ export default function Results({ universities, totalEligible }) {
         <div className="flex items-center">
           {/* Sort Dropdown */}
           <label className="text-gray-700 text-sm flex items-center gap-1">
-            Tingkat Penerimaan
+            Persentase Diterima
             <select
               value={sortOrder}
               onChange={e => setSortOrder(e.target.value)}
