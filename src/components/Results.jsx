@@ -14,7 +14,8 @@ export default function Results({ universities, totalEligible }) {
         uniName: u.name,
         city: u.city, // Include city
         nama: p.nama,
-        admissionRate: p.admissionRate // Include admissionRate
+        admissionRate: p.admissionRate, // Include admissionRate
+        cutoffScore: p.cutoffScore // Include cutoffScore
       }))
     );
 
@@ -151,6 +152,7 @@ export default function Results({ universities, totalEligible }) {
           <div className="grid gap-3 grid-cols-1 sm:grid-cols-2">
             {displayed.map((item, idx) => {
               const admissionPercentage = item.admissionRate * 100;
+              const cutoffScore = item.cutoffScore;  // get cutoffScore
               let textColorClass = 'text-green-600';
               if (admissionPercentage <= 10) {
                 textColorClass = 'text-red-600';
@@ -165,12 +167,15 @@ export default function Results({ universities, totalEligible }) {
                 >
                   <h3 className="font-semibold text-indigo-600 text-sm sm:text-base">{item.uniName}</h3>
                   <p className="text-xs text-gray-500">{item.city}</p>
-                  <p className="text-xs sm:text-sm text-gray-700 mt-1 mb-6">{item.nama}</p>
+                  <p className="text-xs sm:text-sm text-gray-700 mt-1 mb-10">
+                    {item.nama}
+                  </p>
                   <div className="absolute bottom-2 right-2 text-right">
-                    <span className="text-xs font-medium text-gray-500">Tingkat Penerimaan:</span>
-                    <span className={`text-xs font-bold ${textColorClass} ml-1`}>
-                      {admissionPercentage.toFixed(2)}%
-                    </span>
+                    <span className="text-xs font-medium text-gray-500">Passing Grade:</span>
+                    <span className={`text-xs font-bold ${textColorClass} ml-1`}>{cutoffScore}</span>
+                    <br />
+                    <span className="text-xs font-medium text-gray-500">Persentase Diterima:</span>
+                    <span className={`text-xs font-bold ${textColorClass} ml-1`}>{admissionPercentage.toFixed(2)}%</span>
                   </div>
                 </div>
               );

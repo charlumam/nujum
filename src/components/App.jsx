@@ -36,35 +36,6 @@ const allUnis = allData.map(data => {
 // Calculate the total number of programs across all universities
 const totalPrograms = allUnis.reduce((sum, uni) => sum + uni.prodi.length, 0);
 
-// More accurate approximation for Percentile to Z-score (Inverse Normal CDF)
-// Based on Abramowitz and Stegun formula 26.2.23
-function percentileToZScore(p) {
-    if (p <= 0) return -Infinity;
-    if (p >= 1) return Infinity;
-    if (p === 0.5) return 0;
-
-    // Constants for the approximation
-    const c0 = 2.515517;
-    const c1 = 0.802853;
-    const c2 = 0.010328;
-    const d1 = 1.432788;
-    const d2 = 0.189269;
-    const d3 = 0.001308;
-
-    let t;
-    if (p < 0.5) {
-        t = Math.sqrt(-2.0 * Math.log(p));
-        const numerator = c0 + c1 * t + c2 * t * t;
-        const denominator = 1 + d1 * t + d2 * t * t + d3 * t * t * t;
-        return -(numerator / denominator);
-    } else {
-        t = Math.sqrt(-2.0 * Math.log(1.0 - p));
-        const numerator = c0 + c1 * t + c2 * t * t;
-        const denominator = 1 + d1 * t + d2 * t * t + d3 * t * t * t;
-        return numerator / denominator;
-    }
-}
-
 // Constants and functions for new UTBK cut-off algorithm
 const MEAN = 500;        // national mean per sub-test
 const STD  = 100;        // national standard deviation
@@ -144,19 +115,23 @@ export default function App() {
         const validAdmissionRate = Math.min(admissionRate, 1.0);
 
         let meetsCutoff = false;
-        // If admission rate is 100%, everyone qualifies (percentile 0)
+        let cutoffScore = 0;  // initialize cutoff score
+
         if (validAdmissionRate >= 1.0) {
-            meetsCutoff = true; // Cutoff is effectively lowest possible score
+          meetsCutoff = true;
+          cutoffScore = 0; // everyone qualifies
         } else {
-            // Calculate UTBK cut-off score using new algorithm
-            const { required: cutoffScore } = getRequiredAverage(MEAN, STD, validAdmissionRate);
-            meetsCutoff = userAverageScore >= cutoffScore;
+          const { required } = getRequiredAverage(MEAN, STD, validAdmissionRate);
+          cutoffScore = required;
+          meetsCutoff = userAverageScore >= cutoffScore;
         }
 
         // console.log(`${uni.name} - ${prodi.nama}: Seats=${seats}, Applicants=${applicants}, Rate=${admissionRate.toFixed(4)}, Percentile=${requiredPercentile.toFixed(4)}, Z=${zScore.toFixed(2)}, Cutoff=${cutoffScore.toFixed(2)}`);
 
         // Return prodi object with admissionRate if it meets the cutoff, otherwise null
-        return meetsCutoff ? { ...prodi, admissionRate: validAdmissionRate } : null;
+        return meetsCutoff
+          ? { ...prodi, admissionRate: validAdmissionRate, cutoffScore: Number(cutoffScore.toFixed(2)) }
+          : null;
       }).filter(prodi => prodi !== null); // Filter out null (ineligible) programs
 
       // Return university only if it has eligible programs
