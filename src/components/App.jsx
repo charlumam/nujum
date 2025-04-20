@@ -2,39 +2,12 @@ import React, { useState } from 'react';
 import ScoreForm from './ScoreForm.jsx';
 import Results from './Results.jsx';
 
-// load all JSON data under data/ptn on component initialization using Vite glob with eager option
-const modules = import.meta.glob('../data/ptn/**/*.json', { eager: true, as: 'json' });
-const allData = Object.values(modules);
+// Lazy load JSON modules only when user searches
+const modules = import.meta.glob('../data/ptn/**/*.json', { as: 'json' });
 
 // Helper function to safely access nested properties
-const safeGet = (obj, path, defaultValue = 0) => {
-  return path.reduce((acc, key) => (acc && acc[key] !== undefined ? acc[key] : defaultValue), obj);
-};
 
-// Preprocess university data to include necessary fields
-const allUnis = allData.map(data => {
-  const info = data.informasi_universitas;
-  const prodiList = (data.daftar_prodi || []).map(p => {
-    const sebaranData = p['SEBARAN DATA'] || {};
-    const dayaTampung = sebaranData['Daya Tampung'] || {};
-    const jumlahPeminat = sebaranData['Jumlah Peminat'] || {};
-
-    return {
-      nama: p.NAMA,
-      dayaTampung2025: Number(dayaTampung['2025']) || 0, // Use 2025 data
-      peminat2024: Number(jumlahPeminat['2024']) || 0, // Use 2024 data (last year)
-    };
-  }).filter(p => p.nama); // Ensure program has a name
-
-  return {
-    name: info?.['Nama Universitas'],
-    city: info?.['Kab/Kota'], // Add city information
-    prodi: prodiList
-  };
-}).filter(u => u.name && u.prodi.length > 0); // Ensure university has a name and programs
-
-// Calculate the total number of programs across all universities
-const totalPrograms = allUnis.reduce((sum, uni) => sum + uni.prodi.length, 0);
+// Note: JSON data will be dynamically loaded and preprocessed in handleScoresSubmit
 
 // Constants and functions for new UTBK cut-off algorithm
 const MEAN = 500;        // national mean per sub-test
@@ -81,11 +54,37 @@ export default function App() {
   const [finalScore, setFinalScore] = useState(null); // Add state for final score
   const [totalEligible, setTotalEligible] = useState(0); // Add state for total eligible count
   const [inputScores, setInputScores] = useState(null); // Add state to preserve user input scores
+  const [totalPrograms, setTotalPrograms] = useState(0); // Track total programs count after load
 
-  const handleScoresSubmit = (scores) => {
+  const handleScoresSubmit = async (scores) => {
     // Save the input scores
     setInputScores(scores);
     
+    // Lazy-load all JSON and preprocess university data
+    const modulesData = await Promise.all(
+      Object.values(modules).map(loader => loader())
+    );
+    const allUnis = modulesData.map(data => {
+      const info = data.informasi_universitas;
+      const prodiList = (data.daftar_prodi || []).map(p => {
+        const sebaranData = p['SEBARAN DATA'] || {};
+        const dayaTampung = sebaranData['Daya Tampung'] || {};
+        const jumlahPeminat = sebaranData['Jumlah Peminat'] || {};
+        return {
+          nama: p.NAMA,
+          dayaTampung2025: Number(dayaTampung['2025']) || 0,
+          peminat2024: Number(jumlahPeminat['2024']) || 0,
+        };
+      }).filter(p => p.nama);
+      return {
+        name: info?.['Nama Universitas'],
+        city: info?.['Kab/Kota'],
+        prodi: prodiList
+      };
+    }).filter(u => u.name && u.prodi.length > 0);
+    // Compute total programs
+    setTotalPrograms(allUnis.reduce((sum, uni) => sum + uni.prodi.length, 0));
+
     // Calculate user's average score
     const scoreValues = Object.values(scores).map(Number);
     const userAverageScore = scoreValues.reduce((sum, score) => sum + score, 0) / scoreValues.length;
@@ -100,6 +99,7 @@ export default function App() {
 
     console.log('User Average Score:', userAverageScore);
 
+    // Filter programs based on cutoff
     const filteredUnis = allUnis.map(uni => {
       const eligibleProdi = uni.prodi.map(prodi => { // Use map instead of filter to keep admissionRate
         const seats = prodi.dayaTampung2025;
@@ -125,8 +125,6 @@ export default function App() {
           cutoffScore = required;
           meetsCutoff = userAverageScore >= cutoffScore;
         }
-
-        // console.log(`${uni.name} - ${prodi.nama}: Seats=${seats}, Applicants=${applicants}, Rate=${admissionRate.toFixed(4)}, Percentile=${requiredPercentile.toFixed(4)}, Z=${zScore.toFixed(2)}, Cutoff=${cutoffScore.toFixed(2)}`);
 
         // Return prodi object with admissionRate if it meets the cutoff, otherwise null
         return meetsCutoff
