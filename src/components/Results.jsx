@@ -23,19 +23,19 @@ export default function Results({ universities, totalEligible }) {
     if (filterUniName) {
       const keywords = filterUniName.toLowerCase().split(',').map(k => k.trim()).filter(Boolean);
       flatItems = flatItems.filter(item =>
-        keywords.every(k => item.uniName.toLowerCase().includes(k))
+        keywords.some(k => item.uniName.toLowerCase().includes(k))
       );
     }
     if (filterCity) {
       const keywords = filterCity.toLowerCase().split(',').map(k => k.trim()).filter(Boolean);
       flatItems = flatItems.filter(item =>
-        keywords.every(k => item.city?.toLowerCase().includes(k))
+        keywords.some(k => item.city?.toLowerCase().includes(k))
       );
     }
     if (filterProdiName) {
       const keywords = filterProdiName.toLowerCase().split(',').map(k => k.trim()).filter(Boolean);
       flatItems = flatItems.filter(item =>
-        keywords.every(k => item.nama.toLowerCase().includes(k))
+        keywords.some(k => item.nama.toLowerCase().includes(k))
       );
     }
 
