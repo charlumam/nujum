@@ -104,7 +104,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
                 type="text"
                 inputMode="numeric"
                 name={key} value={scores[key]} onChange={handleChange}
-                className="mt-1 block w-full bg-gray-50 text-base sm:text-lg px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 placeholder:text-center text-center"
+                className="mt-1 block w-full bg-gray-50 text-base sm:text-lg px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 placeholder:text-center text-center"
                 placeholder="0 - 1000"
               />
             </label>
@@ -125,7 +125,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
                   type="text"
                   inputMode="numeric"
                   name={key} value={scores[key]} onChange={handleChange}
-                  className="mt-1 block w-full bg-gray-50 text-base sm:text-lg px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 placeholder:text-center text-center"
+                  className="mt-1 block w-full bg-gray-50 text-base sm:text-lg px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 placeholder:text-center text-center"
                   placeholder="0 - 1000"
                 />
               </label>
@@ -140,7 +140,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
                 type="text"
                 inputMode="numeric"
                 name="penalaranMatematika" value={scores.penalaranMatematika} onChange={handleChange}
-                className="mt-1 block w-full bg-gray-50 text-base sm:text-lg px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500 placeholder:text-center text-center"
+                className="mt-1 block w-full bg-gray-50 text-base sm:text-lg px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 placeholder:text-center text-center"
                 placeholder="0 - 1000"
               />
             </label>
@@ -162,7 +162,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
             {totalEligible > 0 ? (
               <>
                 <p className="text-sm sm:text-base font-semibold text-orange-500">
-                  Kemu berpeluang besar masuk di <span className="font-bold underline">{totalEligible}</span> program studi.
+                  Kamu berpeluang besar masuk di <span className="font-bold underline">{totalEligible}</span> program studi.
                 </p>
                 {/* Added mt-1 for spacing */}
                 <p className="text-xs sm:text-sm text-orange-500 mt-1 sm:mt-2">
@@ -188,7 +188,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
 
       <button
         type="submit"
-        className="w-full py-2 sm:py-3 bg-orange-500 border-b-3 border-orange-700 text-white text-base sm:text-lg font-semibold rounded-lg hover:bg-orange-400 transition-shadow shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-orange-700 focus:border-b-0"
+        className="w-full py-2 sm:py-3 bg-orange-500 border-b-3 border-orange-700 text-white text-base sm:text-lg font-semibold rounded-lg hover:bg-orange-400 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-orange-700 focus:border-b-0"
       >
         Cari Universitas
       </button>
