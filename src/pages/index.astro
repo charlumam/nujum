@@ -17,5 +17,151 @@ import "../styles/global.css";
   </head>
   <body class="bg-gray-100 min-h-screen py-8">
     <App client:load />
+
+    <div class="container mx-auto px-4 mt-12">
+      <h2 class="text-2xl font-bold mb-4 text-center text-gray-700">
+        Tentang Nujum
+      </h2>
+      <div class="bg-white p-6 rounded-lg shadow mb-8 max-w-4xl mx-auto">
+        <p class="text-gray-600 mb-4">
+          Sebagai seseorang yang pernah berjuang melewati UTBK-SNBT pada tahun
+          2023, aku benar-benar paham banget susahnya mencari informasi akurat
+          tentang passing grade PTN yang kamu incar. Frustasi bener nggak sih?
+        </p>
+        <p class="text-gray-600 mb-4">
+          Kalau kamu coba cek situs resmi dari SNPMB, yang ada cuma data daya
+          tampung dan jumlah peminat. Padahal yang kita butuhkan adalah nilai
+          aman UTBK untuk masuk jurusan impian, kan? Terus kalau googling <i
+            >"passing grade universitas X"</i
+          >, yang muncul kebanyakan website gak jelas, banyak iklan, dan bikin
+          pusing.
+        </p>
+        <p class="text-gray-600 mb-4">
+          Disitulah aku harap Nujum akan membantu. Di sini kamu bisa langsung
+          cek passing grade universitas tujuanmu dengan mudah. Ada data lengkap
+          dari 145 PTN di Indonesia yang diambil langsung dari data resmi SNPMB.
+        </p>
+        <p class="text-gray-600">
+          Mau tahu nilai UTBK minimal untuk jurusan impianmu? Atau penasaran
+          dengan tingkat keketatan/acceptance rate di kampus tertentu? Semua
+          informasi itu bisa kamu temukan di sini.
+        </p>
+      </div>
+
+      <h2 class="text-2xl font-bold mb-4 text-center text-gray-700">
+        Mungkin Ditanyakan
+      </h2>
+      <div class="space-y-4 mb-8 max-w-2xl mx-auto">
+        <details class="bg-white p-4 rounded-lg shadow group">
+          <summary
+            class="font-semibold cursor-pointer text-gray-800 group-open:text-blue-600"
+          >
+            Kenapa diberi nama Nujum?
+          </summary>
+          <blockquote
+            class="mt-2 text-gray-600 border-l-4 border-blue-300 bg-blue-50 p-4"
+          >
+            <u
+              ><a
+                href="https://kbbi.web.id/nujum"
+                rel="nofollow"
+                aria-label="Website KBBI">nujum <i>/nu·jum/</i></a
+              ></u
+            >
+            <br /> Perbintangan untuk meramalkan (mengetahui) nasib orang dan sebagainya.
+          </blockquote>
+          <p class="mt-4 text-gray-600">
+            Sedangkan tujuan utama dari Nujum sendiri adalah
+            "meramalkan" kelulusan UTBK-SNBT berdasarkan rata-rata nilai try-out
+            atau nilai UTBK-SNBT tahun lalu pengguna-nya, menggunakan metode dan
+            data terbaik yang kita miliki.
+          </p>
+        </details>
+        <details class="bg-white p-4 rounded-lg shadow group">
+          <summary
+            class="font-semibold cursor-pointer text-gray-800 group-open:text-blue-600"
+          >
+            Bagaimana cara passing grade dihitung?
+          </summary>
+          <p class="mt-4 text-gray-600">
+            Passing grade dihitung menggunakan pendekatan statistik berdasarkan
+            distribusi nilai yang menyerupai kurva normal, dimana mayoritas
+            peserta memiliki nilai rata-rata, yaitu <code
+              class="font-mono text-sm bg-gray-200 px-1 rounded">500</code
+            > untuk UTBK-SNBT, dan semakin sedikit pula peserta yang dapat nilai
+            sangat tinggi atau sangat rendah.
+          </p>
+          <p class="mt-4 text-gray-600">
+            Untuk menentukan passing grade kita perlu mencari cutoff score yang
+            memisahkan peserta yang lolos dari yang tidak. Hal ini dapat
+            dilakukan dengan menghitung persentil yang sesuai dengan tingkat
+            keketatan. Misalnya, jika tingkat keketatan adalah <code
+              class="font-mono text-sm bg-gray-200 px-1 rounded">0.42%</code
+            >, kita mencari nilai di persentil ke-<code
+              class="font-mono text-sm bg-gray-200 px-1 rounded">99.58</code
+            >.
+          </p>
+          <p class="mt-4 text-gray-600">
+            Dalam statistika, <code
+              class="font-mono text-sm bg-gray-200 px-1 rounded">z-score</code
+            > dipakai untuk mewakili posisi relatif suatu nilai dalam distribusi
+            normal.
+            <code class="font-mono text-sm bg-gray-200 px-1 rounded"
+              >Z-score</code
+            > mengukur berapa banyak simpangan baku (<code
+              class="font-mono text-sm bg-gray-200 px-1 rounded">σ</code
+            >) sebuah nilai dari rata-rata (mean). Untuk mengubah persentil
+            menjadi
+            <code class="font-mono text-sm bg-gray-200 px-1 rounded"
+              >z-score</code
+            >, kita menggunakan fungsi invers dari Cumulative Distribution
+            Function. Nujum memakai algoritma aproksimasi rasional Acklam, yaitu
+            metode efisien untuk menghitung Inverse CDF tanpa perlu tabel besar
+            atau komputasi numerik berat. Untuk persentil
+            <code class="font-mono text-sm bg-gray-200 px-1 rounded"
+              >99.58%</code
+            >, metode ini menghasilkan <code
+              class="font-mono text-sm bg-gray-200 px-1 rounded">z ≈ 2.64</code
+            >.
+          </p>
+          <p class="mt-4 text-gray-600">
+            Terakhir, <code class="font-mono text-sm bg-gray-200 px-1 rounded"
+              >z-score</code
+            > dikonversi kembali ke skala skor UTBK menggunakan rumus: <code
+              class="font-mono text-sm bg-gray-200 px-1 rounded"
+              >Skor = mean + z × σ</code
+            >. Dengan asumsi nilai rata-rata nasional sebelumnya dan simpangan
+            baku (<code class="font-mono text-sm bg-gray-200 px-1 rounded"
+              >σ</code
+            >) sekitar <code class="font-mono text-sm bg-gray-200 px-1 rounded"
+              >100</code
+            >, maka passing grade bisa dihitung sebagai <code
+              class="font-mono text-sm bg-gray-200 px-1 rounded"
+              >500 + 2.64 × 100 ≈ 760</code
+            >
+          </p>
+        </details>
+        <details class="bg-white p-4 rounded-lg shadow group">
+          <summary
+            class="font-semibold cursor-pointer text-gray-800 group-open:text-blue-600"
+          >
+            Dari mana data diambil?
+          </summary>
+          <p class="mt-2 text-gray-600">
+            The data is compiled from publicly available sources and historical
+            data related to UTBK-SNBT passing grades. We strive to keep it
+            updated, but always cross-reference with official university
+            information.
+          </p>
+        </details>
+      </div>
+
+      <div class="text-center text-gray-500 text-sm">
+        <p>
+          Hak Cipta © 2025 Charda Lufthansa Umam | Dilisensikan di bawah
+          Lisensi MIT
+        </p>
+      </div>
+    </div>
   </body>
 </html>

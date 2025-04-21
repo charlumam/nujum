@@ -198,8 +198,8 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
                 </p>
                 {/* Added mt-1 for spacing */}
                 <p className="text-xs sm:text-sm text-blue-600 mt-1 sm:mt-2">
-                  Nilai kamu termasuk dalam top{' '}
-                  <span className="font-bold underline">{percentage}%</span>!
+                  Nilai kamu termasuk dalam {' '}
+                  <span className="font-bold underline">{percentage}%</span> teratas!
                 </p>
               </>
             ) : (
