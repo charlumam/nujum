@@ -86,7 +86,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
 
   return (
     <form onSubmit={handleSubmit} className="max-w-full mx-auto bg-white shadow-lg rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 space-y-4 sm:space-y-6">
-      <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800">Nujum | Passing Grade UTBK-SNBT</h2>
+      <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800">Nujum | Passing Grade UTBK & Masuk PTN</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
         {/* Test Potensi Skolastik */}
