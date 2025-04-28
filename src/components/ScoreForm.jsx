@@ -23,6 +23,9 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
   // New state to track if we're in "view all" mode
   const [viewAllMode, setViewAllMode] = useState(false);
 
+  // New state to track if all scores are set to maximum (1000)
+  const [allMaxScores, setAllMaxScores] = useState(false);
+
   // Use savedScores if available when component mounts or when savedScores changes
   useEffect(() => {
     if (savedScores) {
@@ -42,6 +45,10 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
     const scoreValues = Object.values(scores);
     const areAllFilled = scoreValues.every((v) => v !== '' && !isNaN(parseFloat(v)));
     const areAnyFilled = scoreValues.some((v) => v !== '' && !isNaN(parseFloat(v)));
+    
+    // Check if all scores are set to 1000
+    const areAllMax = areAllFilled && scoreValues.every(v => parseFloat(v) === 1000);
+    setAllMaxScores(areAllMax);
     
     setAllInputsFilled(areAllFilled);
     setAnyInputFilled(areAnyFilled);
@@ -151,7 +158,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
               name={key}
               value={scores[key]}
               onChange={handleChange}
-              className="mt-1 max-w-80 mx-auto block w-full bg-gray-50 text-base sm:text-lg text-gray-700 px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center placeholder:text-gray-500"
+              className="mt-1 max-w-80 mx-auto block w-full bg-gray-50 text-base sm:text-lg text-gray-700 px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center placeholder:text-gray-500"
               placeholder="0 - 1000"
             />
           </label>
@@ -178,7 +185,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
             name={key}
             value={scores[key]}
             onChange={handleChange}
-            className="mt-1 max-w-80 mx-auto block w-full bg-gray-50 text-base sm:text-lg text-gray-700 px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center placeholder:text-gray-500"
+            className="mt-1 max-w-80 mx-auto block w-full bg-gray-50 text-base sm:text-lg text-gray-700 px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center placeholder:text-gray-500"
             placeholder="0 - 1000"
               />
             </label>
@@ -199,7 +206,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
               name="penalaranMatematika"
               value={scores.penalaranMatematika}
               onChange={handleChange}
-              className="mt-1 max-w-80 mx-auto block w-full bg-gray-50 text-base sm:text-lg text-gray-700 px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center placeholder:text-gray-500"
+              className="mt-1 max-w-80 mx-auto block w-full bg-gray-50 text-base sm:text-lg text-gray-700 px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center placeholder:text-gray-500"
               placeholder="0 - 1000"
             />
           </label>
@@ -269,7 +276,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
         type="submit"
         className="w-full py-2 sm:py-3 bg-gradient-to-t from-blue-500 to-blue-700 border-b-4 border-blue-800 text-white text-base sm:text-lg font-semibold rounded-lg hover:opacity-70 focus:outline-none focus:border-none"
       >
-        {allInputsFilled ? 'Cek Passing Grade' : 'Lihat Semua Passing Grade'}
+        {allMaxScores ? 'Lihat Semua Passing Grade' : (allInputsFilled ? 'Cek Passing Grade' : 'Lihat Semua Passing Grade')}
       </button>
     </form>
   );
