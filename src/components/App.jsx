@@ -62,9 +62,15 @@ export default function App() {
     
     // Lazy-load all JSON and preprocess university data
     const modulesData = await Promise.all(
-      Object.values(modules).map(loader => loader())
+      Object.entries(modules).map(async ([path, loader]) => {
+        const data = await loader();
+        // Extract university type from path: '../data/ptn/{type}/...'
+        const match = path.match(/ptn\\(akademik|kin|vokasi)\\/i) || path.match(/ptn\/(akademik|kin|vokasi)\//i);
+        const universityType = match ? match[1].toLowerCase() : 'akademik';
+        return { data, universityType };
+      })
     );
-    const allUnis = modulesData.map(data => {
+    const allUnis = modulesData.map(({ data, universityType }) => {
       const info = data.informasi_universitas;
       const prodiList = (data.daftar_prodi || []).map(p => {
         const sebaranData = p['SEBARAN DATA'] || {};
@@ -79,7 +85,8 @@ export default function App() {
       return {
         name: info?.['Nama Universitas'],
         city: info?.['Kab/Kota'],
-        prodi: prodiList
+        prodi: prodiList,
+        universityType // <-- add type here
       };
     }).filter(u => u.name && u.prodi.length > 0);
     // Compute total programs

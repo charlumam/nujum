@@ -6,6 +6,9 @@ export default function Results({ universities, totalEligible }) {
   const [filterUniName, setFilterUniName] = useState('');
   const [filterCity, setFilterCity] = useState('');
   const [filterProdiName, setFilterProdiName] = useState(''); // Add state for Prodi filter
+  const [selectedTypes, setSelectedTypes] = useState(['akademik', 'kin', 'vokasi']);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const typeLabels = { akademik: 'Akademik', kin: 'KIN', vokasi: 'Vokasi' };
 
   // flatten all university-program entries, filter, and sort based on state
   const items = useMemo(() => {
@@ -15,9 +18,13 @@ export default function Results({ universities, totalEligible }) {
         city: u.city, // Include city
         nama: p.nama,
         admissionRate: p.admissionRate, // Include admissionRate
-        cutoffScore: p.cutoffScore // Include cutoffScore
+        cutoffScore: p.cutoffScore, // Include cutoffScore
+        universityType: u.universityType // <-- add type for filtering
       }))
     );
+
+    // University type filter
+    flatItems = flatItems.filter(item => selectedTypes.includes(item.universityType));
 
     // Apply filters
     if (filterUniName) {
@@ -48,7 +55,7 @@ export default function Results({ universities, totalEligible }) {
       }
     });
     return flatItems;
-  }, [universities, sortOrder, filterUniName, filterCity, filterProdiName]); // Add filterProdiName dependency
+  }, [universities, sortOrder, filterUniName, filterCity, filterProdiName, selectedTypes]); // Add filterProdiName dependency
 
   // Calculate total based on filtered items
   const total = items.length;
@@ -71,6 +78,43 @@ export default function Results({ universities, totalEligible }) {
     <div className="h-full space-y-2 sm:space-y-3">
       {/* Filter Row */}
       <div className="flex flex-col gap-1">
+        {/* University Type Dropdown Filter */}
+        <div className="relative mb-1">
+          <button
+            type="button"
+            className="border rounded px-2 py-1.5 text-sm bg-gray-50 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 flex items-baseline gap-2 hover:bg-blue-50 transition"
+            onClick={() => setDropdownOpen(v => !v)}
+            aria-haspopup="listbox"
+            aria-expanded={dropdownOpen}
+          >
+            <span className="flex items-center gap-2">
+              <span className="font-medium text-gray-700">Tipe Perguruan Tinggi</span>
+              <svg className={`w-4 h-4 text-gray-700 transition-transform ${dropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+            </span>
+            <span className="text-xs text-gray-500">{selectedTypes.length === 3 ? 'Semua' : selectedTypes.map(t => typeLabels[t]).join(', ')}</span>
+          </button>
+          {dropdownOpen && (
+            <div className="absolute z-20 mt-1 bg-white border border-gray-200 rounded shadow-lg p-2 flex flex-col gap-1 min-w-[180px] animate-fade-in">
+              {Object.entries(typeLabels).map(([type, label]) => (
+                <label key={type} className="flex items-center gap-2 text-sm px-2 py-1 rounded hover:bg-blue-50 cursor-pointer transition">
+                  <input
+                    type="checkbox"
+                    checked={selectedTypes.includes(type)}
+                    onChange={e => {
+                      if (e.target.checked) {
+                        setSelectedTypes(prev => [...prev, type]);
+                      } else {
+                        setSelectedTypes(prev => prev.filter(t => t !== type));
+                      }
+                    }}
+                    className="accent-blue-600 focus:ring-2 focus:ring-blue-400"
+                  />
+                  <span className="text-gray-700">{label}</span>
+                </label>
+              ))}
+            </div>
+          )}
+        </div>
         <input
           type="text"
           placeholder="Filter Nama Universitas..."
