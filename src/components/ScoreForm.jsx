@@ -13,6 +13,12 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
   });
   // Local score state for immediate feedback *before* submission
   const [localFinalScore, setLocalFinalScore] = useState(null);
+  
+  // New state to track if all inputs are filled
+  const [allInputsFilled, setAllInputsFilled] = useState(false);
+  
+  // New state to track if we're in "view all" mode
+  const [viewAllMode, setViewAllMode] = useState(false);
 
   // Use savedScores if available when component mounts or when savedScores changes
   useEffect(() => {
@@ -21,13 +27,21 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
         Object.entries(savedScores).map(([key, value]) => [key, String(value)]),
       );
       setScores(formattedScores);
+      
+      // Check if we're in view all mode by seeing if all scores are 1000
+      const isViewAllMode = Object.values(savedScores).every(score => score === 1000);
+      setViewAllMode(isViewAllMode);
     }
   }, [savedScores]);
 
   // Calculate local final score whenever scores change
   useEffect(() => {
     const scoreValues = Object.values(scores);
-    if (scoreValues.every((v) => v !== '' && !isNaN(parseFloat(v)))) {
+    const areAllFilled = scoreValues.every((v) => v !== '' && !isNaN(parseFloat(v)));
+    
+    setAllInputsFilled(areAllFilled);
+    
+    if (areAllFilled) {
       const numericScores = scoreValues.map((v) => parseFloat(v));
       const sum = numericScores.reduce((acc, curr) => acc + curr, 0);
       const average = sum / numericScores.length;
@@ -75,10 +89,22 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (Object.values(scores).some((v) => v === '')) {
-      alert('Harap isi semua skor.');
+    
+    // If inputs are not all filled, submit with empty values to show all programs
+    if (!allInputsFilled) {
+      // Create an object with all scores set to a high value to ensure all programs are returned
+      const allProgramsScores = Object.keys(scores).reduce((obj, key) => {
+        obj[key] = 1000; // Use high score to ensure all programs are returned
+        return obj;
+      }, {});
+      
+      setViewAllMode(true); // Set view all mode to true
+      onSubmit(allProgramsScores);
       return;
     }
+    
+    // Original behavior for when all inputs are filled
+    setViewAllMode(false); // Ensure view all mode is false
     const numeric = Object.fromEntries(
       Object.entries(scores).map(([k, v]) => [k, Number(v)]),
     );
@@ -174,8 +200,8 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
           </div>
         </div>
 
-        {/* Display Final Score and Eligibility Info ONLY AFTER submission */}
-      {propFinalScore !== null && (
+        {/* Display Final Score and Eligibility Info ONLY AFTER submission and NOT in view all mode */}
+      {propFinalScore !== null && !viewAllMode && (
         <div className="text-center mt-3 mb-3 p-3 sm:p-4 bg-blue-50 rounded-lg border border-blue-200 space-y-1 sm:space-y-2">
           {/* Display the final score passed from App.jsx */}
           <div>
@@ -211,8 +237,8 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
         </div>
       )}
 
-      {/* Display local score calculation *before* submission for feedback */}
-      {propFinalScore === null && localFinalScore !== null && (
+      {/* Display local score calculation *before* submission for feedback - only when not in view all mode */}
+      {propFinalScore === null && localFinalScore !== null && !viewAllMode && (
         <div className="text-center mt-3 mb-3 p-2 sm:p-3 bg-gray-50 rounded-lg border border-gray-200">
           <p className="text-sm sm:text-md font-medium text-gray-600">
             Nilai rata-rata sementara:
@@ -223,11 +249,20 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
         </div>
       )}
 
+      {/* When in view all mode and results are shown, display info message */}
+      {viewAllMode && propFinalScore !== null && (
+        <div className="text-center mt-3 mb-3 p-3 sm:p-4 bg-blue-50 rounded-lg border border-blue-200">
+          <p className="text-sm sm:text-base font-medium text-blue-600">
+            Menampilkan semua {totalPrograms} program studi
+          </p>
+        </div>
+      )}
+
       <button
         type="submit"
         className="w-full py-2 sm:py-3 bg-blue-600 border-b-4 border-blue-800 text-white text-base sm:text-lg font-semibold rounded-lg hover:bg-blue-500 focus:outline-none focus:border-none"
       >
-        Cek Passing Grade
+        {allInputsFilled ? 'Cek Passing Grade' : 'Lihat Semua Nilai'}
       </button>
     </form>
   );
