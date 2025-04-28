@@ -17,6 +17,9 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
   // New state to track if all inputs are filled
   const [allInputsFilled, setAllInputsFilled] = useState(false);
   
+  // New state to track if any inputs are filled
+  const [anyInputFilled, setAnyInputFilled] = useState(false);
+  
   // New state to track if we're in "view all" mode
   const [viewAllMode, setViewAllMode] = useState(false);
 
@@ -38,11 +41,15 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
   useEffect(() => {
     const scoreValues = Object.values(scores);
     const areAllFilled = scoreValues.every((v) => v !== '' && !isNaN(parseFloat(v)));
+    const areAnyFilled = scoreValues.some((v) => v !== '' && !isNaN(parseFloat(v)));
     
     setAllInputsFilled(areAllFilled);
+    setAnyInputFilled(areAnyFilled);
     
-    if (areAllFilled) {
-      const numericScores = scoreValues.map((v) => parseFloat(v));
+    if (areAnyFilled) {
+      // Filter out empty values and calculate average based on filled inputs only
+      const filledScores = scoreValues.filter((v) => v !== '' && !isNaN(parseFloat(v)));
+      const numericScores = filledScores.map((v) => parseFloat(v));
       const sum = numericScores.reduce((acc, curr) => acc + curr, 0);
       const average = sum / numericScores.length;
       setLocalFinalScore(average.toFixed(2));
@@ -238,7 +245,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
       )}
 
       {/* Display local score calculation *before* submission for feedback - only when not in view all mode */}
-      {propFinalScore === null && localFinalScore !== null && !viewAllMode && (
+      {propFinalScore === null && localFinalScore !== null && anyInputFilled && !viewAllMode && (
         <div className="text-center mt-3 mb-3 p-2 sm:p-3 bg-gray-50 rounded-lg border border-gray-200">
           <p className="text-sm sm:text-md font-medium text-gray-600">
             Nilai rata-rata sementara:
