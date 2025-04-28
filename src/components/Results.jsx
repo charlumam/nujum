@@ -242,7 +242,7 @@ export default function Results({ universities, totalEligible }) {
               {pageIndex > 0 && (
                 <button
                   onClick={() => setPageIndex(prev => prev - 1)}
-                  className="bg-stone-500 border-b-3 border-stone-600 text-white px-2 py-1 text-xs sm:text-sm rounded font-semibold hover:bg-stone-400 focus:outline-none focus:border-none"
+                  className="bg-gradient-to-t from-stone-500 to-stone-700 border-b-3 border-stone-800 text-white px-2 py-1 text-xs sm:text-sm rounded font-semibold hover:opacity-70 focus:outline-none focus:border-none"
                 >
                   Sebelumnya
                 </button>
@@ -253,7 +253,7 @@ export default function Results({ universities, totalEligible }) {
               {end < total && (
                 <button
                   onClick={() => setPageIndex(prev => prev + 1)}
-                  className="bg-blue-600 border-b-3 border-blue-800 text-white px-2 py-1 text-xs sm:text-sm rounded font-semibold hover:bg-blue-500 focus:outline-none focus:border-none"
+                  className="bg-gradient-to-t from-blue-500 to-blue-700 border-b-3 border-blue-800 text-white px-2 py-1 text-xs sm:text-sm rounded font-semibold hover:opacity-70 focus:outline-none focus:border-none"
                 >
                   Berikutnya
                 </button>

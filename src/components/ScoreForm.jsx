@@ -260,9 +260,9 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
 
       <button
         type="submit"
-        className="w-full py-2 sm:py-3 bg-blue-600 border-b-4 border-blue-800 text-white text-base sm:text-lg font-semibold rounded-lg hover:bg-blue-500 focus:outline-none focus:border-none"
+        className="w-full py-2 sm:py-3 bg-gradient-to-t from-blue-500 to-blue-700 border-b-4 border-blue-800 text-white text-base sm:text-lg font-semibold rounded-lg hover:opacity-70 focus:outline-none focus:border-none"
       >
-        {allInputsFilled ? 'Cek Passing Grade' : 'Lihat Semua Nilai'}
+        {allInputsFilled ? 'Cek Passing Grade' : 'Lihat Semua Program Studi'}
       </button>
     </form>
   );
