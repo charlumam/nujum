@@ -131,10 +131,10 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
       className="max-w-full mx-auto bg-white shadow-lg rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 space-y-4 sm:space-y-6"
     >
       {/* Add mb-1 to reduce space below this heading */}
-        <h1 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-700 mb-1">
-          Nujum | Passing Grade UTBK-SNBT
+        <h1 className="text-md sm:text-lg md:text-lg font-semibold text-gray-700 mb-1">
+          Nujum | Passing Grade & Kelulusan UTBK-SNBT
         </h1>
-        <h2 className="italic text-base font-semibold text-gray-700">Edisi 2025</h2>
+        <h2 className="text-sm sm:text-md md:text-base italic text-base font-semibold text-gray-700">Edisi 2025</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
           {/* Test Potensi Skolastik */}
