@@ -180,7 +180,7 @@ export default function Results({ universities, totalEligible }) {
           placeholder="Filter Nama Universitas..."
           value={filterUniName}
           onChange={e => setFilterUniName(e.target.value)}
-          className="border rounded px-2 py-1.5 text-sm flex-1 border-gray-300 bg-gray-50 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-gray-500"
+          className="border rounded px-2 py-1.5 text-sm flex-1 border-gray-300 bg-gray-50 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600 hover:bg-blue-50 placeholder:text-gray-500"
         />
         <div className="flex flex-col gap-1">
           <input
@@ -188,14 +188,14 @@ export default function Results({ universities, totalEligible }) {
             placeholder="Filter Kab/Kota..."
             value={filterCity}
             onChange={e => setFilterCity(e.target.value)}
-            className="border rounded px-2 py-1.5 text-sm flex-1 border-gray-300 bg-gray-50 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-gray-500"
+            className="border rounded px-2 py-1.5 text-sm flex-1 border-gray-300 bg-gray-50 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600 hover:bg-blue-50 placeholder:text-gray-500"
           />
           <input
             type="text"
             placeholder="Filter Program Studi..."
             value={filterProdiName}
             onChange={e => setFilterProdiName(e.target.value)}
-            className="border rounded px-2 py-1.5 text-sm flex-1 border-gray-300 bg-gray-50 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-gray-500"
+            className="border rounded px-2 py-1.5 text-sm flex-1 border-gray-300 bg-gray-50 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600 hover:bg-blue-50 placeholder:text-gray-500"
           />
         </div>
       </div>
@@ -213,7 +213,7 @@ export default function Results({ universities, totalEligible }) {
                   const newSize = Number(e.target.value);
                   setPageSize(newSize);
                 }}
-                className="border rounded px-2 py-0.5 text-sm border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600 appearance-none pr-6 peer shadow-none"
+                className="border rounded px-2 py-0.5 text-sm border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600 appearance-none pr-6 peer hover:bg-blue-50 shadow-none"
               >
                 {[10, 20, 50].map(n => (
                   <option key={n} value={n}>
@@ -237,7 +237,7 @@ export default function Results({ universities, totalEligible }) {
               <select
                 value={sortOrder}
                 onChange={e => setSortOrder(e.target.value)}
-                className="border rounded px-2 py-0.5 text-sm border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600 appearance-none pr-6 peer shadow-none"
+                className="border rounded px-2 py-0.5 text-sm border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600 appearance-none pr-6 peer hover:bg-blue-50 shadow-none"
               >
                 <option value="asc">Rendah ke Tinggi</option>
                 <option value="desc">Tinggi ke Rendah</option>
