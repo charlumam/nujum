@@ -143,7 +143,7 @@ export default function Results({ universities, totalEligible }) {
           {filterUniName || filterCity || filterProdiName ? (
             <p className="text-base">Tidak ada hasil yang cocok dengan filter Anda.</p>
           ) : (
-            <p className="text-base">Belum ada program studi yang sesuai dengan skor Anda.</p>
+            <p className="text-base">Belum ada program studi yang sesuai dengan kriteria Anda.</p>
           )}
         </div>
       ) : (
@@ -167,7 +167,7 @@ export default function Results({ universities, totalEligible }) {
                     key={start + idx}
                     className="bg-white rounded-lg p-3 shadow-md hover:shadow-lg transition-shadow relative"
                   >
-                    <h3 className="font-semibold text-blue-600 text-sm sm:text-base">{item.uniName}</h3>
+                    <h3 className="font-semibold text-gray-700 text-sm sm:text-base">{item.uniName}</h3>
                     <p className="text-xs text-gray-500">{item.city}</p>
                     <p className="text-xs sm:text-sm text-gray-700 mt-1 mb-10">
                       {item.nama}

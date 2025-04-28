@@ -91,90 +91,90 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
       className="max-w-full mx-auto bg-white shadow-lg rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 space-y-4 sm:space-y-6"
     >
       {/* Add mb-1 to reduce space below this heading */}
-      <h1 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-800 mb-1">
-        Nujum | Passing Grade UTBK-SNBT
-      </h1>
-      <h2 className="italic text-base font-semibold text-gray-800">Edisi 2025</h2>
+        <h1 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-700 mb-1">
+          Nujum | Passing Grade UTBK-SNBT
+        </h1>
+        <h2 className="italic text-base font-semibold text-gray-700">Edisi 2025</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-        {/* Test Potensi Skolastik */}
-        <div className="space-y-3">
-          <h3 className="text-base sm:text-lg md:text-xl font-semibold text-blue-600 border-b-2 border-blue-100 pb-1 sm:pb-2">
-            Tes Potensi Skolastik
-          </h3>
-          {[
-            ['penalaranUmum', 'Kemampuan Penalaran Umum'],
-            ['kuantitatif', 'Kemampuan Kuantitatif'],
-            ['pemahamanUmum', 'Pengetahuan dan Pemahaman Umum'],
-            ['bacaanTulis', 'Kemampuan Memahami Bacaan dan Tulis'],
-          ].map(([key, label]) => (
-            <label key={key} className="block">
-              <span className="text-sm sm:text-base text-gray-700 font-medium">
-                {label}
-              </span>
-              <input
-                type="text"
-                inputMode="numeric"
-                name={key}
-                value={scores[key]}
-                onChange={handleChange}
-                className="mt-1 max-w-80 mx-auto block w-full bg-gray-50 text-base sm:text-lg px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center"
-                placeholder="0 - 1000"
-              />
-            </label>
-          ))}
-        </div>
-
-        {/* Test Literasi & Matematika */}
-        <div className="space-y-3 sm:space-y-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+          {/* Test Potensi Skolastik */}
           <div className="space-y-3">
             <h3 className="text-base sm:text-lg md:text-xl font-semibold text-blue-600 border-b-2 border-blue-100 pb-1 sm:pb-2">
-              Tes Literasi Bahasa
+          Tes Potensi Skolastik
             </h3>
             {[
-              ['bahasaIndonesia', 'Literasi Bahasa Indonesia'],
-              ['bahasaInggris', 'Literasi Bahasa Inggris'],
+          ['penalaranUmum', 'Kemampuan Penalaran Umum'],
+          ['kuantitatif', 'Kemampuan Kuantitatif'],
+          ['pemahamanUmum', 'Pengetahuan dan Pemahaman Umum'],
+          ['bacaanTulis', 'Kemampuan Memahami Bacaan dan Tulis'],
             ].map(([key, label]) => (
-              <label key={key} className="block">
-                <span className="text-sm sm:text-base text-gray-700 font-medium">
-                  {label}
-                </span>
-                <input
-                  type="text"
-                  inputMode="numeric"
-                  name={key}
-                  value={scores[key]}
-                  onChange={handleChange}
-                  className="mt-1 max-w-80 mx-auto block w-full bg-gray-50 text-base sm:text-lg px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center"
-                  placeholder="0 - 1000"
-                />
-              </label>
+          <label key={key} className="block">
+            <span className="text-sm sm:text-base text-gray-700 font-medium">
+              {label}
+            </span>
+            <input
+              type="text"
+              inputMode="numeric"
+              name={key}
+              value={scores[key]}
+              onChange={handleChange}
+              className="mt-1 max-w-80 mx-auto block w-full bg-gray-50 text-base sm:text-lg text-gray-700 px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center"
+              placeholder="0 - 1000"
+            />
+          </label>
             ))}
           </div>
 
-          <div className="space-y-3">
-            <h3 className="text-base sm:text-lg md:text-xl font-semibold text-blue-600 border-b-2 border-blue-100 pb-1 sm:pb-2">
-              Tes Penalaran Matematika
-            </h3>
-            <label className="block">
+          {/* Test Literasi & Matematika */}
+          <div className="space-y-3 sm:space-y-4">
+            <div className="space-y-3">
+          <h3 className="text-base sm:text-lg md:text-xl font-semibold text-blue-600 border-b-2 border-blue-100 pb-1 sm:pb-2">
+            Tes Literasi Bahasa
+          </h3>
+          {[
+            ['bahasaIndonesia', 'Literasi Bahasa Indonesia'],
+            ['bahasaInggris', 'Literasi Bahasa Inggris'],
+          ].map(([key, label]) => (
+            <label key={key} className="block">
               <span className="text-sm sm:text-base text-gray-700 font-medium">
-                Penalaran Matematika
+            {label}
               </span>
               <input
-                type="text"
-                inputMode="numeric"
-                name="penalaranMatematika"
-                value={scores.penalaranMatematika}
-                onChange={handleChange}
-                className="mt-1 max-w-80 mx-auto block w-full bg-gray-50 text-base sm:text-lg px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center"
-                placeholder="0 - 1000"
+            type="text"
+            inputMode="numeric"
+            name={key}
+            value={scores[key]}
+            onChange={handleChange}
+            className="mt-1 max-w-80 mx-auto block w-full bg-gray-50 text-base sm:text-lg text-gray-700 px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center"
+            placeholder="0 - 1000"
               />
             </label>
+          ))}
+            </div>
+
+            <div className="space-y-3">
+          <h3 className="text-base sm:text-lg md:text-xl font-semibold text-blue-600 border-b-2 border-blue-100 pb-1 sm:pb-2">
+            Tes Penalaran Matematika
+          </h3>
+          <label className="block">
+            <span className="text-sm sm:text-base text-gray-700 font-medium">
+              Penalaran Matematika
+            </span>
+            <input
+              type="text"
+              inputMode="numeric"
+              name="penalaranMatematika"
+              value={scores.penalaranMatematika}
+              onChange={handleChange}
+              className="mt-1 max-w-80 mx-auto block w-full bg-gray-50 text-base sm:text-lg text-gray-700 px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center"
+              placeholder="0 - 1000"
+            />
+          </label>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Display Final Score and Eligibility Info ONLY AFTER submission */}
+        {/* Display Final Score and Eligibility Info ONLY AFTER submission */}
       {propFinalScore !== null && (
         <div className="text-center mt-3 mb-3 p-3 sm:p-4 bg-blue-50 rounded-lg border border-blue-200 space-y-1 sm:space-y-2">
           {/* Display the final score passed from App.jsx */}
