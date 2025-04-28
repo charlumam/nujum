@@ -2,69 +2,51 @@ import React, { useState } from 'react';
 import ScoreForm from './ScoreForm.jsx';
 import Results from './Results.jsx';
 
-// load all JSON data under data/ptn on component initialization using Vite glob with eager option
-const modules = import.meta.glob('../data/ptn/**/*.json', { eager: true, as: 'json' });
-const allData = Object.values(modules);
+// Lazy load JSON modules only when user searches
+const modules = import.meta.glob('../data/ptn/**/*.json', { as: 'json' });
 
 // Helper function to safely access nested properties
-const safeGet = (obj, path, defaultValue = 0) => {
-  return path.reduce((acc, key) => (acc && acc[key] !== undefined ? acc[key] : defaultValue), obj);
-};
 
-// Preprocess university data to include necessary fields
-const allUnis = allData.map(data => {
-  const info = data.informasi_universitas;
-  const prodiList = (data.daftar_prodi || []).map(p => {
-    const sebaranData = p['SEBARAN DATA'] || {};
-    const dayaTampung = sebaranData['Daya Tampung'] || {};
-    const jumlahPeminat = sebaranData['Jumlah Peminat'] || {};
+// Note: JSON data will be dynamically loaded and preprocessed in handleScoresSubmit
 
-    return {
-      nama: p.NAMA,
-      dayaTampung2025: Number(dayaTampung['2025']) || 0, // Use 2025 data
-      peminat2024: Number(jumlahPeminat['2024']) || 0, // Use 2024 data (last year)
-    };
-  }).filter(p => p.nama); // Ensure program has a name
+// Constants and functions for new UTBK cut-off algorithm
+const MEAN = 500;        // national mean per sub-test
+const STD  = 100;        // national standard deviation
 
-  return {
-    name: info?.['Nama Universitas'],
-    city: info?.['Kab/Kota'], // Add city information
-    prodi: prodiList
-  };
-}).filter(u => u.name && u.prodi.length > 0); // Ensure university has a name and programs
-
-// Calculate the total number of programs across all universities
-const totalPrograms = allUnis.reduce((sum, uni) => sum + uni.prodi.length, 0);
-
-// More accurate approximation for Percentile to Z-score (Inverse Normal CDF)
-// Based on Abramowitz and Stegun formula 26.2.23
-function percentileToZScore(p) {
-    if (p <= 0) return -Infinity;
-    if (p >= 1) return Infinity;
-    if (p === 0.5) return 0;
-
-    // Constants for the approximation
-    const c0 = 2.515517;
-    const c1 = 0.802853;
-    const c2 = 0.010328;
-    const d1 = 1.432788;
-    const d2 = 0.189269;
-    const d3 = 0.001308;
-
-    let t;
-    if (p < 0.5) {
-        t = Math.sqrt(-2.0 * Math.log(p));
-        const numerator = c0 + c1 * t + c2 * t * t;
-        const denominator = 1 + d1 * t + d2 * t * t + d3 * t * t * t;
-        return -(numerator / denominator);
-    } else {
-        t = Math.sqrt(-2.0 * Math.log(1.0 - p));
-        const numerator = c0 + c1 * t + c2 * t * t;
-        const denominator = 1 + d1 * t + d2 * t * t + d3 * t * t * t;
-        return numerator / denominator;
-    }
+function invNorm(p) {
+  if (p <= 0 || p >= 1) throw RangeError("p must be in (0,1)");
+  const a1 = -3.969683028665376e+01, a2 = 2.209460984245205e+02, a3 = -2.759285104469687e+02,
+        a4 = 1.383577518672690e+02, a5 = -3.066479806614716e+01, a6 = 2.506628277459239e+00;
+  const b1 = -5.447609879822406e+01, b2 = 1.615858368580409e+02, b3 = -1.556989798598866e+02,
+        b4 = 6.680131188771972e+01, b5 = -1.328068155288572e+01;
+  const c1 = -7.784894002430293e-03, c2 = -3.223964580411365e-01, c3 = -2.400758277161838e+00,
+        c4 = -2.549732539343734e+00, c5 = 4.374664141464968e+00,  c6 = 2.938163982698783e+00;
+  const d1 = 7.784695709041462e-03,  d2 = 3.224671290700398e-01,  d3 = 2.445134137142996e+00,
+        d4 = 3.754408661907416e+00;
+  const pLow = 0.02425, pHigh = 1 - pLow;
+  let q, r;
+  if (p < pLow) {
+    q = Math.sqrt(-2 * Math.log(p));
+    return (((((c1*q + c2)*q + c3)*q + c4)*q + c5)*q + c6) /
+           ((((d1*q + d2)*q + d3)*q + d4)*q + 1);
+  }
+  if (p > pHigh) {
+    q = Math.sqrt(-2 * Math.log(1 - p));
+    return -(((((c1*q + c2)*q + c3)*q + c4)*q + c5)*q + c6) /
+             ((((d1*q + d2)*q + d3)*q + d4)*q + 1);
+  }
+  q = p - 0.5;
+  r = q * q;
+  return (((((a1*r + a2)*r + a3)*r + a4)*r + a5)*r + a6) * q /
+         (((((b1*r + b2)*r + b3)*r + b4)*r + b5)*r + 1);
 }
 
+function getRequiredAverage(mean, sigma, accRate) {
+  const p = 1 - accRate;
+  const z = invNorm(p);
+  const required = mean + z * sigma;
+  return { p, z, required };
+}
 
 export default function App() {
   // will hold null before search and array of results after
@@ -72,11 +54,45 @@ export default function App() {
   const [finalScore, setFinalScore] = useState(null); // Add state for final score
   const [totalEligible, setTotalEligible] = useState(0); // Add state for total eligible count
   const [inputScores, setInputScores] = useState(null); // Add state to preserve user input scores
+  const [totalPrograms, setTotalPrograms] = useState(0); // Track total programs count after load
 
-  const handleScoresSubmit = (scores) => {
+  const handleScoresSubmit = async (scores) => {
     // Save the input scores
     setInputScores(scores);
     
+    // Lazy-load all JSON and preprocess university data
+    const modulesData = await Promise.all(
+      Object.entries(modules).map(async ([path, loader]) => {
+        const data = await loader();
+        // Extract university type from path: '../data/ptn/{type}/...'
+        const match = path.match(/ptn\\(akademik|kin|vokasi)\\/i) || path.match(/ptn\/(akademik|kin|vokasi)\//i);
+        const universityType = match ? match[1].toLowerCase() : 'akademik';
+        return { data, universityType };
+      })
+    );
+    const allUnis = modulesData.map(({ data, universityType }) => {
+      const info = data.informasi_universitas;
+      const prodiList = (data.daftar_prodi || []).map(p => {
+        const sebaranData = p['SEBARAN DATA'] || {};
+        const dayaTampung = sebaranData['Daya Tampung'] || {};
+        const jumlahPeminat = sebaranData['Jumlah Peminat'] || {};
+        return {
+          nama: p.NAMA,
+          jenjang: p.JENJANG, // Include JENJANG for the degree level
+          dayaTampung2025: Number(dayaTampung['2025']) || 0,
+          peminat2024: Number(jumlahPeminat['2024']) || 0,
+        };
+      }).filter(p => p.nama);
+      return {
+        name: info?.['Nama Universitas'],
+        city: info?.['Kab/Kota'],
+        prodi: prodiList,
+        universityType // <-- add type here
+      };
+    }).filter(u => u.name && u.prodi.length > 0);
+    // Compute total programs
+    setTotalPrograms(allUnis.reduce((sum, uni) => sum + uni.prodi.length, 0));
+
     // Calculate user's average score
     const scoreValues = Object.values(scores).map(Number);
     const userAverageScore = scoreValues.reduce((sum, score) => sum + score, 0) / scoreValues.length;
@@ -91,6 +107,7 @@ export default function App() {
 
     console.log('User Average Score:', userAverageScore);
 
+    // Filter programs based on cutoff
     const filteredUnis = allUnis.map(uni => {
       const eligibleProdi = uni.prodi.map(prodi => { // Use map instead of filter to keep admissionRate
         const seats = prodi.dayaTampung2025;
@@ -106,31 +123,21 @@ export default function App() {
         const validAdmissionRate = Math.min(admissionRate, 1.0);
 
         let meetsCutoff = false;
-        // If admission rate is 100%, everyone qualifies (percentile 0)
-        if (validAdmissionRate >= 1.0) {
-            meetsCutoff = true; // Cutoff is effectively lowest possible score
-        } else {
-            const requiredPercentile = 1.0 - validAdmissionRate;
-            const zScore = percentileToZScore(requiredPercentile);
+        let cutoffScore = 0;  // initialize cutoff score
 
-            // Handle infinite Z-scores (percentile 0 or 1)
-            if (!isFinite(zScore)) {
-                // If percentile is 1 (Z=Infinity), technically impossible unless score is infinite
-                // If percentile is 0 (Z=-Infinity), technically always possible
-                meetsCutoff = zScore === -Infinity;
-            } else {
-                // Calculate UTBK cut-off score using the official 2024 mean (500) and std dev (100)
-                const mean = 500;
-                const stdDev = 100;
-                const cutoffScore = mean + zScore * stdDev;
-                meetsCutoff = userAverageScore >= cutoffScore;
-            }
+        if (validAdmissionRate >= 1.0) {
+          meetsCutoff = true;
+          cutoffScore = 0; // everyone qualifies
+        } else {
+          const { required } = getRequiredAverage(MEAN, STD, validAdmissionRate);
+          cutoffScore = required;
+          meetsCutoff = userAverageScore >= cutoffScore;
         }
 
-        // console.log(`${uni.name} - ${prodi.nama}: Seats=${seats}, Applicants=${applicants}, Rate=${admissionRate.toFixed(4)}, Percentile=${requiredPercentile.toFixed(4)}, Z=${zScore.toFixed(2)}, Cutoff=${cutoffScore.toFixed(2)}`);
-
         // Return prodi object with admissionRate if it meets the cutoff, otherwise null
-        return meetsCutoff ? { ...prodi, admissionRate: validAdmissionRate } : null;
+        return meetsCutoff
+          ? { ...prodi, admissionRate: validAdmissionRate, cutoffScore: Number(cutoffScore.toFixed(2)) }
+          : null;
       }).filter(prodi => prodi !== null); // Filter out null (ineligible) programs
 
       // Return university only if it has eligible programs

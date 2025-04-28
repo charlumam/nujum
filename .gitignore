@@ -48,3 +48,6 @@ ehthumbs.db
 # Test reports
 coverage/
 .nyc_output/
+
+# Personal notes
+notes/
