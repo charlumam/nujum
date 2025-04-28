@@ -7,8 +7,11 @@ export default function Results({ universities, totalEligible }) {
   const [filterCity, setFilterCity] = useState('');
   const [filterProdiName, setFilterProdiName] = useState(''); // Add state for Prodi filter
   const [selectedTypes, setSelectedTypes] = useState(['akademik', 'kin', 'vokasi']);
+  const [selectedJenjang, setSelectedJenjang] = useState(['Sarjana', 'Sarjana Terapan', 'Diploma Tiga']); // Add state for Jenjang filter
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [jenjangDropdownOpen, setJenjangDropdownOpen] = useState(false); // Add state for Jenjang dropdown
   const typeLabels = { akademik: 'Akademik', kin: 'KIN', vokasi: 'Vokasi' };
+  const jenjangLabels = { 'Sarjana': 'Sarjana', 'Sarjana Terapan': 'Sarjana Terapan', 'Diploma Tiga': 'Diploma Tiga' };
 
   // flatten all university-program entries, filter, and sort based on state
   const items = useMemo(() => {
@@ -26,6 +29,9 @@ export default function Results({ universities, totalEligible }) {
 
     // University type filter
     flatItems = flatItems.filter(item => selectedTypes.includes(item.universityType));
+
+    // Jenjang filter
+    flatItems = flatItems.filter(item => selectedJenjang.includes(item.jenjang));
 
     // Apply filters
     if (filterUniName) {
@@ -56,7 +62,7 @@ export default function Results({ universities, totalEligible }) {
       }
     });
     return flatItems;
-  }, [universities, sortOrder, filterUniName, filterCity, filterProdiName, selectedTypes]); // Add filterProdiName dependency
+  }, [universities, sortOrder, filterUniName, filterCity, filterProdiName, selectedTypes, selectedJenjang]); // Add filterProdiName and selectedJenjang dependency
 
   // Calculate total based on filtered items
   const total = items.length;
@@ -66,7 +72,7 @@ export default function Results({ universities, totalEligible }) {
   // Reset page index when filters change
   React.useEffect(() => {
     setPageIndex(0);
-  }, [filterUniName, filterCity, filterProdiName, pageSize]); // Add filterProdiName dependency
+  }, [filterUniName, filterCity, filterProdiName, pageSize, selectedJenjang]); // Add filterProdiName and selectedJenjang dependency
 
   const start = pageIndex * pageSize;
   const end = Math.min(start + pageSize, total);
@@ -74,48 +80,101 @@ export default function Results({ universities, totalEligible }) {
 
   if (universities === null) return null; // Don't render if initial state
 
+  // Modified click handlers to ensure only one dropdown is open at a time
+  const handleTypeDropdownClick = () => {
+    setJenjangDropdownOpen(false); // Close the other dropdown first
+    setDropdownOpen(v => !v);
+  };
+  
+  const handleJenjangDropdownClick = () => {
+    setDropdownOpen(false); // Close the other dropdown first
+    setJenjangDropdownOpen(v => !v);
+  };
+
   // Always render filters and controls if universities data is present
   return (
     <div className="h-full space-y-2 sm:space-y-3">
       {/* Filter Row */}
       <div className="flex flex-col gap-1">
-        {/* University Type Dropdown Filter */}
-        <div className="relative mb-1">
-          <button
-            type="button"
-            className="border rounded px-2 py-1.5 text-sm bg-gray-50 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 flex items-baseline gap-2 hover:bg-blue-50 transition"
-            onClick={() => setDropdownOpen(v => !v)}
-            aria-haspopup="listbox"
-            aria-expanded={dropdownOpen}
-          >
-            <span className="flex items-center gap-2">
-              <span className="font-medium text-gray-700">Tipe Perguruan Tinggi</span>
-              <svg className={`w-4 h-4 text-gray-700 transition-transform ${dropdownOpen ? 'rotate-180 duration-200' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
-            </span>
-            <span className="text-xs text-gray-500">{selectedTypes.length === 3 ? 'Semua' : selectedTypes.map(t => typeLabels[t]).join(', ')}</span>
-          </button>
-          {dropdownOpen && (
-            <div className="absolute z-20 mt-1 bg-white border border-gray-300 rounded shadow-lg p-2 flex flex-col gap-1 min-w-[180px] animate-fade-in">
-              {Object.entries(typeLabels).map(([type, label]) => (
-                <label key={type} className="flex items-center gap-2 text-sm px-2 py-1 rounded hover:bg-blue-50 cursor-pointer transition">
-                  <input
-                    type="checkbox"
-                    checked={selectedTypes.includes(type)}
-                    onChange={e => {
-                      if (e.target.checked) {
-                        setSelectedTypes(prev => [...prev, type]);
-                      } else {
-                        setSelectedTypes(prev => prev.filter(t => t !== type));
-                      }
-                    }}
-                    className="accent-blue-600 focus:ring-2 focus:ring-blue-400"
-                  />
-                  <span className="text-gray-700">{label}</span>
-                </label>
-              ))}
-            </div>
-          )}
+        {/* University Type and Jenjang Dropdowns - displayed inline with Jenjang aligned right */}
+        <div className="flex flex-wrap justify-between gap-2">
+          {/* University Type Dropdown Filter */}
+          <div className="relative">
+            <button
+              type="button"
+              className="border rounded px-2 py-1.5 text-sm bg-gray-50 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 flex items-baseline gap-2 hover:bg-blue-50 transition"
+              onClick={handleTypeDropdownClick}
+              aria-haspopup="listbox"
+              aria-expanded={dropdownOpen}
+            >
+              <span className="flex items-center gap-2">
+                <span className="font-medium text-gray-700">Tipe Perguruan Tinggi</span>
+                <svg className={`w-4 h-4 text-gray-700 transition-transform ${dropdownOpen ? 'rotate-180 duration-200' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+              </span>
+              <span className="text-xs text-gray-500">{selectedTypes.length === 3 ? 'Semua' : selectedTypes.map(t => typeLabels[t]).join(', ')}</span>
+            </button>
+            {dropdownOpen && (
+              <div className="absolute z-20 mt-1 bg-white border border-gray-300 rounded shadow-lg p-2 flex flex-col gap-1 min-w-[180px] animate-fade-in">
+                {Object.entries(typeLabels).map(([type, label]) => (
+                  <label key={type} className="flex items-center gap-2 text-sm px-2 py-1 rounded hover:bg-blue-50 cursor-pointer transition">
+                    <input
+                      type="checkbox"
+                      checked={selectedTypes.includes(type)}
+                      onChange={e => {
+                        if (e.target.checked) {
+                          setSelectedTypes(prev => [...prev, type]);
+                        } else {
+                          setSelectedTypes(prev => prev.filter(t => t !== type));
+                        }
+                      }}
+                      className="accent-blue-600 focus:ring-2 focus:ring-blue-400"
+                    />
+                    <span className="text-gray-700">{label}</span>
+                  </label>
+                ))}
+              </div>
+            )}
+          </div>
+          
+          {/* Jenjang Dropdown Filter - aligned to the right */}
+          <div className="relative">
+            <button
+              type="button"
+              className="border rounded px-2 py-1.5 text-sm bg-gray-50 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 flex items-baseline gap-2 hover:bg-blue-50 transition"
+              onClick={handleJenjangDropdownClick}
+              aria-haspopup="listbox"
+              aria-expanded={jenjangDropdownOpen}
+            >
+              <span className="flex items-center gap-2">
+                <span className="font-medium text-gray-700">Jenjang</span>
+                <svg className={`w-4 h-4 text-gray-700 transition-transform ${jenjangDropdownOpen ? 'rotate-180 duration-200' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+              </span>
+              <span className="text-xs text-gray-500">{selectedJenjang.length === 3 ? 'Semua' : selectedJenjang.map(t => jenjangLabels[t]).join(', ')}</span>
+            </button>
+            {jenjangDropdownOpen && (
+              <div className="absolute right-0 z-20 mt-1 bg-white border border-gray-300 rounded shadow-lg p-2 flex flex-col gap-1 min-w-[180px] animate-fade-in">
+                {Object.entries(jenjangLabels).map(([jenjang, label]) => (
+                  <label key={jenjang} className="flex items-center gap-2 text-sm px-2 py-1 rounded hover:bg-blue-50 cursor-pointer transition">
+                    <input
+                      type="checkbox"
+                      checked={selectedJenjang.includes(jenjang)}
+                      onChange={e => {
+                        if (e.target.checked) {
+                          setSelectedJenjang(prev => [...prev, jenjang]);
+                        } else {
+                          setSelectedJenjang(prev => prev.filter(t => t !== jenjang));
+                        }
+                      }}
+                      className="accent-blue-600 focus:ring-2 focus:ring-blue-400"
+                    />
+                    <span className="text-gray-700">{label}</span>
+                  </label>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
+        
         <input
           type="text"
           placeholder="Filter Nama Universitas..."
