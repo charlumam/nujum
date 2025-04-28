@@ -253,7 +253,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
       {viewAllMode && propFinalScore !== null && (
         <div className="text-center mt-3 mb-3 p-3 sm:p-4 bg-blue-50 rounded-lg border border-blue-200">
           <p className="text-sm sm:text-base font-medium text-blue-600">
-            Menampilkan semua {totalPrograms} program studi
+            Menampilkan {totalPrograms} program studi.
           </p>
         </div>
       )}
