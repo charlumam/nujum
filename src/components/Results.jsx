@@ -94,7 +94,7 @@ export default function Results({ universities, totalEligible }) {
             <span className="text-xs text-gray-500">{selectedTypes.length === 3 ? 'Semua' : selectedTypes.map(t => typeLabels[t]).join(', ')}</span>
           </button>
           {dropdownOpen && (
-            <div className="absolute z-20 mt-1 bg-white border border-gray-200 rounded shadow-lg p-2 flex flex-col gap-1 min-w-[180px] animate-fade-in">
+            <div className="absolute z-20 mt-1 bg-white border border-gray-300 rounded shadow-lg p-2 flex flex-col gap-1 min-w-[180px] animate-fade-in">
               {Object.entries(typeLabels).map(([type, label]) => (
                 <label key={type} className="flex items-center gap-2 text-sm px-2 py-1 rounded hover:bg-blue-50 cursor-pointer transition">
                   <input
@@ -242,7 +242,7 @@ export default function Results({ universities, totalEligible }) {
               {pageIndex > 0 && (
                 <button
                   onClick={() => setPageIndex(prev => prev - 1)}
-                  className="bg-stone-500 border-b-3 border-stone-600 text-white px-2 py-1 text-xs sm:text-sm rounded font-semibold hover:bg-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-600 focus:border-b-0"
+                  className="bg-stone-500 border-b-3 border-stone-600 text-white px-2 py-1 text-xs sm:text-sm rounded font-semibold hover:bg-stone-400 focus:outline-none focus:border-none"
                 >
                   Sebelumnya
                 </button>
@@ -253,7 +253,7 @@ export default function Results({ universities, totalEligible }) {
               {end < total && (
                 <button
                   onClick={() => setPageIndex(prev => prev + 1)}
-                  className="bg-blue-600 border-b-3 border-blue-800 text-white px-2 py-1 text-xs sm:text-sm rounded font-semibold hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:border-b-0"
+                  className="bg-blue-600 border-b-3 border-blue-800 text-white px-2 py-1 text-xs sm:text-sm rounded font-semibold hover:bg-blue-500 focus:outline-none focus:border-none"
                 >
                   Berikutnya
                 </button>

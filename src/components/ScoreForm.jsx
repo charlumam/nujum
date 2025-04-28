@@ -225,7 +225,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
 
       <button
         type="submit"
-        className="w-full py-2 sm:py-3 bg-blue-600 border-b-4 border-blue-800 text-white text-base sm:text-lg font-semibold rounded-lg hover:bg-blue-500 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-800 focus:border-b-0"
+        className="w-full py-2 sm:py-3 bg-blue-600 border-b-4 border-blue-800 text-white text-base sm:text-lg font-semibold rounded-lg hover:bg-blue-500 focus:outline-none focus:border-none"
       >
         Cek Passing Grade
       </button>
