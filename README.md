@@ -30,7 +30,10 @@ Nujum is a web application that helps Indonesian students check UTBK-SNBT (Selek
 
 ## Why "Nujum"?
 
-From [KBBI](https://kbbi.web.id/nujum): "nujum /nu·jum/ - Perbintangan untuk meramalkan (mengetahui) nasib orang dan sebagainya." Nujum aims to "predict" your UTBK-SNBT admission chances as accurately as possible.
+From [KBBI](https://kbbi.web.id/nujum): 
+> "nujum /nu·jum/ - Perbintangan untuk meramalkan (mengetahui) nasib orang dan sebagainya." 
+
+Nujum aims to "predict" your UTBK-SNBT admission chances as accurately as possible.
 
 ## Installation
 
