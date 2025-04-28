@@ -17,6 +17,7 @@ export default function Results({ universities, totalEligible }) {
         uniName: u.name,
         city: u.city, // Include city
         nama: p.nama,
+        jenjang: p.jenjang, // Include jenjang (degree level)
         admissionRate: p.admissionRate, // Include admissionRate
         cutoffScore: p.cutoffScore, // Include cutoffScore
         universityType: u.universityType // <-- add type for filtering
@@ -224,6 +225,11 @@ export default function Results({ universities, totalEligible }) {
                     <p className="text-xs sm:text-sm text-gray-700 mt-1 mb-10">
                       {item.nama}
                     </p>
+                    <div className="absolute bottom-2 left-3 text-left">
+                      {item.jenjang && (
+                        <span className="text-xs text-gray-500">{item.jenjang}</span>
+                      )}
+                    </div>
                     <div className="absolute bottom-2 right-2 text-right">
                       <span className="text-xs font-medium text-gray-500">Passing Grade:</span>
                       <span className={`text-xs font-bold underline ${textColorClass} ml-1`}>{cutoffScore}</span>

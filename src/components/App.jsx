@@ -78,6 +78,7 @@ export default function App() {
         const jumlahPeminat = sebaranData['Jumlah Peminat'] || {};
         return {
           nama: p.NAMA,
+          jenjang: p.JENJANG, // Include JENJANG for the degree level
           dayaTampung2025: Number(dayaTampung['2025']) || 0,
           peminat2024: Number(jumlahPeminat['2024']) || 0,
         };
