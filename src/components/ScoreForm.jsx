@@ -118,7 +118,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
               name={key}
               value={scores[key]}
               onChange={handleChange}
-              className="mt-1 max-w-80 mx-auto block w-full bg-gray-50 text-base sm:text-lg text-gray-700 px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center"
+              className="mt-1 max-w-80 mx-auto block w-full bg-gray-50 text-base sm:text-lg text-gray-700 px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center placeholder:text-gray-500"
               placeholder="0 - 1000"
             />
           </label>
@@ -145,7 +145,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
             name={key}
             value={scores[key]}
             onChange={handleChange}
-            className="mt-1 max-w-80 mx-auto block w-full bg-gray-50 text-base sm:text-lg text-gray-700 px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center"
+            className="mt-1 max-w-80 mx-auto block w-full bg-gray-50 text-base sm:text-lg text-gray-700 px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center placeholder:text-gray-500"
             placeholder="0 - 1000"
               />
             </label>
@@ -166,7 +166,7 @@ export default function ScoreForm({ onSubmit, finalScore: propFinalScore, totalE
               name="penalaranMatematika"
               value={scores.penalaranMatematika}
               onChange={handleChange}
-              className="mt-1 max-w-80 mx-auto block w-full bg-gray-50 text-base sm:text-lg text-gray-700 px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center"
+              className="mt-1 max-w-80 mx-auto block w-full bg-gray-50 text-base sm:text-lg text-gray-700 px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center placeholder:text-gray-500"
               placeholder="0 - 1000"
             />
           </label>

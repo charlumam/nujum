@@ -89,7 +89,7 @@ export default function Results({ universities, totalEligible }) {
           >
             <span className="flex items-center gap-2">
               <span className="font-medium text-gray-700">Tipe Perguruan Tinggi</span>
-              <svg className={`w-4 h-4 text-gray-700 transition-transform ${dropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+              <svg className={`w-4 h-4 text-gray-700 transition-transform ${dropdownOpen ? 'rotate-180 duration-200' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
             </span>
             <span className="text-xs text-gray-500">{selectedTypes.length === 3 ? 'Semua' : selectedTypes.map(t => typeLabels[t]).join(', ')}</span>
           </button>
@@ -120,7 +120,7 @@ export default function Results({ universities, totalEligible }) {
           placeholder="Filter Nama Universitas..."
           value={filterUniName}
           onChange={e => setFilterUniName(e.target.value)}
-          className="border rounded px-2 py-1.5 text-sm flex-1 border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600"
+          className="border rounded px-2 py-1.5 text-sm flex-1 border-gray-300 bg-gray-50 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-gray-500"
         />
         <div className="flex flex-col gap-1">
           <input
@@ -128,14 +128,14 @@ export default function Results({ universities, totalEligible }) {
             placeholder="Filter Kab/Kota..."
             value={filterCity}
             onChange={e => setFilterCity(e.target.value)}
-            className="border rounded px-2 py-1.5 text-sm flex-1 border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600"
+            className="border rounded px-2 py-1.5 text-sm flex-1 border-gray-300 bg-gray-50 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-gray-500"
           />
           <input
             type="text"
             placeholder="Filter Program Studi..."
             value={filterProdiName}
             onChange={e => setFilterProdiName(e.target.value)}
-            className="border rounded px-2 py-1.5 text-sm flex-1 border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600"
+            className="border rounded px-2 py-1.5 text-sm flex-1 border-gray-300 bg-gray-50 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-gray-500"
           />
         </div>
       </div>
@@ -144,22 +144,26 @@ export default function Results({ universities, totalEligible }) {
       <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
         {/* Left side: Page Size & Total */}
         <div className="flex items-center gap-1">
-          <label className="text-gray-700 text-sm flex items-center gap-1">
+          <label className="text-gray-700 text-sm flex items-center gap-1 relative">
             Tampilkan
-            <select
-              value={pageSize}
-              onChange={e => {
-                const newSize = Number(e.target.value);
-                setPageSize(newSize);
-              }}
-              className="border rounded px-2 py-0.5 text-sm border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600"
-            >
-              {[10, 20, 50].map(n => (
-                <option key={n} value={n}>
-                  {n}
-                </option>
-              ))}
-            </select>
+            <span className="relative inline-block">
+              <select
+                value={pageSize}
+                onChange={e => {
+                  const newSize = Number(e.target.value);
+                  setPageSize(newSize);
+                }}
+                className="border rounded px-2 py-0.5 text-sm border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600 appearance-none pr-6 peer shadow-none"
+              >
+                {[10, 20, 50].map(n => (
+                  <option key={n} value={n}>
+                    {n}
+                  </option>
+                ))}
+              </select>
+              {/* Arrow icon overlay, animated on focus */}
+              <svg className="w-4 h-4 text-gray-700 pointer-events-none absolute right-1 top-1/2 -translate-y-1/2 transition-transform duration-200 peer-focus:rotate-180" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+            </span>
             hasil
           </label>
         </div>
@@ -167,16 +171,20 @@ export default function Results({ universities, totalEligible }) {
         {/* Right side: Sort */}
         <div className="flex items-center">
           {/* Sort Dropdown */}
-          <label className="text-gray-700 text-sm flex items-center gap-1">
+          <label className="text-gray-700 text-sm flex items-center gap-1 relative">
             Persentase Diterima
-            <select
-              value={sortOrder}
-              onChange={e => setSortOrder(e.target.value)}
-              className="border rounded px-2 py-0.5 text-sm border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600"
-            >
-              <option value="asc">Rendah ke Tinggi</option>
-              <option value="desc">Tinggi ke Rendah</option>
-            </select>
+            <span className="relative inline-block">
+              <select
+                value={sortOrder}
+                onChange={e => setSortOrder(e.target.value)}
+                className="border rounded px-2 py-0.5 text-sm border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600 appearance-none pr-6 peer shadow-none"
+              >
+                <option value="asc">Rendah ke Tinggi</option>
+                <option value="desc">Tinggi ke Rendah</option>
+              </select>
+              {/* Arrow icon overlay, animated on focus */}
+              <svg className="w-4 h-4 text-gray-700 pointer-events-none absolute right-1 top-1/2 -translate-y-1/2 transition-transform duration-200 peer-focus:rotate-180" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+            </span>
           </label>
         </div>
       </div>
