@@ -148,10 +148,10 @@ export default function ScoreForm({
       className="max-w-full mx-auto bg-white shadow-lg rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 space-y-4 sm:space-y-6"
     >
       {/* Add mb-1 to reduce space below this heading */}
-      <h1 className="text-md sm:text-lg md:text-lg font-semibold text-gray-700 mb-1">
+      <h1 className="text-md sm:text-lg md:text-lg font-bold text-gray-700 mb-1">
         Nujum | Passing Grade & Kelulusan UTBK-SNBT
       </h1>
-      <h2 className="text-sm sm:text-md md:text-base italic text-base font-semibold text-gray-700">
+      <h2 className="text-sm sm:text-md md:text-base italic text-base text-gray-700">
         Edisi 2025
       </h2>
 
@@ -296,14 +296,15 @@ export default function ScoreForm({
         </div>
       )}
 
+      {/* Apply 3D effect using shadow, transform, and transition */}
       <button
         type="submit"
-        className="w-full py-2 sm:py-3 bg-gradient-to-t from-blue-500 to-blue-700 border-b-4 border-blue-800 text-white text-base sm:text-lg font-semibold rounded-lg hover:opacity-70 focus:outline-none focus:border-none"
+        className="mb-4 mt-4 w-full py-2 sm:py-3 border-b-4 border-blue-800 bg-gradient-to-t from-blue-500 to-blue-700 text-white text-base sm:text-lg font-semibold rounded-lg shadow-lg hover:opacity-70 active:translate-y-0.5 active:shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-all duration-100 ease-in-out"
       >
         {allMaxScores
           ? "Lihat Semua Passing Grade"
           : allInputsFilled
-          ? "Cek Passing Grade"
+          ? "Cek Kelulusan UTBK-SNBT"
           : "Lihat Semua Passing Grade"}
       </button>
     </form>

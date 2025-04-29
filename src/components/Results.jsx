@@ -435,7 +435,7 @@ export default function Results({ universities, totalEligible }) {
               {pageIndex > 0 && (
                 <button
                   onClick={() => setPageIndex((prev) => prev - 1)}
-                  className="bg-gradient-to-t from-stone-500 to-stone-700 border-b-3 border-stone-800 text-white px-2 py-1 text-xs sm:text-sm rounded font-semibold hover:opacity-70 focus:outline-none focus:border-none"
+                  className="text-white px-2 py-1 text-xs sm:text-sm border-b-4 border-stone-800 bg-gradient-to-t from-stone-500 to-stone-700 text-white text-base font-semibold rounded-md shadow-md hover:opacity-70 active:translate-y-0.5 active:shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-all duration-100 ease-in-out"
                 >
                   Sebelumnya
                 </button>
@@ -446,7 +446,7 @@ export default function Results({ universities, totalEligible }) {
               {end < total && (
                 <button
                   onClick={() => setPageIndex((prev) => prev + 1)}
-                  className="bg-gradient-to-t from-blue-500 to-blue-700 border-b-3 border-blue-800 text-white px-2 py-1 text-xs sm:text-sm rounded font-semibold hover:opacity-70 focus:outline-none focus:border-none"
+                  className="text-white px-2 py-1 text-xs sm:text-sm border-b-4 border-blue-800 bg-gradient-to-t from-blue-500 to-blue-700 text-white text-base font-semibold rounded-md shadow-md hover:opacity-70 active:translate-y-0.5 active:shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-all duration-100 ease-in-out"
                 >
                   Berikutnya
                 </button>
