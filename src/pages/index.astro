@@ -6,10 +6,25 @@ import "@fontsource-variable/nunito";
 
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      type="text/partytown"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S1T1BXEDYR"></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S1T1BXEDYR");
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nujum | Passing Grade & Kelulusan UTBK-SNBT</title>
   </head>
+
   <body class="bg-stone-100 min-h-screen py-8">
     <App client:load />
 
@@ -88,9 +103,7 @@ import "@fontsource-variable/nunito";
             keketatan/tingkat penerimaan dan passing grade-nya memang belum
             ketahuan atau belum bisa dihitung.
           </p>
-          <p class="mt-4 text-stone-600">
-            Buat apa juga kan?
-          </p>
+          <p class="mt-4 text-stone-600">Buat apa juga kan?</p>
         </details>
         <details class="bg-white p-4 rounded-lg shadow group">
           <summary
