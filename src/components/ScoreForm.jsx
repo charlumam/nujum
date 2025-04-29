@@ -153,10 +153,10 @@ export default function ScoreForm({
       className="max-w-full mx-auto bg-white shadow-lg rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 space-y-4 sm:space-y-6"
     >
       {/* Add mb-1 to reduce space below this heading */}
-      <h1 className="text-md sm:text-lg md:text-lg font-bold text-gray-700 mb-1">
+      <h1 className="text-md sm:text-lg md:text-lg font-bold text-stone-700 mb-1">
         Nujum | Passing Grade & Kelulusan UTBK-SNBT
       </h1>
-      <h2 className="text-sm sm:text-md md:text-base italic text-base text-gray-700">
+      <h2 className="text-sm sm:text-md md:text-base italic text-base text-stone-700">
         Edisi 2025
       </h2>
 
@@ -173,7 +173,7 @@ export default function ScoreForm({
             ["bacaanTulis", "Kemampuan Memahami Bacaan dan Tulis"],
           ].map(([key, label]) => (
             <label key={key} className="block">
-              <span className="text-sm sm:text-base text-gray-700 font-medium">
+              <span className="text-sm sm:text-base text-stone-700 font-medium">
                 {label}
               </span>
               <input
@@ -182,7 +182,7 @@ export default function ScoreForm({
                 name={key}
                 value={scores[key]}
                 onChange={handleChange}
-                className="mt-1 max-w-80 mx-auto block w-full bg-gray-50 text-base sm:text-lg text-gray-700 px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center placeholder:text-gray-500"
+                className="mt-1 max-w-80 mx-auto block w-full bg-stone-50 text-base sm:text-lg text-stone-700 px-2 py-1.5 sm:px-3 sm:py-2 border border-stone-300 rounded-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center placeholder:text-stone-500"
                 placeholder="0 - 1000"
               />
             </label>
@@ -200,7 +200,7 @@ export default function ScoreForm({
               ["bahasaInggris", "Literasi Bahasa Inggris"],
             ].map(([key, label]) => (
               <label key={key} className="block">
-                <span className="text-sm sm:text-base text-gray-700 font-medium">
+                <span className="text-sm sm:text-base text-stone-700 font-medium">
                   {label}
                 </span>
                 <input
@@ -209,7 +209,7 @@ export default function ScoreForm({
                   name={key}
                   value={scores[key]}
                   onChange={handleChange}
-                  className="mt-1 max-w-80 mx-auto block w-full bg-gray-50 text-base sm:text-lg text-gray-700 px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center placeholder:text-gray-500"
+                  className="mt-1 max-w-80 mx-auto block w-full bg-stone-50 text-base sm:text-lg text-stone-700 px-2 py-1.5 sm:px-3 sm:py-2 border border-stone-300 rounded-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center placeholder:text-stone-500"
                   placeholder="0 - 1000"
                 />
               </label>
@@ -221,7 +221,7 @@ export default function ScoreForm({
               Tes Penalaran Matematika
             </h3>
             <label className="block">
-              <span className="text-sm sm:text-base text-gray-700 font-medium">
+              <span className="text-sm sm:text-base text-stone-700 font-medium">
                 Penalaran Matematika
               </span>
               <input
@@ -230,7 +230,7 @@ export default function ScoreForm({
                 name="penalaranMatematika"
                 value={scores.penalaranMatematika}
                 onChange={handleChange}
-                className="mt-1 max-w-80 mx-auto block w-full bg-gray-50 text-base sm:text-lg text-gray-700 px-2 py-1.5 sm:px-3 sm:py-2 border border-gray-300 rounded-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center placeholder:text-gray-500"
+                className="mt-1 max-w-80 mx-auto block w-full bg-stone-50 text-base sm:text-lg text-stone-700 px-2 py-1.5 sm:px-3 sm:py-2 border border-stone-300 rounded-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-600 placeholder:text-center text-center placeholder:text-stone-500"
                 placeholder="0 - 1000"
               />
             </label>
@@ -243,7 +243,7 @@ export default function ScoreForm({
         <div className="text-center mt-3 mb-3 p-3 sm:p-4 bg-blue-50 rounded-lg border border-blue-200 space-y-1 sm:space-y-2">
           {/* Display the final score passed from App.jsx */}
           <div>
-            <p className="text-base sm:text-lg font-medium text-gray-700">
+            <p className="text-base sm:text-lg font-medium text-stone-700">
               Dengan nilai rata-rata:
             </p>
             <p className="text-2xl sm:text-3xl font-bold text-blue-600">
@@ -282,11 +282,11 @@ export default function ScoreForm({
         localFinalScore !== null &&
         anyInputFilled &&
         !viewAllMode && (
-          <div className="text-center mt-3 mb-3 p-2 sm:p-3 bg-gray-50 rounded-lg border border-gray-200">
-            <p className="text-sm sm:text-md font-medium text-gray-600">
+          <div className="text-center mt-3 mb-3 p-2 sm:p-3 bg-stone-50 rounded-lg border border-stone-200">
+            <p className="text-sm sm:text-md font-medium text-stone-600">
               Nilai rata-rata sementara:
             </p>
-            <p className="text-lg sm:text-xl font-bold text-gray-700">
+            <p className="text-lg sm:text-xl font-bold text-stone-700">
               {localFinalScore}
             </p>
           </div>

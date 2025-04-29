@@ -1,7 +1,7 @@
 ---
 import App from "../components/App.jsx";
 import "../styles/global.css";
-import '@fontsource-variable/nunito';
+import "@fontsource-variable/nunito";
 ---
 
 <html lang="en">
@@ -10,20 +10,20 @@ import '@fontsource-variable/nunito';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nujum | Passing Grade & Kelulusan UTBK-SNBT</title>
   </head>
-  <body class="bg-gray-100 min-h-screen py-8">
+  <body class="bg-stone-100 min-h-screen py-8">
     <App client:load />
 
     <div class="container mx-auto px-4 mt-12">
-      <h2 class="text-2xl font-bold mb-4 text-center text-gray-700">
+      <h2 class="text-2xl font-bold mb-4 text-center text-stone-700">
         Tentang Nujum
       </h2>
       <div class="bg-white p-6 rounded-lg shadow mb-8 max-w-4xl mx-auto">
-        <p class="text-gray-600 mb-4">
+        <p class="text-stone-600 mb-4">
           Sebagai seseorang yang pernah berjuang melewati UTBK-SNBT pada tahun
           2023, aku benar-benar paham banget susahnya mencari informasi akurat
           tentang passing grade PTN yang kamu incar. Frustasi bener nggak sih?
         </p>
-        <p class="text-gray-600 mb-4">
+        <p class="text-stone-600 mb-4">
           Kalau kamu coba cek situs resmi dari SNPMB, yang ada cuma data daya
           tampung dan jumlah peminat. Padahal yang kita butuhkan adalah nilai
           aman untuk masuk jurusan impian, kan? Terus kalau googling <i
@@ -31,158 +31,199 @@ import '@fontsource-variable/nunito';
           >, yang muncul kebanyakan website gak jelas, banyak iklan, dan bikin
           pusing.
         </p>
-        <p class="text-gray-600 mb-4">
+        <p class="text-stone-600 mb-4">
           Disitulah aku harap Nujum akan membantu. Di sini kamu bisa langsung
           cek passing grade universitas tujuanmu dengan mudah. Ada data lengkap
           dari 145 PTN di Indonesia yang diambil langsung dari data resmi SNPMB.
         </p>
-        <p class="text-gray-600">
+        <p class="text-stone-600">
           Mau tahu nilai minimal untuk jurusan impianmu? Atau penasaran dengan
           tingkat keketatan/acceptance rate di kampus tertentu? Semua informasi
           itu bisa kamu temukan di sini.
         </p>
       </div>
 
-      <h2 class="text-2xl font-bold mb-4 text-center text-gray-700">
+      <h2 class="text-2xl font-bold mb-4 text-center text-stone-700">
         Mungkin Ditanyakan
       </h2>
       <div class="space-y-4 mb-8 max-w-2xl mx-auto">
         <details class="bg-white p-4 rounded-lg shadow group">
           <summary
-            class="font-semibold cursor-pointer text-gray-800 group-open:text-blue-600"
+            class="font-semibold cursor-pointer text-stone-800 group-open:text-blue-600"
           >
             Kenapa diberi nama Nujum?
           </summary>
           <blockquote
-            class="mt-2 text-gray-600 border-l-4 border-blue-300 bg-blue-50 p-4"
+            class="mt-2 text-stone-600 border-l-4 border-blue-300 bg-blue-50 p-4"
           >
             <a
               class="text-blue-500 hover:underline"
               href="https://kbbi.web.id/nujum"
-              rel="nofollow"
+              rel="noopener nofollow"
+              target="_blank"
               aria-label="Website KBBI.">nujum <i>/nu·jum/</i></a
             >
             <br /> Perbintangan untuk meramalkan (mengetahui) nasib orang dan sebagainya.
           </blockquote>
-          <p class="mt-4 text-gray-600">
+          <p class="mt-4 text-stone-600">
             Sedangkan tujuan utama dari Nujum sendiri adalah "meramalkan"
             kelulusan UTBK-SNBT berdasarkan rata-rata nilai try-out atau nilai
             UTBK-SNBT tahun lalu pengguna-nya, menggunakan metode dan data
-            terbaik yang kita miliki.
+            terbaik yang aku miliki.
           </p>
         </details>
         <details class="bg-white p-4 rounded-lg shadow group">
           <summary
-            class="font-semibold cursor-pointer text-gray-800 group-open:text-blue-600"
+            class="font-semibold cursor-pointer text-stone-800 group-open:text-blue-600"
           >
             Kenapa program studi X tidak ada disini?
           </summary>
-          <p class="mt-2 text-gray-600">
+          <p class="mt-2 text-stone-600">
             Ada banyak alasan yang diluar jangkauan aku sendiri tentunya. Tapi
             kemungkinan besar adalah karena program studi yang kamu cari itu
             termasuk prodi baru.
           </p>
-          <p class="mt-4 text-gray-600">
+          <p class="mt-4 text-stone-600">
             Prodi baru tersebut sengaja tidak aku masukan dulu, karena
             keketatan/tingkat penerimaan dan passing grade-nya memang belum
             ketahuan atau belum bisa dihitung.
           </p>
+          <p class="mt-4 text-stone-600">
+            Buat apa juga kan?
+          </p>
         </details>
         <details class="bg-white p-4 rounded-lg shadow group">
           <summary
-            class="font-semibold cursor-pointer text-gray-800 group-open:text-blue-600"
+            class="font-semibold cursor-pointer text-stone-800 group-open:text-blue-600"
           >
             Bagaimana cara passing grade dihitung?
           </summary>
-          <p class="mt-2 text-gray-600">
+          <p class="mt-2 text-stone-600">
             Passing grade dihitung menggunakan pendekatan statistik berdasarkan
             distribusi nilai yang menyerupai kurva normal, dimana mayoritas
             peserta memiliki nilai rata-rata, yaitu <code
-              class="font-mono text-sm bg-gray-200 px-1 rounded">500</code
+              class="font-mono text-sm bg-stone-200 px-1 rounded">500</code
             > untuk UTBK-SNBT, dan semakin sedikit pula peserta yang dapat nilai
             sangat tinggi atau sangat rendah.
           </p>
-          <p class="mt-4 text-gray-600">
+          <p class="mt-4 text-stone-600">
             Untuk menentukan passing grade kita perlu mencari cutoff score yang
             memisahkan peserta yang lolos dari yang tidak. Hal ini bisa
             dilakukan dengan menghitung persentil yang sesuai dengan tingkat
             keketatan. Misalnya, jika tingkat keketatan adalah <code
-              class="font-mono text-sm bg-gray-200 px-1 rounded">0.42%</code
+              class="font-mono text-sm bg-stone-200 px-1 rounded">0.42%</code
             >, kita mencari nilai di persentil ke-<code
-              class="font-mono text-sm bg-gray-200 px-1 rounded">99.58</code
+              class="font-mono text-sm bg-stone-200 px-1 rounded">99.58</code
             >.
           </p>
-          <p class="mt-4 text-gray-600">
+          <p class="mt-4 text-stone-600">
             Dalam statistika, <code
-              class="font-mono text-sm bg-gray-200 px-1 rounded">z-score</code
+              class="font-mono text-sm bg-stone-200 px-1 rounded">z-score</code
             > dipakai untuk mewakili posisi relatif suatu nilai dalam distribusi
             normal.
-            <code class="font-mono text-sm bg-gray-200 px-1 rounded"
+            <code class="font-mono text-sm bg-stone-200 px-1 rounded"
               >z-score</code
             > mengukur berapa banyak simpangan baku (<code
-              class="font-mono text-sm bg-gray-200 px-1 rounded">σ</code
+              class="font-mono text-sm bg-stone-200 px-1 rounded">σ</code
             >) sebuah nilai dari rata-rata (mean). Untuk mengubah persentil
             menjadi
-            <code class="font-mono text-sm bg-gray-200 px-1 rounded"
+            <code class="font-mono text-sm bg-stone-200 px-1 rounded"
               >z-score</code
             >, kita menggunakan fungsi invers dari Cumulative Distribution
             Function. Nujum memakai algoritma aproksimasi rasional Acklam, yaitu
             metode efisien untuk menghitung Inverse CDF tanpa perlu tabel besar
             atau komputasi numerik berat. Untuk persentil
-            <code class="font-mono text-sm bg-gray-200 px-1 rounded"
+            <code class="font-mono text-sm bg-stone-200 px-1 rounded"
               >99.58%</code
             >, metode ini menghasilkan <code
-              class="font-mono text-sm bg-gray-200 px-1 rounded">z ≈ 2.64</code
+              class="font-mono text-sm bg-stone-200 px-1 rounded">z ≈ 2.64</code
             >.
           </p>
-          <p class="mt-4 text-gray-600">
-            Terakhir, <code class="font-mono text-sm bg-gray-200 px-1 rounded"
+          <p class="mt-4 text-stone-600">
+            Terakhir, <code class="font-mono text-sm bg-stone-200 px-1 rounded"
               >z-score</code
             > dikonversi kembali ke skala skor UTBK menggunakan rumus: <code
-              class="font-mono text-sm bg-gray-200 px-1 rounded"
+              class="font-mono text-sm bg-stone-200 px-1 rounded"
               >Skor = mean + z × σ</code
             >. Dengan asumsi nilai rata-rata nasional sebelumnya dan simpangan
-            baku (<code class="font-mono text-sm bg-gray-200 px-1 rounded"
+            baku (<code class="font-mono text-sm bg-stone-200 px-1 rounded"
               >σ</code
-            >) sekitar <code class="font-mono text-sm bg-gray-200 px-1 rounded"
+            >) sekitar <code class="font-mono text-sm bg-stone-200 px-1 rounded"
               >100</code
             >, maka passing grade bisa dihitung sebagai <code
-              class="font-mono text-sm bg-gray-200 px-1 rounded"
+              class="font-mono text-sm bg-stone-200 px-1 rounded"
               >500 + 2.64 × 100 ≈ 760</code
             >
           </p>
         </details>
         <details class="bg-white p-4 rounded-lg shadow group">
           <summary
-            class="font-semibold cursor-pointer text-gray-800 group-open:text-blue-600"
+            class="font-semibold cursor-pointer text-stone-800 group-open:text-blue-600"
           >
             Bagaimana cara data UTBK-SNBT diambil?
           </summary>
-          <p class="mt-2 text-gray-600">
+          <p class="mt-2 text-stone-600">
             Semua data di situs ini diambil melalui <a
               class="text-blue-500
               hover:underline"
               href="https://archive.is/JjeQJ"
               aria-label="Arsip situs daya tampung UTBK-SNBT 2025 resmi milik SNPMB."
-              rel="nofollow">situs resmi</a
+              rel="noopener nofollow"
+              target="_blank">situs resmi</a
             > daya tampung UTBK-SNBT dari SNPMB pada tahun 2025.
           </p>
-          <p class="mt-4 text-gray-600">
+          <p class="mt-4 text-stone-600">
             Alat yang aku gunakan adalah HTTrack untuk mengunduh keseluruhan
             website dan script Python menggunakan Beautiful Soup untuk mengubah
             data yang sudah aku unduh menjadi file JSON.
           </p>
         </details>
-      </div>
-
-      <div class="text-center text-gray-500 text-sm">
-        <p>Hak Cipta © 2025 Charda Lufthansa Umam</p>
-        <a
-          class="text-center text-blue-500 text-sm hover:underline"
-          href="https://github.com/charlumam/nujum/blob/e6f7f88008a2863a77900cdbc1d5c89741b36cea/LICENSE"
-          rel="nofollow"
-          aria-label="Lisensi Nujum.">Dilisensikan di bawah Lisensi MIT</a
-        >
+        <details class="bg-white p-4 rounded-lg shadow group">
+          <summary
+            class="font-semibold cursor-pointer text-stone-800 group-open:text-blue-600"
+          >
+            Jika ada saran atau pertanyaan lain bagaimana?
+          </summary>
+          <p class="mt-2 text-stone-600">
+            Kirimkan aku email di charlumam[at]gmail[dot]com, atau DM melalui
+            Instagram dengan username <a
+              class="text-blue-500
+            hover:underline"
+              href="https://instagram.com/charlumam"
+              aria-label="Akun Instagram pribadi Charda Lufthansa Umam."
+              target="_blank">@charlumam</a
+            >
+          </p>
+        </details>
+        <div class="text-center mb-2">
+          <a
+            href="https://github.com/charlumam/nujum"
+            target="_blank"
+            aria-label="Source code Nujum di GitHub."
+            class="inline-block text-stone-600 hover:text-[#171515] transition-colors duration-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <div class="text-center text-stone-500 text-sm">
+          <p>Hak Cipta © 2025 Charda Lufthansa Umam</p>
+          <a
+            class="text-center text-blue-500 text-sm hover:underline"
+            href="https://github.com/charlumam/nujum/blob/e6f7f88008a2863a77900cdbc1d5c89741b36cea/LICENSE"
+            aria-label="Lisensi Nujum.">Dilisensikan di bawah Lisensi MIT</a
+          >
+        </div>
       </div>
     </div>
   </body>

@@ -138,17 +138,17 @@ export default function Results({ universities, totalEligible }) {
           <div className="relative">
             <button
               type="button"
-              className="border rounded px-2 py-1.5 text-sm bg-gray-50 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 flex items-baseline gap-2 hover:bg-blue-50 transition"
+              className="border rounded px-2 py-1.5 text-sm bg-stone-50 border-stone-300 focus:outline-none focus:ring-2 focus:ring-blue-600 flex items-baseline gap-2 hover:bg-blue-50 transition"
               onClick={handleTypeDropdownClick}
               aria-haspopup="listbox"
               aria-expanded={dropdownOpen}
             >
               <span className="flex items-center gap-2">
-                <span className="font-medium text-gray-700">
+                <span className="font-medium text-stone-700">
                   Tipe Perguruan Tinggi
                 </span>
                 <svg
-                  className={`w-4 h-4 text-gray-700 transition-transform ${
+                  className={`w-4 h-4 text-stone-700 transition-transform ${
                     dropdownOpen ? "rotate-180 duration-200" : ""
                   }`}
                   fill="none"
@@ -163,14 +163,14 @@ export default function Results({ universities, totalEligible }) {
                   />
                 </svg>
               </span>
-              <span className="text-xs text-gray-500">
+              <span className="text-xs text-stone-500">
                 {selectedTypes.length === 3
                   ? "Semua"
                   : selectedTypes.map((t) => typeLabels[t]).join(", ")}
               </span>
             </button>
             {dropdownOpen && (
-              <div className="absolute z-20 mt-1 bg-white border border-gray-300 rounded shadow-lg p-2 flex flex-col gap-1 min-w-[180px] animate-fade-in">
+              <div className="absolute z-20 mt-1 bg-white border border-stone-300 rounded shadow-lg p-2 flex flex-col gap-1 min-w-[180px] animate-fade-in">
                 {Object.entries(typeLabels).map(([type, label]) => (
                   <label
                     key={type}
@@ -190,7 +190,7 @@ export default function Results({ universities, totalEligible }) {
                       }}
                       className="accent-blue-600 focus:ring-2 focus:ring-blue-400"
                     />
-                    <span className="text-gray-700">{label}</span>
+                    <span className="text-stone-700">{label}</span>
                   </label>
                 ))}
               </div>
@@ -201,15 +201,15 @@ export default function Results({ universities, totalEligible }) {
           <div className="relative">
             <button
               type="button"
-              className="border rounded px-2 py-1.5 text-sm bg-gray-50 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 flex items-baseline gap-2 hover:bg-blue-50 transition"
+              className="border rounded px-2 py-1.5 text-sm bg-stone-50 border-stone-300 focus:outline-none focus:ring-2 focus:ring-blue-600 flex items-baseline gap-2 hover:bg-blue-50 transition"
               onClick={handleJenjangDropdownClick}
               aria-haspopup="listbox"
               aria-expanded={jenjangDropdownOpen}
             >
               <span className="flex items-center gap-2">
-                <span className="font-medium text-gray-700">Jenjang</span>
+                <span className="font-medium text-stone-700">Jenjang</span>
                 <svg
-                  className={`w-4 h-4 text-gray-700 transition-transform ${
+                  className={`w-4 h-4 text-stone-700 transition-transform ${
                     jenjangDropdownOpen ? "rotate-180 duration-200" : ""
                   }`}
                   fill="none"
@@ -224,14 +224,14 @@ export default function Results({ universities, totalEligible }) {
                   />
                 </svg>
               </span>
-              <span className="text-xs text-gray-500">
+              <span className="text-xs text-stone-500">
                 {selectedJenjang.length === 3
                   ? "Semua"
                   : selectedJenjang.map((t) => jenjangLabels[t]).join(", ")}
               </span>
             </button>
             {jenjangDropdownOpen && (
-              <div className="absolute right-0 z-20 mt-1 bg-white border border-gray-300 rounded shadow-lg p-2 flex flex-col gap-1 min-w-[180px] animate-fade-in">
+              <div className="absolute right-0 z-20 mt-1 bg-white border border-stone-300 rounded shadow-lg p-2 flex flex-col gap-1 min-w-[180px] animate-fade-in">
                 {Object.entries(jenjangLabels).map(([jenjang, label]) => (
                   <label
                     key={jenjang}
@@ -251,7 +251,7 @@ export default function Results({ universities, totalEligible }) {
                       }}
                       className="accent-blue-600 focus:ring-2 focus:ring-blue-400"
                     />
-                    <span className="text-gray-700">{label}</span>
+                    <span className="text-stone-700">{label}</span>
                   </label>
                 ))}
               </div>
@@ -264,7 +264,7 @@ export default function Results({ universities, totalEligible }) {
           placeholder="Filter Nama Universitas..."
           value={filterUniName}
           onChange={(e) => setFilterUniName(e.target.value)}
-          className="border rounded px-2 py-1.5 text-sm flex-1 border-gray-300 bg-gray-50 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600 hover:bg-blue-50 placeholder:text-gray-500"
+          className="border rounded px-2 py-1.5 text-sm flex-1 border-stone-300 bg-stone-50 text-stone-700 focus:outline-none focus:ring-2 focus:ring-blue-600 hover:bg-blue-50 placeholder:text-stone-500"
         />
         <div className="flex flex-col gap-1">
           <input
@@ -272,14 +272,14 @@ export default function Results({ universities, totalEligible }) {
             placeholder="Filter Kab/Kota..."
             value={filterCity}
             onChange={(e) => setFilterCity(e.target.value)}
-            className="border rounded px-2 py-1.5 text-sm flex-1 border-gray-300 bg-gray-50 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600 hover:bg-blue-50 placeholder:text-gray-500"
+            className="border rounded px-2 py-1.5 text-sm flex-1 border-stone-300 bg-stone-50 text-stone-700 focus:outline-none focus:ring-2 focus:ring-blue-600 hover:bg-blue-50 placeholder:text-stone-500"
           />
           <input
             type="text"
             placeholder="Filter Program Studi..."
             value={filterProdiName}
             onChange={(e) => setFilterProdiName(e.target.value)}
-            className="border rounded px-2 py-1.5 text-sm flex-1 border-gray-300 bg-gray-50 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600 hover:bg-blue-50 placeholder:text-gray-500"
+            className="border rounded px-2 py-1.5 text-sm flex-1 border-stone-300 bg-stone-50 text-stone-700 focus:outline-none focus:ring-2 focus:ring-blue-600 hover:bg-blue-50 placeholder:text-stone-500"
           />
         </div>
       </div>
@@ -288,7 +288,7 @@ export default function Results({ universities, totalEligible }) {
       <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
         {/* Left side: Page Size & Total */}
         <div className="flex items-center gap-1">
-          <label className="text-gray-700 text-sm flex items-center gap-1 relative">
+          <label className="text-stone-700 text-sm flex items-center gap-1 relative">
             Tampilkan
             <span className="relative inline-block">
               <select
@@ -297,7 +297,7 @@ export default function Results({ universities, totalEligible }) {
                   const newSize = Number(e.target.value);
                   setPageSize(newSize);
                 }}
-                className="border rounded px-2 py-0.5 text-sm border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600 appearance-none pr-6 peer hover:bg-blue-50 shadow-none"
+                className="border rounded px-2 py-0.5 text-sm border-stone-300 bg-stone-50 focus:outline-none focus:ring-2 focus:ring-blue-600 appearance-none pr-6 peer hover:bg-blue-50 shadow-none"
               >
                 {[10, 20, 50].map((n) => (
                   <option key={n} value={n}>
@@ -307,7 +307,7 @@ export default function Results({ universities, totalEligible }) {
               </select>
               {/* Arrow icon overlay, animated on focus */}
               <svg
-                className="w-4 h-4 text-gray-700 pointer-events-none absolute right-1 top-1/2 -translate-y-1/2 transition-transform duration-200 peer-focus:rotate-180"
+                className="w-4 h-4 text-stone-700 pointer-events-none absolute right-1 top-1/2 -translate-y-1/2 transition-transform duration-200 peer-focus:rotate-180"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
@@ -327,20 +327,20 @@ export default function Results({ universities, totalEligible }) {
         {/* Right side: Sort */}
         <div className="flex items-center">
           {/* Sort Dropdown */}
-          <label className="text-gray-700 text-sm flex items-center gap-1 relative">
+          <label className="text-stone-700 text-sm flex items-center gap-1 relative">
             Persentase Diterima
             <span className="relative inline-block">
               <select
                 value={sortOrder}
                 onChange={(e) => setSortOrder(e.target.value)}
-                className="border rounded px-2 py-0.5 text-sm border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-600 appearance-none pr-6 peer hover:bg-blue-50 shadow-none"
+                className="border rounded px-2 py-0.5 text-sm border-stone-300 bg-stone-50 focus:outline-none focus:ring-2 focus:ring-blue-600 appearance-none pr-6 peer hover:bg-blue-50 shadow-none"
               >
                 <option value="asc">Rendah ke Tinggi</option>
                 <option value="desc">Tinggi ke Rendah</option>
               </select>
               {/* Arrow icon overlay, animated on focus */}
               <svg
-                className="w-4 h-4 text-gray-700 pointer-events-none absolute right-1 top-1/2 -translate-y-1/2 transition-transform duration-200 peer-focus:rotate-180"
+                className="w-4 h-4 text-stone-700 pointer-events-none absolute right-1 top-1/2 -translate-y-1/2 transition-transform duration-200 peer-focus:rotate-180"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
@@ -359,7 +359,7 @@ export default function Results({ universities, totalEligible }) {
 
       {/* Conditional Rendering for Results or No Results Message */}
       {!items.length ? (
-        <div className="max-w-md mx-auto mt-6 p-4 bg-white rounded-lg shadow-lg text-center text-gray-600">
+        <div className="max-w-md mx-auto mt-6 p-4 bg-white rounded-lg shadow-lg text-center text-stone-600">
           {filterUniName || filterCity || filterProdiName ? (
             <p className="text-base">
               Tidak ada hasil yang cocok dengan filter Anda.
@@ -374,7 +374,7 @@ export default function Results({ universities, totalEligible }) {
         <>
           {/* Results Grid - Wrapped for Scrolling */}
           {/* Adjusted height to match ScoreForm */}
-          <div className="overflow-y-auto max-h-[85vh] border bg-gray-50 border-gray-200 rounded p-2 scrollbar-thin scrollbar-thumb-indigo-200 scrollbar-track-gray-100">
+          <div className="overflow-y-auto max-h-[85vh] border bg-stone-50 border-stone-200 rounded p-2 scrollbar-thin scrollbar-thumb-indigo-200 scrollbar-track-stone-100">
             <div className="grid gap-3 grid-cols-1 sm:grid-cols-2">
               {displayed.map((item, idx) => {
                 const admissionPercentage = item.admissionRate * 100;
@@ -391,22 +391,22 @@ export default function Results({ universities, totalEligible }) {
                     key={start + idx}
                     className="bg-white rounded-lg p-3 shadow-md hover:shadow-lg transition-shadow relative hover:bg-blue-50"
                   >
-                    <h3 className="font-semibold text-gray-700 text-sm sm:text-base">
+                    <h3 className="font-semibold text-stone-700 text-sm sm:text-base">
                       {item.uniName}
                     </h3>
-                    <p className="text-xs text-gray-500">{item.city}</p>
-                    <p className="text-xs sm:text-sm text-gray-700 mt-1 mb-10">
+                    <p className="text-xs text-stone-500">{item.city}</p>
+                    <p className="text-xs sm:text-sm text-stone-700 mt-1 mb-10">
                       {item.nama}
                     </p>
                     <div className="absolute bottom-2 left-3 text-left">
                       {item.jenjang && (
-                        <span className="text-xs text-gray-500">
+                        <span className="text-xs text-stone-500">
                           {item.jenjang}
                         </span>
                       )}
                     </div>
                     <div className="absolute bottom-2 right-2 text-right">
-                      <span className="text-xs font-medium text-gray-500">
+                      <span className="text-xs font-medium text-stone-500">
                         Passing Grade:
                       </span>
                       <span
@@ -415,7 +415,7 @@ export default function Results({ universities, totalEligible }) {
                         {cutoffScore}
                       </span>
                       <br />
-                      <span className="text-xs font-medium text-gray-500">
+                      <span className="text-xs font-medium text-stone-500">
                         Persentase Diterima:
                       </span>
                       <span
@@ -440,7 +440,7 @@ export default function Results({ universities, totalEligible }) {
                   Sebelumnya
                 </button>
               )}
-              <span className="text-gray-600 text-xs">
+              <span className="text-stone-600 text-xs">
                 Halaman {pageIndex + 1} dari {Math.ceil(total / pageSize)}
               </span>
               {end < total && (
