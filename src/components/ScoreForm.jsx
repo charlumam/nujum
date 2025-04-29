@@ -119,6 +119,11 @@ export default function ScoreForm({
   };
 
   const handleSubmit = (e) => {
+    // prevent submission when "view all" results are shown and inputs are all max
+    if (viewAllMode && allMaxScores) {
+      e.preventDefault();
+      return;
+    }
     e.preventDefault();
 
     // If inputs are not all filled, submit with empty values to show all programs
@@ -299,7 +304,8 @@ export default function ScoreForm({
       {/* Apply 3D effect using shadow, transform, and transition */}
       <button
         type="submit"
-        className="mb-4 mt-4 w-full py-2 sm:py-3 border-b-4 border-blue-800 bg-gradient-to-t from-blue-500 to-blue-700 text-white text-base sm:text-lg font-semibold rounded-lg shadow-lg hover:opacity-70 active:translate-y-0.5 active:shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-all duration-100 ease-in-out"
+        disabled={viewAllMode && allMaxScores}
+        className={`mb-4 mt-4 w-full py-2 sm:py-3 border-b-4 border-blue-800 bg-gradient-to-t from-blue-500 to-blue-700 text-white text-base sm:text-lg font-semibold rounded-lg shadow-lg hover:opacity-70 active:translate-y-0.5 active:shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-all duration-100 ease-in-out ${viewAllMode && allMaxScores ? 'opacity-70 cursor-not-allowed' : ''}`}
       >
         {allMaxScores
           ? "Lihat Semua Passing Grade"
