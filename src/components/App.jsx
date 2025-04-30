@@ -209,10 +209,10 @@ export default function App() {
           />
         </div>
       ) : (
-        /* Show side-by-side layout once results are available */
-        <div className="flex flex-col md:flex-row md:space-x-4 lg:space-x-6 space-y-6 md:space-y-0">
+        /* Show side-by-side layout only on large screens (lg) */
+        <div className="flex flex-col lg:flex-row lg:space-x-4 xl:space-x-6 space-y-6 lg:space-y-0">
           {/* Left column - ScoreForm */}
-          <div className="w-full md:w-5/12 lg:w-2/5">
+          <div className="w-full lg:w-5/12 xl:w-2/5">
             <ScoreForm
               onSubmit={handleScoresSubmit}
               finalScore={finalScore}
@@ -223,7 +223,7 @@ export default function App() {
           </div>
 
           {/* Right column - Results */}
-          <div className="w-full md:w-7/12 lg:w-3/5">
+          <div className="w-full lg:w-7/12 xl:w-3/5">
             <Results
               universities={eligibleUnis}
               totalEligible={totalEligible}
