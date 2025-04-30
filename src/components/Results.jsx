@@ -374,7 +374,7 @@ export default function Results({ universities, totalEligible }) {
         <>
           {/* Results Grid - Wrapped for Scrolling */}
           {/* Adjusted height to match ScoreForm */}
-          <div className="overflow-y-auto max-h-[85vh] border bg-stone-50 border-stone-200 rounded p-2 scrollbar-thin scrollbar-thumb-indigo-200 scrollbar-track-stone-100">
+          <div className="overflow-y-auto max-h-[85vh] border bg-stone-50 border-stone-300 rounded-lg p-2 scrollbar-thin scrollbar-thumb-stone-200 scrollbar-track-stone-100 shadow-md">
             <div className="grid gap-3 grid-cols-1 sm:grid-cols-2">
               {displayed.map((item, idx) => {
                 const admissionPercentage = item.admissionRate * 100;
@@ -389,7 +389,7 @@ export default function Results({ universities, totalEligible }) {
                 return (
                   <div
                     key={start + idx}
-                    className="bg-white rounded-lg p-3 shadow-md hover:shadow-lg transition-shadow relative hover:bg-blue-50"
+                    className="bg-white rounded-lg p-3 relative border px-2 border-stone-300 hover:bg-blue-50"
                   >
                     <h3 className="font-semibold text-stone-700 text-sm sm:text-base">
                       {item.uniName}
@@ -435,7 +435,7 @@ export default function Results({ universities, totalEligible }) {
               {pageIndex > 0 && (
                 <button
                   onClick={() => setPageIndex((prev) => prev - 1)}
-                  className="text-white px-2 py-1 text-xs sm:text-sm border-b-4 border-stone-800 bg-gradient-to-t from-stone-500 to-stone-700 text-white text-base font-semibold rounded-md shadow-md hover:opacity-70 active:translate-y-0.5 active:shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-all duration-100 ease-in-out"
+                  className="px-2 py-1 text-xs sm:text-sm border-b-4 border-stone-800 bg-gradient-to-t from-stone-500 to-stone-700 text-white font-semibold rounded-md shadow-md hover:opacity-70 active:translate-y-0.5 active:shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-all duration-100 ease-in-out"
                 >
                   Sebelumnya
                 </button>
@@ -446,7 +446,7 @@ export default function Results({ universities, totalEligible }) {
               {end < total && (
                 <button
                   onClick={() => setPageIndex((prev) => prev + 1)}
-                  className="text-white px-2 py-1 text-xs sm:text-sm border-b-4 border-blue-800 bg-gradient-to-t from-blue-500 to-blue-700 text-white text-base font-semibold rounded-md shadow-md hover:opacity-70 active:translate-y-0.5 active:shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-all duration-100 ease-in-out"
+                  className="px-2 py-1 text-xs sm:text-sm border-b-4 border-blue-800 bg-gradient-to-t from-blue-500 to-blue-700 text-white font-semibold rounded-md shadow-md hover:opacity-70 active:translate-y-0.5 active:shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-all duration-100 ease-in-out"
                 >
                   Berikutnya
                 </button>
