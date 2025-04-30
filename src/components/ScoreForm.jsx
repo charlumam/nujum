@@ -159,7 +159,7 @@ export default function ScoreForm({
           alt="Logo Nujum."
           className="h-10 sm:h-12 md:h-14"
         />
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-blue-600">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-blue-700">
           Nujum
         </h1>
       </div>
