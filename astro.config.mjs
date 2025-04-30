@@ -6,10 +6,12 @@ import favicons from "astro-favicons";
 
 import partytown from "@astrojs/partytown";
 
+import sitemap from "@astrojs/sitemap";
+
 // https://astro.build/config
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  integrations: [react(), favicons(), partytown()],
+  integrations: [react(), favicons(), partytown(), sitemap()],
 });
