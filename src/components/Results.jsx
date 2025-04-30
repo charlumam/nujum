@@ -398,7 +398,7 @@ export default function Results({ universities, totalEligible }) {
                     <p className="text-xs sm:text-sm text-stone-700 mt-1 mb-10">
                       {item.nama}
                     </p>
-                    <div className="absolute bottom-2 left-3 text-left">
+                    <div className="absolute bottom-2 text-center">
                       {item.jenjang && (
                         <span className="text-xs text-stone-500">
                           {item.jenjang}
