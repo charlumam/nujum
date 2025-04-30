@@ -316,7 +316,7 @@ export default function ScoreForm({
         {allMaxScores
           ? "Lihat Semua Passing Grade"
           : allInputsFilled
-          ? "Cek Kelulusan UTBK-SNBT"
+          ? "Prediksi Kelulusan UTBK-SNBT"
           : "Lihat Semua Passing Grade"}
       </button>
     </form>
