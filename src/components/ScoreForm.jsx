@@ -152,18 +152,22 @@ export default function ScoreForm({
       onSubmit={handleSubmit}
       className="max-w-full mx-auto bg-white shadow-lg rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 space-y-4 sm:space-y-6"
     >
-      {/* Add mb-1 to reduce space below this heading */}
-      <h1 className="text-md sm:text-lg md:text-lg font-bold text-stone-700 mb-1">
-        Nujum | Passing Grade & Kelulusan UTBK-SNBT
-      </h1>
-      <h2 className="text-sm sm:text-md md:text-base italic text-base text-stone-700">
-        Edisi 2025
-      </h2>
+      {/* Logo and Title */}
+      <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-4">
+        <img
+          src="/favicon.svg"
+          alt="Logo Nujum."
+          className="h-10 sm:h-12 md:h-14"
+        />
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-blue-600">
+          Nujum
+        </h1>
+      </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
         {/* Test Potensi Skolastik */}
         <div className="space-y-3">
-          <h3 className="text-base sm:text-lg md:text-xl font-semibold text-blue-600 border-b-2 border-blue-100 pb-1 sm:pb-2">
+          <h3 className="text-base sm:text-lg md:text-xl font-bold text-stone-600 border-b-2 border-blue-100 pb-1 sm:pb-2">
             Tes Potensi Skolastik
           </h3>
           {[
@@ -192,7 +196,7 @@ export default function ScoreForm({
         {/* Test Literasi & Matematika */}
         <div className="space-y-3 sm:space-y-4">
           <div className="space-y-3">
-            <h3 className="text-base sm:text-lg md:text-xl font-semibold text-blue-600 border-b-2 border-blue-100 pb-1 sm:pb-2">
+            <h3 className="text-base sm:text-lg md:text-xl font-bold text-stone-600 border-b-2 border-blue-100 pb-1 sm:pb-2">
               Tes Literasi Bahasa
             </h3>
             {[
@@ -217,7 +221,7 @@ export default function ScoreForm({
           </div>
 
           <div className="space-y-3">
-            <h3 className="text-base sm:text-lg md:text-xl font-semibold text-blue-600 border-b-2 border-blue-100 pb-1 sm:pb-2">
+            <h3 className="text-base sm:text-lg md:text-xl font-bold text-stone-700 border-b-2 border-blue-100 pb-1 sm:pb-2">
               Tes Penalaran Matematika
             </h3>
             <label className="block">
@@ -305,7 +309,9 @@ export default function ScoreForm({
       <button
         type="submit"
         disabled={viewAllMode && allMaxScores}
-        className={`mb-4 mt-4 w-full py-2 sm:py-3 border-b-4 border-blue-800 bg-gradient-to-t from-blue-500 to-blue-700 text-white text-base sm:text-lg font-semibold rounded-lg shadow-lg hover:opacity-70 active:translate-y-0.5 active:shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-all duration-100 ease-in-out ${viewAllMode && allMaxScores ? 'opacity-70 cursor-not-allowed' : ''}`}
+        className={`mb-4 mt-4 w-full py-2 sm:py-3 border-b-4 border-blue-800 bg-gradient-to-t from-blue-500 to-blue-700 text-white text-base sm:text-lg font-semibold rounded-lg shadow-lg hover:opacity-70 active:translate-y-0.5 active:shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-all duration-100 ease-in-out ${
+          viewAllMode && allMaxScores ? "opacity-70 cursor-not-allowed" : ""
+        }`}
       >
         {allMaxScores
           ? "Lihat Semua Passing Grade"
