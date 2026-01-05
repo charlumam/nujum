@@ -309,7 +309,7 @@ export default function ScoreForm({
       <button
         type="submit"
         disabled={viewAllMode && allMaxScores}
-        className={`mb-4 mt-4 w-full py-2 sm:py-3 border-b-4 border-blue-800 bg-gradient-to-t from-blue-500 to-blue-700 text-white text-base sm:text-lg font-semibold rounded-lg shadow-lg hover:opacity-70 active:translate-y-0.5 active:shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-all duration-100 ease-in-out ${
+        className={`mb-4 mt-4 w-full py-2 sm:py-3 border-b-4 border-blue-800 bg-linear-to-t from-blue-500 to-blue-700 text-white text-base sm:text-lg font-semibold rounded-lg shadow-lg hover:opacity-70 active:translate-y-0.5 active:shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-all duration-100 ease-in-out ${
           viewAllMode && allMaxScores ? "opacity-70 cursor-not-allowed" : ""
         }`}
       >

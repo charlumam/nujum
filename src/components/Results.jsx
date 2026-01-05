@@ -170,7 +170,7 @@ export default function Results({ universities, totalEligible }) {
               </span>
             </button>
             {dropdownOpen && (
-              <div className="absolute z-20 mt-1 bg-white border border-stone-300 rounded shadow-lg p-2 flex flex-col gap-1 min-w-[180px] animate-fade-in">
+              <div className="absolute z-20 mt-1 bg-white border border-stone-300 rounded shadow-lg p-2 flex flex-col gap-1 min-w-45 animate-fade-in">
                 {Object.entries(typeLabels).map(([type, label]) => (
                   <label
                     key={type}
@@ -231,7 +231,7 @@ export default function Results({ universities, totalEligible }) {
               </span>
             </button>
             {jenjangDropdownOpen && (
-              <div className="absolute right-0 z-20 mt-1 bg-white border border-stone-300 rounded shadow-lg p-2 flex flex-col gap-1 min-w-[180px] animate-fade-in">
+              <div className="absolute right-0 z-20 mt-1 bg-white border border-stone-300 rounded shadow-lg p-2 flex flex-col gap-1 min-w-45 animate-fade-in">
                 {Object.entries(jenjangLabels).map(([jenjang, label]) => (
                   <label
                     key={jenjang}
@@ -435,7 +435,7 @@ export default function Results({ universities, totalEligible }) {
               {pageIndex > 0 && (
                 <button
                   onClick={() => setPageIndex((prev) => prev - 1)}
-                  className="px-2 py-1 text-xs sm:text-sm border-b-4 border-stone-800 bg-gradient-to-t from-stone-500 to-stone-700 text-white font-semibold rounded-md shadow-md hover:opacity-70 active:translate-y-0.5 active:shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-all duration-100 ease-in-out"
+                  className="px-2 py-1 text-xs sm:text-sm border-b-4 border-stone-800 bg-linear-to-t from-stone-500 to-stone-700 text-white font-semibold rounded-md shadow-md hover:opacity-70 active:translate-y-0.5 active:shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-all duration-100 ease-in-out"
                 >
                   Sebelumnya
                 </button>
@@ -446,7 +446,7 @@ export default function Results({ universities, totalEligible }) {
               {end < total && (
                 <button
                   onClick={() => setPageIndex((prev) => prev + 1)}
-                  className="px-2 py-1 text-xs sm:text-sm border-b-4 border-blue-800 bg-gradient-to-t from-blue-500 to-blue-700 text-white font-semibold rounded-md shadow-md hover:opacity-70 active:translate-y-0.5 active:shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-all duration-100 ease-in-out"
+                  className="px-2 py-1 text-xs sm:text-sm border-b-4 border-blue-800 bg-linear-to-t from-blue-500 to-blue-700 text-white font-semibold rounded-md shadow-md hover:opacity-70 active:translate-y-0.5 active:shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-all duration-100 ease-in-out"
                 >
                   Berikutnya
                 </button>
