@@ -9,10 +9,29 @@ const modules = import.meta.glob("../data/ptn/**/*.json", { as: "json" });
 
 // Note: JSON data will be dynamically loaded and preprocessed in handleScoresSubmit
 
-// Constants and functions for new UTBK cut-off algorithm
-const MEAN = 500; // national mean per sub-test
-const STD = 100; // national standard deviation
+// Jenjang-specific score statistics for UTBK-SNBT prediction based on official press conference
+const JENJANG_STATS = {
+  "Diploma Tiga": {
+    min: 293.92,
+    mean: 529.39,
+    max: 731.21,
+  },
+  "Sarjana Terapan": {
+    min: 284.16,
+    mean: 541.47,
+    max: 774.38,
+  },
+  Sarjana: {
+    min: 200.0,
+    mean: 545.78,
+    max: 819.85,
+  },
+};
 
+// Default stats for unknown jenjang (uses "Sarjana" as fallback)
+const DEFAULT_STATS = JENJANG_STATS["Sarjana"];
+
+// Inverse normal distribution (probit function) using rational approximation
 function invNorm(p) {
   if (p <= 0 || p >= 1) throw RangeError("p must be in (0,1)");
   const a1 = -3.969683028665376e1,
@@ -61,11 +80,53 @@ function invNorm(p) {
   );
 }
 
-function getRequiredAverage(mean, sigma, accRate) {
-  const p = 1 - accRate;
+/**
+ * Estimates standard deviation from min/max/mean using the range rule.
+ * For approximately normal distributions, range ≈ 4-6 standard deviations.
+ * We use an asymmetric approach considering the skewness of admission data.
+ */
+function estimateStdDev(stats) {
+  // Calculate range-based estimate
+  const range = stats.max - stats.min;
+  // Use 4.5 as divisor (between 4 and 6) for a moderately conservative estimate
+  const rangeBasedStd = range / 4.5;
+
+  // Also consider the distance from mean to min/max
+  const upperRange = stats.max - stats.mean;
+  const lowerRange = stats.mean - stats.min;
+
+  // Use weighted average favoring the larger range (accounts for skewness)
+  const asymmetricStd = (upperRange + lowerRange) / 3;
+
+  // Return average of both methods for robustness
+  return (rangeBasedStd + asymmetricStd) / 2;
+}
+
+/**
+ * Calculate the required cutoff score for a given admission rate and jenjang.
+ * Uses jenjang-specific statistics for more accurate predictions.
+ */
+function getRequiredAverage(admissionRate, jenjang) {
+  const stats = JENJANG_STATS[jenjang] || DEFAULT_STATS;
+  const sigma = estimateStdDev(stats);
+
+  // Clamp admission rate to valid range for invNorm
+  const clampedRate = Math.min(Math.max(admissionRate, 0.001), 0.999);
+
+  // p is the percentile that must be exceeded (1 - admission rate)
+  const p = 1 - clampedRate;
   const z = invNorm(p);
-  const required = mean + z * sigma;
-  return { p, z, required };
+
+  // Calculate required score using the jenjang-specific mean and estimated std dev
+  let required = stats.mean + z * sigma;
+
+  // Clamp to reasonable bounds based on jenjang statistics
+  // The cutoff shouldn't be below the minimum observed score for that jenjang
+  required = Math.max(required, stats.min);
+  // The cutoff shouldn't exceed the maximum observed score
+  required = Math.min(required, stats.max);
+
+  return { p, z, required, stats, sigma };
 }
 
 export default function App() {
@@ -125,8 +186,15 @@ export default function App() {
       scoreValues.reduce((sum, score) => sum + score, 0) / scoreValues.length;
     setFinalScore(userAverageScore.toFixed(2)); // Set final score state
 
-    // If user's average score is below minimum threshold, return no results
-    if (userAverageScore < 178) {
+    // Get the absolute minimum score across all jenjang types
+    const absoluteMinScore = Math.min(
+      JENJANG_STATS["Diploma Tiga"].min,
+      JENJANG_STATS["Sarjana Terapan"].min,
+      JENJANG_STATS["Sarjana"].min
+    );
+
+    // If user's average score is below the absolute minimum threshold, return no results
+    if (userAverageScore < absoluteMinScore) {
       setEligibleUnis([]);
       setTotalEligible(0); // Reset eligible count
       return;
@@ -150,17 +218,27 @@ export default function App() {
             // Ensure rate is not > 1 (can happen with data errors)
             const validAdmissionRate = Math.min(admissionRate, 1.0);
 
+            // Get the jenjang (degree level) for this program
+            const jenjang = prodi.jenjang || "Sarjana";
+
+            // Check if user score meets the minimum for this jenjang
+            const jenjangStats = JENJANG_STATS[jenjang] || DEFAULT_STATS;
+            if (userAverageScore < jenjangStats.min) {
+              return null; // User doesn't meet minimum for this jenjang
+            }
+
             let meetsCutoff = false;
             let cutoffScore = 0; // initialize cutoff score
 
             if (validAdmissionRate >= 1.0) {
+              // Everyone qualifies - use the jenjang minimum as cutoff
               meetsCutoff = true;
-              cutoffScore = 0; // everyone qualifies
+              cutoffScore = jenjangStats.min;
             } else {
+              // Calculate cutoff using jenjang-specific statistics
               const { required } = getRequiredAverage(
-                MEAN,
-                STD,
-                validAdmissionRate
+                validAdmissionRate,
+                jenjang
               );
               cutoffScore = required;
               meetsCutoff = userAverageScore >= cutoffScore;
@@ -196,7 +274,7 @@ export default function App() {
   };
 
   return (
-    <div className="container mx-auto p-2 sm:p-3 md:p-4 max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl">
+    <div className="container mx-auto p-2 sm:p-3 md:p-4 max-w-full sm:max-w-screen-sm md:max-w-3xl lg:max-w-5xl xl:max-w-7xl 2xl:max-w-screen-2xl">
       {/* If no results yet, center the ScoreForm */}
       {eligibleUnis === null ? (
         <div className="w-full max-w-sm sm:max-w-lg md:max-w-xl lg:max-w-2xl mx-auto">
