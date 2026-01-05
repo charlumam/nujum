@@ -24,7 +24,7 @@ const TEST_SECTIONS = [
     ],
   },
   {
-    title: "Tes Penalaran",
+    title: "Tes Literasi",
     fields: [
       ["bahasaIndonesia", "Literasi Bahasa Indonesia"],
       ["bahasaInggris", "Literasi Bahasa Inggris"],
