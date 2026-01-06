@@ -373,8 +373,7 @@ export default function Results({ universities, totalEligible }) {
       ) : (
         <>
           {/* Results Grid - Wrapped for Scrolling */}
-          {/* Adjusted height to match ScoreForm */}
-          <div className="overflow-y-auto min-w-50 min-h-[85vh] max-h-[85vh] border bg-stone-50 border-stone-300 rounded-lg p-2 scrollbar-thin scrollbar-thumb-stone-200 scrollbar-track-stone-100 shadow-md">
+          <div className="overflow-y-auto min-w-50 min-h-[min(85vh,500px)] max-h-[min(85vh,500px)] border bg-stone-50 border-stone-300 rounded-lg p-2 scrollbar-thin scrollbar-thumb-stone-200 scrollbar-track-stone-100 shadow-md">
             <div className="grid gap-3 grid-cols-1 sm:grid-cols-2">
               {displayed.map((item, idx) => {
                 const admissionPercentage = item.admissionRate * 100;
