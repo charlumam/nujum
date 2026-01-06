@@ -211,12 +211,12 @@ export default function ScoreForm({
             {totalEligible > 0 ? (
               <>
                 <p className="text-sm sm:text-base font-semibold text-blue-600">
-                  Kamu berpeluang besar masuk di{" "}
+                  Kamu berpeluang masuk di{" "}
                   <span className="font-bold underline">{totalEligible}</span>{" "}
                   program studi.
                 </p>
                 <p className="text-xs sm:text-sm text-blue-600 mt-1 sm:mt-2">
-                  Nilai kamu termasuk dalam{" "}
+                  Nilai kamu termasuk{" "}
                   <span className="font-bold underline">{percentage}%</span>{" "}
                   teratas!
                 </p>
