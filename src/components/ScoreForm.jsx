@@ -181,6 +181,7 @@ export default function ScoreForm({
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-blue-700">
           Nujum
         </h1>
+        <span className="ml-auto text-xs text-blue-500">v2026.1</span>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
