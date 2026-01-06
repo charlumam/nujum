@@ -159,7 +159,8 @@ export default function ScoreForm({
   };
 
   // Disable button if: already in viewAllMode with max scores, OR partially filled (some but not all)
-  const isButtonDisabled = (viewAllMode && allMaxScores) || (anyInputFilled && !allInputsFilled);
+  const isButtonDisabled =
+    (viewAllMode && allMaxScores) || (anyInputFilled && !allInputsFilled);
   // Show "Lihat Semua Passing Grade" only when no inputs are filled, otherwise show prediction text
   const buttonText =
     !anyInputFilled || (viewAllMode && allMaxScores)
@@ -178,7 +179,7 @@ export default function ScoreForm({
           alt="Logo Nujum."
           className="h-10 sm:h-12 md:h-14"
         />
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-blue-700">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-700">
           Nujum
         </h1>
         <span className="ml-auto text-xs text-blue-500">v2026.1</span>
