@@ -5,9 +5,9 @@ const MAX_SCORE = 1000;
 
 const INITIAL_SCORES = {
   penalaranUmum: "",
-  kuantitatif: "",
-  pemahamanUmum: "",
-  bacaanTulis: "",
+  pengetahuanUmum: "",
+  bacaTulis: "",
+  pengetahuanKuantitatif: "",
   bahasaIndonesia: "",
   bahasaInggris: "",
   penalaranMatematika: "",
@@ -138,7 +138,10 @@ export default function ScoreForm({
     e.preventDefault();
     if (viewAllMode && allMaxScores) return;
 
-    if (!allInputsFilled) {
+    // Block submission if partially filled (some but not all inputs)
+    if (anyInputFilled && !allInputsFilled) return;
+
+    if (!anyInputFilled) {
       const allProgramsScores = Object.fromEntries(
         Object.keys(scores).map((key) => [key, MAX_SCORE])
       );
@@ -154,9 +157,11 @@ export default function ScoreForm({
     onSubmit(numeric);
   };
 
-  const isButtonDisabled = viewAllMode && allMaxScores;
+  // Disable button if: already in viewAllMode with max scores, OR partially filled (some but not all)
+  const isButtonDisabled = (viewAllMode && allMaxScores) || (anyInputFilled && !allInputsFilled);
+  // Show "Lihat Semua Passing Grade" only when no inputs are filled, otherwise show prediction text
   const buttonText =
-    allMaxScores || !allInputsFilled
+    !anyInputFilled || (viewAllMode && allMaxScores)
       ? "Lihat Semua Passing Grade"
       : "Prediksi Kelulusan UTBK-SNBT";
 
