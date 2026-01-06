@@ -51,6 +51,7 @@ const ScoreInput = ({ name, label, value, onChange }) => (
       onChange={onChange}
       className={INPUT_CLASS}
       placeholder="0 - 1000"
+      autoComplete="off"
     />
   </label>
 );
@@ -168,6 +169,7 @@ export default function ScoreForm({
   return (
     <form
       onSubmit={handleSubmit}
+      autoComplete="off"
       className="max-w-full mx-auto bg-white shadow-lg rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 space-y-4 sm:space-y-6"
     >
       <div className="flex items-center gap-2 sm:gap-3 mb-4">
