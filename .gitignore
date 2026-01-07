@@ -1,5 +1,6 @@
 # build output
 dist/
+
 # generated types
 .astro/
 
@@ -21,36 +22,9 @@ logs/
 .env.test.local
 .env.production.local
 
-# macOS-specific files
-.DS_Store
-
-# Windows-specific files
-Thumbs.db
-ehthumbs.db
-
-# IDE / Editor specific files
-.vscode/
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.sublime-workspace
-
-# jetbrains setting folder
-.idea/
-
-# Build / Cache
+# build / cache
 .cache/
 .npm/
-.yarn/
-*.tsbuildinfo
-
-# Test reports
-coverage/
-.nyc_output/
-
-# Personal notes
-notes/
 
 # wrangler
 .wrangler/
