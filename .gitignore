@@ -51,3 +51,6 @@ coverage/
 
 # Personal notes
 notes/
+
+# wrangler
+.wrangler/
