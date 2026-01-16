@@ -173,18 +173,6 @@ export default function ScoreForm({
       autoComplete="off"
       className="max-w-full mx-auto bg-white shadow-lg rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 space-y-4 sm:space-y-6"
     >
-      <div className="flex items-center gap-2 sm:gap-3 mb-4">
-        <img
-          src="/favicon.svg"
-          alt="Logo Nujum."
-          className="h-10 sm:h-12 md:h-14"
-        />
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-700">
-          Nujum
-        </h1>
-        <span className="ml-auto text-xs text-blue-500">v2026.1</span>
-      </div>
-
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
         {TEST_SECTIONS.map((section) => (
           <TestSection
