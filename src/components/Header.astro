@@ -1,5 +1,5 @@
 ---
-export const prerender = false
+export const prerender = false;
 ---
 
 <div class="sticky top-0 z-50 px-4 pt-4">
@@ -8,154 +8,165 @@ export const prerender = false
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
         <a href="/" class="flex items-center gap-2 sm:gap-3 group shrink-0">
-        <svg
-          width="40"
-          height="40"
-          viewBox="0 0 135.46667 135.46667"
-          class="w-8 h-8 sm:w-10 sm:h-10 shrink-0"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <defs>
-            <linearGradient
-              id="logoGradient"
-              x1="67.733337"
-              y1="0"
-              x2="67.733337"
-              y2="135.46667"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop style="stop-color:#1d4ed8;stop-opacity:1;" offset="0"
-              ></stop>
-              <stop style="stop-color:#3b82f6;stop-opacity:1;" offset="1"
-              ></stop>
-            </linearGradient>
-          </defs>
-          <path
-            style="fill:url(#logoGradient);fill-opacity:1;"
-            d="M 67.733335,0 A 67.733337,67.733337 0 0 0 0,67.733335 67.733337,67.733337 0 0 0 67.733335,135.46667 67.733337,67.733337 0 0 0 88.970282,131.9196 c -0.0077,-0.16705 -0.02274,-0.33109 -0.02274,-0.50126 v -27.82259 l -19.78484,19.78484 c -1.957876,1.95787 -4.250457,2.91077 -6.878133,2.85925 -2.627676,-0.0516 -4.920774,-1.05597 -6.87865,-3.01377 -1.957876,-1.95787 -2.936772,-4.22497 -2.936772,-6.80113 0,-2.57616 0.978896,-4.84326 2.936772,-6.80114 L 74.881736,90.147988 H 47.523199 c -2.6792,0 -4.972298,-0.952904 -6.87865,-2.859257 -1.906353,-1.906353 -2.859258,-4.19945 -2.859258,-6.87865 0,-2.679199 0.952905,-4.97178 2.859258,-6.878133 1.906352,-1.906354 4.19945,-2.859774 6.87865,-2.859774 h 27.822075 l -19.78484,-19.78484 c -1.854831,-1.85483 -2.782259,-4.095944 -2.782259,-6.72362 0,-2.627674 0.927428,-4.920257 2.782259,-6.878134 1.85483,-1.957876 4.121938,-2.962763 6.801136,-3.014286 2.6792,-0.05152 4.99777,0.901902 6.955648,2.859774 l 19.630327,19.630327 v -27.66808 c 0,-2.679199 0.953419,-4.97178 2.859773,-6.878133 1.906354,-1.906353 4.198929,-2.859774 6.878134,-2.859774 2.679198,0 4.971778,0.953421 6.878128,2.859774 1.90636,1.906353 2.85978,4.198934 2.85978,6.878133 v 27.358538 l 19.3213,-19.320785 c 0.0874,-0.08744 0.17933,-0.162449 0.2682,-0.24598 A 67.733337,67.733337 0 0 0 67.733335,0 Z m 67.018645,57.945818 -12.72687,12.726356 h 13.23124 a 67.733337,67.733337 0 0 0 0.21032,-2.938839 67.733337,67.733337 0 0 0 -0.71469,-9.787517 z m -12.41733,32.20217 6.55619,6.556189 a 67.733337,67.733337 0 0 0 2.58951,-6.556189 z M 108.42336,103.75026 V 121.667 a 67.733337,67.733337 0 0 0 9.45679,-8.53488 z"
-          ></path>
-        </svg>
-        <span
-          class="text-xl sm:text-2xl font-bold bg-linear-to-b from-blue-700 to-blue-500 bg-clip-text text-transparent group-hover:from-blue-600 group-hover:to-blue-400 transition-all duration-200"
-        >
-          Nujum
-        </span>
-      </a>
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 135.46667 135.46667"
+            class="w-8 h-8 sm:w-10 sm:h-10 shrink-0 logo-spin"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient
+                id="logoGradient"
+                x1="67.733337"
+                y1="0"
+                x2="67.733337"
+                y2="135.46667"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop style="stop-color:#1d4ed8;stop-opacity:1;" offset="0"
+                ></stop>
+                <stop style="stop-color:#3b82f6;stop-opacity:1;" offset="1"
+                ></stop>
+              </linearGradient>
+            </defs>
+            <path
+              style="fill:url(#logoGradient);fill-opacity:1;"
+              d="M 67.733335,0 A 67.733337,67.733337 0 0 0 0,67.733335 67.733337,67.733337 0 0 0 67.733335,135.46667 67.733337,67.733337 0 0 0 88.970282,131.9196 c -0.0077,-0.16705 -0.02274,-0.33109 -0.02274,-0.50126 v -27.82259 l -19.78484,19.78484 c -1.957876,1.95787 -4.250457,2.91077 -6.878133,2.85925 -2.627676,-0.0516 -4.920774,-1.05597 -6.87865,-3.01377 -1.957876,-1.95787 -2.936772,-4.22497 -2.936772,-6.80113 0,-2.57616 0.978896,-4.84326 2.936772,-6.80114 L 74.881736,90.147988 H 47.523199 c -2.6792,0 -4.972298,-0.952904 -6.87865,-2.859257 -1.906353,-1.906353 -2.859258,-4.19945 -2.859258,-6.87865 0,-2.679199 0.952905,-4.97178 2.859258,-6.878133 1.906352,-1.906354 4.19945,-2.859774 6.87865,-2.859774 h 27.822075 l -19.78484,-19.78484 c -1.854831,-1.85483 -2.782259,-4.095944 -2.782259,-6.72362 0,-2.627674 0.927428,-4.920257 2.782259,-6.878134 1.85483,-1.957876 4.121938,-2.962763 6.801136,-3.014286 2.6792,-0.05152 4.99777,0.901902 6.955648,2.859774 l 19.630327,19.630327 v -27.66808 c 0,-2.679199 0.953419,-4.97178 2.859773,-6.878133 1.906354,-1.906353 4.198929,-2.859774 6.878134,-2.859774 2.679198,0 4.971778,0.953421 6.878128,2.859774 1.90636,1.906353 2.85978,4.198934 2.85978,6.878133 v 27.358538 l 19.3213,-19.320785 c 0.0874,-0.08744 0.17933,-0.162449 0.2682,-0.24598 A 67.733337,67.733337 0 0 0 67.733335,0 Z m 67.018645,57.945818 -12.72687,12.726356 h 13.23124 a 67.733337,67.733337 0 0 0 0.21032,-2.938839 67.733337,67.733337 0 0 0 -0.71469,-9.787517 z m -12.41733,32.20217 6.55619,6.556189 a 67.733337,67.733337 0 0 0 2.58951,-6.556189 z M 108.42336,103.75026 V 121.667 a 67.733337,67.733337 0 0 0 9.45679,-8.53488 z"
+            ></path>
+          </svg>
+          <span
+            class="text-xl sm:text-2xl font-bold bg-linear-to-b from-blue-700 to-blue-500 bg-clip-text text-transparent group-hover:from-blue-600 group-hover:to-blue-400 transition-all duration-200"
+          >
+            Nujum
+          </span>
+        </a>
 
-      <!-- Desktop Navigation -->
-      <nav class="hidden md:flex items-center gap-2">
-        <a
-          href="#tentang"
-          class="px-4 py-2 text-lg text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-semibold transition-colors duration-200"
-        >
-          Tentang
-        </a>
-        <a
-          href="#layanan"
-          class="px-4 py-2 text-lg text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-semibold transition-colors duration-200"
-        >
-          Layanan
-        </a>
-        <a
-          href="#faq"
-          class="px-4 py-2 text-lg text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-semibold transition-colors duration-200"
-        >
-          FAQ
-        </a>
-      </nav>
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-2">
+          <a
+            href="#tentang"
+            class="px-4 py-2 text-lg text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-semibold transition-colors duration-200"
+          >
+            Tentang
+          </a>
+          <a
+            href="#layanan"
+            class="px-4 py-2 text-lg text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-semibold transition-colors duration-200"
+          >
+            Layanan
+          </a>
+          <a
+            href="#faq"
+            class="px-4 py-2 text-lg text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-semibold transition-colors duration-200"
+          >
+            FAQ
+          </a>
+        </nav>
 
-      <!-- Mobile Hamburger Button -->
-      <button
-        id="menu-toggle"
-        class="md:hidden p-2 text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-200"
-        aria-label="Toggle menu"
-        aria-expanded="false"
-      >
-        <!-- Hamburger Icon -->
-        <svg
-          id="menu-icon"
-          class="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
+        <!-- Mobile Hamburger Button -->
+        <button
+          id="menu-toggle"
+          class="md:hidden p-2 text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-200"
+          aria-label="Toggle menu"
+          aria-expanded="false"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-        <!-- Close Icon (hidden by default) -->
-        <svg
-          id="close-icon"
-          class="w-6 h-6 hidden"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
-      </button>
-    </div>
-
-    <!-- Mobile Navigation Menu -->
-    <nav
-      id="mobile-menu"
-      class="hidden md:hidden border-t border-stone-100 pb-4"
-    >
-      <div class="flex flex-col px-2 pt-2 space-y-1">
-        <a
-          href="#tentang"
-          class="px-4 py-3 text-lg text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-semibold transition-colors duration-200"
-        >
-          Tentang
-        </a>
-        <a
-          href="#layanan"
-          class="px-4 py-3 text-lg text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-semibold transition-colors duration-200"
-        >
-          Layanan
-        </a>
-        <a
-          href="#faq"
-          class="px-4 py-3 text-lg text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-semibold transition-colors duration-200"
-        >
-          FAQ
-        </a>
+          <!-- Hamburger Icon -->
+          <svg
+            id="menu-icon"
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <!-- Close Icon (hidden by default) -->
+          <svg
+            id="close-icon"
+            class="w-6 h-6 hidden"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
       </div>
-    </nav>
-  </div>
-</header>
+
+      <!-- Mobile Navigation Menu -->
+      <nav
+        id="mobile-menu"
+        class="hidden md:hidden border-t border-stone-100 pb-4"
+      >
+        <div class="flex flex-col px-2 pt-2 space-y-1">
+          <a
+            href="#tentang"
+            class="px-4 py-3 text-lg text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-semibold transition-colors duration-200"
+          >
+            Tentang
+          </a>
+          <a
+            href="#layanan"
+            class="px-4 py-3 text-lg text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-semibold transition-colors duration-200"
+          >
+            Layanan
+          </a>
+          <a
+            href="#faq"
+            class="px-4 py-3 text-lg text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-semibold transition-colors duration-200"
+          >
+            FAQ
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
 </div>
 
 <script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const menuIcon = document.getElementById('menu-icon');
-  const closeIcon = document.getElementById('close-icon');
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuIcon = document.getElementById("menu-icon");
+  const closeIcon = document.getElementById("close-icon");
 
-  menuToggle?.addEventListener('click', () => {
-    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-    
-    menuToggle.setAttribute('aria-expanded', (!isExpanded).toString());
-    mobileMenu?.classList.toggle('hidden');
-    menuIcon?.classList.toggle('hidden');
-    closeIcon?.classList.toggle('hidden');
+  menuToggle?.addEventListener("click", () => {
+    const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+
+    menuToggle.setAttribute("aria-expanded", (!isExpanded).toString());
+    mobileMenu?.classList.toggle("hidden");
+    menuIcon?.classList.toggle("hidden");
+    closeIcon?.classList.toggle("hidden");
   });
 
   // Close menu when clicking a link
-  mobileMenu?.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');
-      menuIcon?.classList.remove('hidden');
-      closeIcon?.classList.add('hidden');
-      menuToggle?.setAttribute('aria-expanded', 'false');
+  mobileMenu?.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+      menuIcon?.classList.remove("hidden");
+      closeIcon?.classList.add("hidden");
+      menuToggle?.setAttribute("aria-expanded", "false");
     });
   });
 </script>
+
+<style>
+  .logo-spin {
+    transform-origin: 50% 50%;
+    transition: transform 700ms ease-in-out;
+  }
+
+  .group:hover .logo-spin {
+    transform: rotate(360deg);
+  }
+</style>
