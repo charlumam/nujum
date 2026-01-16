@@ -1,5 +1,6 @@
 ---
 import App from "../components/App.jsx";
+import Header from "../components/Header.astro";
 import "../styles/global.css";
 import "@fontsource-variable/nunito";
 ---
@@ -54,11 +55,15 @@ import "@fontsource-variable/nunito";
     <meta name="twitter:image" content="/og.jpg" />
   </head>
 
-  <body class="bg-stone-100 min-h-screen py-8">
-    <App client:load />
+  <body class="bg-stone-100 min-h-screen">
+    <Header />
+    
+    <main id="layanan" class="py-8">
+      <App client:load />
+    </main>
 
     <div class="container mx-auto px-4 mt-12">
-      <h2 class="text-2xl font-bold mb-4 text-center text-stone-700">
+      <h2 id="tentang" class="text-2xl font-bold mb-4 text-center text-stone-700 scroll-mt-20">
         Tentang Nujum
       </h2>
       <div class="bg-white p-6 rounded-lg shadow mb-8 max-w-4xl mx-auto">
@@ -86,7 +91,7 @@ import "@fontsource-variable/nunito";
         </p>
       </div>
 
-      <h2 class="text-2xl font-bold mb-4 text-center text-stone-600">
+      <h2 id="faq" class="text-2xl font-bold mb-4 text-center text-stone-600 scroll-mt-20">
         Mungkin Ditanyakan
       </h2>
       <div class="space-y-4 mb-8 max-w-2xl mx-auto">
