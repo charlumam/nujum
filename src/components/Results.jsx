@@ -129,7 +129,7 @@ export default function Results({ universities, totalEligible }) {
 
   // Always render filters and controls if universities data is present
   return (
-    <div className="h-full space-y-2 sm:space-y-3">
+    <div className="h-full space-y-2 sm:space-y-3" style={{ fontFamily: '"Nunito Sans Variable", sans-serif' }}>
       {/* Filter Row */}
       <div className="flex flex-col gap-1">
         {/* University Type and Jenjang Dropdowns - displayed inline with Jenjang aligned right */}

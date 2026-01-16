@@ -40,7 +40,7 @@ const isValidScore = (value) => value !== "" && !isNaN(parseFloat(value));
 
 const ScoreInput = ({ name, label, value, onChange }) => (
   <label className="block">
-    <span className="text-sm sm:text-base text-stone-700 font-medium">
+    <span className="text-sm sm:text-base text-stone-700 font-regular">
       {label}
     </span>
     <input
@@ -172,6 +172,7 @@ export default function ScoreForm({
       onSubmit={handleSubmit}
       autoComplete="off"
       className="max-w-full mx-auto bg-white shadow-lg rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 space-y-4 sm:space-y-6"
+      style={{ fontFamily: '"Nunito Sans Variable", sans-serif' }}
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
         {TEST_SECTIONS.map((section) => (
