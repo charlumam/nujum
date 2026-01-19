@@ -82,44 +82,61 @@ import {
           </SignedIn>
         </nav>
 
-        <!-- Mobile Hamburger Button -->
-        <button
-          id="menu-toggle"
-          class="md:hidden p-2 text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-200"
-          aria-label="Toggle menu"
-          aria-expanded="false"
-        >
-          <!-- Hamburger Icon -->
-          <svg
-            id="menu-icon"
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+        <!-- Mobile Controls -->
+        <div class="md:hidden flex items-center gap-2">
+          <!-- Mobile Avatar -->
+          <SignedIn>
+            <div class="clerk-avatar">
+              <UserButton
+                appearance={{
+                  elements: {
+                    avatarBox: "!w-8 !h-8",
+                    userButtonTrigger: "!outline-none focus:!outline-none focus:!ring-2 focus:!ring-blue-600 !rounded-full",
+                  },
+                }}
+              />
+            </div>
+          </SignedIn>
+
+          <!-- Mobile Hamburger Button -->
+          <button
+            id="menu-toggle"
+            class="p-2 text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors duration-200"
+            aria-label="Toggle menu"
+            aria-expanded="false"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-          <!-- Close Icon (hidden by default) -->
-          <svg
-            id="close-icon"
-            class="w-6 h-6 hidden"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
+            <!-- Hamburger Icon -->
+            <svg
+              id="menu-icon"
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <!-- Close Icon (hidden by default) -->
+            <svg
+              id="close-icon"
+              class="w-6 h-6 hidden"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </header>
@@ -147,18 +164,6 @@ import {
           <SignInButton mode="modal">Masuk</SignInButton>
         </div>
       </SignedOut>
-      <SignedIn>
-        <div class="clerk-avatar">
-          <UserButton
-            appearance={{
-              elements: {
-                avatarBox: "!w-10 !h-10",
-                userButtonTrigger: "!outline-none focus:!outline-none focus:!ring-2 focus:!ring-blue-600 !rounded-full",
-              },
-            }}
-          />
-        </div>
-      </SignedIn>
     </div>
   </nav>
 </div>
