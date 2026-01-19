@@ -161,10 +161,10 @@ export default function ScoreForm({
   // Disable button if: already in viewAllMode with max scores, OR partially filled (some but not all)
   const isButtonDisabled =
     (viewAllMode && allMaxScores) || (anyInputFilled && !allInputsFilled);
-  // Show "Lihat Semua Passing Grade" only when no inputs are filled, otherwise show prediction text
+  // Show "Lihat Passing Grade 145 PTN" only when no inputs are filled, otherwise show prediction text
   const buttonText =
     !anyInputFilled || (viewAllMode && allMaxScores)
-      ? "Lihat Semua Passing Grade"
+      ? "Lihat Passing Grade 145 PTN"
       : "Prediksi Kelulusan UTBK-SNBT";
 
   return (
