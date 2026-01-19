@@ -20,6 +20,11 @@ export default defineConfig({
     sitemap(),
     clerk({
       localization: idID,
+      appearance: {
+        variables: {
+          fontFamily: '"Nunito Sans Variable", sans-serif',
+        },
+      },
     }),
   ],
   adapter: cloudflare(),
