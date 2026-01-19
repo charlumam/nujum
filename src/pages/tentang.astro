@@ -1,6 +1,6 @@
 ---
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
+import Footer from "../layouts/Footer.astro";
+import Header from "../layouts/Header.astro";
 import "../styles/global.css";
 import "@fontsource-variable/nunito";
 import "@fontsource-variable/nunito-sans";
@@ -40,19 +40,19 @@ import "@fontsource-variable/nunito-sans";
           <p class="text-stone-600 mb-4">
             Kalau kamu coba cek situs resmi dari SNPMB, yang ada cuma data daya
             tampung dan jumlah peminat. Padahal yang kita butuhkan adalah nilai
-            aman untuk masuk jurusan impian, kan? Terus kalau googling yang muncul
-            kebanyakan website gak jelas, banyak iklan, dan bikin pusing.
+            aman untuk masuk jurusan impian, kan? Terus kalau googling yang
+            muncul kebanyakan website gak jelas, banyak iklan, dan bikin pusing.
           </p>
           <p class="text-stone-600 mb-4">
             Disitulah aku harap Nujum akan membantu. Melalui aplikasi ini kamu
-            bisa langsung cek passing grade universitas tujuanmu dengan mudah. Ada
-            data lengkap dari 145 PTN di Indonesia yang diambil langsung dari data
-            resmi SNPMB.
+            bisa langsung cek passing grade universitas tujuanmu dengan mudah.
+            Ada data lengkap dari 145 PTN di Indonesia yang diambil langsung
+            dari data resmi SNPMB.
           </p>
           <p class="text-stone-600">
             Mau tahu passing grade untuk jurusan impianmu? Atau penasaran dengan
-            tingkat keketatan/acceptance rate di kampus tertentu? Semua informasi
-            itu bisa kamu temukan di sini.
+            tingkat keketatan/acceptance rate di kampus tertentu? Semua
+            informasi itu bisa kamu temukan di sini.
           </p>
         </section>
 
@@ -77,8 +77,7 @@ import "@fontsource-variable/nunito-sans";
                 href="https://kbbi.web.id/nujum"
                 rel="noopener nofollow"
                 target="_blank"
-                aria-label="Website KBBI."
-                >nujum <i>/nu·jum/</i></a
+                aria-label="Website KBBI.">nujum <i>/nu·jum/</i></a
               >
               <br /> Perbintangan untuk meramalkan (mengetahui) nasib orang dan sebagainya.
             </blockquote>
@@ -114,16 +113,16 @@ import "@fontsource-variable/nunito-sans";
               Bagaimana cara passing grade dihitung?
             </summary>
             <p class="mt-2 text-stone-600">
-              Passing grade dihitung menggunakan pendekatan statistik berdasarkan
-              distribusi nilai yang menyerupai kurva normal, dimana mayoritas
-              peserta memiliki nilai rata-rata, yaitu <code
+              Passing grade dihitung menggunakan pendekatan statistik
+              berdasarkan distribusi nilai yang menyerupai kurva normal, dimana
+              mayoritas peserta memiliki nilai rata-rata, yaitu <code
                 class="font-mono text-sm bg-stone-200 px-1 rounded">500</code
-              > untuk UTBK-SNBT, dan semakin sedikit pula peserta yang dapat nilai sangat
-              tinggi atau sangat rendah.
+              > untuk UTBK-SNBT, dan semakin sedikit pula peserta yang dapat nilai
+              sangat tinggi atau sangat rendah.
             </p>
             <p class="mt-4 text-stone-600">
-              Untuk menentukan passing grade kita perlu mencari cutoff score yang
-              memisahkan peserta yang lolos dari yang tidak. Hal ini bisa
+              Untuk menentukan passing grade kita perlu mencari cutoff score
+              yang memisahkan peserta yang lolos dari yang tidak. Hal ini bisa
               dilakukan dengan menghitung persentil yang sesuai dengan tingkat
               keketatan. Misalnya, jika tingkat keketatan adalah <code
                 class="font-mono text-sm bg-stone-200 px-1 rounded">0.42%</code
@@ -133,8 +132,10 @@ import "@fontsource-variable/nunito-sans";
             </p>
             <p class="mt-4 text-stone-600">
               Dalam statistika, <code
-                class="font-mono text-sm bg-stone-200 px-1 rounded">z-score</code
-              > dipakai untuk mewakili posisi relatif suatu nilai dalam distribusi normal.
+                class="font-mono text-sm bg-stone-200 px-1 rounded"
+                >z-score</code
+              > dipakai untuk mewakili posisi relatif suatu nilai dalam distribusi
+              normal.
               <code class="font-mono text-sm bg-stone-200 px-1 rounded"
                 >z-score</code
               > mengukur berapa banyak simpangan baku (<code
@@ -144,17 +145,19 @@ import "@fontsource-variable/nunito-sans";
               <code class="font-mono text-sm bg-stone-200 px-1 rounded"
                 >z-score</code
               >, kita menggunakan fungsi invers dari Cumulative Distribution
-              Function. Nujum memakai algoritma aproksimasi rasional Acklam, yaitu
-              metode efisien untuk menghitung Inverse CDF tanpa perlu tabel besar
-              atau komputasi numerik berat. Untuk persentil
+              Function. Nujum memakai algoritma aproksimasi rasional Acklam,
+              yaitu metode efisien untuk menghitung Inverse CDF tanpa perlu
+              tabel besar atau komputasi numerik berat. Untuk persentil
               <code class="font-mono text-sm bg-stone-200 px-1 rounded"
                 >99.58%</code
               >, metode ini menghasilkan <code
-                class="font-mono text-sm bg-stone-200 px-1 rounded">z ≈ 2.64</code
+                class="font-mono text-sm bg-stone-200 px-1 rounded"
+                >z ≈ 2.64</code
               >.
             </p>
             <p class="mt-4 text-stone-600">
-              Terakhir, <code class="font-mono text-sm bg-stone-200 px-1 rounded"
+              Terakhir, <code
+                class="font-mono text-sm bg-stone-200 px-1 rounded"
                 >z-score</code
               > dikonversi kembali ke skala skor UTBK menggunakan rumus: <code
                 class="font-mono text-sm bg-stone-200 px-1 rounded"
@@ -162,8 +165,8 @@ import "@fontsource-variable/nunito-sans";
               >. Dengan asumsi nilai rata-rata nasional sebelumnya dan simpangan
               baku (<code class="font-mono text-sm bg-stone-200 px-1 rounded"
                 >σ</code
-              >) sekitar <code class="font-mono text-sm bg-stone-200 px-1 rounded"
-                >100</code
+              >) sekitar <code
+                class="font-mono text-sm bg-stone-200 px-1 rounded">100</code
               >, maka passing grade bisa dihitung sebagai <code
                 class="font-mono text-sm bg-stone-200 px-1 rounded"
                 >500 + 2.64 × 100 ≈ 760</code
@@ -188,8 +191,8 @@ import "@fontsource-variable/nunito-sans";
             </p>
             <p class="mt-4 text-stone-600">
               Alat yang aku gunakan adalah HTTrack untuk mengunduh keseluruhan
-              website dan script Python menggunakan Beautiful Soup untuk mengubah
-              data yang sudah aku unduh menjadi file JSON.
+              website dan script Python menggunakan Beautiful Soup untuk
+              mengubah data yang sudah aku unduh menjadi file JSON.
             </p>
           </details>
           <details class="bg-white p-4 rounded-lg shadow group">
@@ -210,10 +213,9 @@ import "@fontsource-variable/nunito-sans";
             </p>
           </details>
         </section>
-
       </div>
     </main>
 
-      <Footer />
+    <Footer />
   </body>
 </html>
