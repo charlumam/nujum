@@ -1,5 +1,10 @@
 ---
-export const prerender = false;
+import {
+  SignedIn,
+  SignedOut,
+  UserButton,
+  SignInButton,
+} from "@clerk/astro/components";
 ---
 
 <div class="sticky top-0 z-50 px-4 pt-4">
@@ -45,19 +50,36 @@ export const prerender = false;
         </a>
 
         <!-- Desktop Navigation -->
-        <nav class="hidden md:flex items-center gap-2">
+        <nav class="hidden md:flex items-center gap-1">
           <a
             href="/tentang"
-            class="px-4 py-2 text-lg text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-semibold transition-colors duration-200"
+            class="px-4 py-2 text-lg text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-semibold transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-600"
           >
             Tentang
           </a>
           <a
             href="/layanan"
-            class="px-4 py-2 text-lg text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-semibold transition-colors duration-200"
+            class="px-4 py-2 text-lg text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-semibold transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-600"
           >
             Layanan
           </a>
+          <SignedOut>
+            <div class="clerk-btn">
+              <SignInButton mode="modal" />
+            </div>
+          </SignedOut>
+          <SignedIn>
+            <div class="clerk-avatar">
+              <UserButton
+                appearance={{
+                  elements: {
+                    avatarBox: "!w-9 !h-9",
+                    userButtonTrigger: "!outline-none focus:!outline-none focus:!ring-2 focus:!ring-blue-600 !rounded-full",
+                  },
+                }}
+              />
+            </div>
+          </SignedIn>
         </nav>
 
         <!-- Mobile Hamburger Button -->
@@ -110,16 +132,33 @@ export const prerender = false;
     <div class="flex flex-col p-2 space-y-1">
       <a
         href="/tentang"
-        class="px-4 py-3 text-lg text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-semibold transition-colors duration-200"
+        class="px-4 py-3 text-lg text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-semibold transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-600"
       >
         Tentang
       </a>
       <a
         href="/layanan"
-        class="px-4 py-3 text-lg text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-semibold transition-colors duration-200"
+        class="px-4 py-3 text-lg text-stone-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg font-semibold transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-600"
       >
         Layanan
       </a>
+      <SignedOut>
+        <div class="clerk-btn-mobile">
+          <SignInButton mode="modal" />
+        </div>
+      </SignedOut>
+      <SignedIn>
+        <div class="clerk-avatar">
+          <UserButton
+            appearance={{
+              elements: {
+                avatarBox: "!w-10 !h-10",
+                userButtonTrigger: "!outline-none focus:!outline-none focus:!ring-2 focus:!ring-blue-600 !rounded-full",
+              },
+            }}
+          />
+        </div>
+      </SignedIn>
     </div>
   </nav>
 </div>
@@ -158,5 +197,99 @@ export const prerender = false;
 
   .group:hover .logo-spin {
     transform: rotate(360deg);
+  }
+
+  /* Style Clerk SignInButton to match submit button */
+  .clerk-btn :global(button) {
+    padding: 0.5rem 1rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: white;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    background: linear-gradient(to top, #3b82f6, #1d4ed8);
+    border-bottom: 4px solid #1e40af;
+    box-shadow:
+      0 3px 6px -4px rgb(0 0 0 / 0.12),
+      0 1px 2px -2px rgb(0 0 0 / 0.12);
+    transition: all 100ms ease-in-out;
+    cursor: pointer;
+  }
+
+  .clerk-btn :global(button:hover) {
+    opacity: 0.7;
+  }
+
+  .clerk-btn :global(button:focus) {
+    outline: none;
+    ring: 2px solid #2563eb;
+    ring-offset: 2px;
+    box-shadow:
+      0 0 0 2px white,
+      0 0 0 4px #2563eb;
+  }
+
+  .clerk-btn :global(button:active) {
+    transform: translateY(2px);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  }
+
+  .clerk-btn-mobile :global(button) {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: white;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    background: linear-gradient(to top, #3b82f6, #1d4ed8);
+    border-bottom: 4px solid #1e40af;
+    box-shadow:
+      0 3px 6px -4px rgb(0 0 0 / 0.12),
+      0 1px 2px -2px rgb(0 0 0 / 0.12);
+    transition: all 100ms ease-in-out;
+    cursor: pointer;
+  }
+
+  .clerk-btn-mobile :global(button:hover) {
+    opacity: 0.7;
+  }
+
+  .clerk-btn-mobile :global(button:focus) {
+    outline: none;
+    box-shadow:
+      0 0 0 2px white,
+      0 0 0 4px #2563eb;
+  }
+
+  .clerk-btn-mobile :global(button:active) {
+    transform: translateY(2px);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  }
+
+  /* Style the wrapper divs for SignInButton hover effect */
+  .clerk-btn,
+  .clerk-btn-mobile {
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    transition: opacity 200ms;
+  }
+
+  .clerk-btn:hover,
+  .clerk-btn-mobile:hover {
+    opacity: 0.7;
+  }
+
+  .clerk-avatar {
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Override Clerk's default avatar outline */
+  .clerk-avatar :global(*) {
+    outline: none !important;
+    box-shadow: none !important;
   }
 </style>

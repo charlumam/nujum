@@ -9,7 +9,7 @@ import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
   site: "https://nujum.charda.org",
-  output: "static",
+  output: "server",
   vite: {
     plugins: [tailwindcss()],
   },
