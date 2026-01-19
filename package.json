@@ -13,6 +13,7 @@
     "@astrojs/react": "^4.2.4",
     "@astrojs/sitemap": "^3.3.1",
     "@clerk/astro": "^2.16.13",
+    "@clerk/localizations": "^3.35.0",
     "@fontsource-variable/nunito": "^5.2.5",
     "@fontsource-variable/nunito-sans": "^5.2.7",
     "@tailwindcss/vite": "^4.1.4",
