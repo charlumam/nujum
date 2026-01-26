@@ -101,7 +101,7 @@ export default function ScoreForm({
               Object.entries(data.scores).map(([key, value]) => [key, String(value)])
             );
             setScores(formattedScores);
-            setViewAllMode(Object.values(data.scores).every((s) => s === MAX_SCORE));
+            // Don't set viewAllMode here - let user manually submit to see results
           }
         }
       } catch (error) {
@@ -194,8 +194,7 @@ export default function ScoreForm({
       );
       setViewAllMode(true);
       onSubmit(allProgramsScores);
-      // Save max scores for signed-in users
-      saveScoresToApi(allProgramsScores);
+      // Don't save max scores to database - this is just for viewing all programs
       return;
     }
 
