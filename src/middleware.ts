@@ -1,3 +1,11 @@
-import { clerkMiddleware } from "@clerk/astro/server";
+import { clerkMiddleware, createRouteMatcher } from "@clerk/astro/server";
 
-export const onRequest = clerkMiddleware();
+const isProtectedRoute = createRouteMatcher(["/layanan(.*)"]);
+
+export const onRequest = clerkMiddleware((auth, context) => {
+	const { isAuthenticated, redirectToSignIn } = auth();
+
+	if (!isAuthenticated && isProtectedRoute(context.request)) {
+		return redirectToSignIn();
+	}
+});
