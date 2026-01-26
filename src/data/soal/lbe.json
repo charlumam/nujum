@@ -1,0 +1,149 @@
+{
+  "subtest": {
+    "id": "lbe",
+    "name": "Literasi Bahasa Inggris",
+    "description": "Pemahaman teks bahasa Inggris"
+  },
+  "questions": [
+    {
+      "id": "lbe_001",
+      "question": "Read the following passage:\n\n\"Climate change poses unprecedented challenges to global food security. Rising temperatures and unpredictable weather patterns have disrupted agricultural cycles worldwide. Scientists warn that without immediate action, crop yields could decline by up to 25% by 2050.\"\n\nWhat is the main idea of this passage?",
+      "options": [
+        { "id": "a", "text": "Scientists are worried about the future" },
+        { "id": "b", "text": "Climate change threatens global food production" },
+        { "id": "c", "text": "Temperatures are rising around the world" },
+        { "id": "d", "text": "Agricultural cycles have been disrupted" },
+        { "id": "e", "text": "Crop yields will decline by 2050" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The main idea is that climate change threatens global food security, with the passage explaining how through temperature rises and weather disruption.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "lbe_002",
+      "question": "\"The new policy was met with widespread criticism from various stakeholders.\"\n\nThe word 'stakeholders' in the sentence most likely refers to...",
+      "options": [
+        { "id": "a", "text": "Government officials only" },
+        { "id": "b", "text": "People who own stakes in a company" },
+        { "id": "c", "text": "People who have an interest or concern in something" },
+        { "id": "d", "text": "Shareholders of a corporation" },
+        { "id": "e", "text": "Critics of the government" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "In this context, 'stakeholders' refers broadly to people who have an interest or concern in the matter being discussed, not just business shareholders.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "lbe_003",
+      "question": "Read the following passage:\n\n\"Remote work has transformed the modern workplace. While employees enjoy greater flexibility and eliminated commutes, companies have reported mixed results in productivity. Some organizations have fully embraced the hybrid model, while others are mandating return to office.\"\n\nWhich statement best describes the author's tone?",
+      "options": [
+        { "id": "a", "text": "Strongly supportive of remote work" },
+        { "id": "b", "text": "Critical of companies mandating office return" },
+        { "id": "c", "text": "Objective and balanced" },
+        { "id": "d", "text": "Pessimistic about the future of work" },
+        { "id": "e", "text": "Enthusiastic about hybrid models" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The author presents both benefits (flexibility, no commutes) and challenges (mixed productivity results) while noting different company approaches, showing an objective, balanced tone.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "lbe_004",
+      "question": "\"Although the experiment yielded promising results, further research is ______ to confirm the findings.\"\n\nChoose the best word to complete the sentence.",
+      "options": [
+        { "id": "a", "text": "necessary" },
+        { "id": "b", "text": "necessarily" },
+        { "id": "c", "text": "necessity" },
+        { "id": "d", "text": "necessitate" },
+        { "id": "e", "text": "necessitated" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "The sentence requires an adjective after 'is' to describe the research. 'Necessary' is the correct adjective form meaning 'needed or required'.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "lbe_005",
+      "question": "Read the following passage:\n\n\"The Great Barrier Reef, the world's largest coral reef system, is facing an existential threat. Ocean acidification and warming waters have caused mass bleaching events. In the past decade alone, half of the reef's coral cover has been lost.\"\n\nWhat can be inferred from this passage?",
+      "options": [
+        { "id": "a", "text": "The Great Barrier Reef will completely disappear soon" },
+        { "id": "b", "text": "Ocean acidification is the only threat to coral reefs" },
+        { "id": "c", "text": "Environmental conditions are severely impacting the reef" },
+        { "id": "d", "text": "The reef has always experienced bleaching events" },
+        { "id": "e", "text": "Conservation efforts have failed completely" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The passage describes threats (acidification, warming) and their effects (bleaching, coral loss), from which we can infer that environmental conditions are severely impacting the reef.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "lbe_006",
+      "question": "\"The company's revenue increased exponentially after implementing the new marketing strategy.\"\n\nThe word 'exponentially' is closest in meaning to...",
+      "options": [
+        { "id": "a", "text": "Slightly" },
+        { "id": "b", "text": "Gradually" },
+        { "id": "c", "text": "Rapidly and increasingly" },
+        { "id": "d", "text": "Temporarily" },
+        { "id": "e", "text": "Unexpectedly" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "'Exponentially' means growing at an increasingly rapid rate, where the growth accelerates over time rather than remaining constant.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "lbe_007",
+      "question": "Read the following passage:\n\n\"Artificial intelligence is revolutionizing healthcare. From diagnostic imaging to drug discovery, AI applications are accelerating medical breakthroughs. However, concerns about data privacy and algorithmic bias remain significant hurdles to widespread adoption.\"\n\nAccording to the passage, what are the challenges facing AI in healthcare?",
+      "options": [
+        { "id": "a", "text": "High costs and lack of technology" },
+        { "id": "b", "text": "Data privacy concerns and algorithmic bias" },
+        { "id": "c", "text": "Resistance from medical professionals" },
+        { "id": "d", "text": "Limited applications in the field" },
+        { "id": "e", "text": "Slow medical breakthroughs" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The passage explicitly states that 'concerns about data privacy and algorithmic bias remain significant hurdles' to AI adoption in healthcare.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "lbe_008",
+      "question": "\"Despite the overwhelming evidence, the committee remained ______ about the proposal's effectiveness.\"\n\nChoose the best word to complete the sentence.",
+      "options": [
+        { "id": "a", "text": "confident" },
+        { "id": "b", "text": "skeptical" },
+        { "id": "c", "text": "enthusiastic" },
+        { "id": "d", "text": "optimistic" },
+        { "id": "e", "text": "supportive" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The word 'Despite' indicates contrast. Despite overwhelming evidence (which should convince them), the committee still had doubts, so 'skeptical' fits best.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "lbe_009",
+      "question": "Read the following passage:\n\n\"The transition to renewable energy sources is no longer a question of if, but when. Solar and wind power costs have plummeted, making them competitive with fossil fuels in many regions. Major economies are setting ambitious targets for carbon neutrality by 2050.\"\n\nWhich of the following statements would the author most likely agree with?",
+      "options": [
+        { "id": "a", "text": "Fossil fuels will remain dominant for decades" },
+        { "id": "b", "text": "Renewable energy transition is inevitable" },
+        { "id": "c", "text": "Carbon neutrality targets are unrealistic" },
+        { "id": "d", "text": "Solar power is too expensive for widespread use" },
+        { "id": "e", "text": "Only minor economies support renewable energy" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The phrase 'no longer a question of if, but when' clearly indicates the author believes renewable energy transition is inevitable.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "lbe_010",
+      "question": "\"The artist's latest exhibition was a ______ success, attracting record-breaking attendance and critical acclaim.\"\n\nChoose the best word to complete the sentence.",
+      "options": [
+        { "id": "a", "text": "resounding" },
+        { "id": "b", "text": "moderate" },
+        { "id": "c", "text": "questionable" },
+        { "id": "d", "text": "partial" },
+        { "id": "e", "text": "controversial" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Given the positive context (record-breaking attendance, critical acclaim), 'resounding' (meaning emphatic, unequivocal) best describes this major success.",
+      "difficulty": "easy"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "subtest": {
+    "id": "ppu",
+    "name": "Pengetahuan Umum",
+    "description": "Wawasan kebangsaan dan sosial"
+  },
+  "questions": [
+    {
+      "id": "ppu_001",
+      "question": "Pancasila sebagai dasar negara Indonesia pertama kali dirumuskan dalam sidang BPUPKI pada tanggal...",
+      "options": [
+        { "id": "a", "text": "29 Mei 1945" },
+        { "id": "b", "text": "1 Juni 1945" },
+        { "id": "c", "text": "22 Juni 1945" },
+        { "id": "d", "text": "17 Agustus 1945" },
+        { "id": "e", "text": "18 Agustus 1945" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Pancasila pertama kali dirumuskan oleh Ir. Soekarno dalam pidatonya pada sidang BPUPKI tanggal 1 Juni 1945, yang kemudian dikenal sebagai Hari Lahir Pancasila.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ppu_002",
+      "question": "Lembaga negara yang berwenang menguji undang-undang terhadap UUD 1945 adalah...",
+      "options": [
+        { "id": "a", "text": "Mahkamah Agung" },
+        { "id": "b", "text": "Mahkamah Konstitusi" },
+        { "id": "c", "text": "Dewan Perwakilan Rakyat" },
+        { "id": "d", "text": "Komisi Yudisial" },
+        { "id": "e", "text": "Badan Pemeriksa Keuangan" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Berdasarkan UUD 1945, Mahkamah Konstitusi berwenang menguji undang-undang terhadap Undang-Undang Dasar (judicial review).",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ppu_003",
+      "question": "Sistem ekonomi Indonesia berdasarkan UUD 1945 adalah...",
+      "options": [
+        { "id": "a", "text": "Sistem ekonomi liberal" },
+        { "id": "b", "text": "Sistem ekonomi sosialis" },
+        { "id": "c", "text": "Sistem ekonomi campuran" },
+        { "id": "d", "text": "Sistem ekonomi kerakyatan" },
+        { "id": "e", "text": "Sistem ekonomi pasar bebas" }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Pasal 33 UUD 1945 mengamanatkan sistem ekonomi kerakyatan yang berasaskan kekeluargaan, di mana cabang produksi penting dikuasai negara untuk kemakmuran rakyat.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ppu_004",
+      "question": "Perjanjian Linggarjati ditandatangani pada tahun 1947 antara Indonesia dengan...",
+      "options": [
+        { "id": "a", "text": "Inggris" },
+        { "id": "b", "text": "Jepang" },
+        { "id": "c", "text": "Belanda" },
+        { "id": "d", "text": "Amerika Serikat" },
+        { "id": "e", "text": "Australia" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Perjanjian Linggarjati ditandatangani pada 25 Maret 1947 antara Indonesia dan Belanda, di mana Belanda mengakui kedaulatan RI atas Jawa, Madura, dan Sumatera.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ppu_005",
+      "question": "Semboyan Bhinneka Tunggal Ika berasal dari kitab...",
+      "options": [
+        { "id": "a", "text": "Negarakertagama" },
+        { "id": "b", "text": "Sutasoma" },
+        { "id": "c", "text": "Pararaton" },
+        { "id": "d", "text": "Arjunawiwaha" },
+        { "id": "e", "text": "Ramayana" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Bhinneka Tunggal Ika berasal dari kitab Sutasoma karya Mpu Tantular pada masa Kerajaan Majapahit, yang bermakna 'Berbeda-beda tetapi tetap satu'.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ppu_006",
+      "question": "Berapa jumlah provinsi di Indonesia saat ini (2026)?",
+      "options": [
+        { "id": "a", "text": "34 provinsi" },
+        { "id": "b", "text": "36 provinsi" },
+        { "id": "c", "text": "37 provinsi" },
+        { "id": "d", "text": "38 provinsi" },
+        { "id": "e", "text": "39 provinsi" }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Setelah pemekaran beberapa provinsi baru di Papua, Indonesia kini memiliki 38 provinsi.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ppu_007",
+      "question": "Asas desentralisasi dalam pemerintahan daerah berarti...",
+      "options": [
+        { "id": "a", "text": "Pelimpahan wewenang dari pusat ke wakil pemerintah di daerah" },
+        { "id": "b", "text": "Penyerahan wewenang dari pusat ke daerah otonom" },
+        { "id": "c", "text": "Penugasan dari pusat ke daerah" },
+        { "id": "d", "text": "Pengawasan dari pusat ke daerah" },
+        { "id": "e", "text": "Koordinasi antara pusat dan daerah" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Desentralisasi adalah penyerahan urusan pemerintahan dari pemerintah pusat kepada daerah otonom untuk mengatur dan mengurus sendiri urusan pemerintahan.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ppu_008",
+      "question": "Organisasi pergerakan nasional pertama yang menggunakan bahasa Indonesia sebagai bahasa pengantar adalah...",
+      "options": [
+        { "id": "a", "text": "Budi Utomo" },
+        { "id": "b", "text": "Sarekat Islam" },
+        { "id": "c", "text": "Indische Partij" },
+        { "id": "d", "text": "Perhimpunan Indonesia" },
+        { "id": "e", "text": "Jong Java" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Sarekat Islam (1912) menjadi organisasi massa pertama yang menggunakan bahasa Melayu/Indonesia sebagai bahasa pengantar dalam rapat-rapatnya.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "ppu_009",
+      "question": "Hak angket DPR adalah hak untuk...",
+      "options": [
+        { "id": "a", "text": "Mengajukan pertanyaan kepada pemerintah" },
+        { "id": "b", "text": "Menyatakan pendapat atas kebijakan pemerintah" },
+        { "id": "c", "text": "Mengadakan penyelidikan terhadap kebijakan pemerintah" },
+        { "id": "d", "text": "Mengubah rancangan undang-undang" },
+        { "id": "e", "text": "Memberhentikan presiden" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Hak angket adalah hak DPR untuk mengadakan penyelidikan terhadap pelaksanaan undang-undang dan/atau kebijakan pemerintah.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ppu_010",
+      "question": "Konferensi Asia Afrika 1955 di Bandung menghasilkan...",
+      "options": [
+        { "id": "a", "text": "Piagam Jakarta" },
+        { "id": "b", "text": "Dasasila Bandung" },
+        { "id": "c", "text": "Deklarasi Djuanda" },
+        { "id": "d", "text": "Trikora" },
+        { "id": "e", "text": "Supersemar" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Konferensi Asia Afrika 1955 menghasilkan Dasasila Bandung (Ten Principles of Bandung) yang berisi prinsip-prinsip perdamaian dan kerja sama internasional.",
+      "difficulty": "easy"
+    }
+  ]
+}

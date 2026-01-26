@@ -1,0 +1,149 @@
+{
+  "subtest": {
+    "id": "pm",
+    "name": "Penalaran Matematika",
+    "description": "Logika dan pemecahan masalah matematika"
+  },
+  "questions": [
+    {
+      "id": "pm_001",
+      "question": "Jika f(x) = 2x² - 3x + 1, maka f(2) = ...",
+      "options": [
+        { "id": "a", "text": "1" },
+        { "id": "b", "text": "2" },
+        { "id": "c", "text": "3" },
+        { "id": "d", "text": "4" },
+        { "id": "e", "text": "5" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "f(2) = 2(2)² - 3(2) + 1 = 2(4) - 6 + 1 = 8 - 6 + 1 = 3",
+      "difficulty": "easy"
+    },
+    {
+      "id": "pm_002",
+      "question": "Tentukan nilai x yang memenuhi persamaan |2x - 5| = 7",
+      "options": [
+        { "id": "a", "text": "x = 6 atau x = -1" },
+        { "id": "b", "text": "x = 6 atau x = 1" },
+        { "id": "c", "text": "x = -6 atau x = 1" },
+        { "id": "d", "text": "x = 6 saja" },
+        { "id": "e", "text": "x = -1 saja" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "|2x - 5| = 7 berarti 2x - 5 = 7 atau 2x - 5 = -7.\nDari 2x - 5 = 7: x = 6\nDari 2x - 5 = -7: x = -1",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pm_003",
+      "question": "Diketahui barisan aritmetika dengan suku pertama 5 dan beda 3. Jumlah 20 suku pertama adalah...",
+      "options": [
+        { "id": "a", "text": "570" },
+        { "id": "b", "text": "610" },
+        { "id": "c", "text": "670" },
+        { "id": "d", "text": "710" },
+        { "id": "e", "text": "770" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Sn = n/2 × (2a + (n-1)b)\nS20 = 20/2 × (2(5) + (20-1)(3))\nS20 = 10 × (10 + 57) = 10 × 67 = 670",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pm_004",
+      "question": "Jika log₂ x = 3, maka nilai x adalah...",
+      "options": [
+        { "id": "a", "text": "6" },
+        { "id": "b", "text": "8" },
+        { "id": "c", "text": "9" },
+        { "id": "d", "text": "12" },
+        { "id": "e", "text": "16" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "log₂ x = 3 berarti 2³ = x, sehingga x = 8",
+      "difficulty": "easy"
+    },
+    {
+      "id": "pm_005",
+      "question": "Sebuah fungsi kuadrat memiliki titik puncak (2, 5) dan melalui titik (0, 1). Persamaan fungsi tersebut adalah...",
+      "options": [
+        { "id": "a", "text": "y = -(x - 2)² + 5" },
+        { "id": "b", "text": "y = (x - 2)² + 5" },
+        { "id": "c", "text": "y = -2(x - 2)² + 5" },
+        { "id": "d", "text": "y = 2(x - 2)² + 5" },
+        { "id": "e", "text": "y = -(x + 2)² + 5" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Bentuk vertex: y = a(x - h)² + k dengan (h,k) = (2,5)\ny = a(x - 2)² + 5\nSubstitusi (0,1): 1 = a(0-2)² + 5 → 1 = 4a + 5 → a = -1\nJadi y = -(x - 2)² + 5",
+      "difficulty": "hard"
+    },
+    {
+      "id": "pm_006",
+      "question": "Nilai dari sin 30° × cos 60° + sin 60° × cos 30° adalah...",
+      "options": [
+        { "id": "a", "text": "0" },
+        { "id": "b", "text": "1/2" },
+        { "id": "c", "text": "√3/2" },
+        { "id": "d", "text": "1" },
+        { "id": "e", "text": "√2" }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Ini adalah rumus sin(A + B) = sin A cos B + cos A sin B\n= sin(30° + 60°) = sin 90° = 1\nAtau: (1/2)(1/2) + (√3/2)(√3/2) = 1/4 + 3/4 = 1",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pm_007",
+      "question": "Diketahui sistem persamaan:\nx + y = 7\nx² + y² = 25\nNilai xy adalah...",
+      "options": [
+        { "id": "a", "text": "10" },
+        { "id": "b", "text": "12" },
+        { "id": "c", "text": "14" },
+        { "id": "d", "text": "16" },
+        { "id": "e", "text": "18" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "(x + y)² = x² + 2xy + y²\n49 = 25 + 2xy\n2xy = 24\nxy = 12",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pm_008",
+      "question": "Limit dari (x² - 4)/(x - 2) ketika x mendekati 2 adalah...",
+      "options": [
+        { "id": "a", "text": "0" },
+        { "id": "b", "text": "2" },
+        { "id": "c", "text": "4" },
+        { "id": "d", "text": "Tak hingga" },
+        { "id": "e", "text": "Tidak ada" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "lim (x² - 4)/(x - 2) = lim (x+2)(x-2)/(x-2) = lim (x+2) = 2 + 2 = 4\nx→2",
+      "difficulty": "easy"
+    },
+    {
+      "id": "pm_009",
+      "question": "Berapa banyak cara menyusun huruf-huruf dari kata \"MATEMATIKA\"?",
+      "options": [
+        { "id": "a", "text": "75.600" },
+        { "id": "b", "text": "151.200" },
+        { "id": "c", "text": "302.400" },
+        { "id": "d", "text": "453.600" },
+        { "id": "e", "text": "604.800" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "MATEMATIKA: M(2), A(3), T(2), E(1), I(1), K(1) = 10 huruf\nBanyak susunan = 10!/(2! × 3! × 2!) = 3.628.800/(2 × 6 × 2) = 3.628.800/24 = 151.200",
+      "difficulty": "hard"
+    },
+    {
+      "id": "pm_010",
+      "question": "Jika f(x) = 3x² + 2x - 1, maka f'(x) = ...",
+      "options": [
+        { "id": "a", "text": "6x + 2" },
+        { "id": "b", "text": "6x - 2" },
+        { "id": "c", "text": "3x + 2" },
+        { "id": "d", "text": "6x² + 2" },
+        { "id": "e", "text": "3x² + 2" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Turunan f(x) = 3x² + 2x - 1:\nf'(x) = 2(3)x^(2-1) + 1(2)x^(1-1) - 0 = 6x + 2",
+      "difficulty": "easy"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "subtest": {
+    "id": "pbm",
+    "name": "Pemahaman Bacaan & Menulis",
+    "description": "Membaca dan menulis efektif"
+  },
+  "questions": [
+    {
+      "id": "pbm_001",
+      "question": "Bacalah paragraf berikut!\n\n\"Perubahan iklim global telah menyebabkan berbagai dampak signifikan terhadap ekosistem laut. Kenaikan suhu air laut mengakibatkan pemutihan terumbu karang secara masif. Selain itu, peningkatan keasaman air laut mengganggu proses pembentukan cangkang pada organisme laut.\"\n\nIde pokok paragraf tersebut adalah...",
+      "options": [
+        { "id": "a", "text": "Pemutihan terumbu karang" },
+        { "id": "b", "text": "Dampak perubahan iklim terhadap ekosistem laut" },
+        { "id": "c", "text": "Kenaikan suhu air laut" },
+        { "id": "d", "text": "Peningkatan keasaman air laut" },
+        { "id": "e", "text": "Pembentukan cangkang organisme laut" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Ide pokok terletak pada kalimat pertama yang menyatakan dampak perubahan iklim global terhadap ekosistem laut. Kalimat-kalimat berikutnya merupakan penjelas.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "pbm_002",
+      "question": "Kalimat efektif adalah...",
+      "options": [
+        { "id": "a", "text": "Para mahasiswa-mahasiswa sedang belajar di perpustakaan." },
+        { "id": "b", "text": "Kami mengharapkan partisipasi dari Bapak/Ibu sekalian." },
+        { "id": "c", "text": "Ia pandai di bidang matematika dan fisika." },
+        { "id": "d", "text": "Dua orang mahasiswa itu masing-masing mendapat hadiah." },
+        { "id": "e", "text": "Saya sangat mengharapkan sekali kedatangan Anda." }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Kalimat (c) efektif karena tidak ada pemborosan kata. (a) redundan 'para' dan 'mahasiswa-mahasiswa', (b) redundan 'sekalian', (d) redundan 'masing-masing', (e) redundan 'sangat' dan 'sekali'.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pbm_003",
+      "question": "Bacalah teks berikut!\n\n\"Budidaya tanaman hidroponik semakin diminati masyarakat perkotaan. Metode ini memungkinkan penanaman sayuran di lahan terbatas. ______ , hasil panen hidroponik cenderung lebih bersih dan bebas pestisida.\"\n\nKata hubung yang tepat untuk melengkapi kalimat tersebut adalah...",
+      "options": [
+        { "id": "a", "text": "Namun" },
+        { "id": "b", "text": "Oleh karena itu" },
+        { "id": "c", "text": "Selain itu" },
+        { "id": "d", "text": "Meskipun demikian" },
+        { "id": "e", "text": "Sebaliknya" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "\"Selain itu\" tepat karena kalimat ketiga menambahkan informasi keuntungan lain dari hidroponik, bukan pertentangan atau sebab-akibat.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "pbm_004",
+      "question": "Penulisan kata serapan yang benar adalah...",
+      "options": [
+        { "id": "a", "text": "analisa, hipotesa, diagnosa" },
+        { "id": "b", "text": "analisis, hipotesis, diagnosa" },
+        { "id": "c", "text": "analisa, hipotesis, diagnosis" },
+        { "id": "d", "text": "analisis, hipotesis, diagnosis" },
+        { "id": "e", "text": "analisis, hipotesa, diagnosis" }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Menurut KBBI dan PUEBI, penulisan yang baku adalah 'analisis', 'hipotesis', dan 'diagnosis' (bukan berakhiran -a).",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pbm_005",
+      "question": "Bacalah paragraf berikut!\n\n\"Penelitian menunjukkan bahwa tidur yang cukup sangat penting bagi kesehatan otak. Saat tidur, otak membersihkan racun yang menumpuk selama beraktivitas. Kurang tidur kronis dapat meningkatkan risiko penyakit neurodegeneratif.\"\n\nKesimpulan yang tepat dari paragraf tersebut adalah...",
+      "options": [
+        { "id": "a", "text": "Tidur membuat otak beristirahat total" },
+        { "id": "b", "text": "Tidur cukup membantu menjaga kesehatan otak" },
+        { "id": "c", "text": "Kurang tidur pasti menyebabkan penyakit otak" },
+        { "id": "d", "text": "Racun di otak hanya bisa dibersihkan saat tidur" },
+        { "id": "e", "text": "Penyakit neurodegeneratif disebabkan oleh racun" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Kesimpulan yang tepat adalah tidur cukup membantu menjaga kesehatan otak, sesuai dengan ide pokok dan informasi pendukung dalam paragraf.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pbm_006",
+      "question": "Penggunaan tanda baca yang benar adalah...",
+      "options": [
+        { "id": "a", "text": "Ia membeli buku, pensil dan penghapus." },
+        { "id": "b", "text": "Ia membeli: buku, pensil, dan penghapus." },
+        { "id": "c", "text": "Ia membeli buku, pensil, dan penghapus." },
+        { "id": "d", "text": "Ia membeli, buku, pensil, dan penghapus." },
+        { "id": "e", "text": "Ia membeli buku pensil dan penghapus." }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Tanda koma digunakan untuk memisahkan unsur dalam suatu pemerincian. Sebelum kata 'dan' dalam pemerincian, tanda koma tetap diperlukan.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "pbm_007",
+      "question": "Kalimat yang menggunakan kata bermakna denotatif adalah...",
+      "options": [
+        { "id": "a", "text": "Ia menjadi bunga desa di kampungnya." },
+        { "id": "b", "text": "Petani itu menanam bunga di kebunnya." },
+        { "id": "c", "text": "Pikirannya sedang melayang ke mana-mana." },
+        { "id": "d", "text": "Kakinya sudah tidak berpijak di bumi." },
+        { "id": "e", "text": "Hatinya hancur berkeping-keping." }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Kalimat (b) menggunakan kata 'bunga' secara denotatif (makna sebenarnya, yaitu tumbuhan). Kalimat lain menggunakan makna konotatif/kiasan.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "pbm_008",
+      "question": "Bacalah paragraf berikut!\n\n\"(1) Sampah plastik menjadi ancaman serius bagi lingkungan. (2) Plastik membutuhkan ratusan tahun untuk terurai. (3) Banyak hewan laut yang mati karena menelan sampah plastik. (4) Pengurangan penggunaan plastik sekali pakai menjadi solusi utama.\"\n\nHubungan antarkalimat dalam paragraf tersebut adalah...",
+      "options": [
+        { "id": "a", "text": "(1) umum - (2)(3) khusus - (4) simpulan" },
+        { "id": "b", "text": "(1)(2)(3) sebab - (4) akibat" },
+        { "id": "c", "text": "(1) tesis - (2)(3)(4) argumen" },
+        { "id": "d", "text": "(1)(2)(3) masalah - (4) solusi" },
+        { "id": "e", "text": "(1) orientasi - (2)(3) komplikasi - (4) resolusi" }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Kalimat (1), (2), (3) memaparkan masalah sampah plastik, sedangkan kalimat (4) memberikan solusi atas masalah tersebut.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "pbm_009",
+      "question": "Ejaan yang benar dalam kalimat berikut adalah...",
+      "options": [
+        { "id": "a", "text": "Acara itu dihadiri oleh Mentri Pendidikan." },
+        { "id": "b", "text": "Acara itu dihadiri oleh menteri Pendidikan." },
+        { "id": "c", "text": "Acara itu dihadiri oleh Menteri Pendidikan." },
+        { "id": "d", "text": "Acara itu di hadiri oleh Menteri pendidikan." },
+        { "id": "e", "text": "Acara itu dihadiri oleh menteri pendidikan." }
+      ],
+      "correctAnswer": "c",
+      "explanation": "\"Menteri Pendidikan\" ditulis dengan huruf kapital karena merupakan nama jabatan yang diikuti nama instansi. 'dihadiri' ditulis serangkai karena merupakan kata kerja pasif.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pbm_010",
+      "question": "Urutan kalimat yang membentuk paragraf padu adalah...\n\n(1) Hal ini dapat mengurangi stres dan kecemasan.\n(2) Meditasi adalah praktik melatih pikiran untuk fokus dan tenang.\n(3) Banyak penelitian membuktikan manfaat meditasi bagi kesehatan mental.\n(4) Dengan meditasi rutin, seseorang dapat meningkatkan kesadaran diri.",
+      "options": [
+        { "id": "a", "text": "(1)-(2)-(3)-(4)" },
+        { "id": "b", "text": "(2)-(3)-(1)-(4)" },
+        { "id": "c", "text": "(2)-(4)-(3)-(1)" },
+        { "id": "d", "text": "(3)-(2)-(4)-(1)" },
+        { "id": "e", "text": "(3)-(1)-(2)-(4)" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Urutan padu: (2) definisi meditasi, (3) bukti manfaat, (1) manfaat spesifik (mengurangi stres), (4) manfaat tambahan dengan meditasi rutin.",
+      "difficulty": "hard"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "subtest": {
+    "id": "lbi",
+    "name": "Literasi Bahasa Indonesia",
+    "description": "Pemahaman teks bahasa Indonesia"
+  },
+  "questions": [
+    {
+      "id": "lbi_001",
+      "question": "Bacalah teks berikut!\n\n\"Kopi Indonesia memiliki keunikan tersendiri di pasar global. Beragam jenis kopi dari berbagai daerah seperti Gayo, Toraja, dan Kintamani masing-masing memiliki karakteristik rasa yang khas. Faktor geografis dan metode pengolahan tradisional menjadi kunci keistimewaan kopi Nusantara.\"\n\nTujuan teks tersebut adalah...",
+      "options": [
+        { "id": "a", "text": "Menghibur pembaca dengan cerita tentang kopi" },
+        { "id": "b", "text": "Menjelaskan keunikan kopi Indonesia" },
+        { "id": "c", "text": "Membujuk pembaca untuk membeli kopi Indonesia" },
+        { "id": "d", "text": "Menceritakan sejarah kopi di Indonesia" },
+        { "id": "e", "text": "Membandingkan kopi Indonesia dengan kopi luar negeri" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Teks bertujuan untuk menjelaskan atau menginformasikan keunikan kopi Indonesia dengan menyebutkan jenis, karakteristik, dan faktor keistimewaannya.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "lbi_002",
+      "question": "Bacalah teks berikut!\n\n\"Penggunaan energi terbarukan di Indonesia terus meningkat. Pemerintah menargetkan bauran energi terbarukan mencapai 23% pada tahun 2025. Berbagai proyek pembangkit listrik tenaga surya dan angin telah dikembangkan di berbagai wilayah.\"\n\nPernyataan yang sesuai dengan teks adalah...",
+      "options": [
+        { "id": "a", "text": "Indonesia sudah mencapai target 23% energi terbarukan" },
+        { "id": "b", "text": "Energi terbarukan hanya dikembangkan di Jawa" },
+        { "id": "c", "text": "Pemerintah memiliki target bauran energi terbarukan" },
+        { "id": "d", "text": "Pembangkit listrik tenaga surya adalah satu-satunya yang dikembangkan" },
+        { "id": "e", "text": "Penggunaan energi terbarukan menurun" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Teks menyebutkan bahwa pemerintah menargetkan bauran energi terbarukan mencapai 23% pada tahun 2025.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "lbi_003",
+      "question": "Bacalah paragraf berikut!\n\n\"Kebiasaan membaca buku di kalangan generasi muda Indonesia mengalami pergeseran. Banyak yang kini lebih memilih konten digital dibandingkan buku fisik. Meskipun demikian, penerbit buku mencatat penjualan buku cetak tetap stabil di segmen tertentu.\"\n\nSimpulan yang tepat dari teks tersebut adalah...",
+      "options": [
+        { "id": "a", "text": "Buku cetak akan segera punah" },
+        { "id": "b", "text": "Generasi muda tidak suka membaca" },
+        { "id": "c", "text": "Terjadi pergeseran medium bacaan meski buku cetak tetap diminati" },
+        { "id": "d", "text": "Konten digital lebih baik dari buku cetak" },
+        { "id": "e", "text": "Penerbit buku mengalami kerugian besar" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Teks menunjukkan pergeseran ke konten digital, namun buku cetak tetap stabil di segmen tertentu, menunjukkan keduanya masih memiliki tempat.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "lbi_004",
+      "question": "\"Harga minyak goreng yang melambung tinggi membuat pemerintah turun tangan dengan mengeluarkan kebijakan harga eceran tertinggi (HET).\"\n\nMakna ungkapan 'turun tangan' dalam kalimat tersebut adalah...",
+      "options": [
+        { "id": "a", "text": "Mengundurkan diri" },
+        { "id": "b", "text": "Ikut campur atau mengambil tindakan" },
+        { "id": "c", "text": "Menyerah pada keadaan" },
+        { "id": "d", "text": "Memberikan bantuan dana" },
+        { "id": "e", "text": "Menurunkan jabatan" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "'Turun tangan' adalah ungkapan yang bermakna ikut campur atau mengambil tindakan langsung untuk menangani suatu masalah.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "lbi_005",
+      "question": "Bacalah teks berikut!\n\n\"Penelitian terbaru menunjukkan bahwa tidur siang singkat selama 20-30 menit dapat meningkatkan produktivitas dan kreativitas. Namun, tidur siang yang terlalu lama justru dapat menyebabkan rasa kantuk yang lebih berat dan mengganggu pola tidur malam.\"\n\nSikap penulis terhadap tidur siang adalah...",
+      "options": [
+        { "id": "a", "text": "Menolak sepenuhnya" },
+        { "id": "b", "text": "Mendukung tanpa syarat" },
+        { "id": "c", "text": "Netral, menyajikan sisi positif dan negatif" },
+        { "id": "d", "text": "Skeptis terhadap manfaatnya" },
+        { "id": "e", "text": "Tidak peduli" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Penulis bersikap netral dengan menyajikan manfaat tidur siang singkat sekaligus dampak negatif tidur siang yang terlalu lama.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "lbi_006",
+      "question": "Bacalah teks berikut!\n\n\"Taman Nasional Komodo tidak hanya menjadi habitat bagi komodo, tetapi juga memiliki keanekaragaman hayati laut yang luar biasa. Perairan di sekitarnya menjadi rumah bagi lebih dari 1.000 spesies ikan dan 260 spesies terumbu karang.\"\n\nInformasi yang tidak terdapat dalam teks adalah...",
+      "options": [
+        { "id": "a", "text": "Taman Nasional Komodo adalah habitat komodo" },
+        { "id": "b", "text": "Terdapat keanekaragaman hayati laut" },
+        { "id": "c", "text": "Ada lebih dari 1.000 spesies ikan" },
+        { "id": "d", "text": "Waktu terbaik untuk mengunjungi Taman Nasional Komodo" },
+        { "id": "e", "text": "Terdapat 260 spesies terumbu karang" }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Teks tidak menyebutkan informasi tentang waktu terbaik untuk mengunjungi Taman Nasional Komodo.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "lbi_007",
+      "question": "\"Perkembangan teknologi kecerdasan buatan bagaikan pedang bermata dua bagi dunia kerja.\"\n\nMajas yang digunakan dalam kalimat tersebut adalah...",
+      "options": [
+        { "id": "a", "text": "Personifikasi" },
+        { "id": "b", "text": "Hiperbola" },
+        { "id": "c", "text": "Metafora" },
+        { "id": "d", "text": "Litotes" },
+        { "id": "e", "text": "Metonimia" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Kalimat menggunakan majas metafora dengan menyamakan teknologi AI dengan 'pedang bermata dua' untuk menggambarkan dampak positif dan negatifnya.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "lbi_008",
+      "question": "Bacalah teks berikut!\n\n\"Urbanisasi yang tidak terkendali menimbulkan berbagai permasalahan di kota-kota besar Indonesia. Kemacetan, polusi udara, dan permukiman kumuh menjadi pemandangan sehari-hari. Diperlukan kebijakan pembangunan yang lebih merata antara perkotaan dan pedesaan.\"\n\nOpini penulis dalam teks tersebut terdapat pada kalimat...",
+      "options": [
+        { "id": "a", "text": "Pertama" },
+        { "id": "b", "text": "Kedua" },
+        { "id": "c", "text": "Ketiga" },
+        { "id": "d", "text": "Pertama dan kedua" },
+        { "id": "e", "text": "Kedua dan ketiga" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Kalimat ketiga 'Diperlukan kebijakan pembangunan...' merupakan opini/pendapat penulis tentang solusi, bukan fakta.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "lbi_009",
+      "question": "Bacalah teks berikut!\n\n\"Batik telah diakui UNESCO sebagai Warisan Budaya Tak Benda sejak 2009. Pengakuan ini menjadi kebanggaan sekaligus tanggung jawab untuk melestarikannya. Berbagai upaya dilakukan, mulai dari pendidikan di sekolah hingga promosi di tingkat internasional.\"\n\nKata 'melestarikannya' pada teks merujuk pada...",
+      "options": [
+        { "id": "a", "text": "UNESCO" },
+        { "id": "b", "text": "Pengakuan" },
+        { "id": "c", "text": "Batik" },
+        { "id": "d", "text": "Warisan Budaya" },
+        { "id": "e", "text": "Kebanggaan" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Kata 'melestarikannya' merujuk pada 'batik' yang merupakan topik utama paragraf dan objek yang perlu dilestarikan.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "lbi_010",
+      "question": "Bacalah teks berikut!\n\n\"(1) UMKM memiliki peran vital dalam perekonomian Indonesia. (2) Sektor ini menyerap lebih dari 97% tenaga kerja nasional. (3) Kontribusinya terhadap PDB mencapai lebih dari 60%. (4) Sayangnya, masih banyak UMKM yang belum melek digital.\"\n\nKalimat yang berisi kritik adalah nomor...",
+      "options": [
+        { "id": "a", "text": "1" },
+        { "id": "b", "text": "2" },
+        { "id": "c", "text": "3" },
+        { "id": "d", "text": "4" },
+        { "id": "e", "text": "1 dan 4" }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Kalimat (4) berisi kritik yang ditandai dengan kata 'Sayangnya' dan menyatakan kekurangan UMKM yang belum melek digital.",
+      "difficulty": "medium"
+    }
+  ]
+}

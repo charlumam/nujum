@@ -1,0 +1,149 @@
+{
+  "subtest": {
+    "id": "pk",
+    "name": "Pengetahuan Kuantitatif",
+    "description": "Matematika dasar dan terapan"
+  },
+  "questions": [
+    {
+      "id": "pk_001",
+      "question": "Jika 3x + 5 = 20, maka nilai x adalah...",
+      "options": [
+        { "id": "a", "text": "3" },
+        { "id": "b", "text": "4" },
+        { "id": "c", "text": "5" },
+        { "id": "d", "text": "6" },
+        { "id": "e", "text": "7" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "3x + 5 = 20 → 3x = 15 → x = 5",
+      "difficulty": "easy"
+    },
+    {
+      "id": "pk_002",
+      "question": "Sebuah toko memberikan diskon 20% untuk semua barang. Jika harga asli sebuah baju adalah Rp250.000, berapa harga setelah diskon?",
+      "options": [
+        { "id": "a", "text": "Rp180.000" },
+        { "id": "b", "text": "Rp190.000" },
+        { "id": "c", "text": "Rp200.000" },
+        { "id": "d", "text": "Rp210.000" },
+        { "id": "e", "text": "Rp220.000" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Diskon = 20% × 250.000 = 50.000. Harga setelah diskon = 250.000 - 50.000 = Rp200.000",
+      "difficulty": "easy"
+    },
+    {
+      "id": "pk_003",
+      "question": "Rata-rata nilai ujian 5 siswa adalah 78. Jika seorang siswa baru bergabung dengan nilai 90, berapa rata-rata nilai sekarang?",
+      "options": [
+        { "id": "a", "text": "78" },
+        { "id": "b", "text": "80" },
+        { "id": "c", "text": "82" },
+        { "id": "d", "text": "84" },
+        { "id": "e", "text": "86" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Total nilai 5 siswa = 78 × 5 = 390. Total sekarang = 390 + 90 = 480. Rata-rata = 480 ÷ 6 = 80",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pk_004",
+      "question": "Perbandingan uang Ani dan Budi adalah 3 : 5. Jika selisih uang mereka Rp40.000, berapa jumlah uang mereka?",
+      "options": [
+        { "id": "a", "text": "Rp120.000" },
+        { "id": "b", "text": "Rp140.000" },
+        { "id": "c", "text": "Rp160.000" },
+        { "id": "d", "text": "Rp180.000" },
+        { "id": "e", "text": "Rp200.000" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Selisih perbandingan = 5 - 3 = 2. Nilai 1 bagian = 40.000 ÷ 2 = 20.000. Jumlah = (3+5) × 20.000 = 160.000",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pk_005",
+      "question": "Luas lingkaran dengan diameter 14 cm adalah... (π = 22/7)",
+      "options": [
+        { "id": "a", "text": "144 cm²" },
+        { "id": "b", "text": "154 cm²" },
+        { "id": "c", "text": "164 cm²" },
+        { "id": "d", "text": "174 cm²" },
+        { "id": "e", "text": "184 cm²" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Jari-jari = 14 ÷ 2 = 7 cm. Luas = π × r² = (22/7) × 7² = 22 × 7 = 154 cm²",
+      "difficulty": "easy"
+    },
+    {
+      "id": "pk_006",
+      "question": "Sebuah mobil menempuh jarak 240 km dalam waktu 3 jam. Jika mobil tersebut menempuh jarak 400 km dengan kecepatan yang sama, berapa lama waktu yang diperlukan?",
+      "options": [
+        { "id": "a", "text": "4 jam" },
+        { "id": "b", "text": "4,5 jam" },
+        { "id": "c", "text": "5 jam" },
+        { "id": "d", "text": "5,5 jam" },
+        { "id": "e", "text": "6 jam" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Kecepatan = 240 ÷ 3 = 80 km/jam. Waktu = 400 ÷ 80 = 5 jam",
+      "difficulty": "easy"
+    },
+    {
+      "id": "pk_007",
+      "question": "Jika 2^x = 32, maka nilai x adalah...",
+      "options": [
+        { "id": "a", "text": "3" },
+        { "id": "b", "text": "4" },
+        { "id": "c", "text": "5" },
+        { "id": "d", "text": "6" },
+        { "id": "e", "text": "7" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "32 = 2^5, jadi x = 5",
+      "difficulty": "easy"
+    },
+    {
+      "id": "pk_008",
+      "question": "Sebuah tangki berbentuk balok dengan panjang 2 m, lebar 1,5 m, dan tinggi 1 m. Berapa liter air yang dapat ditampung tangki tersebut?",
+      "options": [
+        { "id": "a", "text": "2.000 liter" },
+        { "id": "b", "text": "2.500 liter" },
+        { "id": "c", "text": "3.000 liter" },
+        { "id": "d", "text": "3.500 liter" },
+        { "id": "e", "text": "4.000 liter" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Volume = 2 × 1,5 × 1 = 3 m³ = 3.000 liter (1 m³ = 1.000 liter)",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pk_009",
+      "question": "Dari 40 siswa, 25 siswa suka matematika dan 20 siswa suka fisika. Jika 10 siswa suka keduanya, berapa siswa yang tidak suka keduanya?",
+      "options": [
+        { "id": "a", "text": "3 siswa" },
+        { "id": "b", "text": "4 siswa" },
+        { "id": "c", "text": "5 siswa" },
+        { "id": "d", "text": "6 siswa" },
+        { "id": "e", "text": "7 siswa" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Siswa yang suka minimal satu = 25 + 20 - 10 = 35. Tidak suka keduanya = 40 - 35 = 5 siswa",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pk_010",
+      "question": "Harga 3 buku dan 2 pensil adalah Rp27.000. Harga 2 buku dan 3 pensil adalah Rp23.000. Berapa harga 1 buku?",
+      "options": [
+        { "id": "a", "text": "Rp5.000" },
+        { "id": "b", "text": "Rp6.000" },
+        { "id": "c", "text": "Rp7.000" },
+        { "id": "d", "text": "Rp8.000" },
+        { "id": "e", "text": "Rp9.000" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "3b + 2p = 27000 ... (1)\n2b + 3p = 23000 ... (2)\nDari (1)×3 - (2)×2: 9b + 6p - 4b - 6p = 81000 - 46000\n5b = 35000, b = 7000",
+      "difficulty": "hard"
+    }
+  ]
+}

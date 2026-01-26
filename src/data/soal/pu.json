@@ -1,0 +1,149 @@
+{
+  "subtest": {
+    "id": "pu",
+    "name": "Penalaran Umum",
+    "description": "Logika, analisis, dan penalaran"
+  },
+  "questions": [
+    {
+      "id": "pu_001",
+      "question": "Jika semua mahasiswa rajin belajar, dan Budi adalah mahasiswa, maka...",
+      "options": [
+        { "id": "a", "text": "Budi belum tentu rajin belajar" },
+        { "id": "b", "text": "Budi pasti rajin belajar" },
+        { "id": "c", "text": "Budi mungkin tidak rajin belajar" },
+        { "id": "d", "text": "Budi bukan mahasiswa yang rajin" },
+        { "id": "e", "text": "Tidak dapat disimpulkan" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Berdasarkan silogisme: Premis mayor 'Semua mahasiswa rajin belajar' dan premis minor 'Budi adalah mahasiswa' menghasilkan kesimpulan 'Budi pasti rajin belajar'.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "pu_002",
+      "question": "Perhatikan pola berikut: 2, 6, 12, 20, 30, ...\nBilangan selanjutnya adalah...",
+      "options": [
+        { "id": "a", "text": "40" },
+        { "id": "b", "text": "42" },
+        { "id": "c", "text": "44" },
+        { "id": "d", "text": "46" },
+        { "id": "e", "text": "48" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Pola: n × (n+1). Untuk n=1: 1×2=2, n=2: 2×3=6, n=3: 3×4=12, n=4: 4×5=20, n=5: 5×6=30, n=6: 6×7=42.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pu_003",
+      "question": "Tidak benar bahwa semua politisi tidak jujur. Pernyataan yang setara adalah...",
+      "options": [
+        { "id": "a", "text": "Semua politisi jujur" },
+        { "id": "b", "text": "Tidak ada politisi yang jujur" },
+        { "id": "c", "text": "Ada politisi yang jujur" },
+        { "id": "d", "text": "Sebagian besar politisi tidak jujur" },
+        { "id": "e", "text": "Semua politisi tidak jujur" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Negasi dari 'semua X tidak Y' adalah 'ada X yang Y'. Jadi negasi dari 'semua politisi tidak jujur' adalah 'ada politisi yang jujur'.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pu_004",
+      "question": "Dalam suatu barisan, A lebih tinggi dari B, C lebih pendek dari D, dan B lebih tinggi dari D. Siapa yang paling pendek?",
+      "options": [
+        { "id": "a", "text": "A" },
+        { "id": "b", "text": "B" },
+        { "id": "c", "text": "C" },
+        { "id": "d", "text": "D" },
+        { "id": "e", "text": "Tidak dapat ditentukan" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Dari informasi: A > B, B > D, dan C < D. Maka urutan dari tinggi ke pendek: A > B > D > C. Jadi C paling pendek.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pu_005",
+      "question": "Jika hujan turun, maka jalanan basah. Jalanan tidak basah. Kesimpulan yang valid adalah...",
+      "options": [
+        { "id": "a", "text": "Hujan turun" },
+        { "id": "b", "text": "Hujan tidak turun" },
+        { "id": "c", "text": "Mungkin hujan turun" },
+        { "id": "d", "text": "Jalanan kering karena panas" },
+        { "id": "e", "text": "Tidak dapat disimpulkan" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Ini adalah modus tollens. Jika P → Q dan ¬Q, maka ¬P. Jika hujan → basah, dan tidak basah, maka tidak hujan.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "pu_006",
+      "question": "Sebuah kubus memiliki 6 sisi dengan warna berbeda: merah, biru, kuning, hijau, oranye, dan ungu. Jika merah berhadapan dengan biru, dan kuning berhadapan dengan hijau, warna apa yang berhadapan dengan oranye?",
+      "options": [
+        { "id": "a", "text": "Merah" },
+        { "id": "b", "text": "Biru" },
+        { "id": "c", "text": "Kuning" },
+        { "id": "d", "text": "Hijau" },
+        { "id": "e", "text": "Ungu" }
+      ],
+      "correctAnswer": "e",
+      "explanation": "Kubus memiliki 3 pasang sisi berhadapan. Merah-biru dan kuning-hijau sudah berpasangan, maka oranye-ungu adalah pasangan ketiga.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "pu_007",
+      "question": "Perhatikan deret: 3, 5, 9, 17, 33, ...\nSuku berikutnya adalah...",
+      "options": [
+        { "id": "a", "text": "49" },
+        { "id": "b", "text": "57" },
+        { "id": "c", "text": "65" },
+        { "id": "d", "text": "66" },
+        { "id": "e", "text": "67" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Pola: setiap suku = suku sebelumnya × 2 - 1. 3×2-1=5, 5×2-1=9, 9×2-1=17, 17×2-1=33, 33×2-1=65.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pu_008",
+      "question": "Lima orang (P, Q, R, S, T) duduk melingkar. P duduk di sebelah kanan Q. R duduk berhadapan dengan S. T tidak duduk di sebelah P. Siapa yang duduk di sebelah kiri Q?",
+      "options": [
+        { "id": "a", "text": "P" },
+        { "id": "b", "text": "R" },
+        { "id": "c", "text": "S" },
+        { "id": "d", "text": "T" },
+        { "id": "e", "text": "Tidak dapat ditentukan" }
+      ],
+      "correctAnswer": "d",
+      "explanation": "P di kanan Q berarti Q-P berurutan searah jarum jam. R berhadapan S, dan T tidak di sebelah P. Satu-satunya kemungkinan adalah T di sebelah kiri Q.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "pu_009",
+      "question": "Semua guru adalah pendidik. Sebagian pendidik adalah penulis. Kesimpulan yang pasti benar adalah...",
+      "options": [
+        { "id": "a", "text": "Semua guru adalah penulis" },
+        { "id": "b", "text": "Sebagian guru adalah penulis" },
+        { "id": "c", "text": "Tidak ada guru yang penulis" },
+        { "id": "d", "text": "Semua penulis adalah guru" },
+        { "id": "e", "text": "Tidak dapat disimpulkan hubungan guru dan penulis" }
+      ],
+      "correctAnswer": "e",
+      "explanation": "Dari premis 'Semua guru adalah pendidik' dan 'Sebagian pendidik adalah penulis', tidak dapat disimpulkan hubungan langsung antara guru dan penulis.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pu_010",
+      "question": "Jika 🔺 + 🔺 = 10 dan 🔺 × ⬜ = 15, maka ⬜ = ...",
+      "options": [
+        { "id": "a", "text": "2" },
+        { "id": "b", "text": "3" },
+        { "id": "c", "text": "4" },
+        { "id": "d", "text": "5" },
+        { "id": "e", "text": "6" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "🔺 + 🔺 = 10, maka 🔺 = 5. Dari 🔺 × ⬜ = 15, kita dapat 5 × ⬜ = 15, sehingga ⬜ = 3.",
+      "difficulty": "easy"
+    }
+  ]
+}
