@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
+import { useAuth } from "@clerk/astro/react";
 
 const MAX_AVERAGE_SCORE = 859.13;
 const MAX_SCORE = 1000;
@@ -82,6 +83,36 @@ export default function ScoreForm({
 }) {
   const [scores, setScores] = useState(INITIAL_SCORES);
   const [viewAllMode, setViewAllMode] = useState(false);
+  const [isLoadingScores, setIsLoadingScores] = useState(false);
+  const { isSignedIn, isLoaded } = useAuth();
+
+  // Fetch saved scores from API for signed-in users on mount
+  useEffect(() => {
+    if (!isLoaded || !isSignedIn) return;
+
+    const fetchSavedScores = async () => {
+      setIsLoadingScores(true);
+      try {
+        const response = await fetch("/api/scores");
+        if (response.ok) {
+          const data = await response.json();
+          if (data.scores) {
+            const formattedScores = Object.fromEntries(
+              Object.entries(data.scores).map(([key, value]) => [key, String(value)])
+            );
+            setScores(formattedScores);
+            setViewAllMode(Object.values(data.scores).every((s) => s === MAX_SCORE));
+          }
+        }
+      } catch (error) {
+        console.error("Failed to fetch saved scores:", error);
+      } finally {
+        setIsLoadingScores(false);
+      }
+    };
+
+    fetchSavedScores();
+  }, [isLoaded, isSignedIn]);
 
   useEffect(() => {
     if (savedScores) {
@@ -135,6 +166,21 @@ export default function ScoreForm({
     }
   };
 
+  // Helper function to save scores to API for signed-in users
+  const saveScoresToApi = async (scoresToSave) => {
+    if (!isSignedIn) return;
+    
+    try {
+      await fetch("/api/scores", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ scores: scoresToSave }),
+      });
+    } catch (error) {
+      console.error("Failed to save scores:", error);
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (viewAllMode && allMaxScores) return;
@@ -148,6 +194,8 @@ export default function ScoreForm({
       );
       setViewAllMode(true);
       onSubmit(allProgramsScores);
+      // Save max scores for signed-in users
+      saveScoresToApi(allProgramsScores);
       return;
     }
 
@@ -156,6 +204,8 @@ export default function ScoreForm({
       Object.entries(scores).map(([k, v]) => [k, Number(v)])
     );
     onSubmit(numeric);
+    // Save scores for signed-in users
+    saveScoresToApi(numeric);
   };
 
   // Disable button if: already in viewAllMode with max scores, OR partially filled (some but not all)

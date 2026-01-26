@@ -29,6 +29,7 @@
     "vite": "^6.0.0"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260124.0",
     "wrangler": "^4.54.0"
   }
 }
