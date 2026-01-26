@@ -1,0 +1,30 @@
+---
+import Footer from "../layouts/Footer.astro";
+import Header from "../layouts/Header.astro";
+import PrepDashboard from "../components/PrepDashboard.jsx";
+import "../styles/global.css";
+import "@fontsource-variable/nunito";
+import "@fontsource-variable/nunito-sans";
+---
+
+<html lang="en">
+  <head>
+    <title>Latihan Persiapan SNBT | Nujum</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://nujum.charda.org/persiapan" />
+    <meta name="description" content="Persiapkan UTBK-SNBT dengan latihan soal berkualitas. Pantau progress belajarmu dan tingkatkan skor dengan fitur persiapan Nujum." />
+  </head>
+
+  <body class="bg-stone-100 min-h-screen">
+    <Header />
+
+    <main class="py-8">
+      <div class="container mx-auto px-4 max-w-4xl">
+        <PrepDashboard client:load />
+      </div>
+    </main>
+
+    <Footer />
+  </body>
+</html>
