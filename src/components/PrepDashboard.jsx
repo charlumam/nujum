@@ -583,7 +583,7 @@ export default function PrepDashboard() {
 
   // Render setup mode (default dashboard)
   return (
-    <div className="space-y-6">
+    <div className="space-y-6" style={{ fontFamily: '"Nunito Sans Variable", sans-serif' }}>
       {/* Main Practice Setup */}
       <div className="grid lg:grid-cols-3 gap-6">
         {/* Subtest Selection */}
