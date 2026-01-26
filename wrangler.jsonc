@@ -1,16 +1,24 @@
 {
 	"main": "dist/_worker.js/index.js",
 	"name": "nujum",
-  "compatibility_date": "2026-01-07",
-  "compatibility_flags": [
-    "nodejs_compat",
-    "global_fetch_strictly_public"
-  ],
+	"compatibility_date": "2026-01-07",
+	"compatibility_flags": [
+		"nodejs_compat",
+		"global_fetch_strictly_public"
+	],
 	"assets": {
 		"binding": "ASSETS",
 		"directory": "./dist"
 	},
 	"observability": {
-    "enabled": true
-  }
+		"enabled": true
+	},
+	"d1_databases": [
+		{
+			"binding": "nujum_db",
+			"database_name": "nujum-db",
+			"database_id": "61c0edc9-8f12-400e-aa16-1bbe34735c08",
+			"remote": true
+		}
+	]
 }
