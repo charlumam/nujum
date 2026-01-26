@@ -75,6 +75,7 @@ import {
                   elements: {
                     avatarBox: "!w-9 !h-9",
                     userButtonTrigger: "!outline-none focus:!outline-none focus:!ring-2 focus:!ring-blue-600 !rounded-full",
+                    userButtonPopoverCard: "!mt-4",
                   },
                 }}
               />
@@ -92,6 +93,7 @@ import {
                   elements: {
                     avatarBox: "!w-8 !h-8",
                     userButtonTrigger: "!outline-none focus:!outline-none focus:!ring-2 focus:!ring-blue-600 !rounded-full",
+                    userButtonPopoverCard: "!mt-4",
                   },
                 }}
               />
@@ -296,5 +298,16 @@ import {
   .clerk-avatar :global(*) {
     outline: none !important;
     box-shadow: none !important;
+  }
+
+  /* Center Clerk UserButton popover on small screens and make it fixed */
+  @media (max-width: 767px) {
+    :global(.cl-userButtonPopoverCard) {
+      position: fixed !important;
+      top: 5rem !important;
+      left: 50% !important;
+      right: auto !important;
+      transform: translateX(-50%) !important;
+    }
   }
 </style>
