@@ -1,84 +1,57 @@
 import { useState } from "react";
 
-// Mock data for the prototype
-const MOCK_PROGRESS = {
-  totalSessions: 12,
-  completedSessions: 5,
-  totalQuestions: 180,
-  answeredCorrectly: 127,
-  currentStreak: 3,
-  bestStreak: 7,
-};
+// Subtests available for practice
+const SUBTESTS = [
+  { id: "pu", name: "Penalaran Umum", description: "Logika, analisis, dan penalaran" },
+  { id: "ppu", name: "Pengetahuan Umum", description: "Wawasan kebangsaan dan sosial" },
+  { id: "pbm", name: "Pemahaman Bacaan & Menulis", description: "Membaca dan menulis efektif" },
+  { id: "pk", name: "Pengetahuan Kuantitatif", description: "Matematika dasar dan terapan" },
+  { id: "lbi", name: "Literasi Bahasa Indonesia", description: "Pemahaman teks bahasa Indonesia" },
+  { id: "lbe", name: "Literasi Bahasa Inggris", description: "Pemahaman teks bahasa Inggris" },
+  { id: "pm", name: "Penalaran Matematika", description: "Logika dan pemecahan masalah matematika" },
+];
 
-const MOCK_SUBJECTS = [
-  { id: "pu", name: "Penalaran Umum", progress: 65, total: 30, completed: 19 },
-  {
-    id: "ppu",
-    name: "Pengetahuan Umum",
-    progress: 40,
-    total: 25,
-    completed: 10,
-  },
-  {
-    id: "pbm",
-    name: "Bacaan & Menulis",
-    progress: 80,
-    total: 20,
-    completed: 16,
-  },
-  {
-    id: "pk",
-    name: "Pengetahuan Kuantitatif",
-    progress: 55,
-    total: 25,
-    completed: 14,
-  },
-  {
-    id: "lbi",
-    name: "Literasi Bahasa Indonesia",
-    progress: 70,
-    total: 30,
-    completed: 21,
-  },
-  {
-    id: "lbe",
-    name: "Literasi Bahasa Inggris",
-    progress: 45,
-    total: 25,
-    completed: 11,
-  },
-  {
-    id: "pm",
-    name: "Penalaran Matematika",
-    progress: 30,
-    total: 25,
-    completed: 8,
-  },
+// Duration options
+const DURATION_OPTIONS = [
+  { id: "short", label: "Singkat", minutes: 15, questions: "~10 soal" },
+  { id: "medium", label: "Sedang", minutes: 30, questions: "~20 soal" },
+  { id: "long", label: "Panjang", minutes: 45, questions: "~30 soal" },
+  { id: "full", label: "Penuh", minutes: 60, questions: "~40 soal" },
 ];
 
 const MOCK_RECENT_SESSIONS = [
   {
     id: 1,
-    subject: "Penalaran Umum",
+    subtests: ["Penalaran Umum"],
     score: 85,
     date: "2026-01-25",
+    duration: 30,
     questions: 20,
   },
   {
     id: 2,
-    subject: "Literasi Bahasa Inggris",
+    subtests: ["Literasi Bahasa Inggris", "Literasi Bahasa Indonesia"],
     score: 72,
     date: "2026-01-24",
-    questions: 15,
+    duration: 45,
+    questions: 28,
   },
   {
     id: 3,
-    subject: "Penalaran Matematika",
+    subtests: ["Penalaran Matematika"],
     score: 90,
     date: "2026-01-23",
-    questions: 20,
+    duration: 15,
+    questions: 10,
   },
 ];
+
+const MOCK_STATS = {
+  totalQuestions: 245,
+  accuracy: 78,
+  totalTime: 420, // in minutes
+  sessionsCompleted: 12,
+};
 
 // Icons as simple SVG components
 const BookIcon = () => (
@@ -109,38 +82,6 @@ const CheckIcon = () => (
       strokeLinejoin="round"
       strokeWidth={2}
       d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-    />
-  </svg>
-);
-
-const FireIcon = () => (
-  <svg
-    className="w-5 h-5"
-    fill="none"
-    stroke="currentColor"
-    viewBox="0 0 24 24"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"
-    />
-  </svg>
-);
-
-const ChartIcon = () => (
-  <svg
-    className="w-5 h-5"
-    fill="none"
-    stroke="currentColor"
-    viewBox="0 0 24 24"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
     />
   </svg>
 );
@@ -183,98 +124,164 @@ const ClockIcon = () => (
   </svg>
 );
 
-// Stat Card Component
-const StatCard = ({ icon, label, value, subValue, accent = false }) => (
-  <div
-    className={`p-4 rounded-lg ${accent ? "bg-blue-50 border border-blue-100" : "bg-stone-50"}`}
+const GridIcon = () => (
+  <svg
+    className="w-5 h-5"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
   >
-    <div
-      className={`flex items-center gap-2 mb-1 ${accent ? "text-blue-600" : "text-stone-500"}`}
-    >
-      {icon}
-      <span className="text-sm font-medium">{label}</span>
-    </div>
-    <p
-      className={`text-2xl font-bold ${accent ? "text-blue-700" : "text-stone-700"}`}
-    >
-      {value}
-    </p>
-    {subValue && <p className="text-xs text-stone-500 mt-0.5">{subValue}</p>}
-  </div>
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+    />
+  </svg>
 );
 
-// Progress Bar Component
-const ProgressBar = ({ progress, size = "md" }) => {
-  const height = size === "sm" ? "h-1.5" : "h-2";
+const TargetIcon = () => (
+  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+  </svg>
+);
+
+const TrendingUpIcon = () => (
+  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+  </svg>
+);
+
+const DocumentIcon = () => (
+  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+  </svg>
+);
+
+const TimerIcon = () => (
+  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+  </svg>
+);
+
+// Duration Button Component
+const DurationButton = ({ option, selected, onClick }) => (
+  <button
+    onClick={() => onClick(option.id)}
+    className={`flex-1 p-3 rounded-lg border-2 transition-all ${
+      selected
+        ? "border-blue-500 bg-blue-50 text-blue-700"
+        : "border-stone-200 bg-white hover:border-stone-300 text-stone-600"
+    }`}
+  >
+    <div className="text-lg font-bold">{option.minutes}'</div>
+    <div className="text-xs opacity-75">{option.label}</div>
+  </button>
+);
+
+// Subtest Menu Item Component
+const SubtestMenuItem = ({ subtest, selected, onClick }) => (
+  <button
+    onClick={() => onClick(subtest.id)}
+    className={`w-full p-4 rounded-lg border-2 transition-all text-left ${
+      selected
+        ? "border-blue-500 bg-blue-50"
+        : "border-stone-200 bg-white hover:border-stone-300 hover:bg-stone-50"
+    }`}
+  >
+    <div className="flex items-center justify-between">
+      <div>
+        <h4 className={`font-medium ${selected ? "text-blue-700" : "text-stone-700"}`}>
+          {subtest.name}
+        </h4>
+        <p className="text-xs text-stone-500 mt-0.5">{subtest.description}</p>
+      </div>
+      {selected && (
+        <div className="w-5 h-5 rounded-full bg-blue-500 flex items-center justify-center">
+          <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+          </svg>
+        </div>
+      )}
+    </div>
+  </button>
+);
+
+// Recent Session Row Component
+const RecentSession = ({ session }) => {
+  const subtestLabel = session.subtests.length > 1 
+    ? `${session.subtests[0]} +${session.subtests.length - 1}` 
+    : session.subtests[0];
+  
   return (
-    <div
-      className={`w-full bg-stone-200 rounded-full ${height} overflow-hidden`}
-    >
-      <div
-        className={`bg-blue-500 ${height} rounded-full transition-all duration-300`}
-        style={{ width: `${progress}%` }}
-      />
+    <div className="flex items-center gap-3 py-3 border-b border-stone-100 last:border-0">
+      <div className={`w-10 h-10 rounded-lg flex items-center justify-center text-sm font-bold ${
+        session.score >= 80 ? "bg-green-100 text-green-700" : 
+        session.score >= 60 ? "bg-yellow-100 text-yellow-700" : 
+        "bg-red-100 text-red-600"
+      }`}>
+        {session.score}
+      </div>
+      <div className="flex-1 min-w-0">
+        <p className="text-sm font-medium text-stone-700 truncate">{subtestLabel}</p>
+        <p className="text-xs text-stone-500 flex items-center gap-1 mt-0.5">
+          {new Date(session.date).toLocaleDateString("id-ID", {
+            day: "numeric",
+            month: "short",
+          })}
+          <span className="mx-1">•</span>
+          {session.duration}'
+          <span className="mx-1">•</span>
+          {session.questions} soal
+        </p>
+      </div>
     </div>
   );
 };
 
-// Subject Card Component
-const SubjectCard = ({ subject, onStart }) => (
-  <div className="flex items-center justify-between p-3 bg-stone-50 rounded-lg hover:bg-blue-50 transition-colors group">
-    <div className="flex-1 min-w-0">
-      <div className="flex items-center justify-between mb-1">
-        <h4 className="text-sm font-medium text-stone-700 truncate pr-2">
-          {subject.name}
-        </h4>
-        <span className="text-xs text-stone-500 shrink-0">
-          {subject.completed}/{subject.total}
-        </span>
-      </div>
-      <ProgressBar progress={subject.progress} size="sm" />
+// Stat Card Component
+const StatCard = ({ icon, label, value, subValue }) => (
+  <div className="bg-white rounded-xl p-4 shadow-sm">
+    <div className="flex items-center gap-2 text-stone-500 mb-1">
+      {icon}
+      <span className="text-xs font-medium uppercase tracking-wide">{label}</span>
     </div>
-    <button
-      onClick={() => onStart(subject.id)}
-      className="ml-3 p-2 text-stone-400 hover:text-blue-600 hover:bg-white rounded-full transition-colors opacity-0 group-hover:opacity-100"
-      aria-label={`Mulai latihan ${subject.name}`}
-    >
-      <PlayIcon />
-    </button>
-  </div>
-);
-
-// Recent Session Row Component
-const RecentSession = ({ session }) => (
-  <div className="flex items-center justify-between py-3 border-b border-stone-100 last:border-0">
-    <div className="flex-1">
-      <p className="text-sm font-medium text-stone-700">{session.subject}</p>
-      <p className="text-xs text-stone-500 flex items-center gap-1 mt-0.5">
-        <ClockIcon />
-        {new Date(session.date).toLocaleDateString("id-ID", {
-          day: "numeric",
-          month: "short",
-        })}
-        <span className="mx-1">•</span>
-        {session.questions} soal
-      </p>
-    </div>
-    <div
-      className={`text-lg font-bold ${session.score >= 80 ? "text-green-600" : session.score >= 60 ? "text-yellow-600" : "text-red-500"}`}
-    >
-      {session.score}%
-    </div>
+    <p className="text-2xl font-bold text-stone-700">{value}</p>
+    {subValue && <p className="text-xs text-stone-500 mt-0.5">{subValue}</p>}
   </div>
 );
 
 export default function PrepDashboard() {
-  const [selectedTab, setSelectedTab] = useState("overview");
-  const accuracy = Math.round(
-    (MOCK_PROGRESS.answeredCorrectly / MOCK_PROGRESS.totalQuestions) * 100,
-  );
+  const [selectedSubtests, setSelectedSubtests] = useState([]);
+  const [selectedDuration, setSelectedDuration] = useState("medium");
 
-  const handleStartPractice = (subjectId) => {
-    // Placeholder for navigation/action
-    console.log(`Starting practice for: ${subjectId}`);
+  const handleSubtestToggle = (subtestId) => {
+    setSelectedSubtests((prev) =>
+      prev.includes(subtestId)
+        ? prev.filter((id) => id !== subtestId)
+        : [...prev, subtestId]
+    );
   };
+
+  const handleSelectAll = () => {
+    if (selectedSubtests.length === SUBTESTS.length) {
+      setSelectedSubtests([]);
+    } else {
+      setSelectedSubtests(SUBTESTS.map((s) => s.id));
+    }
+  };
+
+  const handleStartPractice = () => {
+    const duration = DURATION_OPTIONS.find((d) => d.id === selectedDuration);
+    console.log("Starting practice:", {
+      subtests: selectedSubtests,
+      duration: duration?.minutes,
+    });
+    // Placeholder for navigation/action
+  };
+
+  const allSelected = selectedSubtests.length === SUBTESTS.length;
+  const canStart = selectedSubtests.length > 0;
 
   return (
     <div className="space-y-6">
@@ -284,119 +291,126 @@ export default function PrepDashboard() {
           Latihan Persiapan SNBT
         </h1>
         <p className="text-stone-500">
-          Persiapkan dirimu dengan latihan soal berkualitas
+          Pilih subtes dan durasi latihan yang kamu inginkan
         </p>
       </div>
 
-      {/* Quick Action */}
-      <div className="bg-linear-to-r from-blue-600 to-blue-500 rounded-xl p-6 text-white">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div>
-            <h2 className="text-lg sm:text-xl font-bold mb-1">
-              Lanjutkan Latihan
-            </h2>
-            <p className="text-blue-100 text-sm">
-              Kamu sedang dalam streak {MOCK_PROGRESS.currentStreak} hari!
-              Jangan putus.
+      {/* Main Practice Setup */}
+      <div className="grid lg:grid-cols-3 gap-6">
+        {/* Subtest Selection */}
+        <div className="lg:col-span-2 bg-white rounded-xl shadow-sm p-5">
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-lg font-bold text-stone-700">Pilih Subtes</h3>
+            <button
+              onClick={handleSelectAll}
+              className={`text-sm font-medium px-3 py-1.5 rounded-lg transition-colors flex items-center gap-2 ${
+                allSelected
+                  ? "bg-blue-100 text-blue-700"
+                  : "bg-stone-100 text-stone-600 hover:bg-stone-200"
+              }`}
+            >
+              <GridIcon />
+              {allSelected ? "Batalkan Semua" : "Pilih Semua"}
+            </button>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {SUBTESTS.map((subtest) => (
+              <SubtestMenuItem
+                key={subtest.id}
+                subtest={subtest}
+                selected={selectedSubtests.includes(subtest.id)}
+                onClick={handleSubtestToggle}
+              />
+            ))}
+          </div>
+          
+          {selectedSubtests.length > 0 && (
+            <p className="text-sm text-stone-500 mt-4 text-center">
+              {selectedSubtests.length} subtes dipilih
+            </p>
+          )}
+        </div>
+
+        {/* Duration & Start */}
+        <div className="space-y-4">
+          <div className="bg-white rounded-xl shadow-sm p-5">
+            <h3 className="text-lg font-bold text-stone-700 mb-4">Durasi Latihan</h3>
+            <div className="grid grid-cols-2 gap-2">
+              {DURATION_OPTIONS.map((option) => (
+                <DurationButton
+                  key={option.id}
+                  option={option}
+                  selected={selectedDuration === option.id}
+                  onClick={setSelectedDuration}
+                />
+              ))}
+            </div>
+            <p className="text-xs text-stone-500 mt-3 text-center">
+              {DURATION_OPTIONS.find((d) => d.id === selectedDuration)?.questions}
             </p>
           </div>
-          <button className="w-full sm:w-auto px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors flex items-center justify-center gap-2">
+
+          {/* Start Button */}
+          <button
+            onClick={handleStartPractice}
+            disabled={!canStart}
+            className={`w-full py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-3 ${
+              canStart
+                ? "bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-200"
+                : "bg-stone-200 text-stone-400 cursor-not-allowed"
+            }`}
+          >
             <PlayIcon />
-            Mulai Sekarang
+            Mulai Latihan
           </button>
+
+          {/* Recent Sessions */}
+          <div className="bg-white rounded-xl shadow-sm p-5">
+            <h3 className="text-lg font-bold text-stone-700 mb-3">
+              Latihan Terakhir
+            </h3>
+            {MOCK_RECENT_SESSIONS.length > 0 ? (
+              <div>
+                {MOCK_RECENT_SESSIONS.map((session) => (
+                  <RecentSession key={session.id} session={session} />
+                ))}
+              </div>
+            ) : (
+              <div className="text-center py-6 text-stone-400">
+                <DocumentIcon />
+                <p className="mt-2 text-sm">Belum ada latihan</p>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 
       {/* Stats Grid */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
         <StatCard
-          icon={<BookIcon />}
-          label="Sesi Latihan"
-          value={`${MOCK_PROGRESS.completedSessions}/${MOCK_PROGRESS.totalSessions}`}
-          subValue="sesi selesai"
-        />
-        <StatCard
-          icon={<CheckIcon />}
-          label="Akurasi"
-          value={`${accuracy}%`}
-          subValue={`${MOCK_PROGRESS.answeredCorrectly} jawaban benar`}
-          accent
-        />
-        <StatCard
-          icon={<FireIcon />}
-          label="Streak"
-          value={`${MOCK_PROGRESS.currentStreak} hari`}
-          subValue={`Terbaik: ${MOCK_PROGRESS.bestStreak} hari`}
-        />
-        <StatCard
-          icon={<ChartIcon />}
+          icon={<DocumentIcon />}
           label="Total Soal"
-          value={MOCK_PROGRESS.totalQuestions}
+          value={MOCK_STATS.totalQuestions}
           subValue="soal dikerjakan"
         />
-      </div>
-
-      {/* Main Content Grid */}
-      <div className="grid lg:grid-cols-3 gap-6">
-        {/* Subjects Progress */}
-        <div className="lg:col-span-2 bg-white rounded-xl shadow-sm p-5">
-          <div className="flex items-center justify-between mb-4">
-            <h3 className="text-lg font-bold text-stone-700">
-              Progress Materi
-            </h3>
-            <span className="text-xs text-stone-500 bg-stone-100 px-2 py-1 rounded-full">
-              7 subtes
-            </span>
-          </div>
-          <div className="space-y-2">
-            {MOCK_SUBJECTS.map((subject) => (
-              <SubjectCard
-                key={subject.id}
-                subject={subject}
-                onStart={handleStartPractice}
-              />
-            ))}
-          </div>
-        </div>
-
-        {/* Recent Sessions */}
-        <div className="bg-white rounded-xl shadow-sm p-5">
-          <h3 className="text-lg font-bold text-stone-700 mb-4">
-            Aktivitas Terbaru
-          </h3>
-          {MOCK_RECENT_SESSIONS.length > 0 ? (
-            <div>
-              {MOCK_RECENT_SESSIONS.map((session) => (
-                <RecentSession key={session.id} session={session} />
-              ))}
-              <button className="w-full mt-4 text-sm text-blue-600 hover:text-blue-700 font-medium py-2 hover:bg-blue-50 rounded-lg transition-colors">
-                Lihat Semua Riwayat
-              </button>
-            </div>
-          ) : (
-            <div className="text-center py-8 text-stone-500">
-              <BookIcon />
-              <p className="mt-2 text-sm">Belum ada sesi latihan</p>
-            </div>
-          )}
-        </div>
-      </div>
-
-      {/* Tips Section */}
-      <div className="bg-stone-50 rounded-xl p-5 border border-stone-200">
-        <h3 className="text-sm font-bold text-stone-600 uppercase tracking-wide mb-3">
-          💡 Tips Hari Ini
-        </h3>
-        <p className="text-stone-600 text-sm leading-relaxed">
-          Fokus pada materi dengan progress terendah terlebih dahulu.
-          Berdasarkan data latihanmu,
-          <span className="font-semibold text-blue-600">
-            {" "}
-            Penalaran Matematika{" "}
-          </span>
-          membutuhkan perhatian lebih. Luangkan 20-30 menit setiap hari untuk
-          materi ini.
-        </p>
+        <StatCard
+          icon={<TargetIcon />}
+          label="Akurasi"
+          value={`${MOCK_STATS.accuracy}%`}
+          subValue="jawaban benar"
+        />
+        <StatCard
+          icon={<TimerIcon />}
+          label="Waktu Latihan"
+          value={`${Math.floor(MOCK_STATS.totalTime / 60)}j ${MOCK_STATS.totalTime % 60}m`}
+          subValue="total durasi"
+        />
+        <StatCard
+          icon={<TrendingUpIcon />}
+          label="Sesi Selesai"
+          value={MOCK_STATS.sessionsCompleted}
+          subValue="latihan"
+        />
       </div>
     </div>
   );
