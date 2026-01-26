@@ -13,10 +13,10 @@ const SUBTESTS = [
 
 // Duration options
 const DURATION_OPTIONS = [
-  { id: "short", label: "Singkat", minutes: 15, questions: "~10 soal" },
-  { id: "medium", label: "Sedang", minutes: 30, questions: "~20 soal" },
-  { id: "long", label: "Panjang", minutes: 45, questions: "~30 soal" },
-  { id: "full", label: "Penuh", minutes: 60, questions: "~40 soal" },
+  { id: "short", label: "Singkat", minutes: 45, questions: "~40 soal" },
+  { id: "medium", label: "Sedang", minutes: 90, questions: "~80 soal" },
+  { id: "long", label: "Panjang", minutes: 140, questions: "~120 soal" },
+  { id: "full", label: "Penuh", minutes: 190, questions: "~160 soal" },
 ];
 
 const MOCK_RECENT_SESSIONS = [
@@ -25,24 +25,24 @@ const MOCK_RECENT_SESSIONS = [
     subtests: ["Penalaran Umum"],
     score: 85,
     date: "2026-01-25",
-    duration: 30,
-    questions: 20,
+    duration: 90,
+    questions: 80,
   },
   {
     id: 2,
     subtests: ["Literasi Bahasa Inggris", "Literasi Bahasa Indonesia"],
     score: 72,
     date: "2026-01-24",
-    duration: 45,
-    questions: 28,
+    duration: 140,
+    questions: 120,
   },
   {
     id: 3,
     subtests: ["Penalaran Matematika"],
     score: 90,
     date: "2026-01-23",
-    duration: 15,
-    questions: 10,
+    duration: 45,
+    questions: 40,
   },
 ];
 
